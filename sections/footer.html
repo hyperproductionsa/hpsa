@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
 
-        /* ===== STICKY FOOTER ===== */
+        /* ===== STICKY FOOTER + SLIDE-UP ===== */
         #my-sticky-footer {
             position: sticky;
             bottom: 0;
@@ -26,6 +26,7 @@
             justify-content: space-between;
             padding: 0 30px;
             box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.6s ease forwards;
         }
 
         /* ===== COPYRIGHT (LEFT) ===== */
@@ -64,6 +65,18 @@
             height: 30px;
             width: auto;
             display: block;
+        }
+
+        /* ===== SLIDE-UP KEYFRAMES ===== */
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* ===== MOBILE VERSION ===== */
