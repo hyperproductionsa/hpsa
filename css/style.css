@@ -31,34 +31,37 @@ body {
    ============================================ */
 h1 {
     font-family: 'HyperPixel', sans-serif;
-    font-size: clamp(2rem, 6vw, 4rem);
-    letter-spacing: -12px;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: -8px;
     line-height: 1.1;
     text-transform: uppercase;
+    font-weight: 400;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
-    margin-left: -12px;
+    margin-left: -6px;
     margin-bottom: 10px;
 }
 
 h2 {
     font-family: 'HyperPixel', sans-serif;
-    font-size: clamp(1.5rem, 4vw, 2.8rem);
-    letter-spacing: -10px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -6px;
     line-height: 1.1;
     text-transform: uppercase;
+    font-weight: 400;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0px;
-    margin-left: -8px;
+    margin-left: -4px;
 }
 
 h3 {
     font-family: 'HyperPixel', sans-serif;
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-    letter-spacing: -6px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    letter-spacing: -4px;
     line-height: 1.1;
     text-transform: uppercase;
+    font-weight: 400;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -90,17 +93,66 @@ a:hover {
 }
 
 /* ============================================
+   STICKY HEADER & FOOTER (CSS ONLY)
+   ============================================ */
+#my-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#my-sticky-header img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+#my-sticky-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background: #e4de69;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#my-sticky-footer .copyright {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+}
+
+#my-sticky-footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#my-sticky-footer .social-icons img {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+/* ============================================
    MINIMAL ANIMATIONS
    ============================================ */
 @keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .fade-up {
@@ -108,12 +160,8 @@ a:hover {
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .fade-in {
@@ -121,14 +169,8 @@ a:hover {
 }
 
 @keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .slide-up {
@@ -138,37 +180,14 @@ a:hover {
 /* ============================================
    UTILITY CLASSES
    ============================================ */
-.text-gold {
-    color: #e4de69;
-}
-
-.text-white {
-    color: #ffffff;
-}
-
-.text-black {
-    color: #000000;
-}
-
-.bg-gold {
-    background: #e4de69;
-}
-
-.bg-black {
-    background: #000000;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
+.text-gold { color: #e4de69; }
+.text-white { color: #ffffff; }
+.text-black { color: #000000; }
+.bg-gold { background: #e4de69; }
+.bg-black { background: #000000; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 .mt-10 { margin-top: 10px; }
 .mt-20 { margin-top: 20px; }
@@ -189,52 +208,79 @@ a:hover {
 }
 
 /* ============================================
-   RESPONSIVE TYPOGRAPHY
+   CATALOG (if needed)
+   ============================================ */
+#hp-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* ============================================
+   RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
     h1 {
-        font-size: clamp(1.8rem, 5vw, 2.8rem);
-        letter-spacing: -8px;
-        margin-left: -8px;
-    }
-
-    h2 {
-        font-size: clamp(1.4rem, 4vw, 2rem);
+        font-size: clamp(2rem, 5vw, 2.8rem);
         letter-spacing: -6px;
-        margin-left: -6px;
+        margin-left: -4px;
     }
-
-    h3 {
-        font-size: clamp(1rem, 3vw, 1.4rem);
+    h2 {
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
         letter-spacing: -4px;
+        margin-left: -3px;
     }
-
+    h3 {
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+        letter-spacing: -3px;
+    }
     h4 {
         font-size: clamp(1rem, 2vw, 1.2rem);
     }
-
     p {
         font-size: 0.95rem;
+    }
+
+    #my-sticky-header {
+        height: 60px;
+    }
+    #my-sticky-header img {
+        height: 35px;
+    }
+
+    #my-sticky-footer {
+        justify-content: center;
+        padding: 0 15px;
+        height: 55px;
+    }
+    #my-sticky-footer .copyright {
+        display: none;
+    }
+    #my-sticky-footer .social-icons {
+        gap: 20px;
+    }
+    #my-sticky-footer .social-icons img {
+        height: 28px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        letter-spacing: -6px;
-        margin-left: -6px;
+        font-size: clamp(1.6rem, 4vw, 2rem);
+        letter-spacing: -4px;
+        margin-left: -3px;
     }
-
     h2 {
         font-size: clamp(1.2rem, 3vw, 1.6rem);
-        letter-spacing: -4px;
-        margin-left: -4px;
+        letter-spacing: -3px;
+        margin-left: -2px;
     }
-
     h4 {
         font-size: clamp(0.9rem, 2vw, 1rem);
     }
-
     p {
         font-size: 0.85rem;
     }
