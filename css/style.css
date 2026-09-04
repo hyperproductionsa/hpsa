@@ -34,20 +34,30 @@ html {
    ============================================ */
 @font-face {
     font-family: 'HyperPixel';
-    src: url('https://hyperproduction.co.za/font/Untitled1.ttf') format('truetype');
+    src: url('https://public-html.local/font/Untitled1.ttf') format('truetype');
     font-display: swap;
 }
 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
+h1 {
+    font-family: 'HyperPixel', sans-serif !important;
+    font-size: 40px !important;
+    letter-spacing: -12px !important;
+    line-height: 1.1 !important;
+    -webkit-font-smoothing: none !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-transform: uppercase !important;
+    margin-left: -12px !important;
+    margin-bottom: 10px !important;
+}
+
 h2 {
     font-family: 'HyperPixel', sans-serif !important;
-    /* This pulls the letters together. Adjust -6px if they overlap too much */
-    letter-spacing: -10px !important; 
-    /* This kills the giant vertical gap */
+    font-size: 32px !important;           /* ← Added — smaller than H1 */
+    letter-spacing: -10px !important;
     line-height: 1.1 !important;
-    /* This keeps the pixels sharp and blocky */
     -webkit-font-smoothing: none !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-transform: uppercase !important;
@@ -55,34 +65,12 @@ h2 {
     margin-left: -8px !important;
 }
 
-h1 {
-    font-family: 'HyperPixel', sans-serif !important;
-    /* Scale this up for the Hero; adjust as needed for screen size */
-    font-size: 40px !important; 
-    /* Aggressive pull for the big letters */
-    letter-spacing: -12px !important; 
-    line-height: 1.1 !important;
-    /* Keeps the pixels raw and sharp */
-    -webkit-font-smoothing: none !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    text-transform: uppercase !important;
-    /* Pulls it slightly left to align with your -8px H2 style */
-    margin-left: -12px !important; 
-    margin-bottom: 10px !important;
-}
-
 /* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .fade-up {
@@ -90,12 +78,8 @@ h1 {
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .fade-in {
@@ -103,14 +87,8 @@ h1 {
 }
 
 @keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .slide-up {
