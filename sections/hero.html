@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyper Production (SA)</title>
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== HERO SECTION — FULL WIDTH ===== */
+        #hero {
+            width: 100%;
+            min-height: 100vh;
+            background: #e5de69;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* ===== LATEST RELEASES TITLE ===== */
+        #hero h1 {
+            font-family: 'HyperPixel', sans-serif;
+            font-size: clamp(2rem, 6vw, 4rem);
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        /* ===== CAROUSEL CONTAINER ===== */
+        #artwork-carousel {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            padding: 0 20px;
+        }
+
+        /* ===== CAROUSEL IMAGES — NO WHITE BORDER ===== */
+        .carousel-img {
+            width: 260px;
+            height: 260px;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.5);
+            object-fit: cover;
+            background: #e5de69;
+        }
+
+        /* ===== HIDE SLICK NAVIGATION ===== */
+        .slick-prev, .slick-next, .slick-dots {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        /* ===== BUTTONS — ROUNDED WITH YELLOW HOVER ===== */
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .hero-buttons a {
+            display: inline-block;
+            padding: 14px 40px;
+            background: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border-radius: 50px;              /* ← Pill shape */
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            border: 2px solid #000000;
+        }
+
+        .hero-buttons a:hover {
+            background: #e5de69;              /* ← Yellow bg on hover */
+            color: #000000;                   /* ← Black text on hover */
+            transform: translateY(-3px);
+            border-color: #000000;            /* ← Keeps black border */
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            #hero {
+                padding: 30px 15px;
+            }
+            .carousel-img {
+                width: 200px;
+                height: 200px;
+            }
+            .hero-buttons a {
+                padding: 12px 30px;
+                font-size: 0.9rem;
+                width: 100%;
+                max-width: 280px;
+                border-radius: 50px;
+            }
+            .hero-buttons {
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-img {
+                width: 160px;
+                height: 160px;
+            }
+            #hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <h1>LATEST RELEASES</h1>
+
+        <!-- Carousel -->
+        <div id="artwork-carousel"></div>
+
+        <!-- Buttons -->
+        <div class="hero-buttons">
+            <a href="/releases/">RELEASES</a>
+            <a href="/demo-submission/">DEMO SUBMISSION</a>
+        </div>
+    </section>
+
+    <!-- ===== JQUERY + SLICK ===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        const jsonUrl = 'https://hyperproduction.co.za/artworks/images.json';
+        const imageBaseUrl = 'https://hyperproduction.co.za/artworks/';
+
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                const container = $('#artwork-carousel');
+
+                data.forEach(imgName => {
+                    const imgTag = `<div><img src="${imageBaseUrl}${imgName}" class="carousel-img" alt="Artwork" crossorigin="anonymous"></div>`;
+                    container.append(imgTag);
+                });
+
+                container.slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    speed: 800,
+                    arrows: false,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            })
+            .catch(err => console.error('Carousel Error:', err));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Hyper Production (SA)</title>
+    <meta name="description" content="Professional mixing, mastering, and graphic design for independent artists. Mixing from R400, mastering from R500." />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #services {
+            width: 100%;
+            min-height: 100vh;
+            background: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .services-content {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #services h2 {
+            font-family: 'HyperPixel', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .service-card {
+            background: #111111;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 30px 20px 25px;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            border-color: #e4de69;
+            transform: translateY(-6px);
+        }
+
+        .service-card h4 {
+            font-family: Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #e4de69;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #cccccc;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex: 1;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: #e4de69;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 4px 18px;
+            border-radius: 50px;
+            align-self: center;
+            margin-top: auto;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 14px 50px;
+            background: #e4de69;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            transition: background 0.3s, transform 0.2s;
+            border: 2px solid #e4de69;
+            margin-top: 10px;
+        }
+
+        .contact-btn:hover {
+            background: transparent;
+            color: #e4de69;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            #services {
+                padding: 40px 15px;
+            }
+            #services h2 {
+                font-size: 1.8rem;
+            }
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .service-card {
+                padding: 24px 16px 20px;
+            }
+            .service-card h4 {
+                font-size: 1.2rem;
+            }
+            .service-card p {
+                font-size: 0.9rem;
+            }
+            .contact-btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #services h2 {
+                font-size: 1.5rem;
+            }
+            .service-card h4 {
+                font-size: 1rem;
+            }
+            .service-card p {
+                font-size: 0.85rem;
+            }
+            .contact-btn {
+                font-size: 0.9rem;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="services">
+        <div class="services-content">
+            <h2>Services</h2>
+
+            <div class="service-grid">
+
+                <!-- Mixing -->
+                <div class="service-card">
+                    <div>
+                        <h4>Mixing</h4>
+                        <p>
+                            Clarity, punch, and depth — we balance every element so your track hits hard on club systems, headphones, and streaming platforms.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R400</span>
+                </div>
+
+                <!-- Mastering -->
+                <div class="service-card">
+                    <div>
+                        <h4>Mastering</h4>
+                        <p>
+                            Competitive loudness, precise EQ, and dynamic control — the final polish that makes your track ready for Spotify, Apple Music, and Beatport.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R500</span>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card">
+                    <div>
+                        <h4>Graphic Design</h4>
+                        <p>
+                            Cover art, logos, and promotional visuals that capture your sound. We make sure your visual identity is as professional as your music.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R200</span>
+                </div>
+
+            </div>
+
+            <!-- Contact Button -->
+            <a href="mailto:services@hyperproduction.co.za" class="contact-btn">Contact Us Now</a>
+
+        </div>
+    </section>
+
+</body>
+</html>

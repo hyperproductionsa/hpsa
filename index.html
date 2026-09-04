@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== TITLE ===== -->
+    <title>Hyper Production (SA) | South African Record Label &amp; Music Distribution</title>
+
+    <!-- ===== META DESCRIPTION ===== -->
+    <meta name="description" content="Hyper Production (SA) is a South African record label founded in 2014. We offer mixing, mastering, graphic design, and global music distribution for independent artists." />
+
+    <!-- ===== OPEN GRAPH (Social Sharing) ===== -->
+    <meta property="og:title" content="Hyper Production (SA) | Record Label &amp; Music Distribution" />
+    <meta property="og:description" content="South African record label offering mixing, mastering, and global distribution for independent artists." />
+    <meta property="og:image" content="https://hyperproduction.co.za/logo/HPSA%20LOGO.png" />
+    <meta property="og:url" content="https://hyperproduction.co.za/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hyper Production (SA) | Record Label &amp; Music Distribution" />
+    <meta name="twitter:description" content="South African record label offering mixing, mastering, and global distribution for independent artists." />
+    <meta name="twitter:image" content="https://hyperproduction.co.za/logo/HPSA%20LOGO.png" />
+
+    <!-- ===== GLOBAL CSS ===== -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- ===== SLICK CAROUSEL CSS ===== -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicRecordLabel",
+        "name": "Hyper Production (SA)",
+        "foundingDate": "2014",
+        "founder": {
+            "@type": "Person",
+            "name": "Mahlogonolo 'HyperSOUL-X' Dinake"
+        },
+        "description": "South African record label offering mixing, mastering, graphic design, and global music distribution.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ZA"
+        },
+        "url": "https://hyperproduction.co.za/",
+        "logo": "https://hyperproduction.co.za/logo/HPSA%20LOGO.png",
+        "sameAs": [
+            "https://facebook.com/hyperproductionsa",
+            "https://instagram.com/hyperprosa",
+            "https://www.youtube.com/@hyperproductionsa",
+            "https://www.traxsource.com/label/19884/hyper-production-sa",
+            "https://www.beatport.com/label/hyper-production-sa/43113"
+        ]
+    }
+    </script>
+
+    <style>
+        /* Any index-specific overrides */
+    </style>
+</head>
+<body>
+
+    <!-- ===== INCLUDE ALL SECTIONS ===== -->
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+    <div id="distribution-placeholder"></div>
+    <div id="about-placeholder"></div>
+    <div id="services-placeholder"></div>
+    <div id="contact-placeholder"></div>
+    <div id="footer-placeholder"></div>
+
+    <!-- ===== JQUERY + SLICK ===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- ===== LOAD SECTIONS ===== -->
+    <script>
+        const sections = [
+            { id: 'header-placeholder', file: '/sections/header.html' },
+            { id: 'hero-placeholder', file: '/sections/hero.html' },
+            { id: 'distribution-placeholder', file: '/sections/distribution.html' },
+            { id: 'about-placeholder', file: '/sections/about.html' },
+            { id: 'services-placeholder', file: '/sections/services.html' },
+            { id: 'contact-placeholder', file: '/sections/contact.html' },
+            { id: 'footer-placeholder', file: '/sections/footer.html' }
+        ];
+
+        sections.forEach(section => {
+            fetch(section.file)
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById(section.id).innerHTML = html;
+                })
+                .catch(err => console.error('Error loading:', section.file, err));
+        });
+    </script>
+
+</body>
+</html>

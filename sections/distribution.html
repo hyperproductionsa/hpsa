@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distribution | Hyper Production (SA)</title>
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ===== DISTRIBUTION SECTION ===== */
+        #distribution {
+            width: 100%;
+            min-height: 100vh;
+            background: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .distribution-content {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* ===== HEADING ===== */
+        #distribution h2 {
+            font-family: 'HyperPixel', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        /* ===== DISTRIBUTION CAROUSEL — CLEAN & EVEN ===== */
+        #distribution-carousel {
+            width: 100%;
+            padding: 20px 0;
+            margin: 0 auto 30px;
+            overflow: hidden;
+            /* No background — transparent */
+        }
+
+        .distro-img-wrapper {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            padding: 0 30px;          /* Even horizontal spacing */
+            height: 60px;             /* Fixed height for consistent alignment */
+        }
+
+        .distro-img {
+            height: 35px !important;  /* Adjust to your liking */
+            width: auto !important;
+            max-width: 120px;         /* Prevents logos from getting too wide */
+            object-fit: contain;
+            display: block;
+            /* NO FILTER — original colors */
+        }
+
+        /* Force constant linear movement */
+        #distribution-carousel .slick-track {
+            display: flex !important;
+            transition-timing-function: linear !important;
+        }
+
+        /* Hide Slick navigation */
+        #distribution-carousel .slick-prev,
+        #distribution-carousel .slick-next,
+        #distribution-carousel .slick-dots {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        /* ===== TEXT ===== */
+        .distribution-text {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .distribution-text p {
+            margin-bottom: 16px;
+        }
+
+        .distribution-text strong {
+            color: #e5de69;
+            font-weight: 700;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            #distribution {
+                padding: 40px 15px;
+                min-height: 100vh;
+            }
+
+            #distribution h2 {
+                font-size: 1.8rem;
+                letter-spacing: -2px;
+            }
+
+            .distribution-text {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .distro-img {
+                height: 28px !important;
+            }
+
+            .distro-img-wrapper {
+                padding: 0 18px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #distribution h2 {
+                font-size: 1.5rem;
+            }
+
+            .distribution-text {
+                font-size: 0.85rem;
+            }
+
+            .distro-img {
+                height: 22px !important;
+            }
+
+            .distro-img-wrapper {
+                padding: 0 12px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== DISTRIBUTION SECTION ===== -->
+    <section id="distribution">
+        <div class="distribution-content">
+            <h2>Find Our Music Here</h2>
+
+            <!-- Carousel -->
+            <div id="distribution-carousel"></div>
+
+            <!-- Text -->
+            <div class="distribution-text">
+                <p>
+                    Hyper Production (SA) delivers your music to <strong>150+ digital platforms</strong> worldwide — 
+                    including <strong>Spotify, Apple Music, Beatport, Traxsource, Deezer, and Tidal</strong>. 
+                    Our global distribution network ensures your sound reaches listeners, DJs, and tastemakers 
+                    across every corner of the globe.
+                </p>
+                <p>
+                    From club-ready anthems to streaming hits, we bridge the gap between local talent and 
+                    international audiences. With a commitment to high-quality audio and strategic platform 
+                    partnerships, we give your music the stage it deserves.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JQUERY + SLICK ===== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        (function($) {
+            const initTicker = () => {
+                const jsonUrl = 'https://hyperproduction.co.za/logo/stores/images.json';
+                const imageBaseUrl = 'https://hyperproduction.co.za/logo/stores/';
+
+                $.getJSON(jsonUrl, function(data) {
+                    const $carousel = $('#distribution-carousel');
+                    
+                    let html = '';
+                    $.each(data, function(i, name) {
+                        html += '<div class="distro-img-wrapper"><img src="' + imageBaseUrl + name + '" class="distro-img" alt="Distribution Partner"></div>';
+                    });
+                    $carousel.html(html);
+
+                    $carousel.slick({
+                        slidesToShow: 8,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 0,
+                        speed: 3000,
+                        cssEase: 'linear',
+                        pauseOnHover: false,
+                        pauseOnFocus: false,
+                        arrows: false,
+                        dots: false,
+                        infinite: true,
+                        responsive: [
+                            { breakpoint: 1024, settings: { slidesToShow: 6 } },
+                            { breakpoint: 768, settings: { slidesToShow: 4 } },
+                            { breakpoint: 480, settings: { slidesToShow: 3 } }
+                        ]
+                    });
+                }).fail(function() {
+                    console.error('Failed to load distribution logos JSON');
+                });
+            };
+
+            // Wait for Slick to be ready
+            const waitForSlick = setInterval(function() {
+                if ($.fn.slick) {
+                    clearInterval(waitForSlick);
+                    initTicker();
+                }
+            }, 100);
+        })(jQuery);
+    </script>
+
+</body>
+</html>
