@@ -18,12 +18,12 @@ h3,h4,h5,h6{font-family:'Roboto',Arial,sans-serif}
 p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 
 /* ============================================
-   STICKY HEADER & FOOTER
+   STICKY HEADER & FOOTER (NO ANIMATIONS)
    ============================================ */
-#my-sticky-header{position:fixed!important;top:0;left:0;z-index:9999;width:100%;height:80px;background:#000;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.5);animation:slideDown .6s ease forwards;animation-fill-mode:forwards}
+#my-sticky-header{position:fixed!important;top:0;left:0;z-index:9999;width:100%;height:80px;background:#000;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.5)}
 #my-sticky-header a{display:flex;align-items:center;justify-content:center;height:100%;text-decoration:none}
 #my-sticky-header img{height:50px;width:auto;display:block}
-#my-sticky-footer{position:fixed!important;bottom:0;left:0;z-index:9999;width:100%;height:60px;background:#e5de69;display:flex;align-items:center;justify-content:center;padding:0 30px;box-shadow:0 -4px 20px rgba(0,0,0,.3);animation:slideUp .6s ease forwards;animation-fill-mode:forwards}
+#my-sticky-footer{position:fixed!important;bottom:0;left:0;z-index:9999;width:100%;height:60px;background:#e5de69;display:flex;align-items:center;justify-content:center;padding:0 30px;box-shadow:0 -4px 20px rgba(0,0,0,.3)}
 .footer-inner{max-width:1200px;width:100%;display:flex;align-items:center;justify-content:space-between}
 #my-sticky-footer .copyright{font:14px 'Roboto',Arial,sans-serif;color:#000;margin:0}
 #my-sticky-footer .social-icons{display:flex;align-items:center;gap:15px}
@@ -32,10 +32,10 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #my-sticky-footer .social-icons img{height:30px;width:auto}
 
 /* ============================================
-   KEYFRAMES
+   KEYFRAMES (Only for scroll animations)
    ============================================ */
-@keyframes slideDown{from{opacity:0;transform:translateY(-100%)}to{opacity:1;transform:translateY(0)}}
-@keyframes slideUp{from{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
 /* ============================================
    SCROLL ANIMATIONS
@@ -68,7 +68,6 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .hero-buttons a{display:inline-block;padding:14px 40px;background:#000;color:#fff;font-family:'Roboto',Arial,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;text-decoration:none;letter-spacing:1px;border-radius:50px;transition:background .3s,color .3s,transform .2s;border:2px solid #000}
 .hero-buttons a:hover{background:#e5de69;color:#000;transform:translateY(-3px);border-color:#000}
 
-/* Hero Responsive */
 @media (max-width:768px){#hero{padding:30px 10px;padding-top:100px;padding-bottom:80px}#artwork-carousel{padding:0 5px}#artwork-carousel .slick-slide{padding:0 5px}.carousel-img{max-width:280px}.hero-buttons a{padding:12px 30px;font-size:.9rem;width:100%;max-width:280px}.hero-buttons{gap:12px}}
 @media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px}.carousel-img{max-width:260px}#hero h1{font-size:1.8rem}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
 
