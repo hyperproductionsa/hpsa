@@ -903,15 +903,8 @@ h2 {
     background: #111111;
     border-radius: 8px;
     transition: border-color 0.3s, transform 0.3s;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 4;
     overflow: hidden;
-}
-
-@media (max-width: 767px) {
-    .tile {
-        aspect-ratio: 4 / 3;
-        padding: 8px;
-    }
 }
 
 .tile:hover {
@@ -960,7 +953,6 @@ h2 {
 @media (max-width: 480px) {
     .tile {
         padding: 6px;
-        gap: 4px;
     }
     
     .tile-info {
