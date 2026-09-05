@@ -26,6 +26,7 @@
     <!-- ===== GLOBAL CSS ===== -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="https://hyperproduction.co.za/logo/site-icon.png" type="image/png" />
+    
     <!-- ===== SLICK CAROUSEL CSS ===== -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
@@ -56,47 +57,181 @@
         ]
     }
     </script>
-
-    <style>
-        /* Any index-specific overrides */
-    </style>
 </head>
 <body>
 
-    <!-- ===== INCLUDE ALL SECTIONS ===== -->
-    <div id="header-placeholder"></div>
-    <div id="hero-placeholder"></div>
-    <div id="distribution-placeholder"></div>
-    <div id="about-placeholder"></div>
-    <div id="services-placeholder"></div>
-    <div id="contact-placeholder"></div>
-    <div id="footer-placeholder"></div>
+    <!-- ============================================ -->
+    <!-- HEADER -->
+    <!-- ============================================ -->
+    <header id="my-sticky-header">
+        <a href="https://hyperproduction.co.za/" title="Home">
+            <img src="https://hyperproduction.co.za/logo/HPSA-gold.png" alt="Hyper Production (SA) – Home" />
+        </a>
+    </header>
 
-    <!-- ===== JQUERY + SLICK ===== -->
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section id="hero">
+        <h1>LATEST RELEASES</h1>
+
+        <div id="artwork-carousel"></div>
+
+        <div class="hero-buttons">
+            <a href="/releases/">RELEASES</a>
+            <a href="/demo-submission/">DEMO SUBMISSION</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- DISTRIBUTION SECTION -->
+    <!-- ============================================ -->
+    <section id="distribution">
+        <div class="distribution-content">
+            <h2>Find Our Music Here</h2>
+
+            <div id="distribution-carousel"></div>
+
+            <div class="distribution-text">
+                <p>
+                    Hyper Production (SA) delivers your music to <strong>150+ digital platforms</strong> worldwide — 
+                    including <strong>Spotify, Apple Music, Beatport, Traxsource, Deezer, and Tidal</strong>. 
+                    Our global distribution network ensures your sound reaches listeners, DJs, and tastemakers 
+                    across every corner of the globe.
+                </p>
+                <p>
+                    From club-ready anthems to streaming hits, we bridge the gap between local talent and 
+                    international audiences. With a commitment to high-quality audio and strategic platform 
+                    partnerships, we give your music the stage it deserves.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT SECTION -->
+    <!-- ============================================ -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+
+            <h4>Our Journey</h4>
+            <div class="about-divider"></div>
+            <div class="about-text">
+                <p>
+                    Hyper Production (SA) was born out of a passion for pure sound and the drive to empower independent creators. Based in the heart of South Africa's vibrant music scene, we recognized early on that local talent often lacked the technical bridge to reach the international stage. We set out to build that bridge. Today, we stand as a full-service creative engine, specializing in turning artistic concepts into global brands. Our history is rooted in the studio, but our reach extends across every major digital territory.
+                </p>
+            </div>
+
+            <h4>Excellence Without Compromise</h4>
+            <div class="about-divider"></div>
+            <div class="about-text">
+                <p>
+                    We believe that the technical side of music should never be a barrier to creativity. That is why we have invested years into mastering the nuances of acoustic perfection and digital aesthetics. At Hyper Production (SA), <strong>"good enough"</strong> is never the standard. Whether we are fine-tuning the percussive drive of an Afro House anthem or meticulously crafting a visual identity for a new EP, our goal is to ensure that the final product can stand side-by-side with the world's biggest releases.
+                </p>
+            </div>
+
+            <h4>A Global Vision for Local Talent</h4>
+            <div class="about-divider"></div>
+            <div class="about-text">
+                <p>
+                    The digital landscape has changed the rules of the music industry. We stay ahead of the curve by mastering the platforms that matter. By integrating high-end audio engineering with strategic distribution on platforms like <strong>Beatport, Traxsource, and Apple Music</strong>, we give our artists a competitive edge. We don't just see ourselves as a service provider; we see ourselves as partners in your career. When you work with Hyper Production (SA), you are gaining a team dedicated to your longevity in the industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SERVICES SECTION -->
+    <!-- ============================================ -->
+    <section id="services">
+        <div class="services-content">
+            <h2>Services</h2>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h4>Mixing</h4>
+                        <p>
+                            Clarity, punch, and depth — we balance every element so your track hits hard on club systems, headphones, and streaming platforms.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R400</span>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <h4>Mastering</h4>
+                        <p>
+                            Competitive loudness, precise EQ, and dynamic control — the final polish that makes your track ready for Spotify, Apple Music, and Beatport.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R500</span>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <h4>Graphic Design</h4>
+                        <p>
+                            Cover art, logos, and promotional visuals that capture your sound. We make sure your visual identity is as professional as your music.
+                        </p>
+                    </div>
+                    <span class="price-tag">From R200</span>
+                </div>
+            </div>
+
+            <a href="mailto:services@hyperproduction.co.za" class="contact-btn">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT SECTION -->
+    <!-- ============================================ -->
+    <section id="contact">
+        <div class="contact-container">
+
+            <div class="contact-col contact-col--left">
+                <h2>GET IN TOUCH</h2>
+                <p>Services &amp; Engineering: <a href="mailto:services@hyperproduction.co.za">services@hyperproduction.co.za</a></p>
+                <p>Demo Submissions: <a href="mailto:demo@hyperproduction.co.za">demo@hyperproduction.co.za</a></p>
+                <p>General Inquiries: <a href="mailto:info@hyperproduction.co.za">info@hyperproduction.co.za</a></p>
+            </div>
+
+            <div class="contact-col contact-col--center">
+                <h2>OUTLETS</h2>
+                <p><a href="https://www.traxsource.com/label/19884/hyper-production-sa" target="_blank">Traxsource</a></p>
+                <p><a href="https://www.beatport.com/label/hyper-production-sa/43113" target="_blank">Beatport</a></p>
+            </div>
+
+            <div class="contact-col contact-col--right">
+                <img src="https://hyperproduction.co.za/logo/HPSA-indexed.png" alt="Hyper Production (SA) Logo" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer id="my-sticky-footer">
+        <p class="copyright">&copy; 2026 <strong>Hyper Production (SA)</strong>. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/hyperproductionsa" target="_blank" title="Facebook"><img src="https://hyperproduction.co.za/logo/facebook.png" alt="Facebook" /></a>
+            <a href="https://instagram.com/hyperprosa" target="_blank" title="Instagram"><img src="https://hyperproduction.co.za/logo/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.youtube.com/@hyperproductionsa" target="_blank" title="YouTube"><img src="https://hyperproduction.co.za/logo/youtube.png" alt="YouTube" /></a>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================ -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- ===== LOAD SECTIONS ===== -->
-    <script>
-        const sections = [
-            { id: 'header-placeholder', file: '/sections/header.html' },
-            { id: 'hero-placeholder', file: '/sections/hero.html' },
-            { id: 'distribution-placeholder', file: '/sections/distribution.html' },
-            { id: 'about-placeholder', file: '/sections/about.html' },
-            { id: 'services-placeholder', file: '/sections/services.html' },
-            { id: 'contact-placeholder', file: '/sections/contact.html' },
-            { id: 'footer-placeholder', file: '/sections/footer.html' }
-        ];
-
-        sections.forEach(section => {
-            fetch(section.file)
-                .then(res => res.text())
-                .then(html => {
-                    document.getElementById(section.id).innerHTML = html;
-                })
-                .catch(err => console.error('Error loading:', section.file, err));
-        });
-    </script>
+    
+    <!-- Custom Scripts -->
+    <script src="/js/hero-carousel.js"></script>
+    <script src="/js/distribution-carousel.js"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 </html>
