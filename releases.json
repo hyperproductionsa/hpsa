@@ -936,6 +936,19 @@
         ]
     },
     {
+        "cat": "HYP082",
+        "artist": "Dub Smash, HyperSOUL-X",
+        "title": "Bueno",
+        "upc": "723277875033",
+        "tracks": [
+            {
+                "artist": "Dub Smash, HyperSOUL-X",
+                "title": "Bueno",
+                "mix": ""
+            }
+        ]
+    },
+    {
         "cat": "HYP081",
         "artist": "Alvilianx",
         "title": "Into The Unknown",
@@ -1580,6 +1593,29 @@
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Fly Away",
                 "mix": "a Lieutenant-X Remix"
+            }
+        ]
+    },
+    {
+        "cat": "HYP045",
+        "artist": "Lieutenant-X",
+        "title": "D For Deep",
+        "upc": "5054287349616",
+        "tracks": [
+            {
+                "artist": "Lieutenant-X, HyperSOUL-X",
+                "title": "Lunar Echo",
+                "mix": "Original Mix"
+            },
+            {
+                "artist": "Lieutenant-X",
+                "title": "House Party",
+                "mix": "Original Mix"
+            },
+            {
+                "artist": "Lieutenant-X",
+                "title": "Deep Groove",
+                "mix": "Original Mix"
             }
         ]
     },
