@@ -4,10 +4,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Hyper Production (SA) - Website loaded');
     
-   // ============================================
-// SCROLL ANIMATIONS
-// ============================================
-document.addEventListener('DOMContentLoaded', function() {
+    // ============================================
+    // SCROLL ANIMATIONS
+    // ============================================
     // Observe all elements with animation classes
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
