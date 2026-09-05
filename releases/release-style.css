@@ -1,0 +1,346 @@
+
+/* ============================================
+   RELEASE PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Font */
+@font-face {
+    font-family: 'HyperPixel';
+    src: url('https://hyperproduction.co.za/font/Untitled1.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* ============================================
+   STICKY HEADER & FOOTER
+   ============================================ */
+#my-sticky-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.6s ease forwards;
+    animation-fill-mode: forwards;
+}
+
+#my-sticky-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+#my-sticky-header img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+#my-sticky-footer {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background: #e5de69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.6s ease forwards;
+    animation-fill-mode: forwards;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#my-sticky-footer .copyright {
+    font: 14px 'Roboto', Arial, sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+#my-sticky-footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#my-sticky-footer .social-icons a {
+    display: flex;
+    transition: opacity 0.3s;
+}
+
+#my-sticky-footer .social-icons a:hover {
+    opacity: 0.7;
+}
+
+#my-sticky-footer .social-icons img {
+    height: 30px;
+    width: auto;
+}
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-100%); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(100%); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   RELEASE DETAIL CONTAINER
+   ============================================ */
+.release-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 140px 20px 100px 20px;
+    min-height: 600px;
+    color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.release-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .release-detail-grid {
+        grid-template-columns: 400px 1fr;
+    }
+}
+
+/* ============================================
+   RELEASE ARTWORK
+   ============================================ */
+.release-artwork img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #2a2a2a;
+}
+
+.release-stores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.release-stores img {
+    height: 32px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+.release-stores img:hover {
+    opacity: 0.7;
+}
+
+.release-stores a {
+    display: flex;
+}
+
+/* ============================================
+   RELEASE INFO
+   ============================================ */
+.release-info h1 {
+    font-family: 'HyperPixel', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: #e4de69;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.release-info .artist-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #cccccc;
+    margin-bottom: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.release-info .meta {
+    color: #aaaaaa;
+    margin-bottom: 8px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.release-info .meta strong {
+    color: #ffffff;
+}
+
+.release-info .tracklist {
+    margin-top: 30px;
+}
+
+.release-info .tracklist p {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.release-info .tracklist ol {
+    padding-left: 0;
+    list-style: none;
+    color: #cccccc;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.release-info .tracklist ol li {
+    margin-bottom: 6px;
+    padding: 4px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+/* ============================================
+   BACK BUTTON
+   ============================================ */
+.back-to-catalog {
+    display: inline-block;
+    margin-top: 40px;
+    background: transparent;
+    color: #e4de69;
+    border: 2px solid #e4de69;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.back-to-catalog:hover {
+    background: #e4de69;
+    color: #000000;
+}
+
+/* ============================================
+   PLAY OVERLAY FOR ARTWORK
+   ============================================ */
+.art-wrapper {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.detail-art {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #2a2a2a;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid #e4de69;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #e4de69;
+    margin-left: 5px;
+    display: block;
+}
+
+.pause-icon {
+    display: none;
+    width: 20px;
+    height: 30px;
+    border-left: 6px solid #e4de69;
+    border-right: 6px solid #e4de69;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .release-detail-container {
+        padding: 120px 15px 80px 15px;
+    }
+    .release-info h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .release-detail-container {
+        padding: 100px 10px 70px 10px;
+    }
+    .release-info h1 {
+        font-size: 1.4rem;
+    }
+    .release-stores img {
+        height: 26px;
+    }
+    .release-stores {
+        gap: 10px;
+    }
+    #my-sticky-footer .copyright {
+        display: none;
+    }
+    #my-sticky-footer {
+        min-height: 44px;
+        padding: 0 10px;
+    }
+    .footer-inner {
+        justify-content: center;
+    }
+}

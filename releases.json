@@ -1,9 +1,170 @@
 [
     {
+        "cat": "HYP139",
+        "artist": "HyperSOUL-X",
+        "title": "HTs Collections V",
+        "upc": "612891218237",
+        "tracks": [
+            {
+                "artist": "HyperSOUL-X, Sontshikazi",
+                "title": "Moya",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X",
+                "title": "Ndiani",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X, Mogau SA",
+                "title": "Happysoul",
+                "mix": "Afro HT"
+            },
+            {
+                "artist": "HyperSOUL-X, Sontshikazi",
+                "title": "Menelisi",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X",
+                "title": "Ndiwe",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X",
+                "title": "The Awakening",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X, PreciousGift",
+                "title": "Free",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X",
+                "title": "Mugomo",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X",
+                "title": "The Threshold",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X, Idd Aziz",
+                "title": "Pendula",
+                "mix": "Revised HT"
+            },
+            {
+                "artist": "HyperSOUL-X, LadyKay The Poet",
+                "title": "Tjate",
+                "mix": "Spoken HT"
+            },
+            {
+                "artist": "HyperSOUL-X, Lulu Bolaydie",
+                "title": "Your Light",
+                "mix": "Amapiano HT"
+            },
+            {
+                "artist": "HyperSOUL-X, Zee Royal",
+                "title": "Void",
+                "mix": "Main HT"
+            },
+            {
+                "artist": "HyperSOUL-X, PreciousGift",
+                "title": "Kgetha Nna",
+                "mix": "Main HT"
+            }
+        ]
+    },
+    {
+        "cat": "HYP138",
+        "artist": "Deepeak",
+        "title": "Farhatna",
+        "upc": "612891082548",
+        "tracks": [
+            {
+                "artist": "Deepeak",
+                "title": "Farhatna",
+                "mix": ""
+            }
+        ]
+    },
+    {
+        "cat": "HYP137",
+        "artist": "PabloSA, Alvilianx",
+        "title": "Caller ID",
+        "upc": "612891079685",
+        "tracks": [
+            {
+                "artist": "PabloSA, Alvilianx",
+                "title": "Caller ID",
+                "mix": "Afro Mix"
+            }
+        ]
+    },
+    {
+        "cat": "HYP136",
+        "artist": "Alvin Chunky",
+        "title": "Afro Roots",
+        "upc": "612891079678",
+        "tracks": [
+            {
+                "artist": "Alvin Chunky",
+                "title": "Afro Roots",
+                "mix": ""
+            },
+            {
+                "artist": "Alvin Chunky",
+                "title": "Sunrise Whispers",
+                "mix": ""
+            }
+        ]
+    },
+    {
+        "cat": "HYP135",
+        "artist": "HyperSOUL-X, Sontshikazi",
+        "title": "Menelisi",
+        "upc": "612891079661",
+        "tracks": [
+            {
+                "artist": "HyperSOUL-X, Sontshikazi",
+                "title": "Menelisi",
+                "mix": "Main HT"
+            }
+        ]
+    },
+    {
+        "cat": "HYP134",
+        "artist": "Alvilianx",
+        "title": "Wave",
+        "upc": "612891079654",
+        "tracks": [
+            {
+                "artist": "Alvilianx",
+                "title": "Wave",
+                "mix": ""
+            }
+        ]
+    },
+    {
+        "cat": "HYP133",
+        "artist": "Cheden",
+        "title": "Sky",
+        "upc": "612891054859",
+        "tracks": [
+            {
+                "artist": "Cheden",
+                "title": "Sky",
+                "mix": ""
+            }
+        ]
+    },
+    {
         "cat": "HYP132",
-        "title": "Your Light",
         "artist": "HyperSOUL-X, Lulu Bolaydie",
-        "upc": "",
+        "title": "Your Light",
+        "upc": "663918989340",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, Lulu Bolaydie",
@@ -19,12 +180,12 @@
     },
     {
         "cat": "HYP131",
-        "title": "Oui Monsieur",
         "artist": "The F (Official)",
-        "upc": "",
+        "title": "Oui Monsieur",
+        "upc": "663918989333",
         "tracks": [
             {
-                "artist": "The F",
+                "artist": "The F (Official)",
                 "title": "Oui Monsieur",
                 "mix": ""
             }
@@ -32,9 +193,9 @@
     },
     {
         "cat": "HYP130",
-        "title": "Ndiani",
         "artist": "HyperSOUL-X",
-        "upc": "663918983201.0",
+        "title": "Ndiani",
+        "upc": "663918983201",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -45,9 +206,9 @@
     },
     {
         "cat": "HYP129",
-        "title": "Shimmer",
         "artist": "Marcus Code",
-        "upc": "663918983188.0",
+        "title": "Shimmer",
+        "upc": "663918983188",
         "tracks": [
             {
                 "artist": "Marcus Code",
@@ -58,22 +219,22 @@
     },
     {
         "cat": "HYP128",
-        "title": "LAS NI\u00d1AS",
         "artist": "EDDIE QUEROL",
-        "upc": "663918983171.0",
+        "title": "LAS NINAS",
+        "upc": "663918983171",
         "tracks": [
             {
                 "artist": "EDDIE QUEROL",
-                "title": "LAS NI\u00d1AS",
+                "title": "LAS NI\u00c3\u2018AS",
                 "mix": ""
             }
         ]
     },
     {
         "cat": "HYP127",
-        "title": "Ngithwele",
         "artist": "MR NOO",
-        "upc": "663918973233.0",
+        "title": "Ngithwele",
+        "upc": "663918973233",
         "tracks": [
             {
                 "artist": "MR NOO",
@@ -84,9 +245,9 @@
     },
     {
         "cat": "HYP126",
-        "title": "Xola",
         "artist": "Lieutenant-X, Sontshikazi",
-        "upc": "663918960073.0",
+        "title": "Xola",
+        "upc": "663918960073",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Sontshikazi",
@@ -97,9 +258,9 @@
     },
     {
         "cat": "HYP125",
-        "title": "Oh My! Oh My! (Remix)",
         "artist": "Alvilianx",
-        "upc": "663918957141.0",
+        "title": "Oh My! Oh My! (Remix)",
+        "upc": "663918957141",
         "tracks": [
             {
                 "artist": "Alvilianx",
@@ -110,9 +271,9 @@
     },
     {
         "cat": "HYP124",
-        "title": "Charlie",
         "artist": "The Lashes, Papisto",
-        "upc": "663918946657.0",
+        "title": "Charlie",
+        "upc": "663918946657",
         "tracks": [
             {
                 "artist": "The Lashes, Papisto",
@@ -128,9 +289,9 @@
     },
     {
         "cat": "HYP123",
-        "title": "Sina Sina",
         "artist": "Deep7s, PAUL PARKER & J Nana",
-        "upc": "663918924853.0",
+        "title": "Sina Sina",
+        "upc": "663918924853",
         "tracks": [
             {
                 "artist": "Deep7s, PAUL PARKER & J Nana",
@@ -141,9 +302,9 @@
     },
     {
         "cat": "HYP122",
-        "title": "Planet Dee EP 7",
         "artist": "HyperSOUL-X",
-        "upc": "663918888001.0",
+        "title": "Planet Dee EP 7",
+        "upc": "663918888001",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -164,9 +325,9 @@
     },
     {
         "cat": "HYP121",
-        "title": "On Mood",
         "artist": "SPYRRIDO",
-        "upc": "663918664803.0",
+        "title": "On Mood",
+        "upc": "663918664803",
         "tracks": [
             {
                 "artist": "SPYRRIDO",
@@ -182,9 +343,9 @@
     },
     {
         "cat": "HYP120",
-        "title": "Khanyisa",
         "artist": "Snokie, HyperSOUL-X",
-        "upc": "663918663219.0",
+        "title": "Khanyisa",
+        "upc": "663918663219",
         "tracks": [
             {
                 "artist": "Snokie, HyperSOUL-X",
@@ -200,9 +361,9 @@
     },
     {
         "cat": "HYP119",
-        "title": "Ancient Sound",
         "artist": "Sontshikazi, HyperSOUL-X",
-        "upc": "663918615423.0",
+        "title": "Ancient Sound",
+        "upc": "663918615423",
         "tracks": [
             {
                 "artist": "Sontshikazi, HyperSOUL-X",
@@ -218,9 +379,9 @@
     },
     {
         "cat": "HYP118",
-        "title": "Black In Me EP",
         "artist": "Rawson Ford",
-        "upc": "663918615393.0",
+        "title": "Black In Me EP",
+        "upc": "663918615393",
         "tracks": [
             {
                 "artist": "Rawson Ford",
@@ -251,9 +412,9 @@
     },
     {
         "cat": "HYP117",
-        "title": "Lerato",
         "artist": "Lieutenant-X, Lulu Bolaydie",
-        "upc": "663918470701.0",
+        "title": "Lerato",
+        "upc": "663918470701",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Lulu Bolaydie",
@@ -269,9 +430,9 @@
     },
     {
         "cat": "HYP116",
-        "title": "Drums In Motions",
         "artist": "Who Is He",
-        "upc": "663918427941.0",
+        "title": "Drums In Motions",
+        "upc": "663918427941",
         "tracks": [
             {
                 "artist": "Who Is He",
@@ -282,9 +443,9 @@
     },
     {
         "cat": "HYP115",
-        "title": "Kiangazi",
         "artist": "Norbess",
-        "upc": "663918427965.0",
+        "title": "Kiangazi",
+        "upc": "663918427965",
         "tracks": [
             {
                 "artist": "Norbess",
@@ -295,9 +456,9 @@
     },
     {
         "cat": "HYP114",
-        "title": "Happiness",
         "artist": "HyperSOUL-X, Sabrina Masenya",
-        "upc": "663918455050.0",
+        "title": "Happiness",
+        "upc": "663918455050",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, Sabrina Masenya",
@@ -313,9 +474,9 @@
     },
     {
         "cat": "HYP113",
-        "title": "prosperity",
         "artist": "zhili & byli",
-        "upc": "663918398074.0",
+        "title": "prosperity",
+        "upc": "663918398074",
         "tracks": [
             {
                 "artist": "zhili & byli",
@@ -331,9 +492,9 @@
     },
     {
         "cat": "HYP112",
-        "title": "Breathe",
         "artist": "Lieutenant-X, Thapelo Kganane, Sabrina Masenya",
-        "upc": "663918323847.0",
+        "title": "Breathe",
+        "upc": "663918323847",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Thapelo Kganane, Sabrina Masenya",
@@ -344,9 +505,9 @@
     },
     {
         "cat": "HYP111",
-        "title": "Sleeping Dragon",
         "artist": "Lone Dreamer",
-        "upc": "663918323106.0",
+        "title": "Sleeping Dragon",
+        "upc": "663918323106",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -357,9 +518,9 @@
     },
     {
         "cat": "HYP110",
-        "title": "Koma",
         "artist": "Lieutenant-X",
-        "upc": "663918323120.0",
+        "title": "Koma",
+        "upc": "663918323120",
         "tracks": [
             {
                 "artist": "Lieutenant-X",
@@ -370,9 +531,9 @@
     },
     {
         "cat": "HYP109",
-        "title": "Shadow Chant",
         "artist": "Sons Of The Unknown",
-        "upc": "663918323144.0",
+        "title": "Shadow Chant",
+        "upc": "663918323144",
         "tracks": [
             {
                 "artist": "Sons Of The Unknown",
@@ -383,9 +544,9 @@
     },
     {
         "cat": "HYP108",
-        "title": "Izitha EP",
         "artist": "Lizzard",
-        "upc": "663918323397.0",
+        "title": "Izitha EP",
+        "upc": "663918323397",
         "tracks": [
             {
                 "artist": "Lizzard, SoulMan",
@@ -411,9 +572,9 @@
     },
     {
         "cat": "HYP107",
-        "title": "Hey'O",
         "artist": "HyperSOUL-X, Sabrina Masenya",
-        "upc": "663918323892.0",
+        "title": "Hey'O",
+        "upc": "663918323892",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, Sabrina Masenya",
@@ -429,9 +590,9 @@
     },
     {
         "cat": "HYP106",
-        "title": "Oh my! Oh my!",
         "artist": "Alvilianx",
-        "upc": "663918239810.0",
+        "title": "Oh my! Oh my!",
+        "upc": "663918239810",
         "tracks": [
             {
                 "artist": "Alvilianx",
@@ -442,9 +603,9 @@
     },
     {
         "cat": "HYP105",
-        "title": "2AM Drummin",
         "artist": "Lone Dreamer",
-        "upc": "663918239803.0",
+        "title": "2AM Drummin",
+        "upc": "663918239803",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -455,9 +616,9 @@
     },
     {
         "cat": "HYP104",
-        "title": "Dammy",
         "artist": "LaErhnzo & TooZee",
-        "upc": "663918239834.0",
+        "title": "Dammy",
+        "upc": "663918239834",
         "tracks": [
             {
                 "artist": "LaErhnzo & TooZee",
@@ -473,9 +634,9 @@
     },
     {
         "cat": "HYP103",
-        "title": "Kuya",
         "artist": "Lieutenant-X",
-        "upc": "663918140529.0",
+        "title": "Kuya",
+        "upc": "663918140529",
         "tracks": [
             {
                 "artist": "Lieutenant-X",
@@ -486,12 +647,12 @@
     },
     {
         "cat": "HYP102",
+        "artist": "Tribal Protege, Simplistic T S",
         "title": "Siku",
-        "artist": "Tribal Prot\u00e9g\u00e9, Simplistic T S",
-        "upc": "663918164983.0",
+        "upc": "663918164983",
         "tracks": [
             {
-                "artist": "Tribal Prot\u00e9g\u00e9, Simplistic T S",
+                "artist": "Tribal Prot\u00c3\u00a9g\u00c3\u00a9, Simplistic T S",
                 "title": "Siku",
                 "mix": ""
             }
@@ -499,9 +660,9 @@
     },
     {
         "cat": "HYP101",
-        "title": "Pain",
         "artist": "Lieutenant-X & Sabrina Masenya",
-        "upc": "663918140451.0",
+        "title": "Pain",
+        "upc": "663918140451",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Sabrina Masenya",
@@ -512,9 +673,9 @@
     },
     {
         "cat": "HYP100",
-        "title": "Planets",
         "artist": "Lizzard",
-        "upc": "663918090459.0",
+        "title": "Planets",
+        "upc": "663918090459",
         "tracks": [
             {
                 "artist": "Lizzard",
@@ -525,9 +686,9 @@
     },
     {
         "cat": "HYP099",
-        "title": "Nawe",
         "artist": "Lieutenant-X",
-        "upc": "663918068304.0",
+        "title": "Nawe",
+        "upc": "663918068304",
         "tracks": [
             {
                 "artist": "Lieutenant-X",
@@ -538,9 +699,9 @@
     },
     {
         "cat": "HYP098",
-        "title": "3x3",
         "artist": "Norbess",
-        "upc": "663918068311.0",
+        "title": "3x3",
+        "upc": "663918068311",
         "tracks": [
             {
                 "artist": "Norbess",
@@ -561,9 +722,9 @@
     },
     {
         "cat": "HYP097",
-        "title": "Jaguar's Groove",
         "artist": "Rawson Ford",
-        "upc": "663918068328.0",
+        "title": "Jaguar's Groove",
+        "upc": "663918068328",
         "tracks": [
             {
                 "artist": "Rawson Ford",
@@ -574,9 +735,9 @@
     },
     {
         "cat": "HYP096",
-        "title": "Year Of A Wolf",
         "artist": "Lone Dreamer",
-        "upc": "663918068335.0",
+        "title": "Year Of A Wolf",
+        "upc": "663918068335",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -587,9 +748,9 @@
     },
     {
         "cat": "HYP095",
-        "title": "Woza",
         "artist": "Lieutenant-X",
-        "upc": "663918065747.0",
+        "title": "Woza",
+        "upc": "663918065747",
         "tracks": [
             {
                 "artist": "Lieutenant-X",
@@ -600,9 +761,9 @@
     },
     {
         "cat": "HYP094",
-        "title": "Mufasa II",
         "artist": "Alvilianx",
-        "upc": "663918005798.0",
+        "title": "Mufasa II",
+        "upc": "663918005798",
         "tracks": [
             {
                 "artist": "Alvilianx",
@@ -613,9 +774,9 @@
     },
     {
         "cat": "HYP093",
-        "title": "Machweo",
         "artist": "DJ NaGrim",
-        "upc": "723277975474.0",
+        "title": "Machweo",
+        "upc": "723277975474",
         "tracks": [
             {
                 "artist": "DJ NaGrim",
@@ -631,9 +792,9 @@
     },
     {
         "cat": "HYP092",
-        "title": "Redemption",
         "artist": "Norbess",
-        "upc": "723277970851.0",
+        "title": "Redemption",
+        "upc": "723277970851",
         "tracks": [
             {
                 "artist": "Norbess",
@@ -644,9 +805,9 @@
     },
     {
         "cat": "HYP091",
-        "title": "Yayeh",
         "artist": "Allan Biggs",
-        "upc": "723277962801.0",
+        "title": "Yayeh",
+        "upc": "723277962801",
         "tracks": [
             {
                 "artist": "Allan Biggs",
@@ -657,9 +818,9 @@
     },
     {
         "cat": "HYP090",
-        "title": "Hope (Remixes)",
         "artist": "Bohlale, HyperSOUL-X",
-        "upc": "723277966083.0",
+        "title": "Hope (Remixes)",
+        "upc": "723277966083",
         "tracks": [
             {
                 "artist": "Bohlale, HyperSOUL-X",
@@ -680,9 +841,9 @@
     },
     {
         "cat": "HYP089",
-        "title": "Sanda",
         "artist": "Luca Lyj",
-        "upc": "723277962788.0",
+        "title": "Sanda",
+        "upc": "723277962788",
         "tracks": [
             {
                 "artist": "Luca Lyj",
@@ -693,9 +854,9 @@
     },
     {
         "cat": "HYP088",
-        "title": "Queen of the World",
         "artist": "Bess Cavendish & HyperSOUL-X",
-        "upc": "723277962726.0",
+        "title": "Queen of the World",
+        "upc": "723277962726",
         "tracks": [
             {
                 "artist": "Bess Cavendish, HyperSOUL-X",
@@ -711,9 +872,9 @@
     },
     {
         "cat": "HYP087",
-        "title": "Amaru",
         "artist": "Lone Dreamer",
-        "upc": "723277957524.0",
+        "title": "Amaru",
+        "upc": "723277957524",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -724,9 +885,9 @@
     },
     {
         "cat": "HYP086",
-        "title": "The Game",
         "artist": "George North",
-        "upc": "723277930947.0",
+        "title": "The Game",
+        "upc": "723277930947",
         "tracks": [
             {
                 "artist": "George North",
@@ -737,9 +898,9 @@
     },
     {
         "cat": "HYP085",
-        "title": "Parashat",
         "artist": "Giorgio Bassetti",
-        "upc": "723277921549.0",
+        "title": "Parashat",
+        "upc": "723277921549",
         "tracks": [
             {
                 "artist": "Giorgio Bassetti",
@@ -750,9 +911,9 @@
     },
     {
         "cat": "HYP084",
-        "title": "Ziz",
         "artist": "Rawson Ford",
-        "upc": "723277921532.0",
+        "title": "Ziz",
+        "upc": "723277921532",
         "tracks": [
             {
                 "artist": "Rawson Ford",
@@ -763,9 +924,9 @@
     },
     {
         "cat": "HYP083",
-        "title": "Drum Drum",
         "artist": "Lone Dreamer",
-        "upc": "723277877655.0",
+        "title": "Drum Drum",
+        "upc": "723277877655",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -776,9 +937,9 @@
     },
     {
         "cat": "HYP081",
-        "title": "Into The Unknown",
         "artist": "Alvilianx",
-        "upc": "723277822839.0",
+        "title": "Into The Unknown",
+        "upc": "723277822839",
         "tracks": [
             {
                 "artist": "Alvilianx",
@@ -794,9 +955,9 @@
     },
     {
         "cat": "HYP080",
-        "title": "What A Time To Be Alive",
         "artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
-        "upc": "723277822792.0",
+        "title": "What A Time To Be Alive",
+        "upc": "723277822792",
         "tracks": [
             {
                 "artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
@@ -812,9 +973,9 @@
     },
     {
         "cat": "HYP079",
-        "title": "Ezakwa Zulu",
         "artist": "DarqSphere",
-        "upc": "723277822785.0",
+        "title": "Ezakwa Zulu",
+        "upc": "723277822785",
         "tracks": [
             {
                 "artist": "DarqSphere",
@@ -825,9 +986,9 @@
     },
     {
         "cat": "HYP078",
-        "title": "Heal Africa",
         "artist": "Rawson Ford",
-        "upc": "723277806785.0",
+        "title": "Heal Africa",
+        "upc": "723277806785",
         "tracks": [
             {
                 "artist": "Rawson Ford",
@@ -838,9 +999,9 @@
     },
     {
         "cat": "HYP077",
-        "title": "Hypnotize",
         "artist": "Sons Of The Unknown, HyperSOUL-X",
-        "upc": "723277806358.0",
+        "title": "Hypnotize",
+        "upc": "723277806358",
         "tracks": [
             {
                 "artist": "Sons Of The Unknown, HyperSOUL-X",
@@ -851,9 +1012,9 @@
     },
     {
         "cat": "HYP076",
-        "title": "Ase",
         "artist": "Simplistic T S",
-        "upc": "723277806204.0",
+        "title": "Ase",
+        "upc": "723277806204",
         "tracks": [
             {
                 "artist": "Simplistic T S",
@@ -864,9 +1025,9 @@
     },
     {
         "cat": "HYP075",
-        "title": "Summer Greens",
         "artist": "Naize, Mido Mi, Bess Cavendish",
-        "upc": "723277800745.0",
+        "title": "Summer Greens",
+        "upc": "723277800745",
         "tracks": [
             {
                 "artist": "Naize, Mido Mi, Bess Cavendish",
@@ -882,9 +1043,9 @@
     },
     {
         "cat": "HYP074",
-        "title": "New Leaf",
         "artist": "HDC",
-        "upc": "723277797045.0",
+        "title": "New Leaf",
+        "upc": "723277797045",
         "tracks": [
             {
                 "artist": "HDC",
@@ -895,9 +1056,9 @@
     },
     {
         "cat": "HYP073",
-        "title": "Drum Wars",
         "artist": "Lone Dreamer",
-        "upc": "723277797038.0",
+        "title": "Drum Wars",
+        "upc": "723277797038",
         "tracks": [
             {
                 "artist": "Lone Dreamer",
@@ -908,9 +1069,9 @@
     },
     {
         "cat": "HYP072",
-        "title": "Journey",
         "artist": "Lieutenant-X, Luyanda M",
-        "upc": "723277529509.0",
+        "title": "Journey",
+        "upc": "723277529509",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Luyanda M",
@@ -921,9 +1082,9 @@
     },
     {
         "cat": "HYP071",
-        "title": "Solitario",
         "artist": "Tico Morales",
-        "upc": "723277491516.0",
+        "title": "Solitario",
+        "upc": "723277491516",
         "tracks": [
             {
                 "artist": "Tico Morales",
@@ -934,9 +1095,9 @@
     },
     {
         "cat": "HYP070",
-        "title": "With The Ocean",
         "artist": "Lieutenant-X, Snokie",
-        "upc": "723277491424.0",
+        "title": "With The Ocean",
+        "upc": "723277491424",
         "tracks": [
             {
                 "artist": "Lieutenant-X, Snokie",
@@ -947,9 +1108,9 @@
     },
     {
         "cat": "HYP069",
-        "title": "Pick Up",
         "artist": "Coke Segwapa, HyperSOUL-X",
-        "upc": "723277491509.0",
+        "title": "Pick Up",
+        "upc": "723277491509",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -965,9 +1126,9 @@
     },
     {
         "cat": "HYP068",
-        "title": "Kirrawee",
         "artist": "Lieutenant-X",
-        "upc": "723277491486.0",
+        "title": "Kirrawee",
+        "upc": "723277491486",
         "tracks": [
             {
                 "artist": "Lieutenant-X",
@@ -978,9 +1139,9 @@
     },
     {
         "cat": "HYP067",
-        "title": "Portal To The Beyond",
         "artist": "Tico Morales",
-        "upc": "723277415765.0",
+        "title": "Portal To The Beyond",
+        "upc": "723277415765",
         "tracks": [
             {
                 "artist": "Tico Morales",
@@ -991,9 +1152,9 @@
     },
     {
         "cat": "HYP066",
-        "title": "Sing That Song Again (Feat. Lulu Bolaydie)",
         "artist": "HyperSOUL-X",
-        "upc": "723277416397.0",
+        "title": "Sing That Song Again (Feat. Lulu Bolaydie)",
+        "upc": "723277416397",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1009,9 +1170,9 @@
     },
     {
         "cat": "HYP065",
-        "title": "HTs Collections, Vol. 4",
         "artist": "HyperSOUL-X",
-        "upc": "723277363967.0",
+        "title": "HTs Collections, Vol. 4",
+        "upc": "723277363967",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1097,9 +1258,9 @@
     },
     {
         "cat": "HYP064",
-        "title": "The End (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "723277331768.0",
+        "title": "The End (Main HT)",
+        "upc": "723277331768",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1110,9 +1271,9 @@
     },
     {
         "cat": "HYP063",
-        "title": "Juntos (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "723277342504.0",
+        "title": "Juntos (Main HT)",
+        "upc": "723277342504",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1123,9 +1284,9 @@
     },
     {
         "cat": "HYP062",
-        "title": "Loving You",
         "artist": "Bohlale, HyperSOUL-X",
-        "upc": "723277198347.0",
+        "title": "Loving You",
+        "upc": "723277198347",
         "tracks": [
             {
                 "artist": "Bohlale, HyperSOUL-X",
@@ -1141,9 +1302,9 @@
     },
     {
         "cat": "HYP061",
-        "title": "S'fela Ngawe",
         "artist": "Zack Da Freak, HyperSOUL-X",
-        "upc": "723277097756.0",
+        "title": "S'fela Ngawe",
+        "upc": "723277097756",
         "tracks": [
             {
                 "artist": "Zack Da Freak, HyperSOUL-X",
@@ -1169,9 +1330,9 @@
     },
     {
         "cat": "HYP060",
-        "title": "Bailar (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "723277097725.0",
+        "title": "Bailar (Main HT)",
+        "upc": "723277097725",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1182,9 +1343,9 @@
     },
     {
         "cat": "HYP059",
-        "title": "Africa",
         "artist": "Blessing Dike, HyperSOUL-X",
-        "upc": "723277090948.0",
+        "title": "Africa",
+        "upc": "723277090948",
         "tracks": [
             {
                 "artist": "Blessing Dike, HyperSOUL-X",
@@ -1200,9 +1361,9 @@
     },
     {
         "cat": "HYP058",
-        "title": "Mirame (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "723277071954.0",
+        "title": "Mirame (Main HT)",
+        "upc": "723277071954",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1213,9 +1374,9 @@
     },
     {
         "cat": "HYP057",
-        "title": "I Don't Know Why (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "723277002071.0",
+        "title": "I Don't Know Why (Main HT)",
+        "upc": "723277002071",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1226,9 +1387,9 @@
     },
     {
         "cat": "HYP056",
-        "title": "Scatter Me",
         "artist": "Sabrina Masenya, HyperSOUL-X",
-        "upc": "795397969855.0",
+        "title": "Scatter Me",
+        "upc": "795397969855",
         "tracks": [
             {
                 "artist": "Sabrina Masenya, HyperSOUL-X",
@@ -1244,9 +1405,9 @@
     },
     {
         "cat": "HYP055",
-        "title": "Bekani (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "795397946054.0",
+        "title": "Bekani (Main HT)",
+        "upc": "795397946054",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1257,9 +1418,9 @@
     },
     {
         "cat": "HYP054",
-        "title": "Hope",
         "artist": "Bohlale, HyperSOUL-X",
-        "upc": "795397905402.0",
+        "title": "Hope",
+        "upc": "795397905402",
         "tracks": [
             {
                 "artist": "Bohlale, HyperSOUL-X",
@@ -1285,9 +1446,9 @@
     },
     {
         "cat": "HYP053",
-        "title": "Charlie",
         "artist": "The Lashes, Papisto",
-        "upc": "795397893631.0",
+        "title": "Charlie",
+        "upc": "795397893631",
         "tracks": [
             {
                 "artist": "The Lashes, Papisto",
@@ -1303,9 +1464,9 @@
     },
     {
         "cat": "HYP052",
-        "title": "Magugu Yangu (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "795397850429.0",
+        "title": "Magugu Yangu (Main HT)",
+        "upc": "795397850429",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1316,9 +1477,9 @@
     },
     {
         "cat": "HYP051",
-        "title": "Yin & Yang EP",
         "artist": "HyperSOUL-X",
-        "upc": "795397831503.0",
+        "title": "Yin & Yang EP",
+        "upc": "795397831503",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1334,9 +1495,9 @@
     },
     {
         "cat": "HYP050",
-        "title": "Ancient Garden",
         "artist": "Dub Smash, HyperSOUL-X",
-        "upc": "795397806709.0",
+        "title": "Ancient Garden",
+        "upc": "795397806709",
         "tracks": [
             {
                 "artist": "Dub Smash, HyperSOUL-X",
@@ -1347,9 +1508,9 @@
     },
     {
         "cat": "HYP049",
-        "title": "Taking Over EP",
         "artist": "Blessing Dike",
-        "upc": "795397752136.0",
+        "title": "Taking Over EP",
+        "upc": "795397752136",
         "tracks": [
             {
                 "artist": "Blessing Dike, Ma-B, HyperSOUL-X",
@@ -1370,9 +1531,9 @@
     },
     {
         "cat": "HYP048",
-        "title": "Hold On",
         "artist": "HyperSOUL-X, Blessing Dike",
-        "upc": "5054287381326.0",
+        "title": "Hold On",
+        "upc": "5054287381326",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, Blessing Dike",
@@ -1388,9 +1549,9 @@
     },
     {
         "cat": "HYP047",
-        "title": "Khumbaya",
         "artist": "HDC, HyperSOUL-X",
-        "upc": "5054287350308.0",
+        "title": "Khumbaya",
+        "upc": "5054287350308",
         "tracks": [
             {
                 "artist": "HDC, HyperSOUL-X",
@@ -1406,9 +1567,9 @@
     },
     {
         "cat": "HYP046",
-        "title": "Fly Away",
         "artist": "Snokie, HyperSOUL-X",
-        "upc": "5054287350292.0",
+        "title": "Fly Away",
+        "upc": "5054287350292",
         "tracks": [
             {
                 "artist": "Snokie, HyperSOUL-X",
@@ -1424,9 +1585,9 @@
     },
     {
         "cat": "HYP044",
-        "title": "Higher",
         "artist": "Coke Segwapa,  HyperSOUL-X",
-        "upc": "5054287323555.0",
+        "title": "Higher",
+        "upc": "5054287323555",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -1452,9 +1613,9 @@
     },
     {
         "cat": "HYP043",
-        "title": "Wrong Turn",
         "artist": "HyperSOUL-X, RejazzSA",
-        "upc": "5054287323500.0",
+        "title": "Wrong Turn",
+        "upc": "5054287323500",
         "tracks": [
             {
                 "artist": "RejazzSA, HyperSOUL-X",
@@ -1465,9 +1626,9 @@
     },
     {
         "cat": "HYP042",
-        "title": "For Me (Afro Mix)",
         "artist": "LeeJoy, HyperSOUL-X",
-        "upc": "5054287281930.0",
+        "title": "For Me (Afro Mix)",
+        "upc": "5054287281930",
         "tracks": [
             {
                 "artist": "LeeJoy, HyperSOUL-X",
@@ -1478,9 +1639,9 @@
     },
     {
         "cat": "HYP041",
-        "title": "The Last Ones",
         "artist": "HDC, HyperSOUL-X",
-        "upc": "5054287265015.0",
+        "title": "The Last Ones",
+        "upc": "5054287265015",
         "tracks": [
             {
                 "artist": "HDC, HyperSOUL-X",
@@ -1491,9 +1652,9 @@
     },
     {
         "cat": "HYP040",
-        "title": "Take Me",
         "artist": "Zack Da Freak, HyperSOUL-X",
-        "upc": "5054287187607.0",
+        "title": "Take Me",
+        "upc": "5054287187607",
         "tracks": [
             {
                 "artist": "Zack Da Freak, HyperSOUL-X",
@@ -1519,9 +1680,9 @@
     },
     {
         "cat": "HYP039",
-        "title": "Phumelela",
         "artist": "Coke Segwapa, HyperSOUL-X",
-        "upc": "5054287187591.0",
+        "title": "Phumelela",
+        "upc": "5054287187591",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -1547,9 +1708,9 @@
     },
     {
         "cat": "HYP038",
-        "title": "Messiah",
         "artist": "Maque, HyperSOUL-X",
-        "upc": "5054287187584.0",
+        "title": "Messiah",
+        "upc": "5054287187584",
         "tracks": [
             {
                 "artist": "Maque, HyperSOUL-X",
@@ -1560,9 +1721,9 @@
     },
     {
         "cat": "HYP037",
-        "title": "Melanin Confidence",
         "artist": "Stewie Le Savage, HyperSOUL-X",
-        "upc": "5054287167326.0",
+        "title": "Melanin Confidence",
+        "upc": "5054287167326",
         "tracks": [
             {
                 "artist": "Stewie Le Savage, HyperSOUL-X",
@@ -1578,9 +1739,9 @@
     },
     {
         "cat": "HYP036",
-        "title": "Arabian Yabki",
         "artist": "KB Deep, HyperSOUL-X",
-        "upc": "5054287139408.0",
+        "title": "Arabian Yabki",
+        "upc": "5054287139408",
         "tracks": [
             {
                 "artist": "KB Deep, HyperSOUL-X",
@@ -1591,9 +1752,9 @@
     },
     {
         "cat": "HYP035",
-        "title": "Khala",
         "artist": "Coke Segwapa, HyperSOUL-X",
-        "upc": "5054287130481.0",
+        "title": "Khala",
+        "upc": "5054287130481",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -1619,9 +1780,9 @@
     },
     {
         "cat": "HYP034",
-        "title": "M'bhobo Bulega",
         "artist": "Ma-b, HyperSOUL-X, Alfina",
-        "upc": "5054287109364.0",
+        "title": "M'bhobo Bulega",
+        "upc": "5054287109364",
         "tracks": [
             {
                 "artist": "Ma-b, HyperSOUL-X, Alfina",
@@ -1642,9 +1803,9 @@
     },
     {
         "cat": "HYP033",
-        "title": "Sunrise",
         "artist": "HDC, HyperSOUL-X",
-        "upc": "5054287096800.0",
+        "title": "Sunrise",
+        "upc": "5054287096800",
         "tracks": [
             {
                 "artist": "HDC, HyperSOUL-X",
@@ -1655,9 +1816,9 @@
     },
     {
         "cat": "HYP032",
-        "title": "Bathagathi",
         "artist": "Native P. , HyperSOUL-X, Coke Segwapa",
-        "upc": "5054287095452.0",
+        "title": "Bathagathi",
+        "upc": "5054287095452",
         "tracks": [
             {
                 "artist": "Native P., HyperSOUL-X, Coke Segwapa",
@@ -1673,9 +1834,9 @@
     },
     {
         "cat": "HYP031",
-        "title": "Dlozi Lam'",
         "artist": "Coke Segwapa, HyperSOUL-X",
-        "upc": "5054287082872.0",
+        "title": "Dlozi Lam'",
+        "upc": "5054287082872",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -1701,9 +1862,9 @@
     },
     {
         "cat": "HYP030",
-        "title": "HTs Collections, Vol. 3",
         "artist": "HyperSOUL-X",
-        "upc": "5054287045433.0",
+        "title": "HTs Collections, Vol. 3",
+        "upc": "5054287045433",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, OKAY GOD",
@@ -1779,9 +1940,9 @@
     },
     {
         "cat": "HYP029",
-        "title": "Eden (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286947912.0",
+        "title": "Eden (Main HT)",
+        "upc": "5054286947912",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1792,9 +1953,9 @@
     },
     {
         "cat": "HYP028",
-        "title": "Our Father",
         "artist": "Coke Segwapa, HyperSOUL-X",
-        "upc": "5054286934059.0",
+        "title": "Our Father",
+        "upc": "5054286934059",
         "tracks": [
             {
                 "artist": "Coke Segwapa, HyperSOUL-X",
@@ -1810,9 +1971,9 @@
     },
     {
         "cat": "HYP027",
-        "title": "Nguwe",
         "artist": "Sabrina Masenya, HyperSOUL-X",
-        "upc": "5054286893318.0",
+        "title": "Nguwe",
+        "upc": "5054286893318",
         "tracks": [
             {
                 "artist": "Sabrina Masenya, HyperSOUL-X",
@@ -1828,9 +1989,9 @@
     },
     {
         "cat": "HYP026",
-        "title": "Pretty Sky (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286860464.0",
+        "title": "Pretty Sky (Main HT)",
+        "upc": "5054286860464",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1841,9 +2002,9 @@
     },
     {
         "cat": "HYP025",
-        "title": "Mzulo",
         "artist": "McKay Johnson, HyperSOUL-X",
-        "upc": "5054286815525.0",
+        "title": "Mzulo",
+        "upc": "5054286815525",
         "tracks": [
             {
                 "artist": "McKay Johnson, HyperSOUL-X",
@@ -1859,9 +2020,9 @@
     },
     {
         "cat": "HYP024",
-        "title": "Mama Yeh (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286794721.0",
+        "title": "Mama Yeh (Main HT)",
+        "upc": "5054286794721",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1872,9 +2033,9 @@
     },
     {
         "cat": "HYP023",
-        "title": "Uthando (Afro Mix)",
         "artist": "Aura Dee, HyperSOUL-X",
-        "upc": "5054286781523.0",
+        "title": "Uthando (Afro Mix)",
+        "upc": "5054286781523",
         "tracks": [
             {
                 "artist": "Aura Dee, HyperSOUL-X",
@@ -1885,9 +2046,9 @@
     },
     {
         "cat": "HYP022",
-        "title": "Afro HTs EP",
         "artist": "HyperSOUL-X",
-        "upc": "5054286758563.0",
+        "title": "Afro HTs EP",
+        "upc": "5054286758563",
         "tracks": [
             {
                 "artist": "HyperSOUL-X, McKay Johnson",
@@ -1918,9 +2079,9 @@
     },
     {
         "cat": "HYP021",
-        "title": "Buye (HyperSOUL-X Mixes)",
         "artist": "Truth Mash & Sabrina Masenya",
-        "upc": "5054286738947.0",
+        "title": "Buye (HyperSOUL-X Mixes)",
+        "upc": "5054286738947",
         "tracks": [
             {
                 "artist": "Truth Mash, Sabrina Masenya",
@@ -1941,9 +2102,9 @@
     },
     {
         "cat": "HYP020",
-        "title": "Fly",
         "artist": "Bohlale, HyperSOUL-X",
-        "upc": "5054286675402.0",
+        "title": "Fly",
+        "upc": "5054286675402",
         "tracks": [
             {
                 "artist": "Bohlale, HyperSOUL-X",
@@ -1959,9 +2120,9 @@
     },
     {
         "cat": "HYP019",
-        "title": "BackGround (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286666011.0",
+        "title": "BackGround (Main HT)",
+        "upc": "5054286666011",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1972,9 +2133,9 @@
     },
     {
         "cat": "HYP018",
-        "title": "Yelele (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286665991.0",
+        "title": "Yelele (Main HT)",
+        "upc": "5054286665991",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1985,9 +2146,9 @@
     },
     {
         "cat": "HYP017",
-        "title": "Zoo (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286656845.0",
+        "title": "Zoo (Main HT)",
+        "upc": "5054286656845",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -1998,9 +2159,9 @@
     },
     {
         "cat": "HYP016",
-        "title": "Khanyisa",
         "artist": "Snokie, HyperSOUL-X",
-        "upc": "5054286620303.0",
+        "title": "Khanyisa",
+        "upc": "5054286620303",
         "tracks": [
             {
                 "artist": "Snokie, HyperSOUL-X",
@@ -2011,9 +2172,9 @@
     },
     {
         "cat": "HYP015",
-        "title": "Twenty-Six (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286614241.0",
+        "title": "Twenty-Six (Main HT)",
+        "upc": "5054286614241",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2024,9 +2185,9 @@
     },
     {
         "cat": "HYP014",
-        "title": "Maji Matamu (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286592884.0",
+        "title": "Maji Matamu (Main HT)",
+        "upc": "5054286592884",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2037,9 +2198,9 @@
     },
     {
         "cat": "HYP013",
-        "title": "Woko (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286565581.0",
+        "title": "Woko (Main HT)",
+        "upc": "5054286565581",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2050,9 +2211,9 @@
     },
     {
         "cat": "HYP012",
-        "title": "Wara Wara (Main Ht)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286531982.0",
+        "title": "Wara Wara (Main Ht)",
+        "upc": "5054286531982",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2063,9 +2224,9 @@
     },
     {
         "cat": "HYP011",
-        "title": "Planet Dee EP 6",
         "artist": "HyperSOUL-X",
-        "upc": "5054286499015.0",
+        "title": "Planet Dee EP 6",
+        "upc": "5054286499015",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2086,9 +2247,9 @@
     },
     {
         "cat": "HYP010",
-        "title": "Kore (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286464686.0",
+        "title": "Kore (Main HT)",
+        "upc": "5054286464686",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2099,9 +2260,9 @@
     },
     {
         "cat": "HYP009",
-        "title": "Abantu (HyperSOUL-X Mixes)",
         "artist": "Fredy Massamba, DJ Satelite",
-        "upc": "5054286448433.0",
+        "title": "Abantu (HyperSOUL-X Mixes)",
+        "upc": "5054286448433",
         "tracks": [
             {
                 "artist": "DJ Satelite, Fredy Massamba",
@@ -2122,9 +2283,9 @@
     },
     {
         "cat": "HYP008",
-        "title": "Let There Be House (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286384809.0",
+        "title": "Let There Be House (Main HT)",
+        "upc": "5054286384809",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2135,9 +2296,9 @@
     },
     {
         "cat": "HYP007",
-        "title": "uThando Lwakho",
         "artist": "Stewie Le Savage, HyperSOUL-X",
-        "upc": "5054286384533.0",
+        "title": "uThando Lwakho",
+        "upc": "5054286384533",
         "tracks": [
             {
                 "artist": "Stewie Le Savage, HyperSOUL-X",
@@ -2153,9 +2314,9 @@
     },
     {
         "cat": "HYP006",
-        "title": "Come Home",
         "artist": "Snokie, HyperSOUL-X",
-        "upc": "5054286357278.0",
+        "title": "Come Home",
+        "upc": "5054286357278",
         "tracks": [
             {
                 "artist": "Snokie, HyperSOUL-X",
@@ -2171,9 +2332,9 @@
     },
     {
         "cat": "HYP005",
-        "title": "Something",
         "artist": "HyperSOUL-X",
-        "upc": "5054286357261.0",
+        "title": "Something",
+        "upc": "5054286357261",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2184,9 +2345,9 @@
     },
     {
         "cat": "HYP004",
-        "title": "How I Feel",
         "artist": "Sabrina Masenya, HyperSOUL-X",
-        "upc": "5054286354635.0",
+        "title": "How I Feel",
+        "upc": "5054286354635",
         "tracks": [
             {
                 "artist": "Sabrina Masenya, HyperSOUL-X",
@@ -2212,9 +2373,9 @@
     },
     {
         "cat": "HYP003",
-        "title": "C'mon (Main HT)",
         "artist": "HyperSOUL-X",
-        "upc": "5054286345480.0",
+        "title": "C'mon (Main HT)",
+        "upc": "5054286345480",
         "tracks": [
             {
                 "artist": "HyperSOUL-X",
@@ -2225,9 +2386,9 @@
     },
     {
         "cat": "HYP002",
-        "title": "AfriCan Melodies (Main V-HT)",
         "artist": "Ma-b, HyperSOUL-X",
-        "upc": "5054286345442.0",
+        "title": "AfriCan Melodies (Main V-HT)",
+        "upc": "5054286345442",
         "tracks": [
             {
                 "artist": "Ma-b, HyperSOUL-X",
@@ -2238,9 +2399,9 @@
     },
     {
         "cat": "HYP001",
-        "title": "Love Me Hard",
         "artist": "Snokie, HyperSOUL-X",
-        "upc": "5054286338444.0",
+        "title": "Love Me Hard",
+        "upc": "5054286338444",
         "tracks": [
             {
                 "artist": "Snokie, HyperSOUL-X",
