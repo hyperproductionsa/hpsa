@@ -1,5 +1,5 @@
 // ============================================
-// HERO CAROUSEL - With Heartbeat & Release Links
+// HERO CAROUSEL - With Shrink on Hover & Release Links
 // ============================================
 (function($) {
     const jsonUrl = 'https://cdn.hyperproduction.co.za/artworks/images.json';
@@ -30,7 +30,7 @@
                     container.append(linkTag);
                 });
 
-                // Add heartbeat CSS only for desktop
+                // Add shrink-on-hover CSS only for desktop
                 if (!isMobile) {
                     const style = document.createElement('style');
                     style.textContent = `
@@ -38,20 +38,14 @@
                             display: block;
                             text-decoration: none;
                             outline: none;
+                            cursor: pointer;
                         }
                         .hero-link .carousel-img {
-                            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-                            transform-origin: center center;
+                            transition: transform 0.3s ease;
+                            transform: scale(1);
                         }
                         .hero-link:hover .carousel-img {
-                            animation: heartbeat 0.8s ease 3;
-                        }
-                        @keyframes heartbeat {
-                            0% { transform: scale(1); }
-                            14% { transform: scale(1.05); }
-                            28% { transform: scale(1); }
-                            42% { transform: scale(1.04); }
-                            70% { transform: scale(1); }
+                            transform: scale(0.8);
                         }
                     `;
                     document.head.appendChild(style);
