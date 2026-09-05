@@ -13,16 +13,20 @@ html {
 
 body {
     background: #000000;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 /* ============================================
-   FONT — CORRECT PATH
+   FONTS
    ============================================ */
 @font-face {
     font-family: 'HyperPixel';
     src: url('https://hyperproduction.co.za/font/Untitled1.ttf') format('truetype');
     font-display: swap;
 }
+
+/* Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* ============================================
    TYPOGRAPHY
@@ -51,6 +55,14 @@ h2 {
     margin-left: -8px !important;
 }
 
+h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+p, a, li, span, div, button, input, textarea {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
 /* ============================================
    STICKY HEADER & FOOTER
    ============================================ */
@@ -67,6 +79,7 @@ h2 {
     justify-content: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     animation: slideDown 0.6s ease forwards;
+    animation-fill-mode: forwards;
 }
 
 #my-sticky-header a {
@@ -97,6 +110,7 @@ h2 {
     padding: 0 30px;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     animation: slideUp 0.6s ease forwards;
+    animation-fill-mode: forwards;
 }
 
 .footer-inner {
@@ -108,7 +122,7 @@ h2 {
 }
 
 #my-sticky-footer .copyright {
-    font: 14px Arial, sans-serif;
+    font: 14px 'Roboto', Arial, sans-serif;
     color: #000;
     margin: 0;
 }
@@ -146,29 +160,60 @@ h2 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 /* ============================================
-   ANIMATION CLASSES
+   SCROLL ANIMATIONS - FADE IN
    ============================================ */
-.fade-up {
-    animation: fadeUp 0.6s ease forwards;
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.fade-in {
-    animation: fadeIn 0.6s ease forwards;
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.slide-up {
-    animation: slideUp 0.8s ease forwards;
+/* Delay variations */
+.fade-section.delay-1 { transition-delay: 0.1s; }
+.fade-section.delay-2 { transition-delay: 0.2s; }
+.fade-section.delay-3 { transition-delay: 0.3s; }
+.fade-section.delay-4 { transition-delay: 0.4s; }
+.fade-section.delay-5 { transition-delay: 0.5s; }
+
+/* Fade left/right */
+.fade-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale up */
+.scale-up {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scale-up.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* ============================================
@@ -244,7 +289,7 @@ h2 {
     padding: 14px 40px;
     background: #000000;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -385,7 +430,7 @@ h2 {
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.1rem;
     line-height: 1.8;
 }
@@ -477,7 +522,7 @@ h2 {
 }
 
 #about h4 {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     font-weight: 700;
     text-transform: uppercase;
@@ -489,7 +534,7 @@ h2 {
 
 .about-text {
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.05rem;
     line-height: 1.8;
     max-width: 900px;
@@ -608,7 +653,7 @@ h2 {
 }
 
 .service-card h4 {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -618,7 +663,7 @@ h2 {
 
 .service-card p {
     color: #cccccc;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 16px;
@@ -629,7 +674,7 @@ h2 {
     display: inline-block;
     background: #e4de69;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1rem;
     font-weight: 700;
     padding: 4px 18px;
@@ -643,7 +688,7 @@ h2 {
     padding: 14px 50px;
     background: #e4de69;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -774,7 +819,7 @@ h2 {
 }
 
 .contact-container p {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 0.75rem;
     line-height: 1.8;
     color: #000000;
@@ -868,7 +913,7 @@ h2 {
     padding: 140px 20px 100px 20px;
     min-height: 600px;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .catalog-title {
@@ -932,7 +977,7 @@ h2 {
 }
 
 .tile-info .artist {
-    font-weight: bold;
+    font-weight: 700;
     margin: 0;
     font-size: 14px;
     color: #e4de69;
@@ -1085,7 +1130,7 @@ h2 {
 
 .details-right h3 {
     font-size: 1.2rem;
-    font-weight: normal;
+    font-weight: 400;
     color: #cccccc;
     margin-bottom: 15px;
 }
@@ -1135,11 +1180,11 @@ h2 {
     border: 2px solid #e4de69;
     padding: 10px 25px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     border-radius: 50px;
     transition: background 0.3s, color 0.3s;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .back-btn:hover {
@@ -1161,7 +1206,7 @@ h2 {
     height: 35px;
     margin: 0 3px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     color: #ffffff;
     border-radius: 50%;
     transition: background 0.3s, color 0.3s;
@@ -1179,7 +1224,7 @@ h2 {
 
 .page-arrow {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     padding: 0 10px;
     font-size: 18px;
     color: #e4de69;
