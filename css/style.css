@@ -726,7 +726,7 @@ h2 {
 
     /* Contact — Fixed */
     #contact {
-        height: auto;
+        height: 160px;
         padding: 20px;
         padding-bottom: 80px; /* Prevents footer overlap */
         min-height: 160px;
