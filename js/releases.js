@@ -7,7 +7,6 @@
         currentPage = 1,
         currentAudio = null;
     const perPage = 20;
-    // Maximum catalog number that has HTML files (from stores.json)
     let maxCatalogWithHTML = 0;
 
     async function initCatalog() {
@@ -23,7 +22,6 @@
                 const rawStores = await storeRes.json();
                 rawStores.forEach(s => storeLinks[s["Catalogue Number"]] = s);
                 
-                // Find the highest catalog number with store links (HTML files)
                 rawStores.forEach(s => {
                     const cat = s["Catalogue Number"];
                     if (cat && cat.startsWith('HYP')) {
@@ -36,7 +34,6 @@
                 console.log(`📊 Max catalog with HTML: HYP${String(maxCatalogWithHTML).padStart(3, '0')}`);
             }
 
-            // Filter globalData to only include releases that have HTML files
             if (maxCatalogWithHTML > 0) {
                 globalData = globalData.filter(rel => {
                     const num = parseInt(rel.cat.replace('HYP', ''));
@@ -47,7 +44,6 @@
 
             globalData.sort((a, b) => b.cat.localeCompare(a.cat));
             
-            // Check if we're on a release detail page
             const path = window.location.pathname;
             const match = path.match(/\/releases\/(HYP\d+)\.html/);
             if (match) {
@@ -56,7 +52,6 @@
                 showGrid();
             }
             
-            // Still support hash for pagination
             window.addEventListener('hashchange', function() {
                 const hash = window.location.hash.substring(1);
                 if (hash.startsWith('page-')) {
@@ -99,14 +94,20 @@
             return;
         }
 
+        // Build tiles with animation
+        const tiles = [];
         for (let i = start; i < end; i++) {
             const rel = globalData[i];
             const div = document.createElement('div');
             div.className = 'tile';
+            div.style.opacity = '0';
+            div.style.transform = 'translateY(15px)';
+            div.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            
             div.onclick = () => {
-                // Navigate to the actual HTML page
                 window.location.href = `/releases/${rel.cat}.html`;
             };
+            
             div.innerHTML = `
                 <img src="https://cdn.hyperproduction.co.za/artworks/${rel.cat}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">
                 <div class="tile-info">
@@ -115,7 +116,16 @@
                 </div>
             `;
             grid.appendChild(div);
+            tiles.push(div);
         }
+
+        // Staggered fade-in (very fast)
+        tiles.forEach((tile, index) => {
+            setTimeout(() => {
+                tile.style.opacity = '1';
+                tile.style.transform = 'translateY(0)';
+            }, 30 + (index * 60)); // Fast stagger: 30ms + 60ms per tile
+        });
 
         renderPagination();
     }
@@ -129,7 +139,6 @@
 
         if (total <= 1) return;
 
-        // Previous Arrow
         if (currentPage > 1) {
             const prev = document.createElement('span');
             prev.className = 'page-arrow';
@@ -140,7 +149,6 @@
             nav.appendChild(prev);
         }
 
-        // Page numbers (max 5)
         let start = Math.max(1, currentPage - 2);
         let end = Math.min(total, start + 4);
         if (end - start < 4) start = Math.max(1, end - 4);
@@ -155,7 +163,6 @@
             nav.appendChild(span);
         }
 
-        // Next Arrow
         if (currentPage < total) {
             const next = document.createElement('span');
             next.className = 'page-arrow';
@@ -168,16 +175,21 @@
     }
 
     async function showDetails(cat) {
-        // This is now only called when directly loading a release HTML page
-        // The HTML already contains all the details, so we just need to show it
         const detailsView = document.getElementById('details-view');
         const gridView = document.getElementById('grid-view');
         
         if (gridView) gridView.style.display = 'none';
         if (detailsView) {
             detailsView.style.display = 'block';
-            // The content is already in the page (loaded from the HTML)
-            // We just need to make sure the audio player works
+            detailsView.style.opacity = '0';
+            detailsView.style.transform = 'translateY(15px)';
+            detailsView.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            
+            setTimeout(() => {
+                detailsView.style.opacity = '1';
+                detailsView.style.transform = 'translateY(0)';
+            }, 50);
+            
             initAudioPlayer(cat);
         }
     }
@@ -200,7 +212,6 @@
             if (ui) ui.style.display = 'none';
         };
 
-        // Remove old event listeners by cloning
         const newArtClick = artClick.cloneNode(true);
         artClick.parentNode.replaceChild(newArtClick, artClick);
         
@@ -217,7 +228,6 @@
         };
     }
 
-    // Initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCatalog);
     } else {
