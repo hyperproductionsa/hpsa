@@ -23,26 +23,31 @@
             }
 
             globalData.sort((a, b) => b.cat.localeCompare(a.cat));
-            window.addEventListener('hashchange', router);
-            router();
+            
+            // Check if we're on a release detail page
+            const path = window.location.pathname;
+            const match = path.match(/\/releases\/(HYP\d+)\.html/);
+            if (match) {
+                showDetails(match[1]);
+            } else {
+                showGrid();
+            }
+            
+            // Still support hash for pagination
+            window.addEventListener('hashchange', function() {
+                const hash = window.location.hash.substring(1);
+                if (hash.startsWith('page-')) {
+                    currentPage = parseInt(hash.replace('page-', '')) || 1;
+                    showGrid();
+                }
+            });
+            
         } catch (err) {
             console.error("Load Error:", err);
             const grid = document.getElementById('grid');
             if (grid) {
                 grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">Failed to load releases. Please try again later.</p>';
             }
-        }
-    }
-
-    function router() {
-        const hash = window.location.hash.substring(1);
-        if (hash.startsWith('page-')) {
-            currentPage = parseInt(hash.replace('page-', '')) || 1;
-            showGrid();
-        } else if (hash) {
-            showDetails(hash);
-        } else {
-            showGrid();
         }
     }
 
@@ -76,7 +81,8 @@
             const div = document.createElement('div');
             div.className = 'tile';
             div.onclick = () => {
-                window.location.hash = rel.cat;
+                // Navigate to the actual HTML page
+                window.location.href = `/releases/${rel.cat}.html`;
             };
             div.innerHTML = `
                 <img src="https://cdn.hyperproduction.co.za/artworks/${rel.cat}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">
@@ -105,7 +111,9 @@
             const prev = document.createElement('span');
             prev.className = 'page-arrow';
             prev.innerHTML = '&laquo;';
-            prev.onclick = () => window.location.hash = `page-${currentPage - 1}`;
+            prev.onclick = () => {
+                window.location.hash = `page-${currentPage - 1}`;
+            };
             nav.appendChild(prev);
         }
 
@@ -129,99 +137,61 @@
             const next = document.createElement('span');
             next.className = 'page-arrow';
             next.innerHTML = '&raquo;';
-            next.onclick = () => window.location.hash = `page-${currentPage + 1}`;
+            next.onclick = () => {
+                window.location.hash = `page-${currentPage + 1}`;
+            };
             nav.appendChild(next);
         }
     }
 
     async function showDetails(cat) {
-        const rel = globalData.find(r => r.cat === cat);
-        if (!rel) return;
-
-        window.scrollTo(0, 0);
-
-        const gridView = document.getElementById('grid-view');
+        // This is now only called when directly loading a release HTML page
+        // The HTML already contains all the details, so we just need to show it
         const detailsView = document.getElementById('details-view');
+        const gridView = document.getElementById('grid-view');
         
         if (gridView) gridView.style.display = 'none';
         if (detailsView) {
             detailsView.style.display = 'block';
-
-            const stores = storeLinks[cat] || {};
-            const tracklistHtml = rel.tracks.map((t, i) =>
-                `<li><strong>${i+1}.</strong> ${t.artist} - ${t.title} ${t.mix ? '(' + t.mix + ')' : ''}</li>`
-            ).join('');
-
-            // FIXED: Samples now use CDN
-            const sampleUrl = `https://cdn.hyperproduction.co.za/samples/${cat}.m4a`;
-
-            detailsView.innerHTML = `
-                <div class="details-container">
-                    <div class="details-left">
-                        <div class="left-stack">
-                            <div class="art-wrapper" id="art-click">
-                                <img src="https://cdn.hyperproduction.co.za/artworks/${rel.cat}.png" class="detail-art" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">
-                                <div class="play-overlay" id="play-btn-ui">
-                                    <div class="play-icon" id="icon-play"></div>
-                                    <div class="pause-icon" id="icon-pause"></div>
-                                </div>
-                            </div>
-                            <div class="hp-stores">
-                                ${stores.Traxsource ? `<a href="${stores.Traxsource}" target="_blank"><img src="https://hyperproduction.co.za/logo/stores/traxsource.webp" alt="Traxsource"></a>` : ''}
-                                ${stores.Spotify ? `<a href="${stores.Spotify}" target="_blank"><img src="https://hyperproduction.co.za/logo/stores/spotify.webp" alt="Spotify"></a>` : ''}
-                                ${stores.Apple ? `<a href="${stores.Apple}" target="_blank"><img src="https://hyperproduction.co.za/logo/stores/apple.webp" alt="Apple Music"></a>` : ''}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details-right">
-                        <h2>${rel.title}</h2>
-                        <h3>${rel.artist}</h3>
-                        <p><strong>Catalog:</strong> ${rel.cat}</p>
-                        ${rel.genre ? `<p><strong>Genre:</strong> ${rel.genre}</p>` : ''}
-                        ${rel.release_date ? `<p><strong>Release Date:</strong> ${rel.release_date}</p>` : ''}
-                        <div style="margin-top:30px;">
-                            <p><strong>Tracklist:</strong></p>
-                            <ol>${tracklistHtml}</ol>
-                        </div>
-                        <div class="back-btn-container">
-                            <button class="back-btn" onclick="window.location.hash='page-${currentPage}'"> &lt; Releases</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            // Audio player
-            const audio = new Audio(sampleUrl);
-            const ui = document.getElementById('play-btn-ui');
-
-            audio.oncanplaythrough = () => {
-                if (ui) ui.style.display = 'flex';
-            };
-
-            audio.onerror = () => {
-                if (ui) ui.style.display = 'none';
-            };
-
-            const artClick = document.getElementById('art-click');
-            if (artClick) {
-                artClick.onclick = () => {
-                    if (audio.paused) {
-                        audio.play();
-                        const iconPlay = document.getElementById('icon-play');
-                        const iconPause = document.getElementById('icon-pause');
-                        if (iconPlay) iconPlay.style.display = 'none';
-                        if (iconPause) iconPause.style.display = 'block';
-                        currentAudio = audio;
-                    } else {
-                        audio.pause();
-                        const iconPlay = document.getElementById('icon-play');
-                        const iconPause = document.getElementById('icon-pause');
-                        if (iconPlay) iconPlay.style.display = 'block';
-                        if (iconPause) iconPause.style.display = 'none';
-                    }
-                };
-            }
+            // The content is already in the page (loaded from the HTML)
+            // We just need to make sure the audio player works
+            initAudioPlayer(cat);
         }
+    }
+
+    function initAudioPlayer(cat) {
+        const artClick = document.getElementById('art-click');
+        if (!artClick) return;
+
+        const sampleUrl = `https://cdn.hyperproduction.co.za/samples/${cat}.m4a`;
+        const audio = new Audio(sampleUrl);
+        const ui = document.getElementById('play-btn-ui');
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+
+        audio.oncanplaythrough = () => {
+            if (ui) ui.style.display = 'flex';
+        };
+
+        audio.onerror = () => {
+            if (ui) ui.style.display = 'none';
+        };
+
+        // Remove old event listeners by cloning
+        const newArtClick = artClick.cloneNode(true);
+        artClick.parentNode.replaceChild(newArtClick, artClick);
+        
+        newArtClick.onclick = () => {
+            if (audio.paused) {
+                audio.play();
+                if (iconPlay) iconPlay.style.display = 'none';
+                if (iconPause) iconPause.style.display = 'block';
+            } else {
+                audio.pause();
+                if (iconPlay) iconPlay.style.display = 'block';
+                if (iconPause) iconPause.style.display = 'none';
+            }
+        };
     }
 
     // Initialize when DOM is ready
