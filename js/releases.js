@@ -7,6 +7,8 @@
         currentPage = 1,
         currentAudio = null;
     const perPage = 20;
+    // Maximum catalog number that has HTML files (from stores.json)
+    let maxCatalogWithHTML = 0;
 
     async function initCatalog() {
         try {
@@ -20,6 +22,27 @@
             if (storeRes.ok) {
                 const rawStores = await storeRes.json();
                 rawStores.forEach(s => storeLinks[s["Catalogue Number"]] = s);
+                
+                // Find the highest catalog number with store links (HTML files)
+                rawStores.forEach(s => {
+                    const cat = s["Catalogue Number"];
+                    if (cat && cat.startsWith('HYP')) {
+                        const num = parseInt(cat.replace('HYP', ''));
+                        if (num > maxCatalogWithHTML) {
+                            maxCatalogWithHTML = num;
+                        }
+                    }
+                });
+                console.log(`📊 Max catalog with HTML: HYP${String(maxCatalogWithHTML).padStart(3, '0')}`);
+            }
+
+            // Filter globalData to only include releases that have HTML files
+            if (maxCatalogWithHTML > 0) {
+                globalData = globalData.filter(rel => {
+                    const num = parseInt(rel.cat.replace('HYP', ''));
+                    return num <= maxCatalogWithHTML;
+                });
+                console.log(`📄 Showing ${globalData.length} releases (up to HYP${String(maxCatalogWithHTML).padStart(3, '0')})`);
             }
 
             globalData.sort((a, b) => b.cat.localeCompare(a.cat));
