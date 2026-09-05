@@ -93,15 +93,25 @@ h2 {
     background: #e5de69;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center the inner container */
     padding: 0 30px;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     animation: slideUp 0.6s ease forwards;
 }
 
+/* Inner container for footer to match content width */
+.footer-inner {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #my-sticky-footer .copyright {
     font: 14px Arial, sans-serif;
     color: #000;
+    margin: 0;
 }
 
 #my-sticky-footer .social-icons {
@@ -179,6 +189,11 @@ h2 {
     padding-bottom: 100px;
 }
 
+.hero-inner {
+    max-width: 1200px;
+    width: 100%;
+}
+
 #hero h1 {
     font-family: 'HyperPixel', sans-serif;
     font-size: clamp(2rem, 6vw, 4rem);
@@ -190,7 +205,6 @@ h2 {
 
 #artwork-carousel {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto 30px;
     padding: 0 20px;
 }
@@ -504,32 +518,27 @@ h2 {
 }
 
 /* ============================================
-   CONTACT SECTION — FIXED
+   CONTACT SECTION — FULLY FIXED
    ============================================ */
 #contact {
     width: 100%;
-    height: 184px;
     background: #e4de69;
     display: flex;
     align-items: flex-start;
-    padding: 0 40px;
-    padding-bottom: 80px; /* Prevents footer overlap */
+    justify-content: center;
+    padding: 20px 20px 100px 20px; /* Increased bottom padding for footer */
 }
 
 .contact-container {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 160px;
     padding-top: 20px;
-    padding-bottom: 80px
 }
 
 .contact-col {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -560,17 +569,17 @@ h2 {
     letter-spacing: -2px;
     text-transform: uppercase;
     color: #000000;
-    margin: 0 0 10px 0; /* 10px breathing space below heading */
+    margin: 0 0 12px 0; /* Breathing space below heading */
     line-height: 1.2;
 }
 
 .contact-container p {
     font-family: Arial, sans-serif;
     font-size: 0.75rem;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #000000;
     margin: 0;
-    margin-top: 4px; /* Space between each link */
+    margin-top: 6px; /* Space between each link */
 }
 
 .contact-container a {
@@ -599,22 +608,32 @@ h2 {
 
 /* Tablet */
 @media (max-width: 768px) {
-    /* Header & Footer */
+    /* Footer */
     #my-sticky-footer {
-        justify-content: center;
         padding: 0 15px;
+        height: auto;
+        min-height: 55px;
+        flex-wrap: wrap;
+    }
+    
+    .footer-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 0;
     }
     
     #my-sticky-footer .copyright {
-        display: none;
+        font-size: 11px;
+        text-align: center;
     }
     
     #my-sticky-footer .social-icons {
-        gap: 20px;
+        gap: 12px;
     }
     
     #my-sticky-footer .social-icons img {
-        height: 28px;
+        height: 24px;
     }
 
     /* Hero */
@@ -725,20 +744,15 @@ h2 {
         max-width: 300px;
     }
 
-    /* Contact — Fixed */
+    /* Contact */
     #contact {
-        height: 160px;
-        padding: 20px;
-        padding-bottom: 80px; /* Prevents footer overlap */
-        min-height: 160px;
-        align-items: center;
+        padding: 20px 15px 80px 15px;
     }
     
     .contact-container {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        height: auto;
         padding-top: 0;
     }
     
@@ -746,7 +760,6 @@ h2 {
         width: 100%;
         padding-left: 0;
         text-align: center;
-        height: auto;
     }
     
     .contact-col--center {
@@ -760,18 +773,33 @@ h2 {
     .contact-container h2 {
         text-align: center;
         font-size: 1rem;
-        margin-bottom: 8px; /* Breathing space on mobile */
+        margin-bottom: 8px;
     }
     
     .contact-container p {
         font-size: 0.7rem;
-        line-height: 1.5;
-        margin-top: 3px; /* Space between links on mobile */
+        line-height: 1.6;
+        margin-top: 4px;
     }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+    /* Footer */
+    .footer-inner {
+        flex-direction: column;
+        gap: 4px;
+        padding: 6px 0;
+    }
+    
+    #my-sticky-footer .copyright {
+        font-size: 10px;
+    }
+    
+    #my-sticky-footer .social-icons img {
+        height: 22px;
+    }
+
     /* Hero */
     #hero .carousel-img {
         width: 160px;
@@ -831,11 +859,9 @@ h2 {
         padding: 12px 20px;
     }
 
-    /* Contact — Fixed */
+    /* Contact */
     #contact {
-        padding: 15px;
-        padding-bottom: 70px; /* Prevents footer overlap on small mobile */
-        min-height: 100px;
+        padding: 15px 15px 70px 15px;
     }
     
     .contact-container h2 {
@@ -845,7 +871,7 @@ h2 {
     
     .contact-container p {
         font-size: 0.6rem;
-        line-height: 1.4;
-        margin-top: 2px;
+        line-height: 1.5;
+        margin-top: 3px;
     }
 }
