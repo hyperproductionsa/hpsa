@@ -1,9 +1,80 @@
 [
     {
+        "Catalogue Number": "HYP139",
+        "Release Artist": "HyperSOUL-X",
+        "Release Title": "HTs Collections V",
+        "Apple Music": "https://music.apple.com/us/album/hts-collections-v/6807407658",
+        "Traxsource": "https://www.traxsource.com/title/2868934/hts-collections-v"
+    },
+    {
+        "Catalogue Number": "HYP138",
+        "Release Artist": "Deepeak",
+        "Release Title": "Farhatna",
+        "Spotify": "https://open.spotify.com/album/1MXvHbvsldpTjtFz5bP7ac",
+        "Apple Music": "https://music.apple.com/us/album/farhatna-single/6779662419?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2814611/farhatna"
+    },
+    {
+        "Catalogue Number": "HYP137",
+        "Release Artist": "PabloSA, Alvilianx",
+        "Release Title": "Caller ID",
+        "Spotify": "https://open.spotify.com/album/3aiDHi2p5UGjWV4aeFnb4Z",
+        "Apple Music": "https://music.apple.com/us/album/caller-id-single/6779295696?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2813955/caller-id"
+    },
+    {
+        "Catalogue Number": "HYP136",
+        "Release Artist": "Alvin Chunky",
+        "Release Title": "Afro Roots",
+        "Spotify": "https://open.spotify.com/album/3yjT6E7zeOjFWtAxp07C2S",
+        "Apple Music": "https://music.apple.com/us/album/afro-roots-single/6779295589?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2813957/afro-roots"
+    },
+    {
+        "Catalogue Number": "HYP135",
+        "Release Artist": "HyperSOUL-X, Sontshikazi",
+        "Release Title": "Menelisi",
+        "Spotify": "https://open.spotify.com/album/75gnBi0Gq5qfsvee38MJoi",
+        "Apple Music": "https://music.apple.com/us/album/menelisi-single/6779295322?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2813956/menelisi"
+    },
+    {
+        "Catalogue Number": "HYP134",
+        "Release Artist": "Alvilianx",
+        "Release Title": "Wave",
+        "Spotify": "https://open.spotify.com/album/6Bnw90RfA5QkvwFyK55kiZ",
+        "Apple Music": "https://music.apple.com/us/album/wave-single/6779295229?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2813971/wave"
+    },
+    {
+        "Catalogue Number": "HYP133",
+        "Release Artist": "Cheden",
+        "Release Title": "Sky",
+        "Spotify": "https://open.spotify.com/album/0nRIcbRXKRZXmtH6i8CYHN",
+        "Apple Music": "https://music.apple.com/us/album/sky-single/6774603693?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2804336/sky"
+    },
+    {
+        "Catalogue Number": "HYP132",
+        "Release Artist": "HyperSOUL-X, Lulu Bolaydie",
+        "Release Title": "Your Light",
+        "Spotify": "https://open.spotify.com/album/2j8CRksP0oibspuEX9fNzt",
+        "Apple Music": "https://music.apple.com/us/album/your-light-single/1895552468?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2780547/your-light"
+    },
+    {
+        "Catalogue Number": "HYP131",
+        "Release Artist": "The F (Official)",
+        "Release Title": "Oui Monsieur",
+        "Spotify": "https://open.spotify.com/album/2Bx4r50POQBHrogvIQdDGz",
+        "Apple Music": "https://music.apple.com/us/album/oui-monsieur-single/1895552128?uo=4",
+        "Traxsource": "https://www.traxsource.com/title/2780548/oui-monsieur"
+    },
+    {
         "Catalogue Number": "HYP130",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Ndiani",
-        "Spotify": "https://open.spotify.com/album/2tINMAhJFuRxW8B3l0rVva",
+        "Spotify": "https://open.spotify.com/album/1irBkPz8qQPdWeTTXpcqmo",
         "Apple Music": "https://music.apple.com/us/album/ndiani-single/1895158280?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2777075/ndiani"
     },
@@ -11,7 +82,7 @@
         "Catalogue Number": "HYP129",
         "Release Artist": "Marcus Code",
         "Release Title": "Shimmer",
-        "Spotify": "https://open.spotify.com/album/4ZLnlZVihquOWLutztZiY2",
+        "Spotify": "https://open.spotify.com/album/78uGyPacU0qSj8trCZgOU4",
         "Apple Music": "https://music.apple.com/us/album/shimmer-single/1895158211?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2777076/shimmer"
     },
@@ -19,7 +90,7 @@
         "Catalogue Number": "HYP128",
         "Release Artist": "EDDIE QUEROL",
         "Release Title": "LAS NINAS",
-        "Spotify": "https://open.spotify.com/album/6BvR8xqcnvm7Gpmmnr7JKa",
+        "Spotify": "https://open.spotify.com/album/3rMH9oFfd5BeNz2Thmf2Zh",
         "Apple Music": "https://music.apple.com/us/album/las-ni%C3%B1as-single/1895158267?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2777077/las-ninas"
     },
@@ -27,7 +98,7 @@
         "Catalogue Number": "HYP127",
         "Release Artist": "MR NOO",
         "Release Title": "Ngithwele",
-        "Spotify": "https://open.spotify.com/album/2uGdmRoG1aebc0ncKvtONw",
+        "Spotify": "https://open.spotify.com/album/71ldIUB9dNbqQZ6uihzb86",
         "Apple Music": "https://music.apple.com/us/album/ngithwele-single/1893946960?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2772471/ngithwele"
     },
@@ -35,7 +106,7 @@
         "Catalogue Number": "HYP126",
         "Release Artist": "Lieutenant-X, Sontshikazi",
         "Release Title": "Xola",
-        "Spotify": "https://open.spotify.com/album/65yR26vM5XD42VtqcX3ZZ8",
+        "Spotify": "https://open.spotify.com/album/0ceVMng3InxjcHWFsaHNRl",
         "Apple Music": "https://music.apple.com/us/album/xola-single/1891740385?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2766292/xola"
     },
@@ -43,7 +114,7 @@
         "Catalogue Number": "HYP125",
         "Release Artist": "Alvilianx",
         "Release Title": "Oh My! Oh My! (Remix)",
-        "Spotify": "https://open.spotify.com/album/2GVx1Hmo6nwhfn3BDcwpof",
+        "Spotify": "https://open.spotify.com/album/79OKbncsAflBkEOg1mNYdU",
         "Apple Music": "https://music.apple.com/us/album/oh-my-oh-my-remix-single/1891207440?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2764913/oh-my-oh-my-remix"
     },
@@ -51,7 +122,7 @@
         "Catalogue Number": "HYP124",
         "Release Artist": "The Lashes, Papisto",
         "Release Title": "Charlie",
-        "Spotify": "https://open.spotify.com/album/2LTqBgZUH4EkDcj8hdkNjK",
+        "Spotify": "https://open.spotify.com/album/0q08ZIhyKEltq0M7H7sz5A",
         "Apple Music": "https://music.apple.com/us/album/charlie-single/1889663383?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2760530/charlie"
     },
@@ -67,7 +138,7 @@
         "Catalogue Number": "HYP122",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Planet Dee EP 7",
-        "Spotify": "https://open.spotify.com/album/3B2WfSap7tjFrN3dQJfP3f",
+        "Spotify": "https://open.spotify.com/album/3dsTWdzx9friqb9KGsjA5D",
         "Apple Music": "https://music.apple.com/us/album/planet-dee-ep-7-single/1880707965?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2734791/planet-dee-ep-7"
     },
@@ -83,7 +154,7 @@
         "Catalogue Number": "HYP120",
         "Release Artist": "Snokie, HyperSOUL-X",
         "Release Title": "Khanyisa",
-        "Spotify": "https://open.spotify.com/album/0QIMtRQYp7mdskyo2ERZZD",
+        "Spotify": "https://open.spotify.com/album/58GdV1TViu9bzy8fOJJcV7",
         "Apple Music": "https://music.apple.com/us/album/khanyisa-single/1853640167?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2664683/khanyisa"
     },
@@ -91,7 +162,7 @@
         "Catalogue Number": "HYP119",
         "Release Artist": "Sontshikazi, HyperSOUL-X",
         "Release Title": "Ancient Sound",
-        "Spotify": "https://open.spotify.com/album/1XMFdsFiZOB9KpZqyF9dLL?autoplay=true",
+        "Spotify": "https://open.spotify.com/album/4UIT23RBpZdA3q8MALjTYJ",
         "Apple Music": "https://music.apple.com/us/album/ancient-sound-single/1848203880?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2648621/ancient-sound"
     },
@@ -107,7 +178,6 @@
         "Catalogue Number": "HYP117",
         "Release Artist": "Lieutenant-X, Lulu Bolaydie",
         "Release Title": "Lerato",
-        "Spotify": "https://open.spotify.com/album/75uIOSJqI452Li9RGYreKe",
         "Apple Music": "https://music.apple.com/us/album/lerato-single/1835740307?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2606873/lerato"
     },
@@ -115,7 +185,7 @@
         "Catalogue Number": "HYP116",
         "Release Artist": "Who Is He",
         "Release Title": "Drums In Motions",
-        "Spotify": "https://open.spotify.com/album/4Il3pHb3VY5ET0vHfUgTgE",
+        "Spotify": "https://open.spotify.com/album/5hAhtYQMvRhDUSW6RHDiV3",
         "Apple Music": "https://music.apple.com/us/album/drums-in-motions-single/1831525503?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2594400/drums-in-motions"
     },
@@ -123,7 +193,7 @@
         "Catalogue Number": "HYP115",
         "Release Artist": "Norbess",
         "Release Title": "Kiangazi",
-        "Spotify": "https://open.spotify.com/album/1WPs1Ai3ohU3ab95NmpxHs",
+        "Spotify": "https://open.spotify.com/album/5Ys0y3kf0iOolTn8EtE9rG",
         "Apple Music": "https://music.apple.com/us/album/kiangazi-single/1831525346?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2602687/happiness"
     },
@@ -131,7 +201,7 @@
         "Catalogue Number": "HYP114",
         "Release Artist": "HyperSOUL-X, Sabrina Masenya",
         "Release Title": "Happiness",
-        "Spotify": "https://open.spotify.com/album/3Ly3wVmkWOQNhGejP3RhRf",
+        "Spotify": "https://open.spotify.com/album/3dicQulwjgF2zEmjVcknW4",
         "Apple Music": "https://music.apple.com/us/album/happiness-single/1834257340?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2594399/kiangazi"
     },
@@ -147,7 +217,7 @@
         "Catalogue Number": "HYP112",
         "Release Artist": "Lieutenant-X, Thapelo Kganane, Sabrina Masenya",
         "Release Title": "Breathe",
-        "Spotify": "https://open.spotify.com/album/3BGPil8BDPVoDK0lnUPtvb",
+        "Spotify": "https://open.spotify.com/album/5AkeqfOXvGhFD6DBBxzlA3",
         "Apple Music": "https://music.apple.com/us/album/breathe-single/1821707193?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2560108/breathe"
     },
@@ -155,7 +225,7 @@
         "Catalogue Number": "HYP111",
         "Release Artist": "Lone Dreamer",
         "Release Title": "Sleeping Dragon",
-        "Spotify": "https://open.spotify.com/album/2OHRZq8iYWKf1gcSZ6rQb3",
+        "Spotify": "https://open.spotify.com/album/3A08vlDUcGl6aTxWcUTxZr",
         "Apple Music": "https://music.apple.com/us/album/sleeping-dragon-single/1821694815?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2559945/sleeping-dragon"
     },
@@ -163,7 +233,7 @@
         "Catalogue Number": "HYP110",
         "Release Artist": "Lieutenant-X",
         "Release Title": "Koma",
-        "Spotify": "https://open.spotify.com/album/2tINMAhJFuRxW8B3l0rVva",
+        "Spotify": "https://open.spotify.com/album/2rzns52MrrbqwCqh2aQ2ls",
         "Apple Music": "https://music.apple.com/us/album/koma-single/1821695019?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2559948/koma"
     },
@@ -171,7 +241,7 @@
         "Catalogue Number": "HYP109",
         "Release Artist": "Sons Of The Unknown",
         "Release Title": "Shadow Chant",
-        "Spotify": "https://open.spotify.com/album/3kayUILw92CJWVMs0f2Oqa",
+        "Spotify": "https://open.spotify.com/album/6TeTZDBRgQIV4UjlKXfQTu",
         "Apple Music": "https://music.apple.com/us/album/shadow-chant-single/1821694946?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2559951/shadow-chant"
     },
@@ -179,7 +249,7 @@
         "Catalogue Number": "HYP108",
         "Release Artist": "Lizzard",
         "Release Title": "Izitha EP",
-        "Spotify": "https://open.spotify.com/album/33uvylXKepsXQV3MdNZdxx",
+        "Spotify": "https://open.spotify.com/album/6sBq0VngIcHP3sZH97Ryfu",
         "Apple Music": "https://music.apple.com/us/album/izitha-ep-ep/1821697519?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2559959/izitha-ep"
     },
@@ -187,7 +257,7 @@
         "Catalogue Number": "HYP107",
         "Release Artist": "HyperSOUL-X, Sabrina Masenya",
         "Release Title": "Hey'O",
-        "Spotify": "https://open.spotify.com/album/1mM5k53EdLMpkybnWBS67M",
+        "Spotify": "https://open.spotify.com/album/6yvYUfDrdtjNEyZOd6AKVG",
         "Apple Music": "https://music.apple.com/us/album/heyo-single/1821707833?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2560107/heyo"
     },
@@ -195,7 +265,7 @@
         "Catalogue Number": "HYP106",
         "Release Artist": "Alvilianx",
         "Release Title": "Oh my! Oh my!",
-        "Spotify": "https://open.spotify.com/album/2GVx1Hmo6nwhfn3BDcwpof",
+        "Spotify": "https://open.spotify.com/album/6E8EVH0qNqjgCZEs0coZeQ",
         "Apple Music": "https://music.apple.com/us/album/oh-my-oh-my-single/1814389114?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2533777/oh-my-oh-my"
     },
@@ -203,7 +273,7 @@
         "Catalogue Number": "HYP105",
         "Release Artist": "Lone Dreamer",
         "Release Title": "2AM Drummin",
-        "Spotify": "https://open.spotify.com/album/56LHnVus0wHh6dx6LMHVpj",
+        "Spotify": "https://open.spotify.com/album/0HRnXnikPA5n0qwL6nyMeH",
         "Apple Music": "https://music.apple.com/us/album/2am-drummin-single/1814388837?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2533774/2am-drummin"
     },
@@ -211,7 +281,7 @@
         "Catalogue Number": "HYP104",
         "Release Artist": "LaErhnzo & TooZee",
         "Release Title": "Dammy",
-        "Spotify": "https://open.spotify.com/album/42n8WJffE5d1qwgZsxUMLQ",
+        "Spotify": "https://open.spotify.com/album/7mcJCuc64HoVUD6hmv9Bb1",
         "Apple Music": "https://music.apple.com/us/album/dammy-single/1814389533?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2533776/dammy"
     },
@@ -219,7 +289,7 @@
         "Catalogue Number": "HYP103",
         "Release Artist": "Lieutenant-X",
         "Release Title": "Kuya",
-        "Spotify": "https://open.spotify.com/album/2tINMAhJFuRxW8B3l0rVva",
+        "Spotify": "https://open.spotify.com/album/2wChmigYDUuRElap3UIE7M",
         "Apple Music": "https://music.apple.com/us/album/kuya-single/1802215302?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2490323/kuya"
     },
@@ -235,7 +305,7 @@
         "Catalogue Number": "HYP101",
         "Release Artist": "Lieutenant-X & Sabrina Masenya",
         "Release Title": "Pain",
-        "Spotify": "https://open.spotify.com/album/3frZxeAtxGvdQtHQGIQPJE",
+        "Spotify": "https://open.spotify.com/album/1niAA29rqvrbIRHZVfZcKH",
         "Apple Music": "https://music.apple.com/us/album/pain-single/1802213686?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2490321/pain"
     },
@@ -243,7 +313,7 @@
         "Catalogue Number": "HYP100",
         "Release Artist": "Lizzard",
         "Release Title": "Planets",
-        "Spotify": "https://open.spotify.com/album/2nPbslvl01lfELsFHTKp0s",
+        "Spotify": "https://open.spotify.com/album/05Wm9gK7n6Vuydr4KcEKkJ",
         "Apple Music": "https://music.apple.com/us/album/planets-single/1796200911?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2467175/planets"
     },
@@ -251,7 +321,7 @@
         "Catalogue Number": "HYP099",
         "Release Artist": "Lieutenant-X",
         "Release Title": "Nawe",
-        "Spotify": "https://open.spotify.com/album/4EDITClEvx5SQD6oAIUsGF",
+        "Spotify": "https://open.spotify.com/album/3muX6UK5z4bAM0f8RgWVIu",
         "Apple Music": "https://music.apple.com/us/album/nawe-single/1793925333?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2458309/nawe"
     },
@@ -259,7 +329,7 @@
         "Catalogue Number": "HYP098",
         "Release Artist": "Norbess",
         "Release Title": "3x3",
-        "Spotify": "https://open.spotify.com/album/4E8iI6RzNWyYLdFcUJZz6G",
+        "Spotify": "https://open.spotify.com/album/1RSdmHEc9Pla1MkArUUpLd",
         "Apple Music": "https://music.apple.com/us/album/3x3-single/1793925553?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2458311/3x3"
     },
@@ -275,7 +345,7 @@
         "Catalogue Number": "HYP096",
         "Release Artist": "Lone Dreamer",
         "Release Title": "Year Of A Wolf",
-        "Spotify": "https://open.spotify.com/album/2sD7WgUFZ64YVczIGdlJeh",
+        "Spotify": "https://open.spotify.com/album/3wnzI7Hd5fFlWqKM3fOqgf",
         "Apple Music": "https://music.apple.com/us/album/year-of-a-wolf-single/1793925935?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2458314/year-of-a-wolf"
     },
@@ -283,7 +353,7 @@
         "Catalogue Number": "HYP095",
         "Release Artist": "Lieutenant-X",
         "Release Title": "Woza",
-        "Spotify": "https://open.spotify.com/album/42KlpR3wGrG98phF8OqyK4",
+        "Spotify": "https://open.spotify.com/album/38FnRpDSBbTEsTRCIZUTgy",
         "Apple Music": "https://music.apple.com/us/album/woza-single/1793769708?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2457652/woza"
     },
@@ -291,7 +361,7 @@
         "Catalogue Number": "HYP094",
         "Release Artist": "Alvilianx",
         "Release Title": "Mufasa II",
-        "Spotify": "https://open.spotify.com/album/0ZdpwZx7VyolP4neyNaiRy",
+        "Spotify": "https://open.spotify.com/album/5kXoSqNrR5LONBkQOcA6Ye",
         "Apple Music": "https://music.apple.com/us/album/mufasa-ii-single/1787570036?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2434374/mufasa-ii"
     },
@@ -299,7 +369,7 @@
         "Catalogue Number": "HYP093",
         "Release Artist": "DJ NaGrim",
         "Release Title": "Machweo",
-        "Spotify": "https://open.spotify.com/album/6n2PWtkjxV8AF84dPnpWnv",
+        "Spotify": "https://open.spotify.com/album/4eQW4UmhhuIPrao24ONpqd",
         "Apple Music": "https://music.apple.com/us/album/machweo-single/1783816214?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2422889/machweo"
     },
@@ -307,7 +377,7 @@
         "Catalogue Number": "HYP092",
         "Release Artist": "Norbess",
         "Release Title": "Redemption",
-        "Spotify": "https://open.spotify.com/album/6LDLfssRIwKqvSQAMBWmTU",
+        "Spotify": "https://open.spotify.com/album/1gOxQ9fJoqoKOfp1NSNzkj",
         "Apple Music": "https://music.apple.com/us/album/redemption-single/1783312982?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2420745/redemption"
     },
@@ -315,7 +385,7 @@
         "Catalogue Number": "HYP091",
         "Release Artist": "Allan Biggs",
         "Release Title": "Yayeh",
-        "Spotify": "https://open.spotify.com/album/3rflXoyYnnuMcshL4M4V4d",
+        "Spotify": "https://open.spotify.com/album/3N43vDPv4LPs2hWNaY8Zc0",
         "Apple Music": "https://music.apple.com/us/album/yayeh-single/1782215827?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2417301/yayeh"
     },
@@ -323,7 +393,7 @@
         "Catalogue Number": "HYP090",
         "Release Artist": "Bohlale, HyperSOUL-X",
         "Release Title": "Hope (Remixes)",
-        "Spotify": "https://open.spotify.com/album/5bhG771C62eQNwEKBJhkv5",
+        "Spotify": "https://open.spotify.com/album/5vyO04SvwmUXHTAfmuHEFz",
         "Apple Music": "https://music.apple.com/us/album/hope-remixes-single/1782925121?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2419459/hope-remixes"
     },
@@ -331,7 +401,7 @@
         "Catalogue Number": "HYP089",
         "Release Artist": "Luca Lyj",
         "Release Title": "Sanda",
-        "Spotify": "https://open.spotify.com/album/0dMx3mL7CyzoYFU1THzJBc",
+        "Spotify": "https://open.spotify.com/album/7dLK7pGr2044ydqLMv6Xhs",
         "Apple Music": "https://music.apple.com/us/album/sanda-single/1782215626?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2417302/sanda"
     },
@@ -347,7 +417,7 @@
         "Catalogue Number": "HYP087",
         "Release Artist": "Lone Dreamer",
         "Release Title": "Amaru",
-        "Spotify": "https://open.spotify.com/album/6r1STi3YoZcpBOoWBaEK1C",
+        "Spotify": "https://open.spotify.com/album/2zhXnPBMK33GHyiMD8mOSs",
         "Apple Music": "https://music.apple.com/us/album/amaru-single/1781720769?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2414483/amaru"
     },
@@ -363,7 +433,7 @@
         "Catalogue Number": "HYP085",
         "Release Artist": "Giorgio Bassetti",
         "Release Title": "Parashat",
-        "Spotify": "https://open.spotify.com/album/1GpZv5fafI1GIIEjXFZXnZ",
+        "Spotify": "https://open.spotify.com/album/58IaU4Cq9Vj5u22PklJTtp",
         "Apple Music": "https://music.apple.com/us/album/parashat-single/1777457640?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2398550/parashat"
     },
@@ -371,7 +441,7 @@
         "Catalogue Number": "HYP084",
         "Release Artist": "Rawson Ford",
         "Release Title": "Ziz",
-        "Spotify": "https://open.spotify.com/album/3EyFaDlNuRZOhjm9VWTshQ",
+        "Spotify": "https://open.spotify.com/album/5VYgJCzJo4KYJXpBHjxx0c",
         "Apple Music": "https://music.apple.com/us/album/ziz-single/1777457166?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2398551/ziz"
     },
@@ -379,7 +449,7 @@
         "Catalogue Number": "HYP083",
         "Release Artist": "Lone Dreamer",
         "Release Title": "Drum Drum",
-        "Spotify": "https://open.spotify.com/album/56LHnVus0wHh6dx6LMHVpj",
+        "Spotify": "https://open.spotify.com/album/1fLLQJLrsvI3ctDyt1zq9u",
         "Apple Music": "https://music.apple.com/us/album/drum-drum-single/1772484822?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2379688/drum-drum"
     },
@@ -387,7 +457,7 @@
         "Catalogue Number": "HYP081",
         "Release Artist": "Alvilianx",
         "Release Title": "Into The Unknown",
-        "Spotify": "https://open.spotify.com/album/2spge3mzNdBzEl4wxniTa9",
+        "Spotify": "https://open.spotify.com/album/2sQw5ognqYs8AFulTMhE65",
         "Apple Music": "https://music.apple.com/us/album/into-the-unknown-single/1768256109?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2363767/into-the-unknown"
     },
@@ -395,7 +465,7 @@
         "Catalogue Number": "HYP080",
         "Release Artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
         "Release Title": "What A Time To Be Alive",
-        "Spotify": "https://open.spotify.com/album/15QCBYjP6HwHvsff100UBx",
+        "Spotify": "https://open.spotify.com/album/4uVhnTHv2I4q3F6YvXuZj8",
         "Apple Music": "https://music.apple.com/us/album/what-a-time-to-be-alive-single/1768249031?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2363752/what-a-time-to-be-alive"
     },
@@ -403,7 +473,7 @@
         "Catalogue Number": "HYP079",
         "Release Artist": "DarqSphere",
         "Release Title": "Ezakwa Zulu",
-        "Spotify": "https://open.spotify.com/album/5Ed0PEvNnSHHbmplPc8LuH",
+        "Spotify": "https://open.spotify.com/album/5WK9Mm7ONVzDYpPTKls08F",
         "Apple Music": "https://music.apple.com/us/album/ezakwa-zulu-single/1768248915?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2363753/ezakwa-zulu"
     },
@@ -411,7 +481,7 @@
         "Catalogue Number": "HYP078",
         "Release Artist": "Rawson Ford",
         "Release Title": "Heal Africa",
-        "Spotify": "https://open.spotify.com/album/2KT1aTHahPtEvuZ8hWCD6D",
+        "Spotify": "https://open.spotify.com/album/0rfH7Wd4xSEpWXHrwy3saI",
         "Apple Music": "https://music.apple.com/us/album/heal-africa-single/1767421570?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2360848/heal-africa"
     },
@@ -419,7 +489,7 @@
         "Catalogue Number": "HYP077",
         "Release Artist": "Sons Of The Unknown, HyperSOUL-X",
         "Release Title": "Hypnotize",
-        "Spotify": "https://open.spotify.com/album/3zF7BicynH7zb3OX49o24x",
+        "Spotify": "https://open.spotify.com/album/07WUZ0cemEiXPNBh29KNgf",
         "Apple Music": "https://music.apple.com/us/album/hypnotize-single/1767271020?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2360134/hypnotize"
     },
@@ -443,7 +513,7 @@
         "Catalogue Number": "HYP074",
         "Release Artist": "HDC",
         "Release Title": "New Leaf",
-        "Spotify": "https://open.spotify.com/album/4QSzXyiJHTEkZpghNo9Gnr",
+        "Spotify": "https://open.spotify.com/album/2C1bEw8MZAqWG3h5HFFdjx",
         "Apple Music": "https://music.apple.com/us/album/new-leaf-single/1766585851?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2357383/new-leaf"
     },
@@ -531,7 +601,7 @@
         "Catalogue Number": "HYP063",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Juntos (Main HT)",
-        "Spotify": "https://open.spotify.com/album/3VorIlU9fsDxZmoBXKQJu5",
+        "Spotify": "https://open.spotify.com/album/55l4i729nvXQkahZdlqieZ",
         "Apple Music": "https://music.apple.com/us/album/juntos-main-ht-single/1727202438?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2175271/loving-you"
     },
@@ -563,7 +633,7 @@
         "Catalogue Number": "HYP059",
         "Release Artist": "Blessing Dike, HyperSOUL-X",
         "Release Title": "Africa",
-        "Spotify": "https://open.spotify.com/album/30fghGiaXZNZMonrAbKYjj",
+        "Spotify": "https://open.spotify.com/album/6tdOqureun73vUxxsWoq85",
         "Apple Music": "https://music.apple.com/us/album/africa-single/1708493025?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2102073/africa"
     },
@@ -571,7 +641,7 @@
         "Catalogue Number": "HYP058",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Mirame (Main HT)",
-        "Spotify": "https://open.spotify.com/album/5BdAYt75CrU3zsSYvj5WC2",
+        "Spotify": "https://open.spotify.com/album/0ccFLzB48IHQszPxXPua62",
         "Apple Music": "https://music.apple.com/us/album/mirame-main-ht-single/1707405348?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2097220/mirame-main-ht"
     },
@@ -579,7 +649,7 @@
         "Catalogue Number": "HYP057",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "I Don't Know Why (Main HT)",
-        "Spotify": "https://open.spotify.com/album/7j8ZEJZMG16latQUMVCVLI",
+        "Spotify": "https://open.spotify.com/album/5AP8kqO1XJSUcHrUWxmKEj",
         "Apple Music": "https://music.apple.com/us/album/i-dont-know-why-main-ht-single/1703291138?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2079823/i-dont-know-why-main-ht"
     },
@@ -587,7 +657,7 @@
         "Catalogue Number": "HYP056",
         "Release Artist": "Sabrina Masenya, HyperSOUL-X",
         "Release Title": "Scatter Me",
-        "Spotify": "https://open.spotify.com/album/4E8iI6RzNWyYLdFcUJZz6G",
+        "Spotify": "https://open.spotify.com/album/4BFYXR0zhJbyIeWurDAK7M",
         "Apple Music": "https://music.apple.com/us/album/scatter-me-single/1701405873?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2072227/scatter-me"
     },
@@ -595,7 +665,7 @@
         "Catalogue Number": "HYP055",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Bekani (Main HT)",
-        "Spotify": "https://open.spotify.com/album/4E8iI6RzNWyYLdFcUJZz6G",
+        "Spotify": "https://open.spotify.com/album/5nDrOxac4UryGlJhDd2NWn",
         "Apple Music": "https://music.apple.com/us/album/bekani-main-ht-single/1699659137?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2066556/bekani-main-ht"
     },
@@ -611,7 +681,7 @@
         "Catalogue Number": "HYP053",
         "Release Artist": "The Lashes, Papisto",
         "Release Title": "Charlie",
-        "Spotify": "https://open.spotify.com/album/2LTqBgZUH4EkDcj8hdkNjK",
+        "Spotify": "https://open.spotify.com/album/5ERs4rqNk5t052SRZVJmqJ",
         "Apple Music": "https://music.apple.com/us/album/charlie-single/1696205153?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2053805/charlie"
     },
@@ -635,7 +705,7 @@
         "Catalogue Number": "HYP050",
         "Release Artist": "Dub Smash, HyperSOUL-X",
         "Release Title": "Ancient Garden",
-        "Spotify": "https://open.spotify.com/album/5GRsxewvZeSFDjYBRwIr22",
+        "Spotify": "https://open.spotify.com/album/27biZJeAFNDSOdjiZFxyAy",
         "Apple Music": "https://music.apple.com/us/album/ancient-garden-single/1690482636?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2030995/ancient-garden"
     },
@@ -643,7 +713,7 @@
         "Catalogue Number": "HYP049",
         "Release Artist": "Blessing Dike",
         "Release Title": "Taking Over EP",
-        "Spotify": "https://open.spotify.com/album/2GDoWJkYSulHYMhmy9DtlY",
+        "Spotify": "https://open.spotify.com/album/5CQTDfAkRNxCIr8XVAO6Nf",
         "Apple Music": "https://music.apple.com/us/album/taking-over-ep/1686227531?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2043534/taking-over-ep"
     },
@@ -659,7 +729,7 @@
         "Catalogue Number": "HYP047",
         "Release Artist": "HDC, HyperSOUL-X",
         "Release Title": "Khumbaya",
-        "Spotify": "https://open.spotify.com/album/5I4UG95wgJEAwbJomA6J3w",
+        "Spotify": "https://open.spotify.com/album/0Z44iGKjQLenHmSFMADXaV",
         "Apple Music": "https://music.apple.com/us/album/khumbaya-single/1688456243?uo=4",
         "Traxsource": "https://www.traxsource.com/title/2000724/khumbaya"
     },
@@ -675,7 +745,7 @@
         "Catalogue Number": "HYP044",
         "Release Artist": "Coke Segwapa,  HyperSOUL-X",
         "Release Title": "Higher",
-        "Spotify": "https://open.spotify.com/album/2tINMAhJFuRxW8B3l0rVva",
+        "Spotify": "https://open.spotify.com/album/59rd4CzhuMEHnD7lOToXMi",
         "Apple Music": "https://music.apple.com/us/album/higher-ep/1701444421?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1992186/higher"
     },
@@ -683,7 +753,7 @@
         "Catalogue Number": "HYP043",
         "Release Artist": "HyperSOUL-X, RejazzSA",
         "Release Title": "Wrong Turn",
-        "Spotify": "https://open.spotify.com/album/6utbPlKHRQvVXLb4rG6bwV",
+        "Spotify": "https://open.spotify.com/album/7wFP9waiLktu4G41QCI3LH",
         "Apple Music": "https://music.apple.com/us/album/wrong-turn-single/1688457885?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1992709/wrong-turn"
     },
@@ -691,7 +761,7 @@
         "Catalogue Number": "HYP042",
         "Release Artist": "LeeJoy, HyperSOUL-X",
         "Release Title": "For Me (Afro Mix)",
-        "Spotify": "https://open.spotify.com/album/75gnBi0Gq5qfsvee38MJoi",
+        "Spotify": "https://open.spotify.com/album/1lk3pqsMYvCzN2Dh3l7S5E",
         "Apple Music": "https://music.apple.com/us/album/for-me-afro-mix-single/1688455631?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1981124/for-me-afro-mix"
     },
@@ -699,7 +769,7 @@
         "Catalogue Number": "HYP041",
         "Release Artist": "HDC, HyperSOUL-X",
         "Release Title": "The Last Ones",
-        "Spotify": "https://open.spotify.com/album/6RYQ2mfjeDCp1RrsYnIOc6",
+        "Spotify": "https://open.spotify.com/album/6fNmUFZ7tGS2GIJlOJUlS5",
         "Apple Music": "https://music.apple.com/us/album/the-last-ones-single/1688457634?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1974992/the-last-ones"
     },
@@ -723,7 +793,7 @@
         "Catalogue Number": "HYP038",
         "Release Artist": "Maque, HyperSOUL-X",
         "Release Title": "Messiah",
-        "Spotify": "https://open.spotify.com/album/0Rx5CchseAuWra6Ap3Fq1Z",
+        "Spotify": "https://open.spotify.com/album/4CRSZUF3lF9cdSkYyQ5y18",
         "Apple Music": "https://music.apple.com/us/album/messiah-single/1688457665?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1955690/messiah"
     },
@@ -731,7 +801,7 @@
         "Catalogue Number": "HYP037",
         "Release Artist": "Stewie Le Savage, HyperSOUL-X",
         "Release Title": "Melanin Confidence",
-        "Spotify": "https://open.spotify.com/album/4K6ITH2zwBdFO4hnCAlhmd",
+        "Spotify": "https://open.spotify.com/album/61AxEP1Ow3U2n4JF51I110",
         "Apple Music": "https://music.apple.com/us/album/melanin-confidence-single/1688457511?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1951617/melanin-confidence"
     },
@@ -739,7 +809,7 @@
         "Catalogue Number": "HYP036",
         "Release Artist": "KB Deep, HyperSOUL-X",
         "Release Title": "Arabian Yabki",
-        "Spotify": "https://open.spotify.com/album/3VorIlU9fsDxZmoBXKQJu5",
+        "Spotify": "https://open.spotify.com/album/62RezGw0XFZjxgz6mtQ67E",
         "Apple Music": "https://music.apple.com/us/album/arabian-yabki-single/1688455637?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1942242/arabian-yabki"
     },
@@ -747,7 +817,7 @@
         "Catalogue Number": "HYP035",
         "Release Artist": "Coke Segwapa, HyperSOUL-X",
         "Release Title": "Khala",
-        "Spotify": "https://open.spotify.com/album/2tINMAhJFuRxW8B3l0rVva",
+        "Spotify": "https://open.spotify.com/album/77CXuCef2RMYcaljIV6oom",
         "Apple Music": "https://music.apple.com/us/album/khala-ep/1688455546?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1941592/khala"
     },
@@ -763,7 +833,7 @@
         "Catalogue Number": "HYP033",
         "Release Artist": "HDC, HyperSOUL-X",
         "Release Title": "Sunrise",
-        "Spotify": "https://open.spotify.com/album/3VorIlU9fsDxZmoBXKQJu5",
+        "Spotify": "https://open.spotify.com/album/1KkFV5rdeqP7xRcGGhBCuv",
         "Apple Music": "https://music.apple.com/us/album/sunrise-single/1688453955?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1933294/sunrise"
     },
@@ -771,7 +841,7 @@
         "Catalogue Number": "HYP032",
         "Release Artist": "Native P. , HyperSOUL-X, Coke Segwapa",
         "Release Title": "Bathagathi",
-        "Spotify": "https://open.spotify.com/album/4tHsvaKWANreMjpIbHdNu8",
+        "Spotify": "https://open.spotify.com/album/7liIkz2cGwnYzbux33z4BR",
         "Apple Music": "https://music.apple.com/us/album/bathagathi-single/1688454563?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1932006/bathagathi"
     },
@@ -779,7 +849,7 @@
         "Catalogue Number": "HYP031",
         "Release Artist": "Coke Segwapa, HyperSOUL-X",
         "Release Title": "Dlozi Lam'",
-        "Spotify": "https://open.spotify.com/album/2umJPQDnlN7KcQODITJ04e",
+        "Spotify": "https://open.spotify.com/album/1rX6XXnVz7nKjIhLOhchRF",
         "Apple Music": "https://music.apple.com/us/album/dlozi-lam-ep/1688458858?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1928418/dlozi-lam"
     },
@@ -787,7 +857,7 @@
         "Catalogue Number": "HYP030",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "HTs Collections, Vol. 3",
-        "Spotify": "https://open.spotify.com/album/7uNvwKK5oZiJzeaW8HYasI",
+        "Spotify": "https://open.spotify.com/album/6H2Ca36iQiK4BfGOgCznc4",
         "Apple Music": "https://music.apple.com/us/album/hts-collections-vol-3/1692218981?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1917596/hts-collections-vol-3"
     },
@@ -795,7 +865,7 @@
         "Catalogue Number": "HYP029",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Eden (Main HT)",
-        "Spotify": "https://open.spotify.com/album/380UbSJnNQ9SioALGRB0Cf",
+        "Spotify": "https://open.spotify.com/album/3891Mkeek2Z3liEwTWpn9b",
         "Apple Music": "https://music.apple.com/us/album/eden-main-ht-single/1688454011?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1889712/eden-main-ht"
     },
@@ -803,7 +873,7 @@
         "Catalogue Number": "HYP028",
         "Release Artist": "Coke Segwapa, HyperSOUL-X",
         "Release Title": "Our Father",
-        "Spotify": "https://open.spotify.com/album/3g9JEP55Gt3RofyysrHdz9",
+        "Spotify": "https://open.spotify.com/album/7iFOwDveEaUvM2f0keCQy5",
         "Apple Music": "https://music.apple.com/us/album/our-father-single/1688454118?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1885402/our-father"
     },
@@ -827,7 +897,7 @@
         "Catalogue Number": "HYP025",
         "Release Artist": "McKay Johnson, HyperSOUL-X",
         "Release Title": "Mzulo",
-        "Spotify": "https://open.spotify.com/album/30OYxrL3dSeTSXMTI0Hhhz",
+        "Spotify": "https://open.spotify.com/album/5omKCaBsPtth9ENJlnKAzM",
         "Apple Music": "https://music.apple.com/us/album/mzulo-single/1688459118?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1850620/mzulo"
     },
@@ -835,7 +905,7 @@
         "Catalogue Number": "HYP024",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Mama Yeh (Main HT)",
-        "Spotify": "https://open.spotify.com/album/2cnunMGlmlW0TsIuEkRRon",
+        "Spotify": "https://open.spotify.com/album/3uAFIHa3akMtzWH2uqq5Xf",
         "Apple Music": "https://music.apple.com/us/album/mama-yeh-main-ht-single/1688454429?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1844826/mama-yeh-main-ht"
     },
@@ -843,7 +913,7 @@
         "Catalogue Number": "HYP023",
         "Release Artist": "Aura Dee, HyperSOUL-X",
         "Release Title": "Uthando (Afro Mix)",
-        "Spotify": "https://open.spotify.com/album/0JcGkpJW9ma45SKagh3jtt",
+        "Spotify": "https://open.spotify.com/album/5GrCi3iUZpU5cWYORiJoHc",
         "Apple Music": "https://music.apple.com/us/album/uthando-afro-mix-single/1688453493?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1840645/uthando-afro-mix"
     },
@@ -851,7 +921,7 @@
         "Catalogue Number": "HYP022",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Afro HTs EP",
-        "Spotify": "https://open.spotify.com/album/4HREzVsjAYN4UegR1StFif",
+        "Spotify": "https://open.spotify.com/album/08nt8BouGkGzzzBdvNwJns",
         "Apple Music": "https://music.apple.com/us/album/afro-hts-ep/1691968935?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1834437/afro-hts-ep"
     },
@@ -859,7 +929,7 @@
         "Catalogue Number": "HYP021",
         "Release Artist": "Truth Mash & Sabrina Masenya",
         "Release Title": "Buye (HyperSOUL-X Mixes)",
-        "Spotify": "https://open.spotify.com/album/5YfcCRsNBbcyDh3GIW203q",
+        "Spotify": "https://open.spotify.com/album/31mHWA3lPgHMPOJA8ognB7",
         "Apple Music": "https://music.apple.com/us/album/buye-hypersoul-x-mixes-single/1691968796?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1829685/buye-hypersoul-x-mixes"
     },
@@ -875,7 +945,7 @@
         "Catalogue Number": "HYP019",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "BackGround (Main HT)",
-        "Spotify": "https://open.spotify.com/album/0JxIpnjFXyfIV7igPXdW6a",
+        "Spotify": "https://open.spotify.com/album/1OIw4eG2NXhXJ99FKvYZ8f",
         "Apple Music": "https://music.apple.com/us/album/background-main-ht-single/1688454095?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1808677/background-main-ht"
     },
@@ -883,7 +953,7 @@
         "Catalogue Number": "HYP018",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Yelele (Main HT)",
-        "Spotify": "https://open.spotify.com/album/0eFS5TGJZXas4SEqxhJ0bC",
+        "Spotify": "https://open.spotify.com/album/270q0DAU2HVJOv1mvSqxCZ",
         "Apple Music": "https://music.apple.com/us/album/yelele-main-ht-single/1688452602?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1808678/yelele-main-ht"
     },
@@ -891,7 +961,7 @@
         "Catalogue Number": "HYP017",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Zoo (Main HT)",
-        "Spotify": "https://open.spotify.com/album/0NvirtaDCaZU5PAW1O5FDE",
+        "Spotify": "https://open.spotify.com/album/75uidQqjt5874Bvu1caMeb",
         "Apple Music": "https://music.apple.com/us/album/zoo-main-ht-single/1688452076?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1805970/zoo-main-ht"
     },
@@ -899,7 +969,7 @@
         "Catalogue Number": "HYP016",
         "Release Artist": "Snokie, HyperSOUL-X",
         "Release Title": "Khanyisa",
-        "Spotify": "https://open.spotify.com/album/0QIMtRQYp7mdskyo2ERZZD",
+        "Spotify": "https://open.spotify.com/album/5PcOVy9RBYem88SR6AGsGR",
         "Apple Music": "https://music.apple.com/us/album/khanyisa-single/1853640167?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1796679/khanyisa"
     },
@@ -907,7 +977,7 @@
         "Catalogue Number": "HYP015",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Twenty-Six (Main HT)",
-        "Spotify": "https://open.spotify.com/album/5rWlKqxp5s3KH3SMiCrFWU",
+        "Spotify": "https://open.spotify.com/album/4kQlACgzlM1XjMn8mx1gPG",
         "Apple Music": "https://music.apple.com/us/album/twenty-six-main-ht-single/1688452425?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1794723/twenty-six-main-ht"
     },
@@ -915,7 +985,7 @@
         "Catalogue Number": "HYP014",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Maji Matamu (Main HT)",
-        "Spotify": "https://open.spotify.com/album/0K3KmKQOJBMRDzLfc6koBI",
+        "Spotify": "https://open.spotify.com/album/1w7x6N0B7ERI1hoWnf1vMn",
         "Apple Music": "https://music.apple.com/us/album/maji-matamu-main-ht-single/1688452222?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1789632/maji-matamu-main-ht"
     },
@@ -923,7 +993,7 @@
         "Catalogue Number": "HYP013",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Woko (Main HT)",
-        "Spotify": "https://open.spotify.com/album/7rdV769KCpriFoDS657T68",
+        "Spotify": "https://open.spotify.com/album/7M2C4P4AQMnh6jdKLo6OLI",
         "Apple Music": "https://music.apple.com/us/album/woko-main-ht-single/1688418987?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1779664/woko-main-ht"
     },
@@ -931,7 +1001,7 @@
         "Catalogue Number": "HYP012",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Wara Wara (Main Ht)",
-        "Spotify": "https://open.spotify.com/album/5aWXvqxQ0LLRXeGfsvZU55",
+        "Spotify": "https://open.spotify.com/album/4xHVI0jiLGPrT4jaruRAQE",
         "Apple Music": "https://music.apple.com/us/album/wara-wara-main-ht-single/1688419031?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1772377/wara-wara-main-ht"
     },
@@ -939,7 +1009,7 @@
         "Catalogue Number": "HYP011",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Planet Dee EP 6",
-        "Spotify": "https://open.spotify.com/album/3B2WfSap7tjFrN3dQJfP3f",
+        "Spotify": "https://open.spotify.com/album/2BiDecJyvv9w9dvxI4qjGq",
         "Apple Music": "https://music.apple.com/us/album/planet-dee-ep-6/1688418999?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1762791/planet-dee-ep-6"
     },
@@ -955,7 +1025,7 @@
         "Catalogue Number": "HYP009",
         "Release Artist": "Fredy Massamba, DJ Satelite",
         "Release Title": "Abantu (HyperSOUL-X Mixes)",
-        "Spotify": "https://open.spotify.com/album/1hFDzOfiEb3HaCO2kAvY3t",
+        "Spotify": "https://open.spotify.com/album/2EK4QFUM5gvmhyjQs5S0xO",
         "Apple Music": "https://music.apple.com/us/album/abantu-hypersoul-x-mixes-single/1692218219?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1749542/abantu-hypersoul-x-mixes"
     },
@@ -971,7 +1041,7 @@
         "Catalogue Number": "HYP007",
         "Release Artist": "Stewie Le Savage, HyperSOUL-X",
         "Release Title": "uThando Lwakho",
-        "Spotify": "https://open.spotify.com/album/2nzstz6csI14zXp5NWM0XQ",
+        "Spotify": "https://open.spotify.com/album/1quMRYuItynk627uMekug3",
         "Apple Music": "https://music.apple.com/us/album/uthando-lwakho-single/1692218054?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1735482/uthando-lwakho"
     },
@@ -987,7 +1057,7 @@
         "Catalogue Number": "HYP005",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "Something",
-        "Spotify": "https://open.spotify.com/album/0kD8k6rROHbI0tdOn1KmnN",
+        "Spotify": "https://open.spotify.com/album/0Ha38H5sgEAqXAF2y9NyHh",
         "Apple Music": "https://music.apple.com/us/album/something-single/1692218294?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1728225/something-main-ht"
     },
@@ -995,7 +1065,7 @@
         "Catalogue Number": "HYP004",
         "Release Artist": "Sabrina Masenya, HyperSOUL-X",
         "Release Title": "How I Feel",
-        "Spotify": "https://open.spotify.com/album/1rxJ0bA6PWSyd8R0jurIOJ",
+        "Spotify": "https://open.spotify.com/album/22JeKsJ5vMWHG03Zok4j8f",
         "Apple Music": "https://music.apple.com/us/album/how-i-feel-ep/1692218213?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1728201/how-i-feel"
     },
@@ -1003,7 +1073,7 @@
         "Catalogue Number": "HYP003",
         "Release Artist": "HyperSOUL-X",
         "Release Title": "C'mon (Main HT)",
-        "Spotify": "https://open.spotify.com/album/4dSJexV2ZVjOunTjpvlT5r",
+        "Spotify": "https://open.spotify.com/album/7u86k8bDjlWowQjsK8l2Xj",
         "Apple Music": "https://music.apple.com/us/album/cmon-main-ht-single/1692218511?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1725584/cmon-main-ht"
     },
@@ -1011,7 +1081,7 @@
         "Catalogue Number": "HYP002",
         "Release Artist": "Ma-b, HyperSOUL-X",
         "Release Title": "AfriCan Melodies (Main V-HT)",
-        "Spotify": "https://open.spotify.com/album/6STGDtVwhD4N4Cd2kHbqRv",
+        "Spotify": "https://open.spotify.com/album/7d4WN9JyEtByD18lwNYSbq",
         "Apple Music": "https://music.apple.com/us/album/african-melodies-main-v-ht-single/1692354978?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1725585/african-melodies-main-v-ht"
     },
@@ -1019,7 +1089,7 @@
         "Catalogue Number": "HYP001",
         "Release Artist": "Snokie, HyperSOUL-X",
         "Release Title": "Love Me Hard",
-        "Spotify": "https://open.spotify.com/album/4aVjxoaAykIM0J0pFbRp82",
+        "Spotify": "https://open.spotify.com/album/71Gew1IZVhRARi376E9Mf2",
         "Apple Music": "https://music.apple.com/us/album/love-me-hard-single/1692217970?uo=4",
         "Traxsource": "https://www.traxsource.com/title/1722719/love-me-hard"
     }
