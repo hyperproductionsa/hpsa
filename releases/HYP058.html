@@ -47,9 +47,216 @@
     }
     </script>
     
-    <!-- ===== RELEASE CSS ===== -->
-    <link rel="stylesheet" href="/releases/release-style.css" />
+    <!-- ===== GLOBAL CSS ===== -->
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="https://hyperproduction.co.za/logo/site-icon.png" type="image/png" />
+    
+    <style>
+        /* ============================================
+           RELEASE DETAIL PAGE SPECIFIC STYLES
+           ============================================ */
+        .release-detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 100px 20px;
+            min-height: calc(100vh - 140px);
+            display: flex;
+            align-items: center;
+        }
+
+        .release-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            width: 100%;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .release-detail-grid {
+                grid-template-columns: 400px 1fr;
+            }
+        }
+
+        .release-artwork {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .release-artwork img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #2a2a2a;
+            max-width: 400px;
+        }
+
+        .release-stores {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .release-stores img {
+            height: 45px;
+            width: auto;
+            transition: opacity 0.3s;
+        }
+
+        .release-stores img:hover {
+            opacity: 0.7;
+        }
+
+        .release-stores a {
+            display: flex;
+        }
+
+        .release-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .release-info .artist-name {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+
+        .release-info .meta {
+            color: #aaaaaa;
+            margin-bottom: 8px;
+        }
+
+        .release-info .meta strong {
+            color: #ffffff;
+        }
+
+        .release-info .tracklist {
+            margin-top: 30px;
+        }
+
+        .release-info .tracklist p {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .release-info .tracklist ol {
+            padding-left: 0;
+            list-style: none;
+            color: #cccccc;
+        }
+
+        .release-info .tracklist ol li {
+            margin-bottom: 6px;
+            padding: 4px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .back-to-catalog {
+            display: inline-block;
+            margin-top: 40px;
+            background: transparent;
+            color: #e4de69;
+            border: 2px solid #e4de69;
+            padding: 10px 25px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 50px;
+            transition: background 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .back-to-catalog:hover {
+            background: #e4de69;
+            color: #000000;
+        }
+
+        .art-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            cursor: pointer;
+        }
+
+        .detail-art {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid #2a2a2a;
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 4px solid #e4de69;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid #e4de69;
+            margin-left: 5px;
+            display: block;
+        }
+
+        .pause-icon {
+            display: none;
+            width: 20px;
+            height: 30px;
+            border-left: 6px solid #e4de69;
+            border-right: 6px solid #e4de69;
+        }
+
+        @media (max-width: 768px) {
+            .release-detail-container {
+                padding: 100px 15px 80px 15px;
+                min-height: calc(100vh - 100px);
+            }
+            .release-detail-grid {
+                gap: 30px;
+            }
+            .release-stores img {
+                height: 38px;
+            }
+            .art-wrapper {
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .release-detail-container {
+                padding: 80px 10px 70px 10px;
+                min-height: calc(100vh - 80px);
+            }
+            .release-stores img {
+                height: 32px;
+            }
+            .art-wrapper {
+                max-width: 250px;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
@@ -90,7 +297,7 @@
             
             <!-- Right: Info -->
             <div class="release-info">
-                <h1>Mirame (Main HT)</h1>
+                <h2>Mirame (Main HT)</h2>
                 <p class="artist-name">HyperSOUL-X</p>
                 
                 <p class="meta"><strong>Catalog:</strong> HYP058</p>
