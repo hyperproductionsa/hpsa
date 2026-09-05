@@ -1,5 +1,5 @@
 // ============================================
-// HERO CAROUSEL
+// HERO CAROUSEL 
 // ============================================
 (function($) {
     const jsonUrl = 'https://cdn.hyperproduction.co.za/artworks/images.json';
