@@ -1,5 +1,5 @@
 // ============================================
-// RELEASE CATALOG - Search & Pagination
+// RELEASE CATALOG - Search & Pagination 
 // ============================================
 (function() {
     const perPage = 20;
