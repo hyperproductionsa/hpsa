@@ -7,10 +7,15 @@
     let currentAudio = null;
     let allTiles = [];
     let totalPages = 1;
+    let searchQuery = '';
 
     function initCatalog() {
         allTiles = document.querySelectorAll('.tile');
-        if (allTiles.length === 0) return;
+        if (allTiles.length === 0) {
+            console.log('No tiles found');
+            return;
+        }
+        console.log('Found ' + allTiles.length + ' tiles');
         
         // Check if we're on a detail page
         const path = window.location.pathname;
@@ -24,13 +29,7 @@
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
             searchInput.addEventListener('input', function() {
-                const query = this.value.trim().toLowerCase();
-                allTiles.forEach(tile => {
-                    const artist = tile.dataset.artist || '';
-                    const title = tile.dataset.title || '';
-                    const match = artist.includes(query) || title.includes(query);
-                    tile.style.display = match ? '' : 'none';
-                });
+                searchQuery = this.value.trim().toLowerCase();
                 currentPage = 1;
                 updatePagination();
             });
@@ -47,18 +46,20 @@
         }
         
         // Setup pagination number clicks
-        document.querySelectorAll('.page-num').forEach(el => {
+        document.querySelectorAll('.page-num').forEach(function(el) {
             el.addEventListener('click', function() {
-                currentPage = parseInt(this.dataset.page);
-                updatePagination();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                var page = parseInt(this.getAttribute('data-page'));
+                console.log('Clicked page: ' + page);
+                if (page && page !== currentPage) {
+                    currentPage = page;
+                    updatePagination();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
             });
         });
         
-        // Setup prev/next buttons
-        const prevBtn = document.getElementById('prev-page');
-        const nextBtn = document.getElementById('next-page');
-        
+        // Setup prev button
+        var prevBtn = document.getElementById('prev-page');
         if (prevBtn) {
             prevBtn.addEventListener('click', function() {
                 if (currentPage > 1) {
@@ -69,6 +70,8 @@
             });
         }
         
+        // Setup next button
+        var nextBtn = document.getElementById('next-page');
         if (nextBtn) {
             nextBtn.addEventListener('click', function() {
                 if (currentPage < totalPages) {
@@ -84,49 +87,66 @@
     }
 
     function updatePagination() {
-        // Get visible tiles (not hidden by search)
-        const visibleTiles = Array.from(allTiles).filter(t => t.style.display !== 'none');
-        const totalItems = visibleTiles.length;
+        // Get visible tiles based on search
+        var visibleTiles = [];
+        allTiles.forEach(function(tile) {
+            if (searchQuery) {
+                var artist = (tile.dataset.artist || '').toLowerCase();
+                var title = (tile.dataset.title || '').toLowerCase();
+                if (artist.indexOf(searchQuery) !== -1 || title.indexOf(searchQuery) !== -1) {
+                    visibleTiles.push(tile);
+                    tile.style.display = '';
+                } else {
+                    tile.style.display = 'none';
+                }
+            } else {
+                visibleTiles.push(tile);
+                tile.style.display = '';
+            }
+        });
+        
+        var totalItems = visibleTiles.length;
         totalPages = Math.ceil(totalItems / perPage);
+        if (totalPages === 0) totalPages = 1;
         
         // Clamp current page
         if (currentPage > totalPages) currentPage = totalPages;
         if (currentPage < 1) currentPage = 1;
-        if (totalPages === 0) totalPages = 1;
         
-        // Calculate start and end indices
-        const start = (currentPage - 1) * perPage;
-        const end = Math.min(start + perPage, totalItems);
+        // Calculate start and end
+        var start = (currentPage - 1) * perPage;
+        var end = Math.min(start + perPage, totalItems);
         
-        // Hide all tiles first
-        allTiles.forEach(tile => {
+        // Hide all tiles first, then show only current page
+        allTiles.forEach(function(tile) {
             tile.style.display = 'none';
         });
         
-        // Show only tiles for current page
-        for (let i = start; i < end; i++) {
-            const tile = visibleTiles[i];
+        // Show tiles for current page with animation
+        for (var i = start; i < end; i++) {
+            var tile = visibleTiles[i];
             if (tile) {
                 tile.style.display = '';
-                // Add fade animation
                 tile.style.opacity = '0';
                 tile.style.transform = 'translateY(15px)';
                 tile.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                setTimeout(() => {
-                    tile.style.opacity = '1';
-                    tile.style.transform = 'translateY(0)';
-                }, 30 + ((i - start) * 60));
+                (function(t, index) {
+                    setTimeout(function() {
+                        t.style.opacity = '1';
+                        t.style.transform = 'translateY(0)';
+                    }, 30 + ((index - start) * 60));
+                })(tile, i);
             }
         }
         
         // Update page selector
-        const pageSelect = document.getElementById('page-select');
+        var pageSelect = document.getElementById('page-select');
         if (pageSelect) {
             // Rebuild options if needed
             if (pageSelect.options.length !== totalPages) {
                 pageSelect.innerHTML = '';
-                for (let i = 1; i <= totalPages; i++) {
-                    const opt = document.createElement('option');
+                for (var i = 1; i <= totalPages; i++) {
+                    var opt = document.createElement('option');
                     opt.value = i;
                     opt.textContent = i;
                     if (i === currentPage) opt.selected = true;
@@ -138,26 +158,33 @@
         }
         
         // Update page number buttons
-        document.querySelectorAll('.page-num').forEach(el => {
-            const page = parseInt(el.dataset.page);
-            el.classList.toggle('active', page === currentPage);
+        var pageNums = document.querySelectorAll('.page-num');
+        pageNums.forEach(function(el) {
+            var page = parseInt(el.getAttribute('data-page'));
+            if (page === currentPage) {
+                el.classList.add('active');
+            } else {
+                el.classList.remove('active');
+            }
         });
         
         // Update prev/next buttons
-        const prevBtn = document.getElementById('prev-page');
-        const nextBtn = document.getElementById('next-page');
+        var prevBtn = document.getElementById('prev-page');
+        var nextBtn = document.getElementById('next-page');
         
         if (prevBtn) {
-            prevBtn.style.display = currentPage > 1 ? '' : 'none';
+            prevBtn.style.display = currentPage > 1 ? 'inline' : 'none';
         }
         if (nextBtn) {
-            nextBtn.style.display = currentPage < totalPages ? '' : 'none';
+            nextBtn.style.display = currentPage < totalPages ? 'inline' : 'none';
         }
+        
+        console.log('Page ' + currentPage + ' of ' + totalPages + ' (showing ' + (end - start) + ' of ' + totalItems + ' items)');
     }
 
     async function showDetails(cat) {
-        const detailsView = document.getElementById('details-view');
-        const gridView = document.getElementById('grid-view');
+        var detailsView = document.getElementById('details-view');
+        var gridView = document.getElementById('grid-view');
         
         if (gridView) gridView.style.display = 'none';
         if (detailsView) {
@@ -167,27 +194,27 @@
     }
 
     function initAudioPlayer(cat) {
-        const artClick = document.getElementById('art-click');
+        var artClick = document.getElementById('art-click');
         if (!artClick) return;
 
-        const sampleUrl = `https://cdn.hyperproduction.co.za/samples/${cat}.m4a`;
-        const audio = new Audio(sampleUrl);
-        const ui = document.getElementById('play-btn-ui');
-        const iconPlay = document.getElementById('icon-play');
-        const iconPause = document.getElementById('icon-pause');
+        var sampleUrl = 'https://cdn.hyperproduction.co.za/samples/' + cat + '.m4a';
+        var audio = new Audio(sampleUrl);
+        var ui = document.getElementById('play-btn-ui');
+        var iconPlay = document.getElementById('icon-play');
+        var iconPause = document.getElementById('icon-pause');
 
-        audio.oncanplaythrough = () => {
+        audio.oncanplaythrough = function() {
             if (ui) ui.style.display = 'flex';
         };
 
-        audio.onerror = () => {
+        audio.onerror = function() {
             if (ui) ui.style.display = 'none';
         };
 
-        const newArtClick = artClick.cloneNode(true);
+        var newArtClick = artClick.cloneNode(true);
         artClick.parentNode.replaceChild(newArtClick, artClick);
         
-        newArtClick.onclick = () => {
+        newArtClick.onclick = function() {
             if (audio.paused) {
                 audio.play();
                 if (iconPlay) iconPlay.style.display = 'none';
