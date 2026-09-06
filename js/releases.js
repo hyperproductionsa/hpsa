@@ -1,183 +1,150 @@
 // ============================================
-// RELEASE CATALOG - Full Functionality
+// RELEASE CATALOG - Search & Pagination Only
 // ============================================
 (function() {
-    let globalData = [],
-        storeLinks = {},
-        currentPage = 1,
-        currentAudio = null;
     const perPage = 20;
-    // Maximum catalog number that has HTML files (from stores.json)
-    let maxCatalogWithHTML = 0;
+    let currentPage = 1;
+    let currentAudio = null;
 
-    async function initCatalog() {
-        try {
-            const [relRes, storeRes] = await Promise.all([
-                fetch('/releases.json'),
-                fetch('/stores.json')
-            ]);
-
-            globalData = await relRes.json();
-
-            if (storeRes.ok) {
-                const rawStores = await storeRes.json();
-                rawStores.forEach(s => storeLinks[s["Catalogue Number"]] = s);
-                
-                // Find the highest catalog number with store links (HTML files)
-                rawStores.forEach(s => {
-                    const cat = s["Catalogue Number"];
-                    if (cat && cat.startsWith('HYP')) {
-                        const num = parseInt(cat.replace('HYP', ''));
-                        if (num > maxCatalogWithHTML) {
-                            maxCatalogWithHTML = num;
-                        }
-                    }
-                });
-                console.log(`📊 Max catalog with HTML: HYP${String(maxCatalogWithHTML).padStart(3, '0')}`);
-            }
-
-            // Filter globalData to only include releases that have HTML files
-            if (maxCatalogWithHTML > 0) {
-                globalData = globalData.filter(rel => {
-                    const num = parseInt(rel.cat.replace('HYP', ''));
-                    return num <= maxCatalogWithHTML;
-                });
-                console.log(`📄 Showing ${globalData.length} releases (up to HYP${String(maxCatalogWithHTML).padStart(3, '0')})`);
-            }
-
-            globalData.sort((a, b) => b.cat.localeCompare(a.cat));
-            
-            // Check if we're on a release detail page
-            const path = window.location.pathname;
-            const match = path.match(/\/releases\/(HYP\d+)\.html/);
-            if (match) {
-                showDetails(match[1]);
-            } else {
-                showGrid();
-            }
-            
-            // Still support hash for pagination
-            window.addEventListener('hashchange', function() {
-                const hash = window.location.hash.substring(1);
-                if (hash.startsWith('page-')) {
-                    currentPage = parseInt(hash.replace('page-', '')) || 1;
-                    showGrid();
-                }
-            });
-            
-        } catch (err) {
-            console.error("Load Error:", err);
-            const grid = document.getElementById('grid');
-            if (grid) {
-                grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">Failed to load releases. Please try again later.</p>';
-            }
-        }
-    }
-
-    function showGrid() {
-        if (currentAudio) {
-            currentAudio.pause();
-            currentAudio = null;
-        }
-
-        const detailsView = document.getElementById('details-view');
-        const gridView = document.getElementById('grid-view');
+    function initCatalog() {
+        const tiles = document.querySelectorAll('.tile');
+        if (tiles.length === 0) return;
         
-        if (detailsView) detailsView.style.display = 'none';
-        if (gridView) gridView.style.display = 'block';
-
-        const grid = document.getElementById('grid');
-        if (!grid) return;
-        
-        grid.innerHTML = '';
-
-        const start = (currentPage - 1) * perPage;
-        const end = Math.min(start + perPage, globalData.length);
-
-        if (globalData.length === 0) {
-            grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">No releases found.</p>';
+        // Check if we're on a detail page
+        const path = window.location.pathname;
+        const match = path.match(/\/releases\/(HYP\d+)\.html/);
+        if (match) {
+            showDetails(match[1]);
             return;
         }
-
-        for (let i = start; i < end; i++) {
-            const rel = globalData[i];
-            const div = document.createElement('div');
-            div.className = 'tile';
-            div.onclick = () => {
-                // Navigate to the actual HTML page
-                window.location.href = `/releases/${rel.cat}.html`;
-            };
-            div.innerHTML = `
-                <img src="https://cdn.hyperproduction.co.za/artworks/${rel.cat}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">
-                <div class="tile-info">
-                    <p class="artist">${rel.artist}</p>
-                    <p class="title">${rel.title}</p>
-                </div>
-            `;
-            grid.appendChild(div);
+        
+        // Setup search
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const query = this.value.trim().toLowerCase();
+                tiles.forEach(tile => {
+                    const artist = tile.dataset.artist || '';
+                    const title = tile.dataset.title || '';
+                    const match = artist.includes(query) || title.includes(query);
+                    tile.style.display = match ? 'flex' : 'none';
+                });
+                // Reset to page 1 after search
+                currentPage = 1;
+                updatePagination();
+            });
         }
-
-        renderPagination();
+        
+        // Setup page selector
+        const pageSelect = document.getElementById('page-select');
+        if (pageSelect) {
+            const totalPages = Math.ceil(tiles.length / perPage);
+            for (let i = 1; i <= totalPages; i++) {
+                const opt = document.createElement('option');
+                opt.value = i;
+                opt.textContent = i;
+                pageSelect.appendChild(opt);
+            }
+            pageSelect.addEventListener('change', function() {
+                currentPage = parseInt(this.value);
+                updatePagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        
+        // Setup pagination clicks
+        document.querySelectorAll('.page-num').forEach(el => {
+            el.addEventListener('click', function() {
+                currentPage = parseInt(this.dataset.page);
+                updatePagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+        
+        document.getElementById('prev-page')?.addEventListener('click', function() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        
+        document.getElementById('next-page')?.addEventListener('click', function() {
+            const totalPages = Math.ceil(tiles.length / perPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        
+        // Initial pagination
+        updatePagination();
     }
 
-    function renderPagination() {
-        const nav = document.getElementById('pagination');
-        if (!nav) return;
+    function updatePagination() {
+        const tiles = document.querySelectorAll('.tile');
+        const visibleTiles = Array.from(tiles).filter(t => t.style.display !== 'none');
+        const totalPages = Math.ceil(visibleTiles.length / perPage);
         
-        const total = Math.ceil(globalData.length / perPage);
-        nav.innerHTML = '';
-
-        if (total <= 1) return;
-
-        // Previous Arrow
-        if (currentPage > 1) {
-            const prev = document.createElement('span');
-            prev.className = 'page-arrow';
-            prev.innerHTML = '&laquo;';
-            prev.onclick = () => {
-                window.location.hash = `page-${currentPage - 1}`;
-            };
-            nav.appendChild(prev);
+        // Show/hide tiles
+        tiles.forEach((tile, index) => {
+            // Check if tile is visible (not hidden by search)
+            if (tile.style.display === 'none') return;
+            
+            const start = (currentPage - 1) * perPage;
+            const end = start + perPage;
+            if (index >= start && index < end) {
+                tile.style.display = 'flex';
+                tile.style.opacity = '0';
+                tile.style.transform = 'translateY(15px)';
+                setTimeout(() => {
+                    tile.style.opacity = '1';
+                    tile.style.transform = 'translateY(0)';
+                }, 30 + ((index - start) * 60));
+            } else {
+                tile.style.display = 'none';
+            }
+        });
+        
+        // Update page selector
+        const pageSelect = document.getElementById('page-select');
+        if (pageSelect) {
+            pageSelect.value = currentPage;
+            // Rebuild options if total pages changed
+            const currentTotal = pageSelect.options.length;
+            if (currentTotal !== totalPages) {
+                pageSelect.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const opt = document.createElement('option');
+                    opt.value = i;
+                    opt.textContent = i;
+                    if (i === currentPage) opt.selected = true;
+                    pageSelect.appendChild(opt);
+                }
+            }
         }
-
-        // Page numbers (max 5)
-        let start = Math.max(1, currentPage - 2);
-        let end = Math.min(total, start + 4);
-        if (end - start < 4) start = Math.max(1, end - 4);
-
-        for (let i = start; i <= end; i++) {
-            const span = document.createElement('span');
-            span.className = 'page-num' + (i === currentPage ? ' active' : '');
-            span.innerText = i;
-            span.onclick = () => {
-                window.location.hash = `page-${i}`;
-            };
-            nav.appendChild(span);
-        }
-
-        // Next Arrow
-        if (currentPage < total) {
-            const next = document.createElement('span');
-            next.className = 'page-arrow';
-            next.innerHTML = '&raquo;';
-            next.onclick = () => {
-                window.location.hash = `page-${currentPage + 1}`;
-            };
-            nav.appendChild(next);
-        }
+        
+        // Update page numbers
+        document.querySelectorAll('.page-num').forEach(el => {
+            const page = parseInt(el.dataset.page);
+            el.classList.toggle('active', page === currentPage);
+        });
+        
+        // Update arrows
+        const prevBtn = document.getElementById('prev-page');
+        const nextBtn = document.getElementById('next-page');
+        if (prevBtn) prevBtn.style.display = currentPage > 1 ? 'inline' : 'none';
+        if (nextBtn) nextBtn.style.display = currentPage < totalPages ? 'inline' : 'none';
     }
 
     async function showDetails(cat) {
-        // This is now only called when directly loading a release HTML page
-        // The HTML already contains all the details, so we just need to show it
         const detailsView = document.getElementById('details-view');
         const gridView = document.getElementById('grid-view');
         
         if (gridView) gridView.style.display = 'none';
         if (detailsView) {
             detailsView.style.display = 'block';
-            // The content is already in the page (loaded from the HTML)
-            // We just need to make sure the audio player works
             initAudioPlayer(cat);
         }
     }
@@ -200,7 +167,6 @@
             if (ui) ui.style.display = 'none';
         };
 
-        // Remove old event listeners by cloning
         const newArtClick = artClick.cloneNode(true);
         artClick.parentNode.replaceChild(newArtClick, artClick);
         
@@ -217,7 +183,6 @@
         };
     }
 
-    // Initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initCatalog);
     } else {
