@@ -1,1 +1,229 @@
-!function(){let e=[],t={},n=1,o=null;const a=20;let i=0;async function r(){try{const[t,n]=await Promise.all([fetch("/releases.json"),fetch("/stores.json")]);if(e=await t.json(),n.ok){const o=await n.json();o.forEach(e=>{t[e["Catalogue Number"]]=e}),o.forEach(e=>{const t=e["Catalogue Number"];if(t&&t.startsWith("HYP")){const n=parseInt(t.replace("HYP",""));n>i&&(i=n)}}),console.log(`📊 Max catalog with HTML: HYP${String(i).padStart(3,"0")}`)}i>0&&(e=e.filter(e=>{const t=parseInt(e.cat.replace("HYP",""));return t<=i}),console.log(`📄 Showing ${e.length} releases (up to HYP${String(i).padStart(3,"0")}`)),e.sort((e,t)=>t.cat.localeCompare(e.cat));const o=window.location.pathname,a=o.match(/\/releases\/(HYP\d+)\.html/);a?l(a[1]):c(),window.addEventListener("hashchange",function(){const e=window.location.hash.substring(1);e.startsWith("page-")&&(n=parseInt(e.replace("page-",""))||1,c(),window.scrollTo({top:0,behavior:"smooth"}))})}catch(e){console.error("Load Error:",e);const t=document.getElementById("grid");t&&(t.innerHTML='<p style="color:#fff;text-align:center;padding:40px;">Failed to load releases. Please try again later.</p>')}}function c(){o&&(o.pause(),o=null);const e=document.getElementById("details-view"),t=document.getElementById("grid-view");e&&(e.style.display="none"),t&&(t.style.display="block");const n=document.getElementById("grid");if(!n)return;n.innerHTML="";const a=(n-1)*i,r=Math.min(a+i,e.length);if(0===e.length){n.innerHTML='<p style="color:#fff;text-align:center;padding:40px;">No releases found.</p>';return}const c=[];for(let t=a;t<r;t++){const o=e[t],a=document.createElement("div");a.className="tile",a.style.opacity="0",a.style.transform="translateY(15px)",a.style.transition="opacity 0.4s ease, transform 0.4s ease",a.onclick=()=>{window.location.href=`/releases/${o.cat}.html`},a.innerHTML=`\n                <img src="https://cdn.hyperproduction.co.za/artworks/${o.cat}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">\n                <div class="tile-info">\n                    <p class="artist">${o.artist}</p>\n                    <p class="title">${o.title}</p>\n                </div>\n            `,n.appendChild(a),c.push(a)}c.forEach((e,t)=>{setTimeout(()=>{e.style.opacity="1",e.style.transform="translateY(0)"},30+60*t)}),s()}function s(){const t=document.getElementById("pagination");if(!t)return;const o=Math.ceil(e.length/a);t.innerHTML="";if(o<=1)return;if(n>1){const e=document.createElement("span");e.className="page-arrow",e.innerHTML="&laquo;",e.onclick=()=>{window.location.hash=`page-${n-1}`},t.appendChild(e)}let i=Math.max(1,n-2),r=Math.min(o,i+4);r-i<4&&(i=Math.max(1,r-4));for(let e=i;e<=r;e++){const a=document.createElement("span");a.className="page-num"+(e===n?" active":""),a.innerText=e,a.onclick=()=>{window.location.hash=`page-${e}`},t.appendChild(a)}if(n<o){const e=document.createElement("span");e.className="page-arrow",e.innerHTML="&raquo;",e.onclick=()=>{window.location.hash=`page-${n+1}`},t.appendChild(e)}}async function l(e){const t=document.getElementById("details-view"),n=document.getElementById("grid-view");n&&(n.style.display="none"),t&&(t.style.display="block",d(e))}function d(e){const t=document.getElementById("art-click");if(!t)return;const n=`https://cdn.hyperproduction.co.za/samples/${e}.m4a`,a=new Audio(n),i=document.getElementById("play-btn-ui"),r=document.getElementById("icon-play"),c=document.getElementById("icon-pause");a.oncanplaythrough=()=>{i&&(i.style.display="flex")},a.onerror=()=>{i&&(i.style.display="none")};const s=t.cloneNode(!0);t.parentNode.replaceChild(s,t),s.onclick=()=>{a.paused?(a.play(),r&&(r.style.display="none"),c&&(c.style.display="block")):(a.pause(),r&&(r.style.display="block"),c&&(c.style.display="none"))}}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r()}();
+// ============================================
+// RELEASE CATALOG - Full Functionality
+// ============================================
+(function() {
+    let globalData = [],
+        storeLinks = {},
+        currentPage = 1,
+        currentAudio = null;
+    const perPage = 20;
+    let maxCatalogWithHTML = 0;
+
+    async function initCatalog() {
+        try {
+            const [relRes, storeRes] = await Promise.all([
+                fetch('/releases.json'),
+                fetch('/stores.json')
+            ]);
+
+            globalData = await relRes.json();
+
+            if (storeRes.ok) {
+                const rawStores = await storeRes.json();
+                rawStores.forEach(s => storeLinks[s["Catalogue Number"]] = s);
+                
+                rawStores.forEach(s => {
+                    const cat = s["Catalogue Number"];
+                    if (cat && cat.startsWith('HYP')) {
+                        const num = parseInt(cat.replace('HYP', ''));
+                        if (num > maxCatalogWithHTML) {
+                            maxCatalogWithHTML = num;
+                        }
+                    }
+                });
+                console.log(`📊 Max catalog with HTML: HYP${String(maxCatalogWithHTML).padStart(3, '0')}`);
+            }
+
+            if (maxCatalogWithHTML > 0) {
+                globalData = globalData.filter(rel => {
+                    const num = parseInt(rel.cat.replace('HYP', ''));
+                    return num <= maxCatalogWithHTML;
+                });
+                console.log(`📄 Showing ${globalData.length} releases (up to HYP${String(maxCatalogWithHTML).padStart(3, '0')})`);
+            }
+
+            globalData.sort((a, b) => b.cat.localeCompare(a.cat));
+            
+            const path = window.location.pathname;
+            const match = path.match(/\/releases\/(HYP\d+)\.html/);
+            if (match) {
+                showDetails(match[1]);
+            } else {
+                showGrid();
+            }
+            
+            window.addEventListener('hashchange', function() {
+                const hash = window.location.hash.substring(1);
+                if (hash.startsWith('page-')) {
+                    currentPage = parseInt(hash.replace('page-', '')) || 1;
+                    showGrid();
+                    // SCROLL TO TOP ON PAGE CHANGE
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+            
+        } catch (err) {
+            console.error("Load Error:", err);
+            const grid = document.getElementById('grid');
+            if (grid) {
+                grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">Failed to load releases. Please try again later.</p>';
+            }
+        }
+    }
+
+    function showGrid() {
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio = null;
+        }
+
+        const detailsView = document.getElementById('details-view');
+        const gridView = document.getElementById('grid-view');
+        
+        if (detailsView) detailsView.style.display = 'none';
+        if (gridView) gridView.style.display = 'block';
+
+        const grid = document.getElementById('grid');
+        if (!grid) return;
+        
+        grid.innerHTML = '';
+
+        const start = (currentPage - 1) * perPage;
+        const end = Math.min(start + perPage, globalData.length);
+
+        if (globalData.length === 0) {
+            grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">No releases found.</p>';
+            return;
+        }
+
+        // Build tiles with animation
+        const tiles = [];
+        for (let i = start; i < end; i++) {
+            const rel = globalData[i];
+            const div = document.createElement('div');
+            div.className = 'tile';
+            div.style.opacity = '0';
+            div.style.transform = 'translateY(15px)';
+            div.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            
+            div.onclick = () => {
+                window.location.href = `/releases/${rel.cat}.html`;
+            };
+            
+            div.innerHTML = `
+                <img src="https://cdn.hyperproduction.co.za/artworks/${rel.cat}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'">
+                <div class="tile-info">
+                    <p class="artist">${rel.artist}</p>
+                    <p class="title">${rel.title}</p>
+                </div>
+            `;
+            grid.appendChild(div);
+            tiles.push(div);
+        }
+
+        // Staggered fade-in
+        tiles.forEach((tile, index) => {
+            setTimeout(() => {
+                tile.style.opacity = '1';
+                tile.style.transform = 'translateY(0)';
+            }, 30 + (index * 60));
+        });
+
+        renderPagination();
+    }
+
+    function renderPagination() {
+        const nav = document.getElementById('pagination');
+        if (!nav) return;
+        
+        const total = Math.ceil(globalData.length / perPage);
+        nav.innerHTML = '';
+
+        if (total <= 1) return;
+
+        if (currentPage > 1) {
+            const prev = document.createElement('span');
+            prev.className = 'page-arrow';
+            prev.innerHTML = '&laquo;';
+            prev.onclick = () => {
+                window.location.hash = `page-${currentPage - 1}`;
+            };
+            nav.appendChild(prev);
+        }
+
+        let start = Math.max(1, currentPage - 2);
+        let end = Math.min(total, start + 4);
+        if (end - start < 4) start = Math.max(1, end - 4);
+
+        for (let i = start; i <= end; i++) {
+            const span = document.createElement('span');
+            span.className = 'page-num' + (i === currentPage ? ' active' : '');
+            span.innerText = i;
+            span.onclick = () => {
+                window.location.hash = `page-${i}`;
+            };
+            nav.appendChild(span);
+        }
+
+        if (currentPage < total) {
+            const next = document.createElement('span');
+            next.className = 'page-arrow';
+            next.innerHTML = '&raquo;';
+            next.onclick = () => {
+                window.location.hash = `page-${currentPage + 1}`;
+            };
+            nav.appendChild(next);
+        }
+    }
+
+    async function showDetails(cat) {
+        const detailsView = document.getElementById('details-view');
+        const gridView = document.getElementById('grid-view');
+        
+        if (gridView) gridView.style.display = 'none';
+        if (detailsView) {
+            detailsView.style.display = 'block';
+            initAudioPlayer(cat);
+        }
+    }
+
+    function initAudioPlayer(cat) {
+        const artClick = document.getElementById('art-click');
+        if (!artClick) return;
+
+        const sampleUrl = `https://cdn.hyperproduction.co.za/samples/${cat}.m4a`;
+        const audio = new Audio(sampleUrl);
+        const ui = document.getElementById('play-btn-ui');
+        const iconPlay = document.getElementById('icon-play');
+        const iconPause = document.getElementById('icon-pause');
+
+        audio.oncanplaythrough = () => {
+            if (ui) ui.style.display = 'flex';
+        };
+
+        audio.onerror = () => {
+            if (ui) ui.style.display = 'none';
+        };
+
+        const newArtClick = artClick.cloneNode(true);
+        artClick.parentNode.replaceChild(newArtClick, artClick);
+        
+        newArtClick.onclick = () => {
+            if (audio.paused) {
+                audio.play();
+                if (iconPlay) iconPlay.style.display = 'none';
+                if (iconPause) iconPause.style.display = 'block';
+            } else {
+                audio.pause();
+                if (iconPlay) iconPlay.style.display = 'block';
+                if (iconPause) iconPause.style.display = 'none';
+            }
+        };
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCatalog);
+    } else {
+        initCatalog();
+    }
+})();
