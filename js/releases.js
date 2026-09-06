@@ -1,12 +1,14 @@
 // ============================================
-// RELEASE CATALOG - Search & Pagination
+// RELEASE CATALOG - Search & Pagination (JSON-driven)
 // ============================================
 (function() {
     const perPage = 20;
     let currentPage = 1;
-    let allTiles = [];
+    let allReleases = [];
+    let filteredReleases = [];
     let totalPages = 1;
     let searchQuery = '';
+    let maxCatalogWithStore = 0;
 
     function getPageFromURL() {
         const params = new URLSearchParams(window.location.search);
@@ -23,108 +25,141 @@
         window.history.pushState({}, '', url);
     }
 
-    function initCatalog() {
-        // Get page from URL
-        currentPage = getPageFromURL();
-        
-        allTiles = document.querySelectorAll('.tile');
-        if (allTiles.length === 0) {
-            console.log('No tiles found');
-            return;
-        }
-        console.log('Found ' + allTiles.length + ' tiles');
-        
-        // Setup search
-        const searchInput = document.getElementById('search-input');
-        if (searchInput) {
-            searchInput.addEventListener('input', function() {
-                searchQuery = this.value.trim().toLowerCase();
-                currentPage = 1;
-                updateURL(currentPage);
-                updatePagination();
+    async function initCatalog() {
+        try {
+            // Fetch both JSON files
+            const [releasesRes, storesRes] = await Promise.all([
+                fetch('/releases.json'),
+                fetch('/stores.json')
+            ]);
+
+            const allReleasesData = await releasesRes.json();
+            
+            // Get max catalog from stores
+            if (storesRes.ok) {
+                const storesData = await storesRes.json();
+                storesData.forEach(function(store) {
+                    const cat = store["Catalogue Number"];
+                    if (cat && cat.startsWith('HYP')) {
+                        const num = parseInt(cat.replace('HYP', ''));
+                        if (num > maxCatalogWithStore) {
+                            maxCatalogWithStore = num;
+                        }
+                    }
+                });
+                console.log('📊 Max catalog with store links: HYP' + String(maxCatalogWithStore).padStart(3, '0'));
+            }
+
+            // Filter releases: only those that have store links
+            allReleases = allReleasesData.filter(function(rel) {
+                const num = parseInt(rel.cat.replace('HYP', ''));
+                return num <= maxCatalogWithStore;
             });
-        }
-        
-        // Setup page selector
-        const pageSelect = document.getElementById('page-select');
-        if (pageSelect) {
-            pageSelect.addEventListener('change', function() {
-                currentPage = parseInt(this.value);
-                updateURL(currentPage);
-                updatePagination();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            console.log('📄 Showing ' + allReleases.length + ' releases (up to HYP' + String(maxCatalogWithStore).padStart(3, '0') + ')');
+            
+            // Sort by catalog number (newest first)
+            allReleases.sort(function(a, b) {
+                return b.cat.localeCompare(a.cat);
             });
-        }
-        
-        // Setup pagination number clicks
-        document.querySelectorAll('.page-num').forEach(function(el) {
-            el.addEventListener('click', function() {
-                var page = parseInt(this.getAttribute('data-page'));
-                if (page && page !== currentPage) {
-                    currentPage = page;
-                    updateURL(currentPage);
-                    updatePagination();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-        });
-        
-        // Setup prev button
-        var prevBtn = document.getElementById('prev-page');
-        if (prevBtn) {
-            prevBtn.addEventListener('click', function() {
-                if (currentPage > 1) {
-                    currentPage--;
-                    updateURL(currentPage);
-                    updatePagination();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-        }
-        
-        // Setup next button
-        var nextBtn = document.getElementById('next-page');
-        if (nextBtn) {
-            nextBtn.addEventListener('click', function() {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    updateURL(currentPage);
-                    updatePagination();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            });
-        }
-        
-        // Handle back/forward buttons
-        window.addEventListener('popstate', function() {
+            
+            filteredReleases = [...allReleases];
+            
+            // Get page from URL
             currentPage = getPageFromURL();
-            updatePagination();
-        });
-        
-        // Initial pagination
-        updatePagination();
+            
+            // Build the grid
+            buildGrid();
+            
+            // Setup search
+            const searchInput = document.getElementById('search-input');
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    searchQuery = this.value.trim().toLowerCase();
+                    currentPage = 1;
+                    updateURL(currentPage);
+                    buildGrid();
+                });
+            }
+            
+            // Setup page selector
+            const pageSelect = document.getElementById('page-select');
+            if (pageSelect) {
+                pageSelect.addEventListener('change', function() {
+                    currentPage = parseInt(this.value);
+                    updateURL(currentPage);
+                    buildGrid();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Setup pagination number clicks
+            document.querySelectorAll('.page-num').forEach(function(el) {
+                el.addEventListener('click', function() {
+                    var page = parseInt(this.getAttribute('data-page'));
+                    if (page && page !== currentPage) {
+                        currentPage = page;
+                        updateURL(currentPage);
+                        buildGrid();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Setup prev button
+            var prevBtn = document.getElementById('prev-page');
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        updateURL(currentPage);
+                        buildGrid();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            }
+            
+            // Setup next button
+            var nextBtn = document.getElementById('next-page');
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        updateURL(currentPage);
+                        buildGrid();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
+            }
+            
+            // Handle back/forward buttons
+            window.addEventListener('popstate', function() {
+                currentPage = getPageFromURL();
+                buildGrid();
+            });
+            
+        } catch (err) {
+            console.error('Failed to load releases:', err);
+            const grid = document.getElementById('grid');
+            if (grid) {
+                grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;">Failed to load releases. Please try again later.</p>';
+            }
+        }
     }
 
-    function updatePagination() {
-        // Get visible tiles based on search
-        var visibleTiles = [];
-        allTiles.forEach(function(tile) {
-            if (searchQuery) {
-                var artist = (tile.dataset.artist || '').toLowerCase();
-                var title = (tile.dataset.title || '').toLowerCase();
-                if (artist.indexOf(searchQuery) !== -1 || title.indexOf(searchQuery) !== -1) {
-                    visibleTiles.push(tile);
-                    tile.style.display = '';
-                } else {
-                    tile.style.display = 'none';
-                }
-            } else {
-                visibleTiles.push(tile);
-                tile.style.display = '';
-            }
-        });
+    function buildGrid() {
+        // Filter based on search
+        if (searchQuery) {
+            filteredReleases = allReleases.filter(function(rel) {
+                return rel.artist.toLowerCase().indexOf(searchQuery) !== -1 ||
+                       rel.title.toLowerCase().indexOf(searchQuery) !== -1 ||
+                       rel.cat.toLowerCase().indexOf(searchQuery) !== -1;
+            });
+        } else {
+            filteredReleases = [...allReleases];
+        }
         
-        var totalItems = visibleTiles.length;
+        var totalItems = filteredReleases.length;
         totalPages = Math.ceil(totalItems / perPage);
         if (totalPages === 0) totalPages = 1;
         
@@ -136,27 +171,61 @@
         var start = (currentPage - 1) * perPage;
         var end = Math.min(start + perPage, totalItems);
         
-        // Hide all tiles first
-        allTiles.forEach(function(tile) {
-            tile.style.display = 'none';
-        });
+        // Get the grid element
+        var grid = document.getElementById('grid');
+        if (!grid) return;
         
-        // Show tiles for current page
-        for (var i = start; i < end; i++) {
-            var tile = visibleTiles[i];
-            if (tile) {
-                tile.style.display = '';
-                tile.style.opacity = '0';
-                tile.style.transform = 'translateY(15px)';
-                tile.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                (function(t, idx) {
-                    setTimeout(function() {
-                        t.style.opacity = '1';
-                        t.style.transform = 'translateY(0)';
-                    }, 30 + ((idx - start) * 60));
-                })(tile, i);
-            }
+        // Clear grid
+        grid.innerHTML = '';
+        
+        // Show "no results" message
+        if (totalItems === 0) {
+            grid.innerHTML = '<p style="color:#fff;text-align:center;padding:40px;font-family:Roboto,Arial,sans-serif;">No releases found</p>';
+            updatePaginationControls();
+            return;
         }
+        
+        // Build tiles for current page
+        for (var i = start; i < end; i++) {
+            var rel = filteredReleases[i];
+            var div = document.createElement('div');
+            div.className = 'tile';
+            div.onclick = function(cat) {
+                return function() {
+                    window.location.href = '/releases/' + cat + '.html';
+                };
+            }(rel.cat);
+            
+            div.innerHTML = 
+                '<img src="https://cdn.hyperproduction.co.za/artworks/' + rel.cat + '.png" onerror="this.src=\'https://hyperproduction.co.za/placeholder.png\'">' +
+                '<div class="tile-info">' +
+                    '<p class="artist">' + rel.artist + '</p>' +
+                    '<p class="title">' + rel.title + '</p>' +
+                '</div>';
+            
+            // Animation
+            div.style.opacity = '0';
+            div.style.transform = 'translateY(15px)';
+            div.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            
+            grid.appendChild(div);
+            
+            // Staggered fade-in
+            (function(el, idx) {
+                setTimeout(function() {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 30 + ((idx - start) * 60));
+            })(div, i);
+        }
+        
+        updatePaginationControls();
+    }
+
+    function updatePaginationControls() {
+        var totalItems = filteredReleases.length;
+        totalPages = Math.ceil(totalItems / perPage);
+        if (totalPages === 0) totalPages = 1;
         
         // Update page selector
         var pageSelect = document.getElementById('page-select');
