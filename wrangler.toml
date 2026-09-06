@@ -1,3 +1,6 @@
+name = "hpsa"
+compatibility_date = "2026-09-03"
+
 [assets]
-directory = "./"                          # keep whatever's already there
-not_found_handling = "404-page"           # add this line
+directory = "./"
+not_found_handling = "404-page"
