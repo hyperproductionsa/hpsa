@@ -1,5 +1,5 @@
 // ============================================
-// RELEASE CATALOG - Search & Pagination 
+// RELEASE CATALOG - Search & Pagination
 // ============================================
 (function() {
     const perPage = 20;
@@ -49,7 +49,6 @@
         document.querySelectorAll('.page-num').forEach(function(el) {
             el.addEventListener('click', function() {
                 var page = parseInt(this.getAttribute('data-page'));
-                console.log('Clicked page: ' + page);
                 if (page && page !== currentPage) {
                     currentPage = page;
                     updatePagination();
@@ -117,12 +116,12 @@
         var start = (currentPage - 1) * perPage;
         var end = Math.min(start + perPage, totalItems);
         
-        // Hide all tiles first, then show only current page
+        // Hide all tiles first
         allTiles.forEach(function(tile) {
             tile.style.display = 'none';
         });
         
-        // Show tiles for current page with animation
+        // Show tiles for current page
         for (var i = start; i < end; i++) {
             var tile = visibleTiles[i];
             if (tile) {
@@ -130,11 +129,12 @@
                 tile.style.opacity = '0';
                 tile.style.transform = 'translateY(15px)';
                 tile.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                (function(t, index) {
+                // Use a closure to capture the correct tile and index
+                (function(t, idx) {
                     setTimeout(function() {
                         t.style.opacity = '1';
                         t.style.transform = 'translateY(0)';
-                    }, 30 + ((index - start) * 60));
+                    }, 30 + ((idx - start) * 60));
                 })(tile, i);
             }
         }
@@ -142,7 +142,6 @@
         // Update page selector
         var pageSelect = document.getElementById('page-select');
         if (pageSelect) {
-            // Rebuild options if needed
             if (pageSelect.options.length !== totalPages) {
                 pageSelect.innerHTML = '';
                 for (var i = 1; i <= totalPages; i++) {
@@ -179,7 +178,7 @@
             nextBtn.style.display = currentPage < totalPages ? 'inline' : 'none';
         }
         
-        console.log('Page ' + currentPage + ' of ' + totalPages + ' (showing ' + (end - start) + ' of ' + totalItems + ' items)');
+        console.log('Page ' + currentPage + ' of ' + totalPages);
     }
 
     async function showDetails(cat) {
