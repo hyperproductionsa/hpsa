@@ -1,5 +1,5 @@
 // ============================================
-// RELEASE CATALOG - Search & Pagination (JSON-driven)
+// RELEASE CATALOG - Search & Pagination
 // ============================================
 (function() {
     const perPage = 20;
@@ -188,27 +188,67 @@
         // Build tiles for current page
         for (var i = start; i < end; i++) {
             var rel = filteredReleases[i];
-            var div = document.createElement('div');
-            div.className = 'tile';
-            div.onclick = function(cat) {
-                return function() {
-                    window.location.href = '/releases/' + cat + '.html';
-                };
-            }(rel.cat);
             
-            div.innerHTML = 
-                '<img src="https://cdn.hyperproduction.co.za/artworks/' + rel.cat + '.png" onerror="this.src=\'https://hyperproduction.co.za/placeholder.png\'">' +
-                '<div class="tile-info">' +
-                    '<p class="artist">' + rel.artist + '</p>' +
-                    '<p class="title">' + rel.title + '</p>' +
-                '</div>';
+            // Create link wrapper
+            var link = document.createElement('a');
+            link.href = '/releases/' + rel.cat + '.html';
+            link.className = 'tile';
+            link.style.display = 'flex';
+            link.style.flexDirection = 'column';
+            link.style.textDecoration = 'none';
+            link.style.color = 'inherit';
+            link.style.border = '2px solid #2a2a2a';
+            link.style.padding = '10px';
+            link.style.background = '#111';
+            link.style.borderRadius = '8px';
+            link.style.transition = 'border-color 0.3s, transform 0.3s';
+            link.style.aspectRatio = '3/4';
+            link.style.overflow = 'hidden';
+            link.style.cursor = 'pointer';
+            
+            // Hover styles via CSS
+            link.onmouseenter = function() {
+                this.style.borderColor = '#e4de69';
+                this.style.transform = 'translateY(-4px)';
+            };
+            link.onmouseleave = function() {
+                this.style.borderColor = '#2a2a2a';
+                this.style.transform = 'translateY(0)';
+            };
+            
+            // Image
+            var img = document.createElement('img');
+            img.src = 'https://cdn.hyperproduction.co.za/artworks/' + rel.cat + '.png';
+            img.onerror = function() { this.src = 'https://hyperproduction.co.za/placeholder.png'; };
+            img.style.width = '100%';
+            img.style.height = 'auto';
+            img.style.display = 'block';
+            img.style.borderRadius = '4px';
+            img.style.flexShrink = '0';
+            
+            // Info
+            var info = document.createElement('div');
+            info.className = 'tile-info';
+            info.style.marginTop = '8px';
+            info.style.lineHeight = '1.3';
+            info.style.flex = '1';
+            info.style.display = 'flex';
+            info.style.flexDirection = 'column';
+            info.style.justifyContent = 'flex-start';
+            info.style.overflow = 'hidden';
+            info.style.minHeight = '0';
+            info.innerHTML = '<p class="artist" style="font-weight:700;margin:0;font-size:14px;color:#e4de69;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.artist + '</p>' +
+                             '<p class="title" style="margin:0;font-size:12px;color:#ccc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.title + '</p>';
+            
+            link.appendChild(img);
+            link.appendChild(info);
             
             // Animation
-            div.style.opacity = '0';
-            div.style.transform = 'translateY(15px)';
-            div.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            link.style.opacity = '0';
+            link.style.transform = 'translateY(15px)';
+            link.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
             
-            grid.appendChild(div);
+            grid.appendChild(link);
             
             // Staggered fade-in
             (function(el, idx) {
@@ -216,7 +256,7 @@
                     el.style.opacity = '1';
                     el.style.transform = 'translateY(0)';
                 }, 30 + ((idx - start) * 60));
-            })(div, i);
+            })(link, i);
         }
         
         updatePaginationControls();
