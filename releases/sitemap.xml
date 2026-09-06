@@ -840,4 +840,10 @@
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
+    <url>
+        <loc>https://hyperproduction.co.za/releases/HYP140.html</loc>
+        <lastmod>2026-09-06</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
