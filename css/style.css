@@ -10,11 +10,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* ============================================
-   TYPOGRAPHY - UPDATED (H1 = 56px, proper ratios)
+   TYPOGRAPHY - UPDATED (H1 = 56px, proper ratios, margin-bottom: 10px)
    ============================================ */
-h1{font-family:'HyperPixel',sans-serif!important;font-size:56px!important;letter-spacing:-18px!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-left:-14px!important;margin-bottom:0!important;font-weight:400!important}
+h1{font-family:'HyperPixel',sans-serif!important;font-size:56px!important;letter-spacing:-18px!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-left:-14px!important;margin-bottom:10px!important;font-weight:400!important}
 
-h2{font-family:'HyperPixel',sans-serif!important;font-size:32px!important;letter-spacing:-10px!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-bottom:0!important;margin-left:-8px!important;font-weight:400!important}
+h2{font-family:'HyperPixel',sans-serif!important;font-size:32px!important;letter-spacing:-10px!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-bottom:10px!important;margin-left:-8px!important;font-weight:400!important}
 
 h3{font-family:'Roboto',Arial,sans-serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;text-transform:uppercase;color:#e4de69;margin-top:30px;margin-bottom:12px;text-align:center}
 
