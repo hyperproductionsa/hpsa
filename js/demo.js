@@ -1,5 +1,5 @@
 // ============================================
-// DEMO SUBMISSION - Web3Forms Handler with Link Validation
+// DEMO SUBMISSION - AJAX (No Page Reload)
 // ============================================
 (function() {
     const form = document.getElementById('demo-form');
@@ -12,27 +12,18 @@
     const formContainer = document.getElementById('demo-form-container');
     const demoLink = document.getElementById('demo-link');
 
-    // Check if URL has success parameter
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        formContainer.style.display = 'none';
-        successMessage.style.display = 'block';
-    }
-
     // Validate demo link
     function validateDemoLink(url) {
         if (!url) return false;
         
         const lowerUrl = url.toLowerCase();
         
-        // Check if it's a valid URL
         try {
             new URL(url);
         } catch {
             return false;
         }
         
-        // Allowed platforms
         const allowed = [
             'soundcloud.com',
             'drive.google.com',
@@ -42,15 +33,6 @@
         ];
         
         return allowed.some(domain => lowerUrl.includes(domain));
-    }
-
-    // Get platform name from URL
-    function getPlatformName(url) {
-        const lowerUrl = url.toLowerCase();
-        if (lowerUrl.includes('soundcloud')) return 'SoundCloud';
-        if (lowerUrl.includes('google')) return 'Google Drive';
-        if (lowerUrl.includes('dropbox')) return 'Dropbox';
-        return 'Unknown';
     }
 
     // Real-time validation on input
@@ -64,8 +46,10 @@
         }
     });
 
-    // Form submission
+    // Form submission - AJAX
     form.addEventListener('submit', function(e) {
+        e.preventDefault(); // STOP page reload
+        
         // Clear previous errors
         errorMessage.classList.remove('show');
         linkError.classList.remove('show');
@@ -73,7 +57,6 @@
         // Validate demo link
         const url = demoLink.value.trim();
         if (!validateDemoLink(url)) {
-            e.preventDefault();
             linkError.textContent = '⚠️ Please use a valid Google Drive, Dropbox, or SoundCloud link.';
             linkError.classList.add('show');
             demoLink.focus();
@@ -84,11 +67,36 @@
         submitBtn.disabled = true;
         submitText.textContent = 'Submitting...';
         submitSpinner.classList.add('show');
-    });
 
-    // If there's an error from Web3Forms
-    if (urlParams.get('error') === 'true') {
-        errorMessage.textContent = 'Something went wrong. Please try again.';
-        errorMessage.classList.add('show');
-    }
+        // Build form data
+        const formData = new FormData(form);
+
+        // Send via AJAX to Web3Forms
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Show success message
+                formContainer.style.display = 'none';
+                successMessage.style.display = 'block';
+            } else {
+                // Show error
+                errorMessage.textContent = data.message || 'Something went wrong. Please try again.';
+                errorMessage.classList.add('show');
+                submitBtn.disabled = false;
+                submitText.textContent = 'Submit Demo';
+                submitSpinner.classList.remove('show');
+            }
+        })
+        .catch(function(err) {
+            errorMessage.textContent = 'Network error. Please check your connection and try again.';
+            errorMessage.classList.add('show');
+            submitBtn.disabled = false;
+            submitText.textContent = 'Submit Demo';
+            submitSpinner.classList.remove('show');
+        });
+    });
 })();
