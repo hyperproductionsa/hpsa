@@ -1,9 +1,42 @@
 [
     {
+        "cat": "HYP141",
+        "artist": "Rawson Ford",
+        "title": "Three Chords from Home EP",
+        "upc": "",
+        "tracks": [
+            {
+                "artist": "Rawson Ford",
+                "title": "Auntie's Kitchen",
+                "mix": ""
+            },
+            {
+                "artist": "Rawson Ford",
+                "title": "Journey to Mathopestat",
+                "mix": ""
+            },
+            {
+                "artist": "Rawson Ford",
+                "title": "Midnight in Melville",
+                "mix": ""
+            },
+            {
+                "artist": "Rawson Ford",
+                "title": "Modubung",
+                "mix": ""
+            },
+            {
+                "artist": "Rawson Ford",
+                "title": "G.0.D",
+                "mix": ""
+            }
+        ]
+    },
+    {
         "cat": "HYP140",
         "artist": "Naize",
         "title": "Sunshine (feat. Mido Mi)",
-        "upc": "",
+        "upc": "612891229547.0",
         "tracks": [
             {
                 "artist": "Naize",
