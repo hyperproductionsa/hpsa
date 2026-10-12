@@ -1,102 +1,92 @@
-// ============================================
-// DEMO SUBMISSION - AJAX (No Page Reload)
-// ============================================
-(function() {
-    const form = document.getElementById('demo-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const submitText = document.getElementById('submit-text');
-    const submitSpinner = document.getElementById('submit-spinner');
-    const errorMessage = document.getElementById('error-message');
-    const linkError = document.getElementById('link-error');
-    const successMessage = document.getElementById('success-message');
-    const formContainer = document.getElementById('demo-form-container');
-    const demoLink = document.getElementById('demo-link');
+(function(){
+  const ENDPOINT = "https://demo.hyperproduction.co.za";
 
-    // Validate demo link
-    function validateDemoLink(url) {
-        if (!url) return false;
-        
-        const lowerUrl = url.toLowerCase();
-        
-        try {
-            new URL(url);
-        } catch {
-            return false;
-        }
-        
-        const allowed = [
-            'soundcloud.com',
-            'drive.google.com',
-            'dropbox.com',
-            'dropboxusercontent.com',
-            'db.tt'
-        ];
-        
-        return allowed.some(domain => lowerUrl.includes(domain));
+  const form = document.getElementById("demo-form");
+  const formContainer = document.getElementById("demo-form-container");
+  const successMessage = document.getElementById("success-message");
+  const submitBtn = document.getElementById("submit-btn");
+  const submitText = document.getElementById("submit-text");
+  const submitSpinner = document.getElementById("submit-spinner");
+  const errorEl = document.getElementById("error-message");
+  const linkErrorEl = document.getElementById("link-error");
+
+  if(!form) return;
+
+  function showError(el, msg){
+    if(!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+  }
+  function clearErrors(){
+    [errorEl, linkErrorEl].forEach((el)=>{
+      if(!el) return;
+      el.textContent = "";
+      el.classList.remove("show");
+    });
+  }
+  function setLoading(loading){
+    submitBtn.disabled = loading;
+    submitSpinner.classList.toggle("show", loading);
+    submitText.textContent = loading ? "Sending..." : "Submit Demo";
+  }
+
+  form.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    clearErrors();
+
+    const artist = document.getElementById("artist-name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const link = document.getElementById("demo-link").value.trim();
+    const consent = document.getElementById("privacy-consent").checked;
+    const honeypot = document.querySelector('input[name="website"]');
+    const website = honeypot ? honeypot.value.trim() : "";
+
+    if(!artist || !email || !link){
+      showError(errorEl, "Please fill in all required fields.");
+      return;
+    }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      showError(errorEl, "Please enter a valid email address.");
+      return;
+    }
+    if(!/^https?:\/\//i.test(link)){
+      showError(linkErrorEl, "Demo link must start with http:// or https://");
+      return;
+    }
+    if(!consent){
+      showError(errorEl, "Please accept the privacy policy to continue.");
+      return;
     }
 
-    // Real-time validation on input
-    demoLink.addEventListener('input', function() {
-        const url = this.value.trim();
-        linkError.classList.remove('show');
-        
-        if (url && !validateDemoLink(url)) {
-            linkError.textContent = '⚠️ Please use a valid Google Drive, Dropbox, or SoundCloud link.';
-            linkError.classList.add('show');
-        }
-    });
+    setLoading(true);
 
-    // Form submission - AJAX
-    form.addEventListener('submit', function(e) {
-        e.preventDefault(); // STOP page reload
-        
-        // Clear previous errors
-        errorMessage.classList.remove('show');
-        linkError.classList.remove('show');
-        
-        // Validate demo link
-        const url = demoLink.value.trim();
-        if (!validateDemoLink(url)) {
-            linkError.textContent = '⚠️ Please use a valid Google Drive, Dropbox, or SoundCloud link.';
-            linkError.classList.add('show');
-            demoLink.focus();
-            return;
-        }
-
-        // Show loading state
-        submitBtn.disabled = true;
-        submitText.textContent = 'Submitting...';
-        submitSpinner.classList.add('show');
-
-        // Build form data
-        const formData = new FormData(form);
-
-        // Send via AJAX to Web3Forms
-        fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData
+    try{
+      const r = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          artist_name: artist,
+          email: email,
+          demo_link: link,
+          website: website
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Show success message
-                formContainer.style.display = 'none';
-                successMessage.style.display = 'block';
-            } else {
-                // Show error
-                errorMessage.textContent = data.message || 'Something went wrong. Please try again.';
-                errorMessage.classList.add('show');
-                submitBtn.disabled = false;
-                submitText.textContent = 'Submit Demo';
-                submitSpinner.classList.remove('show');
-            }
-        })
-        .catch(function(err) {
-            errorMessage.textContent = 'Network error. Please check your connection and try again.';
-            errorMessage.classList.add('show');
-            submitBtn.disabled = false;
-            submitText.textContent = 'Submit Demo';
-            submitSpinner.classList.remove('show');
-        });
-    });
+      });
+
+      const data = await r.json().catch(()=>({}));
+
+      if(!r.ok || !data.ok){
+        showError(errorEl, data.error || "Something went wrong. Please try again.");
+        setLoading(false);
+        return;
+      }
+
+      formContainer.style.display = "none";
+      successMessage.style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }catch(err){
+      console.error("Demo submit error:", err);
+      showError(errorEl, "Network error. Please check your connection and try again.");
+      setLoading(false);
+    }
+  });
 })();
