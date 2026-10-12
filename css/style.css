@@ -31,10 +31,12 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #my-sticky-footer{position:fixed!important;bottom:0;left:0;z-index:9999;width:100%;height:60px;background:#e5de69;display:flex;align-items:center;justify-content:center;padding:0 30px;box-shadow:0 -4px 20px rgba(0,0,0,.3)}
 .footer-inner{max-width:1200px;width:100%;display:flex;align-items:center;justify-content:space-between}
 #my-sticky-footer .copyright{font:14px 'Roboto',Arial,sans-serif;color:#000;margin:0}
-#my-sticky-footer .social-icons{display:flex;align-items:center;gap:15px}
+#my-sticky-footer .social-icons{display:flex;align-items:center;gap:8px}
 #my-sticky-footer .social-icons a{display:flex;transition:opacity .3s}
 #my-sticky-footer .social-icons a:hover{opacity:.7}
 #my-sticky-footer .social-icons img{height:30px;width:auto}
+.footer-demo-link{display:inline-block;padding:6px 18px;background:#000;color:#e5de69;font-family:'Roboto',Arial,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border-radius:50px;border:2px solid #000;transition:background .3s,color .3s;white-space:nowrap}
+.footer-demo-link:hover{background:#e5de69;color:#000;border-color:#000}
 
 /* ============================================
    KEYFRAMES
@@ -214,5 +216,5 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 /* ============================================
    RESPONSIVE - FOOTER (Mobile fixes)
    ============================================ */
-@media (max-width:768px){#my-sticky-footer{padding:0 15px;height:auto;min-height:50px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:center;gap:6px;padding:6px 0}#my-sticky-footer .copyright{display:none}#my-sticky-footer .social-icons{gap:16px}#my-sticky-footer .social-icons img{height:26px}}
-@media (max-width:480px){#my-sticky-footer{min-height:44px;padding:0 10px}.footer-inner{gap:4px;padding:4px 0}#my-sticky-footer .social-icons{gap:14px}#my-sticky-footer .social-icons img{height:22px}}
+@media (max-width:768px){#my-sticky-footer{padding:0 15px;height:auto;min-height:50px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:space-between;gap:6px;padding:6px 0}#my-sticky-footer .copyright{display:none}#my-sticky-footer .social-icons{gap:10px}#my-sticky-footer .social-icons img{height:26px}.footer-demo-link{order:3;margin-left:auto;font-size:12px;padding:5px 14px}}
+@media (max-width:480px){#my-sticky-footer{min-height:44px;padding:0 10px}.footer-inner{gap:4px;padding:4px 0}#my-sticky-footer .social-icons{gap:8px}#my-sticky-footer .social-icons img{height:22px}.footer-demo-link{font-size:11px;padding:4px 12px}}
