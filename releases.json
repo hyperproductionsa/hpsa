@@ -1,9 +1,32 @@
 [
     {
+        "cat": "HYP142",
+        "artist": "HDC",
+        "title": "Mogodumo",
+        "upc": "",
+        "tracks": [
+            {
+                "artist": "HDC, Lieutenant-X",
+                "title": "Magegania",
+                "mix": ""
+            },
+            {
+                "artist": "HDC",
+                "title": "Mogodumo",
+                "mix": ""
+            },
+            {
+                "artist": "HDC",
+                "title": "Celebration Cassette (feat. Eshi RSA)",
+                "mix": ""
+            }
+        ]
+    },
+    {
         "cat": "HYP141",
         "artist": "Rawson Ford",
         "title": "Three Chords from Home EP",
-        "upc": "",
+        "upc": "612891266832.0",
         "tracks": [
             {
                 "artist": "Rawson Ford",
