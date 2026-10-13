@@ -31,12 +31,10 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #my-sticky-footer{position:fixed!important;bottom:0;left:0;z-index:9999;width:100%;height:60px;background:#e5de69;display:flex;align-items:center;justify-content:center;padding:0 30px;box-shadow:0 -4px 20px rgba(0,0,0,.3)}
 .footer-inner{max-width:1200px;width:100%;display:flex;align-items:center;justify-content:space-between}
 #my-sticky-footer .copyright{font:14px 'Roboto',Arial,sans-serif;color:#000;margin:0}
-#my-sticky-footer .social-icons{display:flex;align-items:center;gap:8px}
+#my-sticky-footer .social-icons{display:flex;align-items:center;gap:15px}
 #my-sticky-footer .social-icons a{display:flex;transition:opacity .3s}
 #my-sticky-footer .social-icons a:hover{opacity:.7}
 #my-sticky-footer .social-icons img{height:30px;width:auto}
-.footer-demo-link{display:inline-block;padding:6px 18px;background:#000;color:#e5de69;font-family:'Roboto',Arial,sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border-radius:50px;border:2px solid #000;transition:background .3s,color .3s;white-space:nowrap}
-.footer-demo-link:hover{background:#e5de69;color:#000;border-color:#000}
 
 /* ============================================
    KEYFRAMES
@@ -115,7 +113,8 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
    ============================================ */
 #services{width:100%;min-height:100vh;background:#000;display:flex;align-items:center;justify-content:center;padding:60px 20px;padding-top:100px;padding-bottom:100px}
 .services-content{max-width:1000px;width:100%;text-align:center}
-#services h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:40px;font-weight:400!important}
+#services h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:20px;font-weight:400!important}
+.services-intro{color:#ccc;font-family:'Roboto',Arial,sans-serif;font-size:1.05rem;line-height:1.6;max-width:700px;margin:0 auto 40px}
 .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:20px;margin-bottom:40px}
 .service-card{background:#111;border:1px solid #2a2a2a;border-radius:12px;padding:30px 20px 25px;text-align:center;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;justify-content:space-between}
 .service-card:hover{border-color:#e4de69;transform:translateY(-6px)}
@@ -124,8 +123,21 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .price-tag{display:inline-block;background:#e4de69;color:#000;font-family:'Roboto',Arial,sans-serif;font-size:1rem;font-weight:700;padding:4px 18px;border-radius:50px;align-self:center;margin-top:auto}
 .contact-btn{display:inline-block;padding:14px 50px;background:#e4de69;color:#000;font-family:'Roboto',Arial,sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;text-decoration:none;letter-spacing:1px;border-radius:50px;transition:background .3s,transform .2s;border:2px solid #e4de69;margin-top:10px}
 .contact-btn:hover{background:transparent;color:#e4de69;transform:translateY(-3px)}
-@media (max-width:768px){#services{padding:40px 15px;padding-top:80px;padding-bottom:80px}#services h2{font-size:1.8rem}.service-grid{grid-template-columns:1fr;gap:20px}.service-card{padding:24px 16px 20px}.service-card h4{font-size:1.2rem}.service-card p{font-size:.9rem}.contact-btn{padding:12px 30px;font-size:1rem;width:100%;max-width:300px}}
-@media (max-width:480px){#services h2{font-size:1.5rem}.service-card h4{font-size:1rem}.service-card p{font-size:.85rem}.contact-btn{font-size:.9rem;padding:12px 20px}}
+@media (max-width:768px){#services{padding:40px 15px;padding-top:80px;padding-bottom:80px}#services h2{font-size:1.8rem}.services-intro{font-size:.95rem;margin-bottom:30px}.service-grid{grid-template-columns:1fr;gap:20px}.service-card{padding:24px 16px 20px}.service-card h4{font-size:1.2rem}.service-card p{font-size:.9rem}.contact-btn{padding:12px 30px;font-size:1rem;width:100%;max-width:300px}}
+@media (max-width:480px){#services h2{font-size:1.5rem}.services-intro{font-size:.85rem}.service-card h4{font-size:1rem}.service-card p{font-size:.85rem}.contact-btn{font-size:.9rem;padding:12px 20px}}
+
+/* ============================================
+   DEMO SECTION
+   ============================================ */
+#demo{width:100%;min-height:60vh;background:#000;display:flex;align-items:center;justify-content:center;padding:60px 20px;padding-top:100px;padding-bottom:100px}
+.demo-content{max-width:800px;width:100%;text-align:center}
+#demo h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:20px;font-weight:400!important}
+.demo-text{color:#ccc;font-family:'Roboto',Arial,sans-serif;font-size:1.05rem;line-height:1.8;margin-bottom:30px}
+.demo-text strong{color:#e5de69;font-weight:700}
+.demo-btn{display:inline-block;padding:14px 50px;background:#e4de69;color:#000;font-family:'Roboto',Arial,sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;text-decoration:none;letter-spacing:1px;border-radius:50px;transition:background .3s,transform .2s;border:2px solid #e4de69}
+.demo-btn:hover{background:transparent;color:#e4de69;transform:translateY(-3px)}
+@media (max-width:768px){#demo{padding:40px 15px;padding-top:80px;padding-bottom:80px}#demo h2{font-size:1.8rem}.demo-text{font-size:.95rem}.demo-btn{padding:12px 30px;font-size:1rem;width:100%;max-width:300px}}
+@media (max-width:480px){#demo h2{font-size:1.5rem}.demo-text{font-size:.85rem}.demo-btn{font-size:.9rem;padding:12px 20px}}
 
 /* ============================================
    CONTACT SECTION
@@ -257,5 +269,5 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 /* ============================================
    RESPONSIVE - FOOTER (Mobile fixes)
    ============================================ */
-@media (max-width:768px){#my-sticky-footer{padding:0 15px;height:auto;min-height:50px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:space-between;gap:6px;padding:6px 0}#my-sticky-footer .copyright{display:none}#my-sticky-footer .social-icons{gap:10px}#my-sticky-footer .social-icons img{height:26px}.footer-demo-link{order:3;margin-left:auto;font-size:12px;padding:5px 14px}}
-@media (max-width:480px){#my-sticky-footer{min-height:44px;padding:0 10px}.footer-inner{gap:4px;padding:4px 0}#my-sticky-footer .social-icons{gap:8px}#my-sticky-footer .social-icons img{height:22px}.footer-demo-link{font-size:11px;padding:4px 12px}}
+@media (max-width:768px){#my-sticky-footer{padding:0 15px;height:auto;min-height:50px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:center;gap:6px;padding:6px 0}#my-sticky-footer .copyright{display:none}#my-sticky-footer .social-icons{gap:16px}#my-sticky-footer .social-icons img{height:26px}}
+@media (max-width:480px){#my-sticky-footer{min-height:44px;padding:0 10px}.footer-inner{gap:4px;padding:4px 0}#my-sticky-footer .social-icons{gap:14px}#my-sticky-footer .social-icons img{height:22px}}
