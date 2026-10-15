@@ -2,6 +2,7 @@
    RESET & BASE
    ============================================ */
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#000;font-family:'Roboto',Arial,sans-serif}
+a{color:inherit;text-decoration:none}
 
 /* ============================================
    FONTS
@@ -92,6 +93,20 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .distribution-text strong{color:#e5de69;font-weight:700}
 @media (max-width:768px){#distribution{padding:40px 15px;padding-top:80px;padding-bottom:80px}#distribution h2{font-size:1.8rem}.distribution-text{font-size:.95rem;line-height:1.6}.distro-img{height:28px!important}.distro-img-wrapper{padding:0 18px;height:50px}}
 @media (max-width:480px){#distribution h2{font-size:1.5rem}.distribution-text{font-size:.85rem}.distro-img{height:22px!important}.distro-img-wrapper{padding:0 12px;height:40px}}
+
+/* ============================================
+   EXPLORE SECTION
+   ============================================ */
+#explore{width:100%;min-height:60vh;background:#000;display:flex;align-items:center;justify-content:center;padding:60px 20px;padding-top:100px;padding-bottom:100px}
+.explore-content{max-width:1000px;width:100%;text-align:center}
+#explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:40px;font-weight:400!important}
+.explore-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:20px}
+.explore-card{background:#111;border:1px solid #2a2a2a;border-radius:12px;padding:30px 20px 25px;text-align:center;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;justify-content:flex-start;text-decoration:none;color:inherit}
+.explore-card:hover{border-color:#e4de69;transform:translateY(-6px)}
+.explore-card h4{font-family:'Roboto',Arial,sans-serif;font-size:1.4rem;font-weight:700;text-transform:uppercase;color:#e4de69;margin-bottom:10px}
+.explore-card p{color:#ccc;font-family:'Roboto',Arial,sans-serif;font-size:.95rem;line-height:1.6;margin:0}
+@media (max-width:768px){#explore{padding:40px 15px;padding-top:80px;padding-bottom:80px}#explore h2{font-size:1.8rem}.explore-grid{grid-template-columns:1fr;gap:20px}.explore-card{padding:24px 16px 20px}.explore-card h4{font-size:1.2rem}.explore-card p{font-size:.9rem}}
+@media (max-width:480px){#explore h2{font-size:1.5rem}.explore-card h4{font-size:1rem}.explore-card p{font-size:.85rem}}
 
 /* ============================================
    ABOUT SECTION
