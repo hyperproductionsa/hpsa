@@ -322,11 +322,17 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 }
 
 
-/* Remove the blue mobile tap highlight from release pagination controls. */
+/* Remove the blue mobile tap highlight across the entire website. */
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Keep pagination taps consistent with the rest of the site. */
 .pagination,
 .pagination .page-num,
 .pagination .page-arrow {
-  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
 .pagination .page-num,
