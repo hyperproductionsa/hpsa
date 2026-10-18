@@ -67,7 +67,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #hero{width:100%;min-height:100vh;background:#e5de69;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;padding-top:120px;padding-bottom:100px}
 .hero-inner{max-width:1200px;width:100%}
 #hero{--hero-heading-size:clamp(2rem,6vw,4rem)}
-#hero h1{font-family:'HyperPixel',sans-serif;font-size:calc(var(--hero-heading-size) * .4)!important;letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:12px!important;font-weight:400!important}
+#hero h1{font-family:'HyperPixel',sans-serif;font-size:calc(var(--hero-heading-size) * .4)!important;letter-spacing:0;text-transform:uppercase;color:#e5de69!important;margin-bottom:12px!important;font-weight:400!important}
 #hero .hero-section-heading{font-family:'HyperPixel',sans-serif;font-size:var(--hero-heading-size)!important;letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:20px!important;font-weight:400!important}
 #artwork-carousel{width:100%;max-width:1000px;margin:0 auto 30px;padding:0 20px}
 #artwork-carousel .slick-slide{padding:0 10px}
@@ -107,6 +107,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #explore{width:100%;min-height:60vh;background:#000;display:flex;align-items:center;justify-content:center;padding:90px 24px 100px}
 .explore-content{max-width:1120px;width:100%;text-align:center}
 #explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:36px;font-weight:400!important}
+.explore-intro{max-width:760px;margin:-18px auto 28px;color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:1rem;line-height:1.65}
 .explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
 .explore-card{position:relative;min-height:190px;box-sizing:border-box;background:linear-gradient(145deg,#141414 0%,#090909 100%);border:1px solid #292929;border-radius:14px;padding:26px 22px;text-align:center;transition:border-color .25s,transform .25s,background .25s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none;color:inherit;overflow:hidden}
 .explore-card:focus-visible{outline:2px solid #e5de69;outline-offset:4px}
@@ -119,7 +120,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .explore-card p{color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:.9rem;line-height:1.55;margin:0}
 .explore-arrow{position:absolute;right:16px;top:13px;color:#e5de69;font-size:1.1rem;opacity:.65;transition:opacity .2s,transform .2s}
 .explore-card:hover .explore-arrow{opacity:1;transform:translate(2px,-2px)}
-@media (max-width:768px){#explore{padding:70px 16px 85px}#explore h2{font-size:1.8rem;margin-bottom:24px}.explore-grid{grid-template-columns:1fr;gap:10px}.explore-card{min-height:0;padding:17px 16px;display:grid;grid-template-columns:48px minmax(0,1fr) 16px;align-items:center;gap:14px;text-align:left;border-radius:12px}.explore-icon{width:44px;height:44px;flex-basis:44px;border-radius:12px}.explore-icon svg{width:23px;height:23px}.explore-card h4{font-size:1rem;margin-bottom:4px}.explore-card p{font-size:.86rem;line-height:1.45}.explore-arrow{position:static;justify-self:end;font-size:1rem;opacity:.8} .explore-card:hover{transform:none}}
+@media (max-width:768px){.explore-intro{font-size:.9rem;line-height:1.55;margin:-10px auto 22px}#explore{padding:70px 16px 85px}#explore h2{font-size:1.8rem;margin-bottom:24px}.explore-grid{grid-template-columns:1fr;gap:10px}.explore-card{min-height:0;padding:17px 16px;display:grid;grid-template-columns:48px minmax(0,1fr) 16px;align-items:center;gap:14px;text-align:left;border-radius:12px}.explore-icon{width:44px;height:44px;flex-basis:44px;border-radius:12px}.explore-icon svg{width:23px;height:23px}.explore-card h4{font-size:1rem;margin-bottom:4px}.explore-card p{font-size:.86rem;line-height:1.45}.explore-arrow{position:static;justify-self:end;font-size:1rem;opacity:.8} .explore-card:hover{transform:none}}
 @media (max-width:480px){#explore h2{font-size:1.5rem}.explore-card{grid-template-columns:42px minmax(0,1fr) 14px;gap:11px;padding:15px 12px}.explore-icon{width:40px;height:40px;flex-basis:40px}.explore-card h4{font-size:.9rem}.explore-card p{font-size:.8rem}}
 
 /* ============================================
