@@ -1,16 +1,19 @@
 (function($){
   const stores = [
     {name:'Spotify',icon:'spotify'},
-    {name:'Apple Music',icon:'apple-music'},
+    {name:'Apple Music',icon:'apple'},
+    {name:'Amazon Music',icon:'amazon-music'},
     {name:'Beatport',icon:'beatport'},
     {name:'Traxsource',icon:'traxsource'},
     {name:'Deezer',icon:'deezer'},
     {name:'TIDAL',icon:'tidal'},
     {name:'SoundCloud',icon:'soundcloud'},
     {name:'YouTube Music',icon:'youtube-music'},
-    {name:'Bandcamp',icon:'bandcamp'},
     {name:'Audiomack',icon:'audiomack'},
-    {name:'Pandora',icon:'pandora'}
+    {name:'Pandora',icon:'pandora'},
+    {name:'Boomplay',icon:'boomplay'},
+    {name:'Anghami',icon:'anghami'},
+    {name:'Qobuz',icon:'qobuz'}
   ];
 
   const initDistributionCarousel = () => {
