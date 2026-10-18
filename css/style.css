@@ -304,3 +304,19 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
    ============================================ */
 @media (max-width:768px){#my-sticky-footer{padding:0 15px;height:auto;min-height:50px;flex-wrap:wrap}.footer-inner{flex-wrap:wrap;justify-content:center;gap:6px;padding:6px 0}#my-sticky-footer .copyright{display:none}#my-sticky-footer .social-icons{gap:16px}#my-sticky-footer .social-icons img{height:26px}}
 @media (max-width:480px){#my-sticky-footer{min-height:44px;padding:0 10px}.footer-inner{gap:4px;padding:4px 0}#my-sticky-footer .social-icons{gap:14px}#my-sticky-footer .social-icons img{height:22px}}
+
+/* Keep Explore tiles static on mobile; retain scroll reveals elsewhere. */
+@media (max-width: 768px) {
+  #explore .fade-section,
+  #explore .fade-left,
+  #explore .fade-right,
+  #explore .scale-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  #explore .explore-card {
+    transition: none !important;
+  }
+}
