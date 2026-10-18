@@ -66,7 +66,9 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
    ============================================ */
 #hero{width:100%;min-height:100vh;background:#e5de69;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;padding-top:120px;padding-bottom:100px}
 .hero-inner{max-width:1200px;width:100%}
-#hero h1{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,6vw,4rem);letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:20px;font-weight:400!important}
+#hero{--hero-heading-size:clamp(2rem,6vw,4rem)}
+#hero h1{font-family:'HyperPixel',sans-serif;font-size:calc(var(--hero-heading-size) * .4)!important;letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:12px!important;font-weight:400!important}
+#hero .hero-section-heading{font-family:'HyperPixel',sans-serif;font-size:var(--hero-heading-size)!important;letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:20px!important;font-weight:400!important}
 #artwork-carousel{width:100%;max-width:1000px;margin:0 auto 30px;padding:0 20px}
 #artwork-carousel .slick-slide{padding:0 10px}
 .carousel-img{width:100%;max-width:280px;height:auto;aspect-ratio:1/1;margin:0 auto;display:block;box-shadow:0 7px 10px 0 rgba(0,0,0,.5);object-fit:cover;background:#e5de69}
@@ -76,7 +78,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .hero-buttons a:hover{background:#e5de69;color:#000;transform:translateY(-3px);border-color:#000}
 
 @media (max-width:768px){#hero{padding:30px 10px;padding-top:100px;padding-bottom:80px}#artwork-carousel{padding:0 5px}#artwork-carousel .slick-slide{padding:0 5px}.carousel-img{max-width:280px}.hero-buttons a{padding:12px 30px;font-size:.9rem;width:100%;max-width:280px}.hero-buttons{gap:12px}}
-@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px}.carousel-img{max-width:260px}#hero h1{font-size:1.8rem}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
+@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px;--hero-heading-size:1.8rem}.carousel-img{max-width:260px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
 
 /* ============================================
    DISTRIBUTION SECTION
