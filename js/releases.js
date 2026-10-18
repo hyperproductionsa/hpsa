@@ -93,38 +93,26 @@
                 });
             }
             
-            // Setup pagination number clicks
-            document.querySelectorAll('.page-num').forEach(function(el) {
-                el.addEventListener('click', function() {
-                    var page = parseInt(this.getAttribute('data-page'));
-                    if (page && page !== currentPage) {
+            // Delegate pagination clicks so dynamically generated page buttons keep working.
+            var pagination = document.getElementById('pagination');
+            if (pagination) {
+                pagination.addEventListener('click', function(event) {
+                    var target = event.target.closest('[data-page-action], .page-num');
+                    if (!target || !pagination.contains(target)) return;
+
+                    var page;
+                    if (target.hasAttribute('data-page-action')) {
+                        if (target.getAttribute('data-page-action') === 'prev') {
+                            page = currentPage - 1;
+                        } else if (target.getAttribute('data-page-action') === 'next') {
+                            page = currentPage + 1;
+                        }
+                    } else {
+                        page = parseInt(target.getAttribute('data-page'), 10);
+                    }
+
+                    if (page && page >= 1 && page <= totalPages && page !== currentPage) {
                         currentPage = page;
-                        updateURL(currentPage);
-                        buildGrid();
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                });
-            });
-            
-            // Setup prev button
-            var prevBtn = document.getElementById('prev-page');
-            if (prevBtn) {
-                prevBtn.addEventListener('click', function() {
-                    if (currentPage > 1) {
-                        currentPage--;
-                        updateURL(currentPage);
-                        buildGrid();
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }
-                });
-            }
-            
-            // Setup next button
-            var nextBtn = document.getElementById('next-page');
-            if (nextBtn) {
-                nextBtn.addEventListener('click', function() {
-                    if (currentPage < totalPages) {
-                        currentPage++;
                         updateURL(currentPage);
                         buildGrid();
                         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -284,26 +272,68 @@
             }
         }
         
-        // Update page number buttons
-        var pageNums = document.querySelectorAll('.page-num');
-        pageNums.forEach(function(el) {
-            var page = parseInt(el.getAttribute('data-page'));
-            if (page === currentPage) {
-                el.classList.add('active');
-            } else {
-                el.classList.remove('active');
+        // Render pagination from the current result count. This keeps the bottom
+        // controls in sync with search results and allows page 8+ to appear.
+        var pagination = document.getElementById('pagination');
+        if (pagination) {
+            pagination.innerHTML = '';
+
+            function addPageButton(page) {
+                var button = document.createElement('span');
+                button.className = 'page-num' + (page === currentPage ? ' active' : '');
+                button.setAttribute('data-page', page);
+                button.textContent = page;
+                button.setAttribute('role', 'button');
+                button.setAttribute('tabindex', '0');
+                button.setAttribute('aria-current', page === currentPage ? 'page' : 'false');
+                pagination.appendChild(button);
             }
-        });
-        
-        // Update prev/next buttons
-        var prevBtn = document.getElementById('prev-page');
-        var nextBtn = document.getElementById('next-page');
-        
-        if (prevBtn) {
-            prevBtn.style.display = currentPage > 1 ? 'inline' : 'none';
-        }
-        if (nextBtn) {
-            nextBtn.style.display = currentPage < totalPages ? 'inline' : 'none';
+
+            function addEllipsis() {
+                var ellipsis = document.createElement('span');
+                ellipsis.className = 'page-ellipsis';
+                ellipsis.textContent = '…';
+                ellipsis.setAttribute('aria-hidden', 'true');
+                pagination.appendChild(ellipsis);
+            }
+
+            if (currentPage > 1) {
+                var prev = document.createElement('span');
+                prev.className = 'page-arrow';
+                prev.id = 'prev-page';
+                prev.setAttribute('data-page-action', 'prev');
+                prev.setAttribute('role', 'button');
+                prev.setAttribute('tabindex', '0');
+                prev.textContent = '«';
+                pagination.appendChild(prev);
+            }
+
+            // Show every page when there are 10 or fewer. For larger catalogs,
+            // show a compact window while always keeping first/last and current nearby.
+            if (totalPages <= 10) {
+                for (var p = 1; p <= totalPages; p++) addPageButton(p);
+            } else {
+                addPageButton(1);
+                if (currentPage > 4) addEllipsis();
+                var rangeStart = Math.max(2, currentPage - 1);
+                var rangeEnd = Math.min(totalPages - 1, currentPage + 1);
+                if (currentPage <= 4) rangeEnd = 5;
+                if (currentPage >= totalPages - 3) rangeStart = totalPages - 4;
+                for (var p = rangeStart; p <= rangeEnd; p++) addPageButton(p);
+                if (currentPage < totalPages - 3) addEllipsis();
+                addPageButton(totalPages);
+            }
+
+            if (currentPage < totalPages) {
+                var next = document.createElement('span');
+                next.className = 'page-arrow';
+                next.id = 'next-page';
+                next.setAttribute('data-page-action', 'next');
+                next.setAttribute('role', 'button');
+                next.setAttribute('tabindex', '0');
+                next.textContent = '»';
+                pagination.appendChild(next);
+            }
         }
         
         console.log('Page ' + currentPage + ' of ' + totalPages);
