@@ -308,21 +308,12 @@
                 pagination.appendChild(prev);
             }
 
-            // Show every page when there are 10 or fewer. For larger catalogs,
-            // show a compact window while always keeping first/last and current nearby.
-            if (totalPages <= 10) {
-                for (var p = 1; p <= totalPages; p++) addPageButton(p);
-            } else {
-                addPageButton(1);
-                if (currentPage > 4) addEllipsis();
-                var rangeStart = Math.max(2, currentPage - 1);
-                var rangeEnd = Math.min(totalPages - 1, currentPage + 1);
-                if (currentPage <= 4) rangeEnd = 5;
-                if (currentPage >= totalPages - 3) rangeStart = totalPages - 4;
-                for (var p = rangeStart; p <= rangeEnd; p++) addPageButton(p);
-                if (currentPage < totalPages - 3) addEllipsis();
-                addPageButton(totalPages);
-            }
+            // Show at most four page numbers at once, sliding with the current page.
+            // Example: page 3 of 8 shows 2, 3, 4, 5.
+            var visiblePageCount = Math.min(4, totalPages);
+            var rangeStart = Math.max(1, Math.min(currentPage - 1, totalPages - visiblePageCount + 1));
+            var rangeEnd = Math.min(totalPages, rangeStart + visiblePageCount - 1);
+            for (var p = rangeStart; p <= rangeEnd; p++) addPageButton(p);
 
             if (currentPage < totalPages) {
                 var next = document.createElement('span');
