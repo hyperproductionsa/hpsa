@@ -320,3 +320,20 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     transition: none !important;
   }
 }
+
+
+/* Remove the blue mobile tap highlight from release pagination controls. */
+.pagination,
+.pagination .page-num,
+.pagination .page-arrow {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+.pagination .page-num,
+.pagination .page-arrow {
+  outline: none;
+}
+.pagination .page-num:focus,
+.pagination .page-arrow:focus {
+  outline: none;
+}
