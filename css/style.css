@@ -67,7 +67,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #hero{width:100%;min-height:100vh;background:#e5de69;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;padding-top:120px;padding-bottom:100px}
 .hero-inner{max-width:1200px;width:100%}
 #hero{--hero-heading-size:clamp(2rem,6vw,4rem)}
-#hero h1{font-family:'HyperPixel',sans-serif;font-size:calc(var(--hero-heading-size) * .4)!important;letter-spacing:0;text-transform:uppercase;color:#e5de69!important;margin-bottom:12px!important;font-weight:400!important}
+#hero h1{font-family:'HyperPixel',sans-serif;font-size:calc(var(--hero-heading-size) * .3)!important;letter-spacing:0;text-transform:uppercase;color:#e5de69!important;margin-bottom:12px!important;font-weight:400!important}
 #hero .hero-section-heading{font-family:'HyperPixel',sans-serif;font-size:var(--hero-heading-size)!important;letter-spacing:0;text-transform:uppercase;color:#000;margin-bottom:20px!important;font-weight:400!important}
 #artwork-carousel{width:100%;max-width:1000px;margin:0 auto 30px;padding:0 20px}
 #artwork-carousel .slick-slide{padding:0 10px}
@@ -78,14 +78,14 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .hero-buttons a:hover{background:#e5de69;color:#000;transform:translateY(-3px);border-color:#000}
 
 @media (max-width:768px){#hero{padding:30px 10px;padding-top:100px;padding-bottom:80px}#artwork-carousel{padding:0 5px}#artwork-carousel .slick-slide{padding:0 5px}.carousel-img{max-width:280px}.hero-buttons a{padding:12px 30px;font-size:.9rem;width:100%;max-width:280px}.hero-buttons{gap:12px}}
-@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px;--hero-heading-size:1.8rem}.carousel-img{max-width:260px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
+@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px;--hero-heading-size:1.8rem}#hero .hero-section-heading,#explore h2,#distribution h2{font-size:1.5rem!important}.carousel-img{max-width:260px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
 
 /* ============================================
    DISTRIBUTION SECTION
    ============================================ */
 #distribution{width:100%;min-height:100vh;background:#000;display:flex;align-items:center;justify-content:center;padding:60px 20px;padding-top:100px;padding-bottom:100px}
 .distribution-content{max-width:1200px;width:100%;text-align:center}
-#distribution h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:30px;font-weight:400!important}
+#distribution h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:40px;font-weight:400!important}
 #distribution-carousel{width:100%;padding:20px 0;margin:0 auto 30px;overflow:hidden}
 #distribution-carousel .slick-list{margin:0 -1px}
 #distribution-carousel .slick-slide{margin:0!important;padding:0!important}
@@ -99,15 +99,15 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .distribution-text p{margin-bottom:16px}
 .distribution-text strong{color:#e5de69;font-weight:700}
 @media (max-width:1024px){.distro-tile{width:116px;height:116px;flex-basis:116px;border-radius:12px}.distro-icon{width:52px;height:52px}}
-@media (max-width:768px){#distribution{padding:40px 15px;padding-top:80px;padding-bottom:80px}#distribution h2{font-size:1.8rem}.distribution-text{font-size:.95rem;line-height:1.6}#distribution-carousel{padding:12px 0;margin-bottom:24px}#distribution-carousel .slick-list{margin:0}#distribution-carousel .slick-slide{padding:0!important;margin:0!important}.distro-tile{width:78px;height:78px;flex-basis:78px;border-radius:10px}.distro-icon{width:36px;height:36px}.distro-img-wrapper{padding:0!important}}
+@media (max-width:768px){#distribution{padding:40px 15px;padding-top:80px;padding-bottom:80px}#hero .hero-section-heading,#explore h2,#distribution h2{font-size:1.8rem!important}#distribution h2{font-size:1.8rem}.distribution-text{font-size:.95rem;line-height:1.6}#distribution-carousel{padding:12px 0;margin-bottom:24px}#distribution-carousel .slick-list{margin:0}#distribution-carousel .slick-slide{padding:0!important;margin:0!important}.distro-tile{width:78px;height:78px;flex-basis:78px;border-radius:10px}.distro-icon{width:36px;height:36px}.distro-img-wrapper{padding:0!important}}
 @media (max-width:480px){#distribution h2{font-size:1.5rem}.distribution-text{font-size:.85rem}#distribution-carousel{padding:10px 0;margin-bottom:20px}#distribution-carousel .slick-list{margin:0}#distribution-carousel .slick-slide{padding:0!important;margin:0!important}.distro-tile{width:66px;height:66px;flex-basis:66px;border-radius:9px}.distro-icon{width:31px;height:31px}.distro-img-wrapper{padding:0!important}}
 /* ============================================
    EXPLORE SECTION
    ============================================ */
 #explore{width:100%;min-height:60vh;background:#000;display:flex;align-items:center;justify-content:center;padding:90px 24px 100px}
 .explore-content{max-width:1120px;width:100%;text-align:center}
-#explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:36px;font-weight:400!important}
-.explore-intro{max-width:760px;margin:-18px auto 28px;color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:1rem;line-height:1.65}
+#explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:24px;font-weight:400!important}
+.explore-intro{max-width:760px;margin:0 auto 28px;color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:1rem;line-height:1.65}
 .explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
 .explore-card{position:relative;min-height:190px;box-sizing:border-box;background:linear-gradient(145deg,#141414 0%,#090909 100%);border:1px solid #292929;border-radius:14px;padding:26px 22px;text-align:center;transition:border-color .25s,transform .25s,background .25s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none;color:inherit;overflow:hidden}
 .explore-card:focus-visible{outline:2px solid #e5de69;outline-offset:4px}
