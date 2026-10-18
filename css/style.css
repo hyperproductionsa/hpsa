@@ -85,7 +85,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
    ============================================ */
 #distribution{width:100%;min-height:100vh;background:#000;display:flex;align-items:center;justify-content:center;padding:60px 20px;padding-top:100px;padding-bottom:100px}
 .distribution-content{max-width:1200px;width:100%;text-align:center}
-#distribution h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:40px;font-weight:400!important}
+#distribution h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:28px!important;font-weight:400!important}
 #distribution-carousel{width:100%;padding:20px 0;margin:0 auto 30px;overflow:hidden}
 #distribution-carousel .slick-list{margin:0 -1px}
 #distribution-carousel .slick-slide{margin:0!important;padding:0!important}
@@ -106,7 +106,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
    ============================================ */
 #explore{width:100%;min-height:60vh;background:#000;display:flex;align-items:center;justify-content:center;padding:90px 24px 100px}
 .explore-content{max-width:1120px;width:100%;text-align:center}
-#explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:24px;font-weight:400!important}
+#explore h2{font-family:'HyperPixel',sans-serif;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0;text-transform:uppercase;color:#fff;margin-bottom:28px!important;font-weight:400!important}
 .explore-intro{max-width:760px;margin:0 auto 28px;color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:1rem;line-height:1.65}
 .explore-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
 .explore-card{position:relative;min-height:190px;box-sizing:border-box;background:linear-gradient(145deg,#141414 0%,#090909 100%);border:1px solid #292929;border-radius:14px;padding:26px 22px;text-align:center;transition:border-color .25s,transform .25s,background .25s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none;color:inherit;overflow:hidden}
