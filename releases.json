@@ -4,2520 +4,4908 @@
         "artist": "HDC",
         "title": "Mogodumo",
         "upc": "",
+        "release_date": "2026-10-23",
+        "release_status": "Reviewing",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP142.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP142.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600037",
                 "artist": "HDC, Lieutenant-X",
                 "title": "Magegania",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52600038",
                 "artist": "HDC",
                 "title": "Mogodumo",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52600039",
                 "artist": "HDC",
                 "title": "Celebration Cassette (feat. Eshi RSA)",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "https://music.apple.com/us/album/mogodumo/id6822405731?at=1000lpc4&ct=LE",
+            "Traxsource": "https://www.traxsource.com/title/2897578/mogodumo",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP141",
         "artist": "Rawson Ford",
         "title": "Three Chords from Home EP",
         "upc": "612891266832",
+        "release_date": "2026-10-16",
+        "release_status": "Delivered",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP141.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP141.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600032",
                 "artist": "Rawson Ford",
                 "title": "Auntie's Kitchen",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52600033",
                 "artist": "Rawson Ford",
                 "title": "Journey to Mathopestat",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52600034",
                 "artist": "Rawson Ford",
                 "title": "Midnight in Melville",
                 "mix": ""
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52600035",
                 "artist": "Rawson Ford",
                 "title": "Modubung",
                 "mix": ""
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52600036",
                 "artist": "Rawson Ford",
                 "title": "G.0.D",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "https://music.apple.com/us/album/three-chords-from-home-ep/id6816753815",
+            "Traxsource": "https://www.traxsource.com/title/2886559/three-chords-from-home-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP140",
         "artist": "Naize",
         "title": "Sunshine (feat. Mido Mi)",
         "upc": "612891229547",
+        "release_date": "2026-10-02",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP140.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP140.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600031",
                 "artist": "Naize",
                 "title": "Sunshine (feat. Mido Mi)",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "https://music.apple.com/us/album/sunshine-feat-mido-mi/6809566700",
+            "Traxsource": "https://www.traxsource.com/title/2873589/sunshine-feat-mido-mi",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP139",
         "artist": "HyperSOUL-X",
         "title": "HTs Collections V",
         "upc": "612891218237",
+        "release_date": "2026-09-25",
+        "release_status": "Live",
+        "release_type": "Album",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP139.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP139.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600024",
                 "artist": "HyperSOUL-X, Sontshikazi",
                 "title": "Moya",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52600012",
                 "artist": "HyperSOUL-X",
                 "title": "Ndiani",
                 "mix": "Main HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52600025",
                 "artist": "HyperSOUL-X, Mogau SA",
                 "title": "Happysoul",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52600016",
                 "artist": "HyperSOUL-X, Sontshikazi",
                 "title": "Menelisi",
                 "mix": "Main HT"
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52600022",
                 "artist": "HyperSOUL-X",
                 "title": "Ndiwe",
                 "mix": "Main HT"
             },
             {
+                "track_number": 6,
+                "isrc": "ZASY52600001",
                 "artist": "HyperSOUL-X",
                 "title": "The Awakening",
                 "mix": "Main HT"
             },
             {
+                "track_number": 7,
+                "isrc": "ZASY52600027",
                 "artist": "HyperSOUL-X, PreciousGift",
                 "title": "Free",
                 "mix": "Main HT"
             },
             {
+                "track_number": 8,
+                "isrc": "ZASY52600023",
                 "artist": "HyperSOUL-X",
                 "title": "Mugomo",
                 "mix": "Main HT"
             },
             {
+                "track_number": 9,
+                "isrc": "ZASY52600002",
                 "artist": "HyperSOUL-X",
                 "title": "The Threshold",
                 "mix": "Main HT"
             },
             {
+                "track_number": 10,
+                "isrc": "ZASY52600026",
                 "artist": "HyperSOUL-X, Idd Aziz",
                 "title": "Pendula",
                 "mix": "Revised HT"
             },
             {
+                "track_number": 11,
+                "isrc": "ZASY52600029",
                 "artist": "HyperSOUL-X, LadyKay The Poet",
                 "title": "Tjate",
                 "mix": "Spoken HT"
             },
             {
+                "track_number": 12,
+                "isrc": "ZASY51900010",
                 "artist": "HyperSOUL-X, Lulu Bolaydie",
                 "title": "Your Light",
                 "mix": "Amapiano HT"
             },
             {
+                "track_number": 13,
+                "isrc": "ZASY52600030",
                 "artist": "HyperSOUL-X, Zee Royal",
                 "title": "Void",
                 "mix": "Main HT"
             },
             {
+                "track_number": 14,
+                "isrc": "ZASY52600028",
                 "artist": "HyperSOUL-X, PreciousGift",
                 "title": "Kgetha Nna",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6XwXydJ97hQlKBaK4tAitX",
+            "Apple Music": "https://music.apple.com/us/album/hts-collections-v/6807407658",
+            "Traxsource": "https://www.traxsource.com/title/2868934/hts-collections-v",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP138",
         "artist": "Deepeak",
         "title": "Farhatna",
         "upc": "612891082548",
+        "release_date": "2026-07-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP138.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP138.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600021",
                 "artist": "Deepeak",
                 "title": "Farhatna",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1MXvHbvsldpTjtFz5bP7ac",
+            "Apple Music": "https://music.apple.com/us/album/farhatna-single/6779662419?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2814611/farhatna",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP137",
         "artist": "PabloSA, Alvilianx",
         "title": "Caller ID",
         "upc": "612891079685",
+        "release_date": "2026-07-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP137.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP137.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600020",
                 "artist": "PabloSA, Alvilianx",
                 "title": "Caller ID",
                 "mix": "Afro Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3aiDHi2p5UGjWV4aeFnb4Z",
+            "Apple Music": "https://music.apple.com/us/album/caller-id-single/6779295696?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2813955/caller-id",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP136",
         "artist": "Alvin Chunky",
         "title": "Afro Roots",
         "upc": "612891079678",
+        "release_date": "2026-07-10",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP136.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP136.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600018",
                 "artist": "Alvin Chunky",
                 "title": "Afro Roots",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52600019",
                 "artist": "Alvin Chunky",
                 "title": "Sunrise Whispers",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3yjT6E7zeOjFWtAxp07C2S",
+            "Apple Music": "https://music.apple.com/us/album/afro-roots-single/6779295589?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2813957/afro-roots",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP135",
         "artist": "HyperSOUL-X, Sontshikazi",
         "title": "Menelisi",
         "upc": "612891079661",
+        "release_date": "2026-07-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP135.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP135.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600016",
                 "artist": "HyperSOUL-X, Sontshikazi",
                 "title": "Menelisi",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/75gnBi0Gq5qfsvee38MJoi",
+            "Apple Music": "https://music.apple.com/us/album/menelisi-single/6779295322?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2813956/menelisi",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP134",
         "artist": "Alvilianx",
         "title": "Wave",
         "upc": "612891079654",
+        "release_date": "2026-06-26",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP134.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP134.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600017",
                 "artist": "Alvilianx",
                 "title": "Wave",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6Bnw90RfA5QkvwFyK55kiZ",
+            "Apple Music": "https://music.apple.com/us/album/wave-single/6779295229?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2813971/wave",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP133",
         "artist": "Cheden",
         "title": "Sky",
         "upc": "612891054859",
+        "release_date": "2026-06-12",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP133.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP133.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600015",
                 "artist": "Cheden",
                 "title": "Sky",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0nRIcbRXKRZXmtH6i8CYHN",
+            "Apple Music": "https://music.apple.com/us/album/sky-single/6774603693?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2804336/sky",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP132",
         "artist": "HyperSOUL-X, Lulu Bolaydie",
         "title": "Your Light",
         "upc": "663918989340",
+        "release_date": "2026-06-05",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP132.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP132.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600014",
                 "artist": "HyperSOUL-X, Lulu Bolaydie",
                 "title": "Your Light",
                 "mix": "a Lieutenant-X Remix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY51900010",
                 "artist": "HyperSOUL-X, Lulu Bolaydie",
                 "title": "Your Light",
                 "mix": "Amapiano HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2j8CRksP0oibspuEX9fNzt",
+            "Apple Music": "https://music.apple.com/us/album/your-light-single/1895552468?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2780547/your-light",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP131",
         "artist": "The F (Official)",
         "title": "Oui Monsieur",
         "upc": "663918989333",
+        "release_date": "2026-05-29",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP131.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP131.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600013",
                 "artist": "The F (Official)",
                 "title": "Oui Monsieur",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2Bx4r50POQBHrogvIQdDGz",
+            "Apple Music": "https://music.apple.com/us/album/oui-monsieur-single/1895552128?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2780548/oui-monsieur",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP130",
         "artist": "HyperSOUL-X",
         "title": "Ndiani",
         "upc": "663918983201",
+        "release_date": "2026-05-22",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP130.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP130.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600012",
                 "artist": "HyperSOUL-X",
                 "title": "Ndiani",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1irBkPz8qQPdWeTTXpcqmo",
+            "Apple Music": "https://music.apple.com/us/album/ndiani-single/1895158280?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2777075/ndiani",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP129",
         "artist": "Marcus Code",
         "title": "Shimmer",
         "upc": "663918983188",
+        "release_date": "2026-05-15",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP129.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP129.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600011",
                 "artist": "Marcus Code",
                 "title": "Shimmer",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/78uGyPacU0qSj8trCZgOU4",
+            "Apple Music": "https://music.apple.com/us/album/shimmer-single/1895158211?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2777076/shimmer",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP128",
         "artist": "EDDIE QUEROL",
-        "title": "LAS NI\u00c3\u2018AS",
+        "title": "LAS NIÃ‘AS",
         "upc": "663918983171",
+        "release_date": "2026-05-08",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP128.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP128.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600010",
                 "artist": "EDDIE QUEROL",
-                "title": "LAS NI\u00c3\u2018AS",
+                "title": "LAS NIÃ‘AS",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3rMH9oFfd5BeNz2Thmf2Zh",
+            "Apple Music": "https://music.apple.com/us/album/las-ni%C3%B1as-single/1895158267?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2777077/las-ninas",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP127",
         "artist": "MR NOO",
         "title": "Ngithwele",
         "upc": "663918973233",
+        "release_date": "2026-05-01",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP127.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP127.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600009",
                 "artist": "MR NOO",
                 "title": "Ngithwele",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/71ldIUB9dNbqQZ6uihzb86",
+            "Apple Music": "https://music.apple.com/us/album/ngithwele-single/1893946960?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2772471/ngithwele",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP126",
         "artist": "Lieutenant-X, Sontshikazi",
         "title": "Xola",
         "upc": "663918960073",
+        "release_date": "2026-04-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP126.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP126.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600008",
                 "artist": "Lieutenant-X, Sontshikazi",
                 "title": "Xola",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0ceVMng3InxjcHWFsaHNRl",
+            "Apple Music": "https://music.apple.com/us/album/xola-single/1891740385?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2766292/xola",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP125",
         "artist": "Alvilianx",
         "title": "Oh My! Oh My! (Remix)",
         "upc": "663918957141",
+        "release_date": "2026-04-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP125.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP125.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600006",
                 "artist": "Alvilianx",
                 "title": "Oh My! Oh My!",
                 "mix": "Alvilianx Remix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/79OKbncsAflBkEOg1mNYdU",
+            "Apple Music": "https://music.apple.com/us/album/oh-my-oh-my-remix-single/1891207440?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2764913/oh-my-oh-my-remix",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP124",
         "artist": "The Lashes, Papisto",
         "title": "Charlie",
         "upc": "663918946657",
+        "release_date": "2026-04-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP124.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP124.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600005",
                 "artist": "The Lashes, Papisto",
                 "title": "Charlie",
                 "mix": "a Lieutenant-X Remix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY51800058",
                 "artist": "The Lashes, Papisto",
                 "title": "Charlie",
                 "mix": "Oscar P Remix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0q08ZIhyKEltq0M7H7sz5A",
+            "Apple Music": "https://music.apple.com/us/album/charlie-single/1889663383?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2760530/charlie",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP123",
         "artist": "Deep7s, PAUL PARKER & J Nana",
         "title": "Sina Sina",
         "upc": "663918924853",
+        "release_date": "2026-04-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP123.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP123.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600004",
                 "artist": "Deep7s, PAUL PARKER & J Nana",
                 "title": "Sina Sina",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/703wV15sV5KJbRma9YOncZ",
+            "Apple Music": "https://music.apple.com/us/album/sina-sina-single/1886470007?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2751249/sina-sina",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP122",
         "artist": "HyperSOUL-X",
         "title": "Planet Dee EP 7",
         "upc": "663918888001",
+        "release_date": "2026-03-13",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP122.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP122.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52600001",
                 "artist": "HyperSOUL-X",
                 "title": "The Awakening",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52600002",
                 "artist": "HyperSOUL-X",
                 "title": "The Threshold",
                 "mix": "Main HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52600003",
                 "artist": "HyperSOUL-X",
                 "title": "The Slumber",
                 "mix": "Main MHT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3dsTWdzx9friqb9KGsjA5D",
+            "Apple Music": "https://music.apple.com/us/album/planet-dee-ep-7-single/1880707965?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2734791/planet-dee-ep-7",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP121",
         "artist": "SPYRRIDO",
         "title": "On Mood",
         "upc": "663918664803",
+        "release_date": "2025-12-05",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP121.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP121.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "QZWDD2571086",
                 "artist": "SPYRRIDO",
                 "title": "On Mood",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "QZWDD2571075",
                 "artist": "SPYRRIDO",
                 "title": "After The Sun",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6lwHbkOzA3eAWvakiTkCj6",
+            "Apple Music": "https://music.apple.com/us/album/on-mood-single/1853885506?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2665233/on-mood",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP120",
         "artist": "Snokie, HyperSOUL-X",
         "title": "Khanyisa",
         "upc": "663918663219",
+        "release_date": "2025-11-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP120.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP120.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500056",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Khanyisa",
                 "mix": "a Lieutenant-X Remix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200015",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Khanyisa",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/58GdV1TViu9bzy8fOJJcV7",
+            "Apple Music": "https://music.apple.com/us/album/khanyisa-single/1853640167?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2664683/khanyisa",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP119",
         "artist": "Sontshikazi, HyperSOUL-X",
         "title": "Ancient Sound",
         "upc": "663918615423",
+        "release_date": "2025-11-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP119.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP119.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500054",
                 "artist": "Sontshikazi, HyperSOUL-X",
                 "title": "Ancient Sound",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500055",
                 "artist": "Sontshikazi, HyperSOUL-X",
                 "title": "Ancient Sound",
                 "mix": "a Lieutenant-X Remix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4UIT23RBpZdA3q8MALjTYJ",
+            "Apple Music": "https://music.apple.com/us/album/ancient-sound-single/1848203880?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2648621/ancient-sound",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP118",
         "artist": "Rawson Ford",
         "title": "Black In Me EP",
         "upc": "663918615393",
+        "release_date": "2025-11-14",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP118.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP118.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500049",
                 "artist": "Rawson Ford",
                 "title": "Black In Me",
                 "mix": "Intro"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500050",
                 "artist": "Rawson Ford",
                 "title": "Ein Junger",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52500051",
                 "artist": "Rawson Ford",
                 "title": "Mzilikazi",
                 "mix": ""
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52500052",
                 "artist": "Rawson Ford",
                 "title": "Shadows",
                 "mix": ""
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52500053",
                 "artist": "Rawson Ford, Mageba SA",
                 "title": "Time Will Tell",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7aP189NqHJBWywDOU1laiG",
+            "Apple Music": "https://music.apple.com/us/album/black-in-me-ep-ep/1848202893?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2648619/black-in-me-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP117",
         "artist": "Lieutenant-X, Lulu Bolaydie",
         "title": "Lerato",
         "upc": "663918470701",
+        "release_date": "2025-09-12",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP117.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP117.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500047",
                 "artist": "Lieutenant-X, Lulu Bolaydie",
                 "title": "Lerato",
                 "mix": "3Step Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500048",
                 "artist": "Lieutenant-X, Lulu Bolaydie",
                 "title": "Lerato",
                 "mix": "Reprise"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "https://music.apple.com/us/album/lerato-single/1835740307?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2606873/lerato",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP116",
         "artist": "Who Is He",
         "title": "Drums In Motions",
         "upc": "663918427941",
+        "release_date": "2025-09-05",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP116.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP116.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500046",
                 "artist": "Who Is He",
                 "title": "Drums In Motions",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5hAhtYQMvRhDUSW6RHDiV3",
+            "Apple Music": "https://music.apple.com/us/album/drums-in-motions-single/1831525503?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2594400/drums-in-motions",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP115",
         "artist": "Norbess",
         "title": "Kiangazi",
         "upc": "663918427965",
+        "release_date": "2025-08-29",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP115.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP115.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500045",
                 "artist": "Norbess",
                 "title": "Kiangazi",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5Ys0y3kf0iOolTn8EtE9rG",
+            "Apple Music": "https://music.apple.com/us/album/kiangazi-single/1831525346?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2602687/happiness",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP114",
         "artist": "HyperSOUL-X, Sabrina Masenya",
         "title": "Happiness",
         "upc": "663918455050",
+        "release_date": "2025-08-29",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP114.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP114.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500044",
                 "artist": "HyperSOUL-X, Sabrina Masenya",
                 "title": "Happiness",
                 "mix": "a Lieutenant-X Remix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52000036",
                 "artist": "HyperSOUL-X, Sabrina Masenya",
                 "title": "Happiness",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3dicQulwjgF2zEmjVcknW4",
+            "Apple Music": "https://music.apple.com/us/album/happiness-single/1834257340?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2594399/kiangazi",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP113",
         "artist": "zhili & byli",
         "title": "prosperity",
         "upc": "663918398074",
+        "release_date": "2025-08-15",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP113.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP113.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500042",
                 "artist": "zhili & byli",
                 "title": "indisoul",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500043",
                 "artist": "zhili & byli",
                 "title": "liefde",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/09hRG5g9VXMbhgsrltGphG",
+            "Apple Music": "https://music.apple.com/us/album/prosperity-single/1828469307?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2584751/prosperity",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP112",
         "artist": "Lieutenant-X, Thapelo Kganane, Sabrina Masenya",
         "title": "Breathe",
         "upc": "663918323847",
+        "release_date": "2025-08-08",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP112.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP112.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500041",
                 "artist": "Lieutenant-X, Thapelo Kganane, Sabrina Masenya",
                 "title": "Breathe",
                 "mix": "3Step Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5AkeqfOXvGhFD6DBBxzlA3",
+            "Apple Music": "https://music.apple.com/us/album/breathe-single/1821707193?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2560108/breathe",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP111",
         "artist": "Lone Dreamer",
         "title": "Sleeping Dragon",
         "upc": "663918323106",
+        "release_date": "2025-08-01",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP111.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP111.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500040",
                 "artist": "Lone Dreamer",
                 "title": "Sleeping Dragon",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3A08vlDUcGl6aTxWcUTxZr",
+            "Apple Music": "https://music.apple.com/us/album/sleeping-dragon-single/1821694815?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2559945/sleeping-dragon",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP110",
         "artist": "Lieutenant-X",
         "title": "Koma",
         "upc": "663918323120",
+        "release_date": "2025-07-25",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP110.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP110.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500039",
                 "artist": "Lieutenant-X",
                 "title": "Koma",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2rzns52MrrbqwCqh2aQ2ls",
+            "Apple Music": "https://music.apple.com/us/album/koma-single/1821695019?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2559948/koma",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP109",
         "artist": "Sons Of The Unknown",
         "title": "Shadow Chant",
         "upc": "663918323144",
+        "release_date": "2025-07-18",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP109.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP109.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500038",
                 "artist": "Sons Of The Unknown",
                 "title": "Shadow Chant",
                 "mix": "Alienated Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6TeTZDBRgQIV4UjlKXfQTu",
+            "Apple Music": "https://music.apple.com/us/album/shadow-chant-single/1821694946?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2559951/shadow-chant",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP108",
         "artist": "Lizzard",
         "title": "Izitha EP",
         "upc": "663918323397",
+        "release_date": "2025-07-11",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP108.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP108.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500033",
                 "artist": "Lizzard, SoulMan",
                 "title": "Izitha",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500034",
                 "artist": "Lizzard",
                 "title": "Bajo",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52500035",
                 "artist": "Lizzard",
                 "title": "Planets",
                 "mix": "Re-Edit"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52500036",
                 "artist": "Lizzard",
                 "title": "Out Of Control",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6sBq0VngIcHP3sZH97Ryfu",
+            "Apple Music": "https://music.apple.com/us/album/izitha-ep-ep/1821697519?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2559959/izitha-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP107",
         "artist": "HyperSOUL-X, Sabrina Masenya",
         "title": "Hey'O",
         "upc": "663918323892",
+        "release_date": "2025-07-04",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP107.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP107.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500032",
                 "artist": "HyperSOUL-X, Sabrina Masenya",
                 "title": "Hey'O",
                 "mix": "a Lieutenant-X Rework"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY51900015",
                 "artist": "HyperSOUL-X, Sabrina Masenya",
                 "title": "Hey'O",
                 "mix": "Afro HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6yvYUfDrdtjNEyZOd6AKVG",
+            "Apple Music": "https://music.apple.com/us/album/heyo-single/1821707833?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2560107/heyo",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP106",
         "artist": "Alvilianx",
         "title": "Oh my! Oh my!",
         "upc": "663918239810",
+        "release_date": "2025-06-13",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP106.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP106.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500030",
                 "artist": "Alvilianx",
                 "title": "Oh my! Oh my!",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6E8EVH0qNqjgCZEs0coZeQ",
+            "Apple Music": "https://music.apple.com/us/album/oh-my-oh-my-single/1814389114?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2533777/oh-my-oh-my",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP105",
         "artist": "Lone Dreamer",
         "title": "2AM Drummin",
         "upc": "663918239803",
+        "release_date": "2025-06-06",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP105.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP105.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500031",
                 "artist": "Lone Dreamer",
                 "title": "2AM Drummin",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0HRnXnikPA5n0qwL6nyMeH",
+            "Apple Music": "https://music.apple.com/us/album/2am-drummin-single/1814388837?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2533774/2am-drummin",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP104",
         "artist": "LaErhnzo & TooZee",
         "title": "Dammy",
         "upc": "663918239834",
+        "release_date": "2025-05-30",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP104.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP104.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500028",
                 "artist": "LaErhnzo & TooZee",
                 "title": "Dammy",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500029",
                 "artist": "LaErhnzo & TooZee",
                 "title": "Dammy",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7mcJCuc64HoVUD6hmv9Bb1",
+            "Apple Music": "https://music.apple.com/us/album/dammy-single/1814389533?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2533776/dammy",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP103",
         "artist": "Lieutenant-X",
         "title": "Kuya",
         "upc": "663918140529",
+        "release_date": "2025-04-25",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP103.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP103.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500027",
                 "artist": "Lieutenant-X",
                 "title": "Kuya",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2wChmigYDUuRElap3UIE7M",
+            "Apple Music": "https://music.apple.com/us/album/kuya-single/1802215302?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2490323/kuya",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP102",
-        "artist": "Tribal Prot\u00c3\u00a9g\u00c3\u00a9, Simplistic T S",
+        "artist": "Tribal ProtÃ©gÃ©, Simplistic T S",
         "title": "Siku",
         "upc": "663918164983",
+        "release_date": "2025-04-18",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP102.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP102.html",
         "tracks": [
             {
-                "artist": "Tribal Prot\u00c3\u00a9g\u00c3\u00a9, Simplistic T S",
+                "track_number": 1,
+                "isrc": "ZASY52500025",
+                "artist": "Tribal ProtÃ©gÃ©, Simplistic T S",
                 "title": "Siku",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4mQlesWJyGpFX1ZSmCouYI",
+            "Apple Music": "https://music.apple.com/us/album/siku-single/1805619437?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2502465/siku",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP101",
         "artist": "Lieutenant-X & Sabrina Masenya",
         "title": "Pain",
         "upc": "663918140451",
+        "release_date": "2025-04-11",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP101.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP101.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500026",
                 "artist": "Lieutenant-X, Sabrina Masenya",
                 "title": "Pain",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1niAA29rqvrbIRHZVfZcKH",
+            "Apple Music": "https://music.apple.com/us/album/pain-single/1802213686?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2490321/pain",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP100",
         "artist": "Lizzard",
         "title": "Planets",
         "upc": "663918090459",
+        "release_date": "2025-04-04",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP100.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP100.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500024",
                 "artist": "Lizzard",
                 "title": "Planets",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/05Wm9gK7n6Vuydr4KcEKkJ",
+            "Apple Music": "https://music.apple.com/us/album/planets-single/1796200911?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2467175/planets",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP099",
         "artist": "Lieutenant-X",
         "title": "Nawe",
         "upc": "663918068304",
+        "release_date": "2025-03-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP099.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP099.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500023",
                 "artist": "Lieutenant-X",
                 "title": "Nawe",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3muX6UK5z4bAM0f8RgWVIu",
+            "Apple Music": "https://music.apple.com/us/album/nawe-single/1793925333?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2458309/nawe",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP098",
         "artist": "Norbess",
         "title": "3x3",
         "upc": "663918068311",
+        "release_date": "2025-03-21",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP098.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP098.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500020",
                 "artist": "Norbess",
                 "title": "Faith",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500021",
                 "artist": "Norbess",
                 "title": "Senegal",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52500022",
                 "artist": "Norbess",
                 "title": "Sole",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1RSdmHEc9Pla1MkArUUpLd",
+            "Apple Music": "https://music.apple.com/us/album/3x3-single/1793925553?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2458311/3x3",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP097",
         "artist": "Rawson Ford",
         "title": "Jaguar's Groove",
         "upc": "663918068328",
+        "release_date": "2025-03-14",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP097.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP097.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500019",
                 "artist": "Rawson Ford",
                 "title": "Jaguar's Groove",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1McxnwimnRQn2xogDBBB4a",
+            "Apple Music": "https://music.apple.com/us/album/jaguars-groove-single/1793925762?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2458310/jaguars-groove",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP096",
         "artist": "Lone Dreamer",
         "title": "Year Of A Wolf",
         "upc": "663918068335",
+        "release_date": "2025-03-07",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP096.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP096.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500018",
                 "artist": "Lone Dreamer",
                 "title": "Year Of A Wolf",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3wnzI7Hd5fFlWqKM3fOqgf",
+            "Apple Music": "https://music.apple.com/us/album/year-of-a-wolf-single/1793925935?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2458314/year-of-a-wolf",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP095",
         "artist": "Lieutenant-X",
         "title": "Woza",
         "upc": "663918065747",
+        "release_date": "2025-02-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP095.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP095.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500017",
                 "artist": "Lieutenant-X",
                 "title": "Woza",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/38FnRpDSBbTEsTRCIZUTgy",
+            "Apple Music": "https://music.apple.com/us/album/woza-single/1793769708?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2457652/woza",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP094",
         "artist": "Alvilianx",
         "title": "Mufasa II",
         "upc": "663918005798",
+        "release_date": "2025-02-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP094.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP094.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500012",
                 "artist": "Alvilianx",
                 "title": "Mufasa II",
                 "mix": "Transitional Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5kXoSqNrR5LONBkQOcA6Ye",
+            "Apple Music": "https://music.apple.com/us/album/mufasa-ii-single/1787570036?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2434374/mufasa-ii",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP093",
         "artist": "DJ NaGrim",
         "title": "Machweo",
         "upc": "723277975474",
+        "release_date": "2025-02-14",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP093.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP093.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500010",
                 "artist": "DJ NaGrim",
                 "title": "Machweo",
                 "mix": "Extended Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500011",
                 "artist": "DJ NaGrim",
                 "title": "Machweo",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4eQW4UmhhuIPrao24ONpqd",
+            "Apple Music": "https://music.apple.com/us/album/machweo-single/1783816214?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2422889/machweo",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP092",
         "artist": "Norbess",
         "title": "Redemption",
         "upc": "723277970851",
+        "release_date": "2025-02-07",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP092.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP092.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500009",
                 "artist": "Norbess",
                 "title": "Redemption",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1gOxQ9fJoqoKOfp1NSNzkj",
+            "Apple Music": "https://music.apple.com/us/album/redemption-single/1783312982?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2420745/redemption",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP091",
         "artist": "Allan Biggs",
         "title": "Yayeh",
         "upc": "723277962801",
+        "release_date": "2025-01-31",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP091.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP091.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500007",
                 "artist": "Allan Biggs",
                 "title": "Yayeh",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3N43vDPv4LPs2hWNaY8Zc0",
+            "Apple Music": "https://music.apple.com/us/album/yayeh-single/1782215827?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2417301/yayeh",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP090",
         "artist": "Bohlale, HyperSOUL-X",
         "title": "Hope (Remixes)",
         "upc": "723277966083",
+        "release_date": "2025-01-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP090.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP090.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500008",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "a Lieutenant-X Edit"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500004",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Mosco Lee, Nubz MusiQ & Sadam Seguya's 3 Step Drum Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52500005",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Lone Dreamer's Drumkulture Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5vyO04SvwmUXHTAfmuHEFz",
+            "Apple Music": "https://music.apple.com/us/album/hope-remixes-single/1782925121?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2419459/hope-remixes",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP089",
         "artist": "Luca Lyj",
         "title": "Sanda",
         "upc": "723277962788",
+        "release_date": "2025-01-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP089.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP089.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500006",
                 "artist": "Luca Lyj",
                 "title": "Sanda",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7dLK7pGr2044ydqLMv6Xhs",
+            "Apple Music": "https://music.apple.com/us/album/sanda-single/1782215626?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2417302/sanda",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP088",
         "artist": "Bess Cavendish & HyperSOUL-X",
         "title": "Queen of the World",
         "upc": "723277962726",
+        "release_date": "2025-01-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP088.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP088.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500002",
                 "artist": "Bess Cavendish, HyperSOUL-X",
                 "title": "Queen of the World",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52500003",
                 "artist": "Bess Cavendish, HyperSOUL-X",
                 "title": "Queen of the World",
                 "mix": "Alternative Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/11OArSMA2TUaQCkDF8rJot",
+            "Apple Music": "https://music.apple.com/us/album/queen-of-the-world-single/1782214941?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2417300/queen-of-the-world",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP087",
         "artist": "Lone Dreamer",
         "title": "Amaru",
         "upc": "723277957524",
+        "release_date": "2025-01-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP087.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP087.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52500001",
                 "artist": "Lone Dreamer",
                 "title": "Amaru",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2zhXnPBMK33GHyiMD8mOSs",
+            "Apple Music": "https://music.apple.com/us/album/amaru-single/1781720769?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2414483/amaru",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP086",
         "artist": "George North",
         "title": "The Game",
         "upc": "723277930947",
+        "release_date": "2024-12-27",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP086.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP086.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400028",
                 "artist": "George North",
                 "title": "The Game",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4IegHmShmHFfZXLMgXOw4l",
+            "Apple Music": "https://music.apple.com/us/album/the-game-single/1778693888?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2402832/the-game",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP085",
         "artist": "Giorgio Bassetti",
         "title": "Parashat",
         "upc": "723277921549",
+        "release_date": "2024-12-20",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP085.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP085.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400027",
                 "artist": "Giorgio Bassetti",
                 "title": "Parashat",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/58IaU4Cq9Vj5u22PklJTtp",
+            "Apple Music": "https://music.apple.com/us/album/parashat-single/1777457640?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2398550/parashat",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP084",
         "artist": "Rawson Ford",
         "title": "Ziz",
         "upc": "723277921532",
+        "release_date": "2024-12-13",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP084.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP084.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400026",
                 "artist": "Rawson Ford",
                 "title": "Ziz",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5VYgJCzJo4KYJXpBHjxx0c",
+            "Apple Music": "https://music.apple.com/us/album/ziz-single/1777457166?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2398551/ziz",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP083",
         "artist": "Lone Dreamer",
         "title": "Drum Drum",
         "upc": "723277877655",
+        "release_date": "2024-12-06",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP083.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP083.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400025",
                 "artist": "Lone Dreamer",
                 "title": "Drum Drum",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1fLLQJLrsvI3ctDyt1zq9u",
+            "Apple Music": "https://music.apple.com/us/album/drum-drum-single/1772484822?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2379688/drum-drum",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP082",
         "artist": "Dub Smash, HyperSOUL-X",
         "title": "Bueno",
         "upc": "723277875033",
+        "release_date": "2025-01-12",
+        "release_status": "Deleted",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP082.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP082.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400024",
                 "artist": "Dub Smash, HyperSOUL-X",
                 "title": "Bueno",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {}
     },
     {
         "cat": "HYP081",
         "artist": "Alvilianx",
         "title": "Into The Unknown",
         "upc": "723277822839",
+        "release_date": "2024-11-22",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP081.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP081.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400022",
                 "artist": "Alvilianx",
                 "title": "Into The Unknown",
                 "mix": "Transitional Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52400023",
                 "artist": "Alvilianx",
                 "title": "Into The Unknown",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2sQw5ognqYs8AFulTMhE65",
+            "Apple Music": "https://music.apple.com/us/album/into-the-unknown-single/1768256109?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2363767/into-the-unknown",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP080",
         "artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
         "title": "What A Time To Be Alive",
         "upc": "723277822792",
+        "release_date": "2024-11-15",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP080.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP080.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400020",
                 "artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
                 "title": "What A Time To Be Alive",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52400021",
                 "artist": "Mosco Lee, Nubz MusiQ, Sontshikazi",
                 "title": "What A Time To Be Alive",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4uVhnTHv2I4q3F6YvXuZj8",
+            "Apple Music": "https://music.apple.com/us/album/what-a-time-to-be-alive-single/1768249031?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2363752/what-a-time-to-be-alive",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP079",
         "artist": "DarqSphere",
         "title": "Ezakwa Zulu",
         "upc": "723277822785",
+        "release_date": "2024-11-08",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP079.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP079.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400019",
                 "artist": "DarqSphere",
                 "title": "Ezakwa Zulu",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5WK9Mm7ONVzDYpPTKls08F",
+            "Apple Music": "https://music.apple.com/us/album/ezakwa-zulu-single/1768248915?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2363753/ezakwa-zulu",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP078",
         "artist": "Rawson Ford",
         "title": "Heal Africa",
         "upc": "723277806785",
+        "release_date": "2024-11-01",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP078.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP078.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400018",
                 "artist": "Rawson Ford",
                 "title": "Heal Africa",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0rfH7Wd4xSEpWXHrwy3saI",
+            "Apple Music": "https://music.apple.com/us/album/heal-africa-single/1767421570?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2360848/heal-africa",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP077",
         "artist": "Sons Of The Unknown, HyperSOUL-X",
         "title": "Hypnotize",
         "upc": "723277806358",
+        "release_date": "2024-10-25",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP077.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP077.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400017",
                 "artist": "Sons Of The Unknown, HyperSOUL-X",
                 "title": "Hypnotize",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/07WUZ0cemEiXPNBh29KNgf",
+            "Apple Music": "https://music.apple.com/us/album/hypnotize-single/1767271020?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2360134/hypnotize",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP076",
         "artist": "Simplistic T S",
         "title": "Ase",
         "upc": "723277806204",
+        "release_date": "2024-10-18",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP076.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP076.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400016",
                 "artist": "Simplistic T S",
                 "title": "Ase",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/083dZrxF5V6A5TdIAPoP3D",
+            "Apple Music": "https://music.apple.com/us/album/ase-single/1767199115?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2360100/ase",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP075",
         "artist": "Naize, Mido Mi, Bess Cavendish",
         "title": "Summer Greens",
         "upc": "723277800745",
+        "release_date": "2024-10-11",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP075.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP075.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400014",
                 "artist": "Naize, Mido Mi, Bess Cavendish",
                 "title": "Summer Greens",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52400015",
                 "artist": "Naize, Mido Mi, Bess Cavendish",
                 "title": "Summer Greens",
                 "mix": "HyperSOUL-X's HT Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2vJ02S1FjZIk9pLXL5KJQI",
+            "Apple Music": "https://music.apple.com/us/album/summer-greens-single/1766827479?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2358701/summer-greens",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP074",
         "artist": "HDC",
         "title": "New Leaf",
         "upc": "723277797045",
+        "release_date": "2024-10-04",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP074.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP074.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400013",
                 "artist": "HDC",
                 "title": "New Leaf",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2C1bEw8MZAqWG3h5HFFdjx",
+            "Apple Music": "https://music.apple.com/us/album/new-leaf-single/1766585851?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2357383/new-leaf",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP073",
         "artist": "Lone Dreamer",
         "title": "Drum Wars",
         "upc": "723277797038",
+        "release_date": "2024-09-27",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP073.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP073.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400012",
                 "artist": "Lone Dreamer",
                 "title": "Drum Wars",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/56LHnVus0wHh6dx6LMHVpj",
+            "Apple Music": "https://music.apple.com/us/album/drum-wars-single/1766585738?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2357381/drum-wars",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP072",
         "artist": "Lieutenant-X, Luyanda M",
         "title": "Journey",
         "upc": "723277529509",
+        "release_date": "2024-05-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP072.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP072.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400011",
                 "artist": "Lieutenant-X, Luyanda M",
                 "title": "Journey",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6fnC6oUkkepuaO7mVlkKdb",
+            "Apple Music": "https://music.apple.com/us/album/journey-single/1745533415?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2268644/journey",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP071",
         "artist": "Tico Morales",
         "title": "Solitario",
         "upc": "723277491516",
+        "release_date": "2024-05-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP071.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP071.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400010",
                 "artist": "Tico Morales",
                 "title": "Solitario",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6QtNqbgBY8JSza71fmsIia",
+            "Apple Music": "https://music.apple.com/us/album/solitario-single/1741589706?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2250420/solitario",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP070",
         "artist": "Lieutenant-X, Snokie",
         "title": "With The Ocean",
         "upc": "723277491424",
+        "release_date": "2024-05-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP070.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP070.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400009",
                 "artist": "Lieutenant-X, Snokie",
                 "title": "With The Ocean",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2kpXDky0VVRWg1YMBsPxGO",
+            "Apple Music": "https://music.apple.com/us/album/with-the-ocean-single/1741578601?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2250318/with-the-ocean",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP069",
         "artist": "Coke Segwapa, HyperSOUL-X",
         "title": "Pick Up",
         "upc": "723277491509",
+        "release_date": "2024-05-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP069.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP069.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400007",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Pick Up",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52400008",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Pick Up",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/539r2fCMktPlkG7pvb9JjT",
+            "Apple Music": "https://music.apple.com/us/album/pick-up-single/1741560735?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2250421/pick-up",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP068",
         "artist": "Lieutenant-X",
         "title": "Kirrawee",
         "upc": "723277491486",
+        "release_date": "2024-04-26",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP068.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP068.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400006",
                 "artist": "Lieutenant-X",
                 "title": "Kirrawee",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6fnlX2Z0WAJMSVp2Lo2yfv",
+            "Apple Music": "https://music.apple.com/us/album/kirrawee-single/1741559508?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2250338/kirrawee",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP067",
         "artist": "Tico Morales",
         "title": "Portal To The Beyond",
         "upc": "723277415765",
+        "release_date": "2024-03-29",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP067.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP067.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400005",
                 "artist": "Tico Morales",
                 "title": "Portal To The Beyond",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0LAXk7MbuPkuWMsnQN5qaj",
+            "Apple Music": "https://music.apple.com/us/album/portal-to-the-beyond-single/1734262228?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2217647/portal-to-the-beyond",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP066",
         "artist": "HyperSOUL-X",
         "title": "Sing That Song Again (Feat. Lulu Bolaydie)",
         "upc": "723277416397",
+        "release_date": "2024-03-22",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP066.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP066.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400003",
                 "artist": "HyperSOUL-X",
                 "title": "Sing That Song Again (Feat. Lulu Bolaydie)",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 2,
+                "isrc": "FRX202075760",
                 "artist": "HyperSOUL-X",
                 "title": "Sing That Song Again (Feat. Lulu Bolaydie)",
                 "mix": "HT Remake"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1U0DmooFdsp7FDsj0g1fGK",
+            "Apple Music": "https://music.apple.com/us/album/sing-that-song-again-feat-lulu-bolaydie-single/1734273630?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2217743/sing-that-song-again-feat-lulu-bolaydie",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP065",
         "artist": "HyperSOUL-X",
         "title": "HTs Collections, Vol. 4",
         "upc": "723277363967",
+        "release_date": "2024-02-23",
+        "release_status": "Live",
+        "release_type": "Album",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP065.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP065.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300038",
                 "artist": "HyperSOUL-X",
                 "title": "Magugu Yangu",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300036",
                 "artist": "HyperSOUL-X",
                 "title": "Yin",
                 "mix": "Main HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200034",
                 "artist": "HyperSOUL-X",
                 "title": "Eden",
                 "mix": "Main HT"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52200013",
                 "artist": "HyperSOUL-X",
                 "title": "Maji Matamu",
                 "mix": "Main HT"
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52200017",
                 "artist": "HyperSOUL-X",
                 "title": "Yelele",
                 "mix": "Main HT"
             },
             {
+                "track_number": 6,
+                "isrc": "ZASY52200016",
                 "artist": "HyperSOUL-X",
                 "title": "Zoo",
                 "mix": "Main HT"
             },
             {
+                "track_number": 7,
+                "isrc": "ZASY52100058",
                 "artist": "HyperSOUL-X",
                 "title": "C'mon",
                 "mix": "Main HT"
             },
             {
+                "track_number": 8,
+                "isrc": "ZASY52200026",
                 "artist": "HyperSOUL-X",
                 "title": "Mama Yeh",
                 "mix": "Main HT"
             },
             {
+                "track_number": 9,
+                "isrc": "ZASY52200012",
                 "artist": "HyperSOUL-X",
                 "title": "Woko",
                 "mix": "Main HT"
             },
             {
+                "track_number": 10,
+                "isrc": "ZASY52300048",
                 "artist": "HyperSOUL-X",
                 "title": "Mirame",
                 "mix": "Main HT"
             },
             {
+                "track_number": 11,
+                "isrc": "ZASY52100042",
                 "artist": "HyperSOUL-X",
                 "title": "Ijo",
                 "mix": "Main HT"
             },
             {
+                "track_number": 12,
+                "isrc": "ZASY52400001",
                 "artist": "HyperSOUL-X",
                 "title": "Juntos",
                 "mix": "Main HT"
             },
             {
+                "track_number": 13,
+                "isrc": "ZASY52100036",
                 "artist": "HyperSOUL-X",
                 "title": "Centric",
                 "mix": "Main HT"
             },
             {
+                "track_number": 14,
+                "isrc": "ZASY52300044",
                 "artist": "HyperSOUL-X",
                 "title": "Bekani",
                 "mix": "Main HT"
             },
             {
+                "track_number": 15,
+                "isrc": "ZASY52300047",
                 "artist": "HyperSOUL-X",
                 "title": "I Don't Know Why",
                 "mix": "Main HT"
             },
             {
+                "track_number": 16,
+                "isrc": "ZASY52300051",
                 "artist": "HyperSOUL-X",
                 "title": "Bailar",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7j8ZEJZMG16latQUMVCVLI",
+            "Apple Music": "https://music.apple.com/us/album/hts-collections-vol-4/1728940054?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2178733/the-end-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP064",
         "artist": "HyperSOUL-X",
         "title": "The End (Main HT)",
         "upc": "723277331768",
+        "release_date": "2024-01-19",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP064.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP064.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400002",
                 "artist": "HyperSOUL-X",
                 "title": "The End",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7MabsTt1bi4iQRU5FwcgcR",
+            "Apple Music": "https://music.apple.com/us/album/the-end-main-ht-single/1727202744?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2187287/hts-collections-vol-4",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP063",
         "artist": "HyperSOUL-X",
         "title": "Juntos (Main HT)",
         "upc": "723277342504",
+        "release_date": "2024-02-09",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP063.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP063.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52400001",
                 "artist": "HyperSOUL-X",
                 "title": "Juntos",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/55l4i729nvXQkahZdlqieZ",
+            "Apple Music": "https://music.apple.com/us/album/juntos-main-ht-single/1727202438?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2175271/loving-you",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP062",
         "artist": "Bohlale, HyperSOUL-X",
         "title": "Loving You",
         "upc": "723277198347",
+        "release_date": "2024-02-02",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP062.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP062.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300056",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Loving You",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300057",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Loving You",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6tZ2JYyeKqI6VmfkHDYegk",
+            "Apple Music": "https://music.apple.com/us/album/loving-you-single/1726424019?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2178732/juntos-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP061",
         "artist": "Zack Da Freak, HyperSOUL-X",
         "title": "S'fela Ngawe",
         "upc": "723277097756",
+        "release_date": "2023-10-20",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP061.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP061.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300052",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "S'fela Ngawe",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300053",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "S'fela Ngawe",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300054",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "S'fela Ngawe",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300055",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "S'fela Ngawe",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7G6JsO6ylWgqjckrBOdMNs",
+            "Apple Music": "https://music.apple.com/us/album/sfela-ngawe-ep/1708934769?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2103738/sfela-ngawe",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP060",
         "artist": "HyperSOUL-X",
         "title": "Bailar (Main HT)",
         "upc": "723277097725",
+        "release_date": "2023-10-13",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP060.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP060.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300051",
                 "artist": "HyperSOUL-X",
                 "title": "Bailar",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3q40pcDJn6knt7NDN9iqFJ",
+            "Apple Music": "https://music.apple.com/us/album/bailar-main-ht-single/1708934231?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2103732/bailar-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP059",
         "artist": "Blessing Dike, HyperSOUL-X",
         "title": "Africa",
         "upc": "723277090948",
+        "release_date": "2023-10-06",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP059.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP059.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300049",
                 "artist": "Blessing Dike, HyperSOUL-X",
                 "title": "Africa",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300050",
                 "artist": "Blessing Dike, HyperSOUL-X",
                 "title": "Africa",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6tdOqureun73vUxxsWoq85",
+            "Apple Music": "https://music.apple.com/us/album/africa-single/1708493025?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2102073/africa",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP058",
         "artist": "HyperSOUL-X",
         "title": "Mirame (Main HT)",
         "upc": "723277071954",
+        "release_date": "2023-09-29",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP058.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP058.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300048",
                 "artist": "HyperSOUL-X",
                 "title": "Mirame",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0ccFLzB48IHQszPxXPua62",
+            "Apple Music": "https://music.apple.com/us/album/mirame-main-ht-single/1707405348?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2097220/mirame-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP057",
         "artist": "HyperSOUL-X",
         "title": "I Don't Know Why (Main HT)",
         "upc": "723277002071",
+        "release_date": "2023-09-01",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP057.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP057.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300047",
                 "artist": "HyperSOUL-X",
                 "title": "I Don't Know Why",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5AP8kqO1XJSUcHrUWxmKEj",
+            "Apple Music": "https://music.apple.com/us/album/i-dont-know-why-main-ht-single/1703291138?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2079823/i-dont-know-why-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP056",
         "artist": "Sabrina Masenya, HyperSOUL-X",
         "title": "Scatter Me",
         "upc": "795397969855",
+        "release_date": "2023-08-18",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP056.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP056.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300045",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "Scatter Me",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300046",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "Scatter Me",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4BFYXR0zhJbyIeWurDAK7M",
+            "Apple Music": "https://music.apple.com/us/album/scatter-me-single/1701405873?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2072227/scatter-me",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP055",
         "artist": "HyperSOUL-X",
         "title": "Bekani (Main HT)",
         "upc": "795397946054",
+        "release_date": "2023-08-11",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP055.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP055.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300044",
                 "artist": "HyperSOUL-X",
                 "title": "Bekani",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5nDrOxac4UryGlJhDd2NWn",
+            "Apple Music": "https://music.apple.com/us/album/bekani-main-ht-single/1699659137?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2066556/bekani-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP054",
         "artist": "Bohlale, HyperSOUL-X",
         "title": "Hope",
         "upc": "795397905402",
+        "release_date": "2023-07-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP054.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP054.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300040",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300041",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300042",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300043",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Hope",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5bhG771C62eQNwEKBJhkv5",
+            "Apple Music": "https://music.apple.com/us/album/hope-ep/1696996180?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2056347/hope",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP053",
         "artist": "The Lashes, Papisto",
         "title": "Charlie",
         "upc": "795397893631",
+        "release_date": "2023-07-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP053.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP053.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300039",
                 "artist": "The Lashes, Papisto",
                 "title": "Charlie",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY51800058",
                 "artist": "The Lashes, Papisto",
                 "title": "Charlie",
                 "mix": "Oscar P Remix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5ERs4rqNk5t052SRZVJmqJ",
+            "Apple Music": "https://music.apple.com/us/album/charlie-single/1696205153?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2053805/charlie",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP052",
         "artist": "HyperSOUL-X",
         "title": "Magugu Yangu (Main HT)",
         "upc": "795397850429",
+        "release_date": "2023-06-30",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP052.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP052.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300038",
                 "artist": "HyperSOUL-X",
                 "title": "Magugu Yangu",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0rf4QTuPMQnswyO240mKIr",
+            "Apple Music": "https://music.apple.com/us/album/magugu-yangu-main-ht-single/1693290674?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2042233/magugu-yangu-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP051",
         "artist": "HyperSOUL-X",
         "title": "Yin & Yang EP",
         "upc": "795397831503",
+        "release_date": "2023-06-23",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP051.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP051.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300036",
                 "artist": "HyperSOUL-X",
                 "title": "Yin",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300037",
                 "artist": "HyperSOUL-X",
                 "title": "Yang",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4MDmRaVsKD8qMWXtVfvDt1",
+            "Apple Music": "https://music.apple.com/us/album/yin-yang-ep/1692192283?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2037814/yin-and-yang-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP050",
         "artist": "Dub Smash, HyperSOUL-X",
         "title": "Ancient Garden",
         "upc": "795397806709",
+        "release_date": "2023-06-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP050.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP050.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "CA5KR2354583",
                 "artist": "Dub Smash, HyperSOUL-X",
                 "title": "Ancient Garden",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/27biZJeAFNDSOdjiZFxyAy",
+            "Apple Music": "https://music.apple.com/us/album/ancient-garden-single/1690482636?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2030995/ancient-garden",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP049",
         "artist": "Blessing Dike",
         "title": "Taking Over EP",
         "upc": "795397752136",
+        "release_date": "2023-05-13",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP049.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP049.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300033",
                 "artist": "Blessing Dike, Ma-B, HyperSOUL-X",
                 "title": "Together Forever",
                 "mix": ""
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300034",
                 "artist": "Blessing Dike, HyperSOUL-X",
                 "title": "Musical Journey",
                 "mix": ""
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300035",
                 "artist": "Blessing Dike",
                 "title": "Control",
                 "mix": ""
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5CQTDfAkRNxCIr8XVAO6Nf",
+            "Apple Music": "https://music.apple.com/us/album/taking-over-ep/1686227531?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2043534/taking-over-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP048",
         "artist": "HyperSOUL-X, Blessing Dike",
         "title": "Hold On",
         "upc": "5054287381326",
+        "release_date": "2023-05-05",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP048.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP048.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300031",
                 "artist": "HyperSOUL-X, Blessing Dike",
                 "title": "Hold On",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300032",
                 "artist": "HyperSOUL-X, Blessing Dike",
                 "title": "Hold On",
                 "mix": "Dubbed HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7DcBGIg4ftRpbzxGSii3oR",
+            "Apple Music": "https://music.apple.com/us/album/hold-on-single/1688078051?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2009126/hold-on",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP047",
         "artist": "HDC, HyperSOUL-X",
         "title": "Khumbaya",
         "upc": "5054287350308",
+        "release_date": "2023-04-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP047.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP047.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300029",
                 "artist": "HDC, HyperSOUL-X",
                 "title": "Khumbaya",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300030",
                 "artist": "HDC, HyperSOUL-X",
                 "title": "Khumbaya",
                 "mix": "Reprise Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0Z44iGKjQLenHmSFMADXaV",
+            "Apple Music": "https://music.apple.com/us/album/khumbaya-single/1688456243?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2000724/khumbaya",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP046",
         "artist": "Snokie, HyperSOUL-X",
         "title": "Fly Away",
         "upc": "5054287350292",
+        "release_date": "2023-04-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP046.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP046.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300027",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Fly Away",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300028",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Fly Away",
                 "mix": "a Lieutenant-X Remix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/01OOV6NETCUTb9YmxV9MQO",
+            "Apple Music": "https://music.apple.com/us/album/fly-away-single/1688460459?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/2000008/fly-away",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP045",
         "artist": "Lieutenant-X",
         "title": "D For Deep",
         "upc": "5054287349616",
+        "release_date": "2024-07-11",
+        "release_status": "Deleted",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP045.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP045.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300024",
                 "artist": "Lieutenant-X, HyperSOUL-X",
                 "title": "Lunar Echo",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300025",
                 "artist": "Lieutenant-X",
                 "title": "House Party",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300026",
                 "artist": "Lieutenant-X",
                 "title": "Deep Groove",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {}
     },
     {
         "cat": "HYP044",
         "artist": "Coke Segwapa,  HyperSOUL-X",
         "title": "Higher",
         "upc": "5054287323555",
+        "release_date": "2023-04-07",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP044.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP044.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300020",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Higher",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300021",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Higher",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300022",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Higher",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300023",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Higher",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/59rd4CzhuMEHnD7lOToXMi",
+            "Apple Music": "https://music.apple.com/us/album/higher-ep/1701444421?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1992186/higher",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP043",
         "artist": "HyperSOUL-X, RejazzSA",
         "title": "Wrong Turn",
         "upc": "5054287323500",
+        "release_date": "2023-03-31",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP043.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP043.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300019",
                 "artist": "RejazzSA, HyperSOUL-X",
                 "title": "Wrong Turn",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7wFP9waiLktu4G41QCI3LH",
+            "Apple Music": "https://music.apple.com/us/album/wrong-turn-single/1688457885?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1992709/wrong-turn",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP042",
         "artist": "LeeJoy, HyperSOUL-X",
         "title": "For Me (Afro Mix)",
         "upc": "5054287281930",
+        "release_date": "2023-03-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP042.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP042.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300018",
                 "artist": "LeeJoy, HyperSOUL-X",
                 "title": "For Me",
                 "mix": "Afro Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1lk3pqsMYvCzN2Dh3l7S5E",
+            "Apple Music": "https://music.apple.com/us/album/for-me-afro-mix-single/1688455631?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1981124/for-me-afro-mix",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP041",
         "artist": "HDC, HyperSOUL-X",
         "title": "The Last Ones",
         "upc": "5054287265015",
+        "release_date": "2023-03-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP041.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP041.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300017",
                 "artist": "HDC, HyperSOUL-X",
                 "title": "The Last Ones",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6fNmUFZ7tGS2GIJlOJUlS5",
+            "Apple Music": "https://music.apple.com/us/album/the-last-ones-single/1688457634?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1974992/the-last-ones",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP040",
         "artist": "Zack Da Freak, HyperSOUL-X",
         "title": "Take Me",
         "upc": "5054287187607",
+        "release_date": "2023-03-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP040.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP040.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300013",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "Take Me",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300014",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "Take Me",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300016",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "Take Me",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300015",
                 "artist": "Zack Da Freak, HyperSOUL-X",
                 "title": "Take Me",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4ernQhnoU6BwMnAaAZLjgN",
+            "Apple Music": "https://music.apple.com/us/album/take-me-ep/1688457644?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1962318/take-me",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP039",
         "artist": "Coke Segwapa, HyperSOUL-X",
         "title": "Phumelela",
         "upc": "5054287187591",
+        "release_date": "2023-03-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP039.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP039.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300009",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Phumelela",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300010",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Phumelela",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300011",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Phumelela",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300012",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Phumelela",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2zqJfZs4Vt47p7eIujXrOQ",
+            "Apple Music": "https://music.apple.com/us/album/phumelela-ep/1688454615?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1957401/phumelela",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP038",
         "artist": "Maque, HyperSOUL-X",
         "title": "Messiah",
         "upc": "5054287187584",
+        "release_date": "2023-02-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP038.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP038.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300008",
                 "artist": "Maque, HyperSOUL-X",
                 "title": "Messiah",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4CRSZUF3lF9cdSkYyQ5y18",
+            "Apple Music": "https://music.apple.com/us/album/messiah-single/1688457665?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1955690/messiah",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP037",
         "artist": "Stewie Le Savage, HyperSOUL-X",
         "title": "Melanin Confidence",
         "upc": "5054287167326",
+        "release_date": "2023-02-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP037.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP037.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300007",
                 "artist": "Stewie Le Savage, HyperSOUL-X",
                 "title": "Melanin Confidence",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300006",
                 "artist": "Stewie Le Savage, HyperSOUL-X",
                 "title": "Melanin Confidence",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/61AxEP1Ow3U2n4JF51I110",
+            "Apple Music": "https://music.apple.com/us/album/melanin-confidence-single/1688457511?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1951617/melanin-confidence",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP036",
         "artist": "KB Deep, HyperSOUL-X",
         "title": "Arabian Yabki",
         "upc": "5054287139408",
+        "release_date": "2023-02-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP036.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP036.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300005",
                 "artist": "KB Deep, HyperSOUL-X",
                 "title": "Arabian Yabki",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/62RezGw0XFZjxgz6mtQ67E",
+            "Apple Music": "https://music.apple.com/us/album/arabian-yabki-single/1688455637?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1942242/arabian-yabki",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP035",
         "artist": "Coke Segwapa, HyperSOUL-X",
         "title": "Khala",
         "upc": "5054287130481",
+        "release_date": "2023-02-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP035.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP035.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52300001",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Khala",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52300002",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Khala",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52300003",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Khala",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52300004",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Khala",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/77CXuCef2RMYcaljIV6oom",
+            "Apple Music": "https://music.apple.com/us/album/khala-ep/1688455546?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1941592/khala",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP034",
         "artist": "Ma-b, HyperSOUL-X, Alfina",
         "title": "M'bhobo Bulega",
         "upc": "5054287109364",
+        "release_date": "2023-01-27",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP034.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP034.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200042",
                 "artist": "Ma-b, HyperSOUL-X, Alfina",
                 "title": "M'bhobo Bulega",
                 "mix": "Main V-HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200043",
                 "artist": "Ma-b, HyperSOUL-X, Alfina",
                 "title": "M'bhobo Bulega",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200044",
                 "artist": "Ma-b, HyperSOUL-X, Alfina",
                 "title": "M'bhobo Bulega",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6VlGnf2F3ZFF8R0pZvYCD7",
+            "Apple Music": "https://music.apple.com/us/album/mbhobo-bulega-single/1688455160?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1936693/mbhobo-bulega",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP033",
         "artist": "HDC, HyperSOUL-X",
         "title": "Sunrise",
         "upc": "5054287096800",
+        "release_date": "2023-01-20",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP033.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP033.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200041",
                 "artist": "HDC, HyperSOUL-X",
                 "title": "Sunrise",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1KkFV5rdeqP7xRcGGhBCuv",
+            "Apple Music": "https://music.apple.com/us/album/sunrise-single/1688453955?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1933294/sunrise",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP032",
         "artist": "Native P. , HyperSOUL-X, Coke Segwapa",
         "title": "Bathagathi",
         "upc": "5054287095452",
+        "release_date": "2023-01-13",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP032.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP032.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200039",
                 "artist": "Native P., HyperSOUL-X, Coke Segwapa",
                 "title": "Bathagathi",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200040",
                 "artist": "Native P., HyperSOUL-X, Coke Segwapa",
                 "title": "Bathagathi",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7liIkz2cGwnYzbux33z4BR",
+            "Apple Music": "https://music.apple.com/us/album/bathagathi-single/1688454563?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1932006/bathagathi",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP031",
         "artist": "Coke Segwapa, HyperSOUL-X",
         "title": "Dlozi Lam'",
         "upc": "5054287082872",
+        "release_date": "2023-01-06",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP031.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP031.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200035",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Dlozi Lam'",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200036",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Dlozi Lam'",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200037",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Dlozi Lam'",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52200038",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Dlozi Lam'",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1rX6XXnVz7nKjIhLOhchRF",
+            "Apple Music": "https://music.apple.com/us/album/dlozi-lam-ep/1688458858?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1928418/dlozi-lam",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP030",
         "artist": "HyperSOUL-X",
         "title": "HTs Collections, Vol. 3",
         "upc": "5054287045433",
+        "release_date": "2022-11-25",
+        "release_status": "Live",
+        "release_type": "Album",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP030.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP030.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52000034",
                 "artist": "HyperSOUL-X, OKAY GOD",
                 "title": "O Ya Kae",
                 "mix": "Main HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200007",
                 "artist": "HyperSOUL-X",
                 "title": "Kore",
                 "mix": "Main HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200003",
                 "artist": "HyperSOUL-X",
                 "title": "Let There Be House",
                 "mix": "Main HT"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52200011",
                 "artist": "HyperSOUL-X",
                 "title": "Wara Wara",
                 "mix": "Main HT"
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52100017",
                 "artist": "HyperSOUL-X",
                 "title": "Bison",
                 "mix": "Main HT"
             },
             {
+                "track_number": 6,
+                "isrc": "ZASY52100018",
                 "artist": "HyperSOUL-X",
                 "title": "Peace",
                 "mix": "Main HT"
             },
             {
+                "track_number": 7,
+                "isrc": "ZASY52100021",
                 "artist": "HyperSOUL-X",
                 "title": "Peri-Peri",
                 "mix": "Main HT"
             },
             {
+                "track_number": 8,
+                "isrc": "ZASY52100008",
                 "artist": "HyperSOUL-X",
                 "title": "Mood",
                 "mix": "Main HT"
             },
             {
+                "track_number": 9,
+                "isrc": "ZASY52100033",
                 "artist": "HyperSOUL-X",
                 "title": "Malo",
                 "mix": "Main HT"
             },
             {
+                "track_number": 10,
+                "isrc": "ZASY52100063",
                 "artist": "HyperSOUL-X",
                 "title": "Something",
                 "mix": "Main HT"
             },
             {
+                "track_number": 11,
+                "isrc": "ZASY52200010",
                 "artist": "HyperSOUL-X",
                 "title": "The Fall",
                 "mix": "Main HT"
             },
             {
+                "track_number": 12,
+                "isrc": "ZASY52200014",
                 "artist": "HyperSOUL-X",
                 "title": "Twenty-Six",
                 "mix": "Main HT"
             },
             {
+                "track_number": 13,
+                "isrc": "ZASY52200029",
                 "artist": "HyperSOUL-X",
                 "title": "Pretty Sky",
                 "mix": "Main HT"
             },
             {
+                "track_number": 14,
+                "isrc": "ZASY52200018",
                 "artist": "HyperSOUL-X",
                 "title": "BackGround",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6H2Ca36iQiK4BfGOgCznc4",
+            "Apple Music": "https://music.apple.com/us/album/hts-collections-vol-3/1692218981?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1917596/hts-collections-vol-3",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP029",
         "artist": "HyperSOUL-X",
         "title": "Eden (Main HT)",
         "upc": "5054286947912",
+        "release_date": "2022-10-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP029.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP029.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200034",
                 "artist": "HyperSOUL-X",
                 "title": "Eden",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3891Mkeek2Z3liEwTWpn9b",
+            "Apple Music": "https://music.apple.com/us/album/eden-main-ht-single/1688454011?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1889712/eden-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP028",
         "artist": "Coke Segwapa, HyperSOUL-X",
         "title": "Our Father",
         "upc": "5054286934059",
+        "release_date": "2022-10-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP028.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP028.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200032",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Our Father",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200033",
                 "artist": "Coke Segwapa, HyperSOUL-X",
                 "title": "Our Father",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7iFOwDveEaUvM2f0keCQy5",
+            "Apple Music": "https://music.apple.com/us/album/our-father-single/1688454118?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1885402/our-father",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP027",
         "artist": "Sabrina Masenya, HyperSOUL-X",
         "title": "Nguwe",
         "upc": "5054286893318",
+        "release_date": "2022-09-30",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP027.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP027.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200030",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "Nguwe",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200031",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "Nguwe",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/6PmVSJPCrd2k2dePi2zNvs",
+            "Apple Music": "https://music.apple.com/us/album/nguwe-single/1688454213?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1873917/nguwe",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP026",
         "artist": "HyperSOUL-X",
         "title": "Pretty Sky (Main HT)",
         "upc": "5054286860464",
+        "release_date": "2022-09-16",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP026.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP026.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200029",
                 "artist": "HyperSOUL-X",
                 "title": "Pretty Sky",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2c5eAOqpFlzgeQQ6CYRZT5",
+            "Apple Music": "https://music.apple.com/us/album/pretty-sky-main-ht-single/1688454335?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1864412/pretty-sky-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP025",
         "artist": "McKay Johnson, HyperSOUL-X",
         "title": "Mzulo",
         "upc": "5054286815525",
+        "release_date": "2022-08-19",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP025.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP025.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200028",
                 "artist": "McKay Johnson, HyperSOUL-X",
                 "title": "Mzulo",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200027",
                 "artist": "McKay Johnson, HyperSOUL-X",
                 "title": "Mzulo",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5omKCaBsPtth9ENJlnKAzM",
+            "Apple Music": "https://music.apple.com/us/album/mzulo-single/1688459118?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1850620/mzulo",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP024",
         "artist": "HyperSOUL-X",
         "title": "Mama Yeh (Main HT)",
         "upc": "5054286794721",
+        "release_date": "2022-08-12",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP024.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP024.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200026",
                 "artist": "HyperSOUL-X",
                 "title": "Mama Yeh",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/3uAFIHa3akMtzWH2uqq5Xf",
+            "Apple Music": "https://music.apple.com/us/album/mama-yeh-main-ht-single/1688454429?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1844826/mama-yeh-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP023",
         "artist": "Aura Dee, HyperSOUL-X",
         "title": "Uthando (Afro Mix)",
         "upc": "5054286781523",
+        "release_date": "2022-08-05",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP023.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP023.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200025",
                 "artist": "Aura Dee, HyperSOUL-X",
                 "title": "Uthando",
                 "mix": "Afro Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5GrCi3iUZpU5cWYORiJoHc",
+            "Apple Music": "https://music.apple.com/us/album/uthando-afro-mix-single/1688453493?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1840645/uthando-afro-mix",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP022",
         "artist": "HyperSOUL-X",
         "title": "Afro HTs EP",
         "upc": "5054286758563",
+        "release_date": "2022-07-22",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP022.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP022.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200024",
                 "artist": "HyperSOUL-X, McKay Johnson",
                 "title": "Elula",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY51900026",
                 "artist": "HyperSOUL-X, Zee, DVO",
                 "title": "Isoka Lam'",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY51900015",
                 "artist": "HyperSOUL-X, Sabrina Masenya",
                 "title": "Hey'O",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52000068",
                 "artist": "HyperSOUL-X, Kaydee",
                 "title": "In My Sky",
                 "mix": "Afro HT"
             },
             {
+                "track_number": 5,
+                "isrc": "ZASY52000050",
                 "artist": "HyperSOUL-X, Mogau SA",
                 "title": "Ungowami",
                 "mix": "Afro HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/08nt8BouGkGzzzBdvNwJns",
+            "Apple Music": "https://music.apple.com/us/album/afro-hts-ep/1691968935?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1834437/afro-hts-ep",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP021",
         "artist": "Truth Mash & Sabrina Masenya",
         "title": "Buye (HyperSOUL-X Mixes)",
         "upc": "5054286738947",
+        "release_date": "2022-07-15",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP021.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP021.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200021",
                 "artist": "Truth Mash, Sabrina Masenya",
                 "title": "Buye",
                 "mix": "HyperSOUL-X's HT Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200022",
                 "artist": "Truth Mash, Sabrina Masenya",
                 "title": "Buye",
                 "mix": "HyperSOUL-X's Instrumental HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200023",
                 "artist": "Truth Mash, Sabrina Masenya",
                 "title": "Buye",
                 "mix": "HyperSOUL-X's Reprised HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/31mHWA3lPgHMPOJA8ognB7",
+            "Apple Music": "https://music.apple.com/us/album/buye-hypersoul-x-mixes-single/1691968796?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1829685/buye-hypersoul-x-mixes",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP020",
         "artist": "Bohlale, HyperSOUL-X",
         "title": "Fly",
         "upc": "5054286675402",
+        "release_date": "2022-06-24",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP020.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP020.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200019",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Fly",
                 "mix": "Afro Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200020",
                 "artist": "Bohlale, HyperSOUL-X",
                 "title": "Fly",
                 "mix": "Main Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4MySSeLZ05Xq70YzkNRfvU",
+            "Apple Music": "https://music.apple.com/us/album/fly-single/1688453263?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1811987/fly",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP019",
         "artist": "HyperSOUL-X",
         "title": "BackGround (Main HT)",
         "upc": "5054286666011",
+        "release_date": "2022-06-17",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP019.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP019.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200018",
                 "artist": "HyperSOUL-X",
                 "title": "BackGround",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1OIw4eG2NXhXJ99FKvYZ8f",
+            "Apple Music": "https://music.apple.com/us/album/background-main-ht-single/1688454095?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1808677/background-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP018",
         "artist": "HyperSOUL-X",
         "title": "Yelele (Main HT)",
         "upc": "5054286665991",
+        "release_date": "2022-06-10",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP018.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP018.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200017",
                 "artist": "HyperSOUL-X",
                 "title": "Yelele",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/270q0DAU2HVJOv1mvSqxCZ",
+            "Apple Music": "https://music.apple.com/us/album/yelele-main-ht-single/1688452602?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1808678/yelele-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP017",
         "artist": "HyperSOUL-X",
         "title": "Zoo (Main HT)",
         "upc": "5054286656845",
+        "release_date": "2022-06-03",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP017.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP017.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200016",
                 "artist": "HyperSOUL-X",
                 "title": "Zoo",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/75uidQqjt5874Bvu1caMeb",
+            "Apple Music": "https://music.apple.com/us/album/zoo-main-ht-single/1688452076?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1805970/zoo-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP016",
         "artist": "Snokie, HyperSOUL-X",
         "title": "Khanyisa",
         "upc": "5054286620303",
+        "release_date": "2022-05-20",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP016.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP016.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200015",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Khanyisa",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/5PcOVy9RBYem88SR6AGsGR",
+            "Apple Music": "https://music.apple.com/us/album/khanyisa-single/1853640167?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1796679/khanyisa",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP015",
         "artist": "HyperSOUL-X",
         "title": "Twenty-Six (Main HT)",
         "upc": "5054286614241",
+        "release_date": "2022-05-13",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP015.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP015.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200014",
                 "artist": "HyperSOUL-X",
                 "title": "Twenty-Six",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4kQlACgzlM1XjMn8mx1gPG",
+            "Apple Music": "https://music.apple.com/us/album/twenty-six-main-ht-single/1688452425?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1794723/twenty-six-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP014",
         "artist": "HyperSOUL-X",
         "title": "Maji Matamu (Main HT)",
         "upc": "5054286592884",
+        "release_date": "2022-05-06",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP014.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP014.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200013",
                 "artist": "HyperSOUL-X",
                 "title": "Maji Matamu",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1w7x6N0B7ERI1hoWnf1vMn",
+            "Apple Music": "https://music.apple.com/us/album/maji-matamu-main-ht-single/1688452222?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1789632/maji-matamu-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP013",
         "artist": "HyperSOUL-X",
         "title": "Woko (Main HT)",
         "upc": "5054286565581",
+        "release_date": "2022-04-22",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP013.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP013.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200012",
                 "artist": "HyperSOUL-X",
                 "title": "Woko",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7M2C4P4AQMnh6jdKLo6OLI",
+            "Apple Music": "https://music.apple.com/us/album/woko-main-ht-single/1688418987?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1779664/woko-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP012",
         "artist": "HyperSOUL-X",
         "title": "Wara Wara (Main Ht)",
         "upc": "5054286531982",
+        "release_date": "2022-04-08",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP012.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP012.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200011",
                 "artist": "HyperSOUL-X",
                 "title": "Wara Wara",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/4xHVI0jiLGPrT4jaruRAQE",
+            "Apple Music": "https://music.apple.com/us/album/wara-wara-main-ht-single/1688419031?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1772377/wara-wara-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP011",
         "artist": "HyperSOUL-X",
         "title": "Planet Dee EP 6",
         "upc": "5054286499015",
+        "release_date": "2022-03-25",
+        "release_status": "Live",
+        "release_type": "EP",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP011.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP011.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200008",
                 "artist": "HyperSOUL-X",
                 "title": "The Rise",
                 "mix": "Reprise HT"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200009",
                 "artist": "HyperSOUL-X",
                 "title": "The Peak",
                 "mix": "Main HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200010",
                 "artist": "HyperSOUL-X",
                 "title": "The Fall",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2BiDecJyvv9w9dvxI4qjGq",
+            "Apple Music": "https://music.apple.com/us/album/planet-dee-ep-6/1688418999?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1762791/planet-dee-ep-6",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP010",
         "artist": "HyperSOUL-X",
         "title": "Kore (Main HT)",
         "upc": "5054286464686",
+        "release_date": "2022-03-11",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP010.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP010.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200007",
                 "artist": "HyperSOUL-X",
                 "title": "Kore",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/76lX3cmOtglkGSPSDqbLb7",
+            "Apple Music": "https://music.apple.com/us/album/kore-main-ht-single/1688418980?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1755454/kore-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP009",
         "artist": "Fredy Massamba, DJ Satelite",
         "title": "Abantu (HyperSOUL-X Mixes)",
         "upc": "5054286448433",
+        "release_date": "2022-03-04",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP009.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP009.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200004",
                 "artist": "DJ Satelite, Fredy Massamba",
                 "title": "Abantu",
                 "mix": "HyperSOUL-X's HT Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200005",
                 "artist": "DJ Satelite, Fredy Massamba",
                 "title": "Abantu",
                 "mix": "HyperSOUL-X's Instrumental HT"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52200006",
                 "artist": "DJ Satelite, Fredy Massamba",
                 "title": "Abantu",
                 "mix": "HyperSOUL-X's Reprise HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/2EK4QFUM5gvmhyjQs5S0xO",
+            "Apple Music": "https://music.apple.com/us/album/abantu-hypersoul-x-mixes-single/1692218219?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1749542/abantu-hypersoul-x-mixes",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP008",
         "artist": "HyperSOUL-X",
         "title": "Let There Be House (Main HT)",
         "upc": "5054286384809",
+        "release_date": "2022-02-25",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP008.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP008.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200003",
                 "artist": "HyperSOUL-X",
                 "title": "Let There Be House",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0V3o2XZm4K9oDThsnRPBsD",
+            "Apple Music": "https://music.apple.com/us/album/let-there-be-house-main-ht-single/1691157583?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1735461/let-there-be-house-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP007",
         "artist": "Stewie Le Savage, HyperSOUL-X",
         "title": "uThando Lwakho",
         "upc": "5054286384533",
+        "release_date": "2022-02-18",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP007.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP007.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52200002",
                 "artist": "Stewie Le Savage, HyperSOUL-X",
                 "title": "uThando Lwakho",
                 "mix": "Main Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52200001",
                 "artist": "Stewie Le Savage, HyperSOUL-X",
                 "title": "uThando Lwakho",
                 "mix": "Afro Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/1quMRYuItynk627uMekug3",
+            "Apple Music": "https://music.apple.com/us/album/uthando-lwakho-single/1692218054?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1735482/uthando-lwakho",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP006",
         "artist": "Snokie, HyperSOUL-X",
         "title": "Come Home",
         "upc": "5054286357278",
+        "release_date": "2022-02-11",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP006.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP006.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100064",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Come Home",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52100065",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Come Home",
                 "mix": "Instrumental Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7Bd40VRm3soRYBAChJFGVU",
+            "Apple Music": "https://music.apple.com/us/album/come-home-single/1688418755?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1730751/come-home",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP005",
         "artist": "HyperSOUL-X",
         "title": "Something",
         "upc": "5054286357261",
+        "release_date": "2022-02-04",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP005.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP005.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100063",
                 "artist": "HyperSOUL-X",
                 "title": "Something",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/0Ha38H5sgEAqXAF2y9NyHh",
+            "Apple Music": "https://music.apple.com/us/album/something-single/1692218294?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1728225/something-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP004",
         "artist": "Sabrina Masenya, HyperSOUL-X",
         "title": "How I Feel",
         "upc": "5054286354635",
+        "release_date": "2022-01-28",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP004.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP004.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100059",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "How I Feel",
                 "mix": "Original Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52100060",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "How I Feel",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 3,
+                "isrc": "ZASY52100061",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "How I Feel",
                 "mix": "Reprise Mix"
             },
             {
+                "track_number": 4,
+                "isrc": "ZASY52100062",
                 "artist": "Sabrina Masenya, HyperSOUL-X",
                 "title": "How I Feel",
                 "mix": "Radio Edit"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/22JeKsJ5vMWHG03Zok4j8f",
+            "Apple Music": "https://music.apple.com/us/album/how-i-feel-ep/1692218213?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1728201/how-i-feel",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP003",
         "artist": "HyperSOUL-X",
         "title": "C'mon (Main HT)",
         "upc": "5054286345480",
+        "release_date": "2022-01-21",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP003.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP003.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100058",
                 "artist": "HyperSOUL-X",
                 "title": "C'mon",
                 "mix": "Main HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7u86k8bDjlWowQjsK8l2Xj",
+            "Apple Music": "https://music.apple.com/us/album/cmon-main-ht-single/1692218511?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1725584/cmon-main-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP002",
         "artist": "Ma-b, HyperSOUL-X",
         "title": "AfriCan Melodies (Main V-HT)",
         "upc": "5054286345442",
+        "release_date": "2022-01-14",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP002.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP002.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100057",
                 "artist": "Ma-b, HyperSOUL-X",
                 "title": "AfriCan Melodies",
                 "mix": "Main V-HT"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/7d4WN9JyEtByD18lwNYSbq",
+            "Apple Music": "https://music.apple.com/us/album/african-melodies-main-v-ht-single/1692354978?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1725585/african-melodies-main-v-ht",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP001",
         "artist": "Snokie, HyperSOUL-X",
         "title": "Love Me Hard",
         "upc": "5054286338444",
+        "release_date": "2022-01-07",
+        "release_status": "Live",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP001.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP001.html",
         "tracks": [
             {
+                "track_number": 1,
+                "isrc": "ZASY52100056",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Love Me Hard",
                 "mix": "Instrumental Mix"
             },
             {
+                "track_number": 2,
+                "isrc": "ZASY52100055",
                 "artist": "Snokie, HyperSOUL-X",
                 "title": "Love Me Hard",
                 "mix": "Original Mix"
             }
-        ]
+        ],
+        "stores": {
+            "Spotify": "https://open.spotify.com/album/71Gew1IZVhRARi376E9Mf2",
+            "Apple Music": "https://music.apple.com/us/album/love-me-hard-single/1692217970?uo=4",
+            "Traxsource": "https://www.traxsource.com/title/1722719/love-me-hard",
+            "Youtube": "",
+            "Beatport": ""
+        }
     }
 ]
