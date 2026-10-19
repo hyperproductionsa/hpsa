@@ -1,11 +1,40 @@
 [
     {
+        "cat": "HYP143",
+        "artist": "McKay Johnson, HyperSOUL-X",
+        "title": "Mzulo",
+        "upc": "612891305647",
+        "release_date": "2026-10-30",
+        "release_status": "Delivered",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP143.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP143.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600040",
+                "artist": "McKay Johnson, HyperSOUL-X",
+                "title": "Mzulo",
+                "mix": "a Lieutenant-X Remix"
+            },
+            {
+                "track_number": 2,
+                "isrc": "ZASY52200028",
+                "artist": "McKay Johnson, HyperSOUL-X",
+                "title": "Mzulo",
+                "mix": "Afro Mix"
+            }
+        ],
+        "stores": {}
+    },
+    {
         "cat": "HYP142",
         "artist": "HDC",
         "title": "Mogodumo",
-        "upc": "",
+        "upc": "612891292626",
         "release_date": "2026-10-23",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "EP",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP142.png",
@@ -47,7 +76,7 @@
         "title": "Three Chords from Home EP",
         "upc": "612891266832",
         "release_date": "2026-10-16",
-        "release_status": "Delivered",
+        "release_status": "Live",
         "release_type": "EP",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP141.png",
