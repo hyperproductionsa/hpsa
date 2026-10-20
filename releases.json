@@ -26,7 +26,13 @@
                 "mix": "Afro Mix"
             }
         ],
-        "stores": {}
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "https://www.traxsource.com/title/2902181/mzulo",
+            "Youtube": "",
+            "Beatport": ""
+        }
     },
     {
         "cat": "HYP142",
