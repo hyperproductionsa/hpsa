@@ -115,7 +115,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 @media (max-width:768px){.explore-card:hover,.explore-card:active{border-color:#e5de69;background:linear-gradient(145deg,#1a1a1a 0%,#0b0b0b 100%);transform:none}.explore-card:active .explore-arrow,.explore-card:hover .explore-arrow{opacity:1}}
 .explore-icon{width:54px;height:54px;display:flex;align-items:center;justify-content:center;flex:0 0 54px;color:#e5de69;background:rgba(229,222,105,.08);border:1px solid rgba(229,222,105,.22);border-radius:14px}
 .explore-icon svg{display:block;width:27px;height:27px}
-.explore-card-copy{display:block;min-width:0;text-align:left}
+.explore-card-copy{display:flex;flex-direction:column;justify-content:flex-start;align-self:stretch;min-width:0;text-align:left;padding-top:4px}
 .explore-card h3{font-family:'Roboto',Arial,sans-serif!important;font-size:1.05rem;line-height:1.25;font-weight:700;text-transform:uppercase;color:#e5de69;margin:0 0 4px!important;text-align:left}
 .explore-card p{color:#bdbdbd;font-family:'Roboto',Arial,sans-serif;font-size:.88rem;line-height:1.45;margin:0}
 .explore-arrow{position:absolute;right:16px;top:13px;color:#e5de69;font-size:1.1rem;opacity:.65;transition:opacity .2s,transform .2s}
