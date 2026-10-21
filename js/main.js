@@ -1,64 +1,40 @@
 document.addEventListener('DOMContentLoaded',function(){console.log('Hyper Production (SA) - Website loaded');const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:0.15,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.fade-section, .fade-left, .fade-right, .scale-up').forEach(el=>{observer.observe(el)})})
 
-/* Mobile pull-up Explore panel, using the same finger-tracking pattern as the music player. */
+/* Mobile discovery panel: Explore + distribution, controlled by the floating menu and swipe gesture. */
 document.addEventListener('DOMContentLoaded', function () {
   const hero = document.getElementById('hero');
+  const panel = document.getElementById('mobile-discovery-panel');
   const explore = document.getElementById('explore');
   const toggle = document.getElementById('mobile-explore-toggle');
-  if (!hero || !explore || !window.PointerEvent) return;
+  if (!hero || !panel || !explore || !toggle || !window.PointerEvent) return;
 
-  function setExploreOpen(open) {
-    if (!mobile()) return;
-    explore.classList.toggle('explore-open', open);
-    document.body.classList.toggle('explore-expanded', open);
-    if (toggle) {
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Close Explore menu' : 'Open Explore menu');
-    }
-  }
-
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      setExploreOpen(!explore.classList.contains('explore-open'));
-      explore.style.transform = '';
-    });
-  }
-
-  let drag = null;
   const mobile = () => window.matchMedia('(max-width: 768px)').matches;
-  const viewportHeight = () => Math.max(1, window.innerHeight);
-  const ignoredHeroTargets = 'a, button, input, textarea, select, #artwork-carousel, .slick-slider, .slick-list, .slick-track, .slick-slide';
-  let suppressHeroClickUntil = 0;
+  let drag = null;
+  let suppressClickUntil = 0;
 
-  hero.addEventListener('click', function (event) {
-    if (Date.now() > suppressHeroClickUntil) return;
-    suppressHeroClickUntil = 0;
-    event.preventDefault();
-    event.stopPropagation();
-  }, true);
+  function setOpen(open) {
+    if (!mobile()) return;
+    panel.classList.toggle('discovery-open', open);
+    document.body.classList.toggle('explore-expanded', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close Explore and distribution menu' : 'Open Explore and distribution menu');
+    toggle.querySelector('.explore-toggle-open-icon').style.display = open ? 'none' : 'block';
+    toggle.querySelector('.explore-toggle-close-icon').style.display = open ? 'block' : 'none';
+  }
 
-  function begin(event, mode) {
+  toggle.addEventListener('click', function () {
+    setOpen(!panel.classList.contains('discovery-open'));
+    panel.style.transform = '';
+  });
+
+  function start(event, mode) {
     if (!mobile() || (event.pointerType === 'mouse' && event.button !== 0)) return;
-    if (mode === 'open' && document.body.classList.contains('explore-expanded')) return;
-    if (mode === 'close' && !document.body.classList.contains('explore-expanded')) return;
-    if (mode === 'open' && event.target.closest(ignoredHeroTargets)) return;
-    // Close gestures start on the Explore heading so normal scrolling through
-    // the cards and links is never intercepted.
-    if (mode === 'close' && !event.target.closest('#explore h2')) return;
-
-    suppressHeroClickUntil = 0;
-    drag = {
-      mode,
-      id: event.pointerId,
-      surface: event.currentTarget,
-      startY: event.clientY,
-      lastY: event.clientY,
-      lastTime: performance.now(),
-      velocity: 0,
-      moved: false
-    };
-    explore.classList.add('explore-dragging');
-    // Keep the panel hidden on a tap; reveal it only after a real upward drag.
+    if (mode === 'open' && panel.classList.contains('discovery-open')) return;
+    if (mode === 'close' && !panel.classList.contains('discovery-open')) return;
+    if (mode === 'open' && event.target.closest('a,button,input,textarea,select,#artwork-carousel,.slick-slider,.slick-list,.slick-track,.slick-slide')) return;
+    if (mode === 'close' && !event.target.closest('#mobile-discovery-panel .panel-grab-area')) return;
+    drag = {mode, id:event.pointerId, startY:event.clientY, lastY:event.clientY, lastTime:performance.now(), velocity:0, moved:false};
+    panel.classList.add('discovery-dragging');
     try { event.currentTarget.setPointerCapture(event.pointerId); } catch (_) {}
   }
 
@@ -70,13 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
     drag.lastY = event.clientY;
     drag.lastTime = now;
     if (Math.abs(dy) > 12) drag.moved = true;
-
     if (drag.mode === 'open' && dy < -12) {
-      explore.classList.add('explore-open');
+      panel.classList.add('discovery-open');
       document.body.classList.add('explore-expanded');
-      explore.style.transform = 'translateY(calc(100% + ' + dy + 'px))';
-    } else if (drag.mode === 'close') {
-      explore.style.transform = 'translateY(' + Math.max(0, dy) + 'px)';
+      panel.style.transform = 'translateY(calc(100% + ' + dy + 'px))';
+    } else if (drag.mode === 'close' && dy > 0) {
+      panel.style.transform = 'translateY(' + dy + 'px)';
     }
   }
 
@@ -84,44 +59,40 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!drag || (event && event.pointerId !== drag.id)) return;
     const d = drag;
     const dy = (event ? event.clientY : d.lastY) - d.startY;
-    const h = viewportHeight();
-    const intentional = Math.abs(dy) >= Math.max(64, h * 0.09);
-    const shouldOpen = d.mode === 'open' && d.moved && intentional && (dy < -h * 0.18 || d.velocity < -0.7);
-    const shouldClose = d.mode === 'close' && d.moved && intentional && (dy > h * 0.18 || d.velocity > 0.7);
-
+    const h = Math.max(1, window.innerHeight);
+    const intentional = Math.abs(dy) >= Math.max(64, h * .09);
+    const open = d.mode === 'open' && d.moved && intentional && (dy < -h * .18 || d.velocity < -.7);
+    const close = d.mode === 'close' && d.moved && intentional && (dy > h * .18 || d.velocity > .7);
     drag = null;
-    explore.classList.remove('explore-dragging');
-    explore.style.transform = '';
-
-    if (d.mode === 'open') {
-      if (shouldOpen) {
-        setExploreOpen(true);
-      } else {
-        setExploreOpen(false);
-      }
-    } else if (shouldClose) {
-      setExploreOpen(false);
-      explore.scrollTop = 0;
-    }
-
-    if (d.moved && d.mode === 'open') suppressHeroClickUntil = Date.now() + 120;
+    panel.classList.remove('discovery-dragging');
+    panel.style.transform = '';
+    if (open) setOpen(true);
+    else if (d.mode === 'open') setOpen(false);
+    else if (close) setOpen(false);
+    if (d.moved && d.mode === 'open') suppressClickUntil = Date.now() + 180;
   }
 
-  hero.addEventListener('pointerdown', event => begin(event, 'open'));
-  explore.querySelector('h2')?.addEventListener('pointerdown', event => begin(event, 'close'));
-  [hero, explore].forEach(surface => {
-    surface.addEventListener('pointermove', move);
-    surface.addEventListener('pointerup', finish);
-    surface.addEventListener('pointercancel', finish);
+  hero.addEventListener('pointerdown', e => start(e, 'open'));
+  panel.querySelector('.panel-grab-area').addEventListener('pointerdown', e => start(e, 'close'));
+  [hero, panel].forEach(el => {
+    el.addEventListener('pointermove', move);
+    el.addEventListener('pointerup', finish);
+    el.addEventListener('pointercancel', finish);
   });
+  hero.addEventListener('click', e => {
+    if (Date.now() < suppressClickUntil) { e.preventDefault(); e.stopPropagation(); }
+  }, true);
 
   window.addEventListener('resize', function () {
     if (!mobile()) {
       drag = null;
-      explore.classList.remove('explore-open', 'explore-dragging');
-      explore.style.transform = '';
+      panel.classList.remove('discovery-open', 'discovery-dragging');
+      panel.style.transform = '';
       document.body.classList.remove('explore-expanded');
-      if (toggle) { toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open Explore menu'); }
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open Explore and distribution menu');
+      toggle.querySelector('.explore-toggle-open-icon').style.display = 'block';
+      toggle.querySelector('.explore-toggle-close-icon').style.display = 'none';
     }
   });
 });
