@@ -4,7 +4,25 @@ document.addEventListener('DOMContentLoaded',function(){console.log('Hyper Produ
 document.addEventListener('DOMContentLoaded', function () {
   const hero = document.getElementById('hero');
   const explore = document.getElementById('explore');
+  const toggle = document.getElementById('mobile-explore-toggle');
   if (!hero || !explore || !window.PointerEvent) return;
+
+  function setExploreOpen(open) {
+    if (!mobile()) return;
+    explore.classList.toggle('explore-open', open);
+    document.body.classList.toggle('explore-expanded', open);
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close Explore menu' : 'Open Explore menu');
+    }
+  }
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      setExploreOpen(!explore.classList.contains('explore-open'));
+      explore.style.transform = '';
+    });
+  }
 
   let drag = null;
   const mobile = () => window.matchMedia('(max-width: 768px)').matches;
@@ -77,15 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (d.mode === 'open') {
       if (shouldOpen) {
-        explore.classList.add('explore-open');
-        document.body.classList.add('explore-expanded');
+        setExploreOpen(true);
       } else {
-        explore.classList.remove('explore-open');
-        document.body.classList.remove('explore-expanded');
+        setExploreOpen(false);
       }
     } else if (shouldClose) {
-      explore.classList.remove('explore-open');
-      document.body.classList.remove('explore-expanded');
+      setExploreOpen(false);
       explore.scrollTop = 0;
     }
 
@@ -106,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
       explore.classList.remove('explore-open', 'explore-dragging');
       explore.style.transform = '';
       document.body.classList.remove('explore-expanded');
+      if (toggle) { toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open Explore menu'); }
     }
   });
 });
