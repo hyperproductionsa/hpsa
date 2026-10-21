@@ -526,3 +526,21 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 @media (prefers-reduced-motion:reduce) {
   #mobile-discovery-panel { transition:none!important; }
 }
+
+@media (max-width:768px) {
+  #mobile-discovery-panel .fade-section,
+  #mobile-discovery-panel .fade-left,
+  #mobile-discovery-panel .fade-right,
+  #mobile-discovery-panel .scale-up {
+    opacity:1!important;
+    transform:none!important;
+    transition:none!important;
+    animation:none!important;
+  }
+  #mobile-discovery-panel .fade-section.delay-1,
+  #mobile-discovery-panel .fade-section.delay-2,
+  #mobile-discovery-panel .fade-section.delay-3,
+  #mobile-discovery-panel .fade-section.delay-4,
+  #mobile-discovery-panel .fade-section.delay-5,
+  #mobile-discovery-panel .fade-section.delay-6 { transition-delay:0s!important; }
+}
