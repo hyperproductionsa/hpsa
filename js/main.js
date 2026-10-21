@@ -49,13 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
     drag.velocity = (event.clientY - drag.lastY) / Math.max(1, now - drag.lastTime);
     drag.lastY = event.clientY;
     drag.lastTime = now;
-    if (Math.abs(dy) > 12) drag.moved = true;
-    if (drag.mode === 'open' && dy < -12) {
+    if (Math.abs(dy) > 4) drag.moved = true;
+    if (drag.mode === 'open' && dy < 0) {
       panel.classList.add('discovery-open');
       document.body.classList.add('explore-expanded');
-      panel.style.transform = 'translateY(calc(100% + ' + dy + 'px))';
+      const travel = Math.max(0, Math.min(panel.getBoundingClientRect().height, -dy));
+      panel.style.transform = 'translateY(calc(100% - ' + travel + 'px))';
     } else if (drag.mode === 'close' && dy > 0) {
-      panel.style.transform = 'translateY(' + dy + 'px)';
+      const travel = Math.min(panel.getBoundingClientRect().height, dy);
+      panel.style.transform = 'translateY(' + travel + 'px)';
     }
   }
 
@@ -64,7 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const d = drag;
     const dy = (event ? event.clientY : d.lastY) - d.startY;
     const h = Math.max(1, window.innerHeight);
-    const intentional = Math.abs(dy) >= Math.max(64, h * .09);
+    const distanceThreshold = Math.max(64, h * .09);
+    const quickSwipe = Math.abs(dy) >= 28 && Math.abs(d.velocity) > .65;
+    const intentional = Math.abs(dy) >= distanceThreshold || quickSwipe;
     const open = d.mode === 'open' && d.moved && intentional && (dy < -h * .18 || d.velocity < -.7);
     const close = d.mode === 'close' && d.moved && intentional && (dy > h * .18 || d.velocity > .7);
     drag = null;
