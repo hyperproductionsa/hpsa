@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mode === 'open' && panel.classList.contains('discovery-open')) return;
     if (mode === 'close' && !panel.classList.contains('discovery-open')) return;
     if (mode === 'open' && event.target.closest('a,button,input,textarea,select,#artwork-carousel,.slick-slider,.slick-list,.slick-track,.slick-slide')) return;
-    if (mode === 'close' && !event.target.closest('#mobile-discovery-panel .panel-grab-area')) return;
+    if (mode === 'close') {
+      const panelTop = panel.getBoundingClientRect().top;
+      if (event.clientY - panelTop > 200) return;
+      if (event.target.closest('a,button,input,textarea,select')) return;
+    }
     drag = {mode, id:event.pointerId, startY:event.clientY, lastY:event.clientY, lastTime:performance.now(), velocity:0, moved:false};
     panel.classList.add('discovery-dragging');
     try { event.currentTarget.setPointerCapture(event.pointerId); } catch (_) {}
@@ -73,7 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   hero.addEventListener('pointerdown', e => start(e, 'open'));
-  panel.querySelector('.panel-grab-area').addEventListener('pointerdown', e => start(e, 'close'));
+  // Allow a downward swipe anywhere in the top 200px of the open drawer,
+  // so users do not have to land directly on the narrow yellow grab dash.
+  panel.addEventListener('pointerdown', e => {
+    if (panel.classList.contains('discovery-open')) start(e, 'close');
+  });
   [hero, panel].forEach(el => {
     el.addEventListener('pointermove', move);
     el.addEventListener('pointerup', finish);
