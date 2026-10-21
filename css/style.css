@@ -573,3 +573,10 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     box-shadow:none!important;
   }
 }
+
+/* Match the drawer's lower edge to the shorter footer on narrow phones. */
+@media (max-width:480px) {
+  #mobile-discovery-panel {
+    bottom:44px;
+  }
+}
