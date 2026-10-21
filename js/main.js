@@ -56,9 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
       // while the drawer is scrolled fully to the top. Never start closing
       // from Explore content or the distribution section below it.
       const panelTop = panel.getBoundingClientRect().top;
-      const exploreTop = explore.getBoundingClientRect().top;
+      // Use an invisible 200px gesture zone from the drawer's top; keep the
+      // visible grab strip compact and only accept it while Explore is at top.
       if (panel.scrollTop > 0) return;
-      if (event.clientY < panelTop || event.clientY >= exploreTop) return;
+      if (event.clientY < panelTop || event.clientY >= panelTop + 200) return;
       if (event.target.closest('a,button,input,textarea,select')) return;
     }
     drag = {mode, id:event.pointerId, startY:event.clientY, lastY:event.clientY, lastTime:performance.now(), velocity:0, moved:false};
