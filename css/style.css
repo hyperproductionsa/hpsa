@@ -544,3 +544,32 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
   #mobile-discovery-panel .fade-section.delay-5,
   #mobile-discovery-panel .fade-section.delay-6 { transition-delay:0s!important; }
 }
+
+/* Mobile drawer polish: keep distribution content centered and eliminate the hidden contact section's yellow edge. */
+@media (max-width:768px) {
+  #mobile-discovery-panel #distribution {
+    background:#000!important;
+  }
+  #mobile-discovery-panel #distribution .distribution-content {
+    width:100%!important;
+    max-width:1200px;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    text-align:center!important;
+  }
+  #mobile-discovery-panel #distribution .distribution-text {
+    margin-left:auto!important;
+    margin-right:auto!important;
+    text-align:center!important;
+  }
+  #contact {
+    display:none!important;
+    background:#000!important;
+    height:0!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+}
