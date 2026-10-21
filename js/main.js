@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       moved: false
     };
     explore.classList.add('explore-dragging');
-    if (mode === 'open') explore.classList.add('explore-open');
+    // Keep the panel hidden on a tap; reveal it only after a real upward drag.
     try { event.currentTarget.setPointerCapture(event.pointerId); } catch (_) {}
   }
 
