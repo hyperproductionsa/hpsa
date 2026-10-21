@@ -28,7 +28,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
+            "Apple Music": "https://music.apple.com/us/album/mzulo/id6825014895",
             "Traxsource": "https://www.traxsource.com/title/2902181/mzulo",
             "Youtube": "",
             "Beatport": ""
@@ -153,7 +153,7 @@
             }
         ],
         "stores": {
-            "Spotify": "",
+            "Spotify": "https://open.spotify.com/album/1x0GZzSdVDdhncOLsVUQE3",
             "Apple Music": "https://music.apple.com/us/album/sunshine-feat-mido-mi/6809566700",
             "Traxsource": "https://www.traxsource.com/title/2873589/sunshine-feat-mido-mi",
             "Youtube": "",
