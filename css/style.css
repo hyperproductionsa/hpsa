@@ -354,3 +354,48 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .pagination .page-arrow:focus {
   outline: none;
 }
+
+/* Mobile swipe-up Explore panel. It moves behind the fixed header and footer. */
+@media (max-width: 768px) {
+  body.explore-expanded { overflow: hidden; }
+  #hero { touch-action: pan-x; }
+  #explore {
+    position: fixed;
+    inset: 80px 0 50px;
+    z-index: 9998;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 28px 16px 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: transform .32s cubic-bezier(.2,.75,.25,1), opacity .24s ease, visibility .32s;
+    will-change: transform;
+  }
+  #explore.explore-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  #explore.explore-dragging {
+    transition: none !important;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  #explore .explore-content { margin: 0 auto; }
+  #explore h2 { touch-action: none; cursor: grab; }
+  #explore .explore-grid { padding-bottom: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #explore { transition: none !important; }
+}
