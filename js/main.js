@@ -91,6 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
     el.addEventListener('pointerup', finish);
     el.addEventListener('pointercancel', finish);
   });
+
+  // On touchscreens, the open drawer is also a native vertical scroller.
+  // Prevent the browser from stealing a deliberate downward drag near its top,
+  // so the drawer itself tracks the finger instead of waiting until release.
+  panel.addEventListener('touchmove', function (event) {
+    if (drag && drag.mode === 'close' && event.cancelable) event.preventDefault();
+  }, { passive: false });
   hero.addEventListener('click', e => {
     if (Date.now() < suppressClickUntil) { e.preventDefault(); e.stopPropagation(); }
   }, true);
