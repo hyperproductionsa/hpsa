@@ -468,7 +468,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     position:sticky;
     top:0;
     z-index:2;
-    height:80px;
+    height:200px;
     background:#000;
     touch-action:none;
     cursor:grab;
