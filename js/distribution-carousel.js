@@ -29,7 +29,7 @@
     ).join('');
 
     $carousel.html(html).slick({
-      slidesToShow: 8,
+      slidesToShow: 10,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 0,
@@ -41,9 +41,9 @@
       dots: false,
       infinite: true,
       responsive: [
-        {breakpoint:1024,settings:{slidesToShow:6}},
-        {breakpoint:768,settings:{slidesToShow:4}},
-        {breakpoint:480,settings:{slidesToShow:3}}
+        {breakpoint:1024,settings:{slidesToShow:8}},
+        {breakpoint:768,settings:{slidesToShow:6}},
+        {breakpoint:480,settings:{slidesToShow:6}}
       ]
     });
   };
