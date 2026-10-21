@@ -11,9 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobile = () => window.matchMedia('(max-width: 768px)').matches;
   let drag = null;
   let suppressClickUntil = 0;
+  let drawerHistoryActive = false;
+  let closingFromHistory = false;
 
   function setOpen(open) {
     if (!mobile()) return;
+    if (open && !drawerHistoryActive) {
+      history.pushState({ ...(history.state || {}), hpsaDiscoveryDrawer: true }, '', location.href);
+      drawerHistoryActive = true;
+    } else if (!open && drawerHistoryActive && !closingFromHistory) {
+      drawerHistoryActive = false;
+      history.back();
+    }
     panel.classList.toggle('discovery-open', open);
     document.body.classList.toggle('explore-expanded', open);
     toggle.setAttribute('aria-expanded', String(open));
@@ -24,6 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   toggle.addEventListener('click', function () {
     setOpen(!panel.classList.contains('discovery-open'));
+    panel.style.transform = '';
+  });
+
+  // Android/browser Back closes the drawer first instead of leaving the page.
+  window.addEventListener('popstate', function (event) {
+    if (!drawerHistoryActive) return;
+    drawerHistoryActive = false;
+    closingFromHistory = true;
+    setOpen(false);
+    closingFromHistory = false;
     panel.style.transform = '';
   });
 
