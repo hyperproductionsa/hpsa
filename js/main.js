@@ -52,8 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mode === 'close' && !panel.classList.contains('discovery-open')) return;
     if (mode === 'open' && event.target.closest('a,button,input,textarea,select,#artwork-carousel,.slick-slider,.slick-list,.slick-track,.slick-slide')) return;
     if (mode === 'close') {
+      // Only allow the close gesture from the strip above Explore, and only
+      // while the drawer is scrolled fully to the top. Never start closing
+      // from Explore content or the distribution section below it.
       const panelTop = panel.getBoundingClientRect().top;
-      if (event.clientY - panelTop > 200) return;
+      const exploreTop = explore.getBoundingClientRect().top;
+      if (panel.scrollTop > 0) return;
+      if (event.clientY < panelTop || event.clientY >= exploreTop) return;
       if (event.target.closest('a,button,input,textarea,select')) return;
     }
     drag = {mode, id:event.pointerId, startY:event.clientY, lastY:event.clientY, lastTime:performance.now(), velocity:0, moved:false};
