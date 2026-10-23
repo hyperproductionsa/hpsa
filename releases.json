@@ -1,5 +1,40 @@
 [
     {
+        "cat": "HYP144",
+        "artist": "Lieutenant-X, Thapelo Kganane, LeeJoy",
+        "title": "Mamela",
+        "upc": "",
+        "release_date": "2026-11-06",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP144.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP144.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600041",
+                "artist": "Lieutenant-X, Thapelo Kganane, LeeJoy",
+                "title": "Mamela",
+                "mix": "3Step Mix"
+            },
+            {
+                "track_number": 2,
+                "isrc": "ZASY52600042",
+                "artist": "Lieutenant-X, Thapelo Kganane, LeeJoy",
+                "title": "Mamela",
+                "mix": "Reprise"
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
         "cat": "HYP143",
         "artist": "McKay Johnson, HyperSOUL-X",
         "title": "Mzulo",
@@ -576,7 +611,7 @@
     {
         "cat": "HYP128",
         "artist": "EDDIE QUEROL",
-        "title": "LAS NIÃ‘AS",
+        "title": "LAS NINAS",
         "upc": "663918983171",
         "release_date": "2026-05-08",
         "release_status": "Live",
@@ -589,7 +624,7 @@
                 "track_number": 1,
                 "isrc": "ZASY52600010",
                 "artist": "EDDIE QUEROL",
-                "title": "LAS NIÃ‘AS",
+                "title": "LAS NINAS",
                 "mix": ""
             }
         ],
