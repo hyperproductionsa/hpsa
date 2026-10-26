@@ -45,14 +45,15 @@
             release._carouselDate >= today && release._carouselDate <= windowEnd
         );
 
-        // Keep the carousel at six slides: prioritise the nearest upcoming releases,
-        // then fill any remaining slots with the latest released items.
+        // Keep at most six slides, with the nearest upcoming release first.
         const selected = upcoming
             .slice()
             .sort((a, b) => a._carouselDate - b._carouselDate)
             .slice(0, fallbackCount);
         const selectedCats = new Set(selected.map(release => release.cat));
 
+        // If fewer than six releases are in the promo window, fill remaining slots
+        // with the latest already-released items.
         if (selected.length < fallbackCount) {
             const released = dated.filter(release =>
                 release._carouselDate <= today && !selectedCats.has(release.cat)
@@ -60,8 +61,7 @@
             selected.push(...released.slice(0, fallbackCount - selected.length));
         }
 
-        // If the catalogue has fewer than six released items, fill from any
-        // remaining dated releases so the carousel can still show six when possible.
+        // If there are still fewer than six, fill from any remaining dated releases.
         if (selected.length < fallbackCount) {
             const selectedKeys = new Set(selected.map(release => release.cat));
             selected.push(...dated
@@ -69,8 +69,8 @@
                 .slice(0, fallbackCount - selected.length));
         }
 
-        // Present selected slides in chronological order.
-        return selected.sort((a, b) => a._carouselDate - b._carouselDate);
+        // Newest date first in the rendered carousel.
+        return selected.sort((a, b) => b._carouselDate - a._carouselDate);
     };
 
     const initHeroCarousel = () => {
