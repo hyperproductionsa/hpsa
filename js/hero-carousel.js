@@ -40,18 +40,37 @@
             .sort((a, b) => b._carouselDate - a._carouselDate);
 
         // Promote releases scheduled from today through the next 14 days.
-        // release_status is intentionally ignored. Keep at most six, prioritising
-        // the releases with the nearest dates.
+        // release_status is intentionally ignored.
         const upcoming = dated.filter(release =>
             release._carouselDate >= today && release._carouselDate <= windowEnd
         );
 
-        if (upcoming.length) return upcoming.slice(-fallbackCount).reverse();
+        // Keep the carousel at six slides: prioritise the nearest upcoming releases,
+        // then fill any remaining slots with the latest released items.
+        const selected = upcoming
+            .slice()
+            .sort((a, b) => a._carouselDate - b._carouselDate)
+            .slice(0, fallbackCount);
+        const selectedCats = new Set(selected.map(release => release.cat));
 
-        // If no release is in its promo window, keep the latest six already released.
-        const released = dated.filter(release => release._carouselDate <= today);
-        const fallback = released.length ? released : dated;
-        return fallback.slice(0, fallbackCount).reverse();
+        if (selected.length < fallbackCount) {
+            const released = dated.filter(release =>
+                release._carouselDate <= today && !selectedCats.has(release.cat)
+            );
+            selected.push(...released.slice(0, fallbackCount - selected.length));
+        }
+
+        // If the catalogue has fewer than six released items, fill from any
+        // remaining dated releases so the carousel can still show six when possible.
+        if (selected.length < fallbackCount) {
+            const selectedKeys = new Set(selected.map(release => release.cat));
+            selected.push(...dated
+                .filter(release => !selectedKeys.has(release.cat))
+                .slice(0, fallbackCount - selected.length));
+        }
+
+        // Present selected slides in chronological order.
+        return selected.sort((a, b) => a._carouselDate - b._carouselDate);
     };
 
     const initHeroCarousel = () => {
