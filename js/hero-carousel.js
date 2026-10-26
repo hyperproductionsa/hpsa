@@ -39,15 +39,16 @@
             .filter(release => release._carouselDate && release.artwork_url && release.release_url)
             .sort((a, b) => b._carouselDate - a._carouselDate);
 
-        // Promote any release scheduled from today through the next 14 days.
-        // release_status is intentionally ignored.
+        // Promote releases scheduled from today through the next 14 days.
+        // release_status is intentionally ignored. Keep at most six, prioritising
+        // the releases with the nearest dates.
         const upcoming = dated.filter(release =>
             release._carouselDate >= today && release._carouselDate <= windowEnd
         );
 
-        // If no release is in its promo window, keep the latest six already released.
-        if (upcoming.length) return upcoming.reverse();
+        if (upcoming.length) return upcoming.slice(-fallbackCount).reverse();
 
+        // If no release is in its promo window, keep the latest six already released.
         const released = dated.filter(release => release._carouselDate <= today);
         const fallback = released.length ? released : dated;
         return fallback.slice(0, fallbackCount).reverse();
