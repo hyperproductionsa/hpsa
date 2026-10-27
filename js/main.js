@@ -13,6 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
   let suppressClickUntil = 0;
   let drawerHistoryActive = false;
   let closingFromHistory = false;
+  let lockedScrollY = 0;
+  let scrollLocked = false;
+
+  // Freeze the document at its current position while the discovery drawer is open.
+  // overflow:hidden alone is unreliable for preventing background scroll on mobile Safari/Chrome.
+  function lockPageScroll() {
+    if (scrollLocked) return;
+    lockedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.setProperty('--discovery-scroll-top', '-' + lockedScrollY + 'px');
+    document.body.classList.add('explore-expanded');
+    scrollLocked = true;
+  }
+
+  function unlockPageScroll() {
+    if (!scrollLocked) {
+      document.body.classList.remove('explore-expanded');
+      return;
+    }
+    document.body.classList.remove('explore-expanded');
+    document.body.style.removeProperty('--discovery-scroll-top');
+    scrollLocked = false;
+    window.scrollTo(0, lockedScrollY);
+  }
 
   function setOpen(open) {
     if (!mobile()) return;
@@ -24,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
       history.back();
     }
     panel.classList.toggle('discovery-open', open);
-    document.body.classList.toggle('explore-expanded', open);
+    if (open) lockPageScroll();
+    else unlockPageScroll();
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close Explore and distribution menu' : 'Open Explore and distribution menu');
     toggle.querySelector('.explore-toggle-open-icon').style.display = open ? 'none' : 'block';
