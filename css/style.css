@@ -357,7 +357,14 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 
 /* Mobile swipe-up Explore panel. It moves behind the fixed header and footer. */
 @media (max-width: 768px) {
-  body.explore-expanded { overflow: hidden; }
+  body.explore-expanded {
+    position:fixed;
+    top:var(--discovery-scroll-top, 0);
+    left:0;
+    right:0;
+    width:100%;
+    overflow:hidden;
+  }
   #hero { touch-action: pan-x; }
   #explore {
     position: fixed;
