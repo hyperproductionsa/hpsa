@@ -148,17 +148,36 @@
                 }
 
                 if (container.children().length) {
+                    const hasMultipleSlides = container.children().length > 1;
                     container.slick({
-                        infinite: container.children().length > 1,
+                        infinite: hasMultipleSlides,
                         slidesToShow: 3,
                         slidesToScroll: 1,
-                        autoplay: container.children().length > 1,
-                        autoplaySpeed: 1000,
-                        speed: 800,
+                        autoplay: hasMultipleSlides,
+                        autoplaySpeed: isMobile ? 1000 : 0,
+                        speed: isMobile ? 800 : 6000,
+                        cssEase: isMobile ? 'ease' : 'linear',
                         arrows: false,
                         dots: false,
+                        pauseOnHover: true,
+                        pauseOnFocus: false,
                         responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }]
                     });
+
+                    // On touch devices, pause while the user is interacting, then resume
+                    // after release so focus on an artwork link cannot leave autoplay stuck.
+                    if (isMobile && hasMultipleSlides) {
+                        container.on('touchstart.heroCarouselPause', function () {
+                            container.slick('slickPause');
+                        });
+                        container.on('touchend.heroCarouselPause touchcancel.heroCarouselPause', function () {
+                            window.setTimeout(function () {
+                                if (container.hasClass('slick-initialized')) {
+                                    container.slick('slickPlay');
+                                }
+                            }, 250);
+                        });
+                    }
                 }
             })
             .catch(err => console.error('Hero Carousel Error:', err));
