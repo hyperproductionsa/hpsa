@@ -29,6 +29,16 @@
             date.getUTCDate() === day ? date : null;
     };
 
+    const getReleaseRibbon = (releaseDate, today) => {
+        const date = parseReleaseDate(releaseDate);
+        if (!date) return null;
+
+        const daysUntilRelease = Math.round((date - today) / 86400000);
+        if (daysUntilRelease >= 1 && daysUntilRelease <= 14) return 'pre-order';
+        if (daysUntilRelease >= -13 && daysUntilRelease <= 0) return 'promo';
+        return null;
+    };
+
     const selectCarouselReleases = releases => {
         const today = getSouthAfricanToday();
         const windowEnd = new Date(today);
@@ -100,6 +110,14 @@
                     image.crossOrigin = 'anonymous';
 
                     link.appendChild(image);
+                    const ribbonType = getReleaseRibbon(release.release_date, getSouthAfricanToday());
+                    if (ribbonType) {
+                        const ribbon = document.createElement('span');
+                        ribbon.className = 'release-ribbon release-ribbon--' + ribbonType;
+                        ribbon.textContent = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
+                        ribbon.setAttribute('aria-label', ribbonType === 'pre-order' ? 'Pre-order period' : 'Promo period');
+                        link.appendChild(ribbon);
+                    }
                     slide.appendChild(link);
                     container.append(slide);
                 });
