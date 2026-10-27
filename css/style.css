@@ -76,13 +76,17 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #artwork-carousel{width:100%;max-width:1000px;margin:0 auto 30px;padding:0 20px}
 #artwork-carousel .slick-slide{padding:0 10px}
 .carousel-img{width:100%;max-width:280px;height:auto;aspect-ratio:1/1;margin:0 auto;display:block;box-shadow:0 7px 10px 0 rgba(0,0,0,.5);object-fit:cover;background:#e5de69}
+.hero-link{position:relative;display:block;width:100%;max-width:280px;margin:0 auto;overflow:hidden;text-decoration:none}
+.hero-link .carousel-img{width:100%;max-width:100%}
+.release-ribbon{position:absolute;z-index:2;top:19px;right:-37px;width:142px;padding:7px 0;background:#E5DE69;color:#000;text-align:center;font-family:'Roboto',Arial,sans-serif;font-size:12px;font-weight:900;line-height:1.15;letter-spacing:.6px;text-transform:uppercase;transform:rotate(45deg);transform-origin:center;pointer-events:none;box-shadow:0 2px 5px rgba(0,0,0,.22)}
+.release-ribbon--pre-order,.release-ribbon--promo{background:#E5DE69;color:#000}
 .slick-prev,.slick-next,.slick-dots{display:none!important;opacity:0!important;visibility:hidden!important}
 .hero-buttons{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:10px}
 .hero-buttons a{display:inline-block;padding:14px 40px;background:#000;color:#fff;font-family:'Roboto',Arial,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;text-decoration:none;letter-spacing:1px;border-radius:50px;transition:background .3s,color .3s,transform .2s;border:2px solid #000}
 .hero-buttons a:hover{background:#e5de69;color:#000;transform:translateY(-3px);border-color:#000}
 
 @media (max-width:768px){#hero{padding:30px 10px;padding-top:100px;padding-bottom:80px}#artwork-carousel{padding:0 5px}#artwork-carousel .slick-slide{padding:0 5px}.carousel-img{max-width:280px}.hero-buttons a{padding:12px 30px;font-size:.9rem;width:100%;max-width:280px}.hero-buttons{gap:12px}}
-@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px;--hero-heading-size:1.8rem}#hero .hero-section-heading,#explore h2,#distribution h2{font-size:1.5rem!important}.carousel-img{max-width:260px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
+@media (max-width:480px){#hero{padding-top:90px;padding-bottom:70px;--hero-heading-size:1.8rem}#hero .hero-section-heading,#explore h2,#distribution h2{font-size:1.5rem!important}.hero-link{max-width:260px}.carousel-img{max-width:260px}.release-ribbon{top:17px;right:-40px;width:136px;font-size:11px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
 
 /* ============================================
    DISTRIBUTION SECTION
