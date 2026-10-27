@@ -117,6 +117,10 @@
                         ribbon.textContent = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
                         ribbon.setAttribute('aria-label', ribbonType === 'pre-order' ? 'Pre-order period' : 'Promo period');
                         link.appendChild(ribbon);
+                        const traxsourceIcon = document.createElement('span');
+                        traxsourceIcon.className = 'release-traxsource-icon';
+                        traxsourceIcon.setAttribute('aria-label', 'Available on Traxsource');
+                        link.appendChild(traxsourceIcon);
                     }
                     slide.appendChild(link);
                     container.append(slide);
