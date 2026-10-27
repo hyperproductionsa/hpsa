@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (Math.abs(dy) > 4) drag.moved = true;
     if (drag.mode === 'open' && dy < 0) {
       panel.classList.add('discovery-open');
-      document.body.classList.add('explore-expanded');
+      lockPageScroll();
       const travel = Math.max(0, Math.min(panel.getBoundingClientRect().height, -dy));
       panel.style.transform = 'translateY(calc(100% - ' + travel + 'px))';
     } else if (drag.mode === 'close' && dy > 0) {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
       drag = null;
       panel.classList.remove('discovery-open', 'discovery-dragging');
       panel.style.transform = '';
-      document.body.classList.remove('explore-expanded');
+      unlockPageScroll();
       toggle.setAttribute('aria-expanded', 'false');
       toggle.setAttribute('aria-label', 'Open Explore and distribution menu');
       toggle.querySelector('.explore-toggle-open-icon').style.display = 'block';
