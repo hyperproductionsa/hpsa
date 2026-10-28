@@ -123,7 +123,7 @@
                     link.appendChild(ribbon);
 
                     // Traxsource branding belongs on promotional and pre-order slides only.
-                    if (ribbonType === 'pre-order' || ribbonType === 'promo') {
+                    if (ribbonType === 'promo') {
                         const traxsourceIcon = document.createElement('span');
                         traxsourceIcon.className = 'release-traxsource-icon';
                         traxsourceIcon.setAttribute('aria-label', 'Traxsource');
