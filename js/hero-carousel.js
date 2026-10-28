@@ -168,7 +168,7 @@
                         cssEase: isMobile ? 'ease' : 'linear',
                         arrows: false,
                         dots: false,
-                        pauseOnHover: true,
+                        pauseOnHover: false,
                         pauseOnFocus: false,
                         responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }]
                     });
