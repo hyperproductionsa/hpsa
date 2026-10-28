@@ -164,7 +164,7 @@
                         slidesToScroll: 1,
                         autoplay: hasMultipleSlides,
                         autoplaySpeed: isMobile ? 1000 : 0,
-                        speed: isMobile ? 800 : 6000,
+                        speed: isMobile ? 800 : 2000,
                         cssEase: isMobile ? 'ease' : 'linear',
                         arrows: false,
                         dots: false,
