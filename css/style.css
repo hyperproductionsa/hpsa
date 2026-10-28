@@ -616,7 +616,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
   }
 }
 
-/* Explore arrows: one external-link arrow on desktop; bold yellow chevrons on every mobile card. */
+/* Explore arrows: one external-link arrow on desktop; clean centered chevrons on mobile. */
 @media (min-width:769px) {
   #explore .explore-card:not([href="https://htcoll.shop/"]) .explore-arrow {
     display:none;
@@ -624,27 +624,32 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 }
 @media (max-width:768px) {
   #explore .explore-card {
-    grid-template-columns:44px minmax(0,1fr) 28px;
+    grid-template-columns:44px minmax(0,1fr) 18px;
+    align-items:center;
   }
   #explore .explore-card .explore-arrow {
     display:none!important;
   }
   #explore .explore-card::after {
-    content:">";
+    content:"";
     grid-column:3;
     grid-row:1;
-    justify-self:end;
+    justify-self:center;
     align-self:center;
-    color:#e5de69;
-    font-family:Impact,"Arial Narrow",sans-serif;
-    font-size:3rem;
-    font-weight:900;
-    font-stretch:condensed;
-    line-height:.8;
+    width:9px;
+    height:9px;
+    box-sizing:border-box;
+    border-top:3px solid #e5de69;
+    border-right:3px solid #e5de69;
+    transform:rotate(45deg);
+  }
+  #explore .explore-card .explore-icon {
+    align-self:center;
+    justify-self:center;
   }
 }
 @media (max-width:480px) {
   #explore .explore-card {
-    grid-template-columns:40px minmax(0,1fr) 28px;
+    grid-template-columns:40px minmax(0,1fr) 18px;
   }
 }
