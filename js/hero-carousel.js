@@ -150,30 +150,33 @@
                 if (container.children().length) {
                     const hasMultipleSlides = container.children().length > 1;
                     container.slick({
-                        // Desktop runs as a continuous marquee; mobile remains completely still.
-                        infinite: hasMultipleSlides && !isMobile,
-                        slidesToShow: isMobile ? 1 : 3,
+                        infinite: hasMultipleSlides,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
-                        autoplay: hasMultipleSlides && !isMobile,
-                        autoplaySpeed: 0,
-                        speed: 6000,
-                        cssEase: 'linear',
+                        autoplay: hasMultipleSlides,
+                        autoplaySpeed: isMobile ? 1000 : 0,
+                        speed: isMobile ? 800 : 6000,
+                        cssEase: isMobile ? 'ease' : 'linear',
                         arrows: false,
                         dots: false,
                         pauseOnHover: true,
                         pauseOnFocus: false,
-                        responsive: [{
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-                                infinite: false,
-                                autoplay: false,
-                                swipe: false,
-                                draggable: false,
-                                touchMove: false
-                            }
-                        }]
+                        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }]
                     });
+
+                    // Pause while the user touches an artwork, then resume after release.
+                    if (isMobile && hasMultipleSlides) {
+                        container.on('touchstart.heroCarouselPause', function () {
+                            container.slick('slickPause');
+                        });
+                        container.on('touchend.heroCarouselPause touchcancel.heroCarouselPause', function () {
+                            window.setTimeout(function () {
+                                if (container.hasClass('slick-initialized')) {
+                                    container.slick('slickPlay');
+                                }
+                            }, 250);
+                        });
+                    }
                 }
             })
             .catch(err => console.error('Hero Carousel Error:', err));
