@@ -1,6 +1,6 @@
 (function ($) {
     const releasesUrl = '/releases.json';
-    const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
     const promoWindowDays = 14;
     const fallbackCount = 6;
 
