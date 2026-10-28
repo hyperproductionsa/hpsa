@@ -615,3 +615,35 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     filter:brightness(0) saturate(100%) invert(89%) sepia(16%) saturate(1042%) hue-rotate(11deg) brightness(96%) contrast(91%);
   }
 }
+
+/* Mobile Explore: use a large condensed yellow chevron for internal links.
+   Keep the external HTs Collections link's original external-link arrow. */
+@media (max-width:768px) {
+  #explore .explore-card {
+    grid-template-columns:44px minmax(0,1fr) 28px;
+  }
+  #explore .explore-card:not([href="https://htcoll.shop/"]) .explore-arrow {
+    display:none;
+  }
+  #explore .explore-card:not([href="https://htcoll.shop/"])::after {
+    content:">";
+    grid-column:3;
+    grid-row:1;
+    justify-self:end;
+    align-self:center;
+    color:#e5de69;
+    font-family:Impact,"Arial Narrow",sans-serif;
+    font-size:3rem;
+    font-weight:900;
+    font-stretch:condensed;
+    line-height:.8;
+  }
+  #explore .explore-card[href="https://htcoll.shop/"] .explore-arrow {
+    display:block;
+  }
+}
+@media (max-width:480px) {
+  #explore .explore-card {
+    grid-template-columns:40px minmax(0,1fr) 28px;
+  }
+}
