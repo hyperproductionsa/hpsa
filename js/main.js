@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){console.log('Hyper Produ
 /* Mobile discovery panel: Explore + distribution, controlled by the floating menu and swipe gesture. */
 document.addEventListener('DOMContentLoaded', function () {
   const hero = document.getElementById('hero');
+  if (hero) document.body.classList.add('hpsa-home-active');
   const panel = document.getElementById('mobile-discovery-panel');
   const explore = document.getElementById('explore');
   const toggle = document.getElementById('mobile-explore-toggle');
