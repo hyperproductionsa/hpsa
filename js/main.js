@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
       history.pushState({ ...(history.state || {}), hpsaDiscoveryDrawer: true }, '', location.href);
       drawerHistoryActive = true;
     } else if (!open && drawerHistoryActive && !closingFromHistory) {
+      // Mark this history entry closed instead of navigating back immediately.
+      // history.back() here races a fast reopen and can make the X need two taps.
       drawerHistoryActive = false;
-      history.back();
+      history.replaceState({ ...(history.state || {}), hpsaDiscoveryDrawer: false }, '', location.href);
     }
     panel.classList.toggle('discovery-open', open);
     if (open) lockPageScroll();
@@ -60,9 +62,10 @@ document.addEventListener('DOMContentLoaded', function () {
     panel.style.transform = '';
   });
 
-  // Android/browser Back closes the drawer first instead of leaving the page.
+  // Browser Back closes an open drawer without racing a rapid tap on the X.
   window.addEventListener('popstate', function (event) {
-    if (!drawerHistoryActive) return;
+    if (!panel.classList.contains('discovery-open')) return;
+    if (event.state && event.state.hpsaDiscoveryDrawer) return;
     drawerHistoryActive = false;
     closingFromHistory = true;
     setOpen(false);
