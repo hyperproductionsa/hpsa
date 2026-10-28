@@ -417,22 +417,23 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 }
 
 
-/* Floating Explore control: compact square button, mobile only, above the fixed footer. */
+/* Right-edge half-pill Explore control: mobile only, flush with the screen edge. */
 #mobile-explore-toggle { display:none; }
 @media (max-width:768px) {
   #mobile-explore-toggle {
     position:fixed;
-    right:16px;
+    right:0;
     bottom:calc(54px + env(safe-area-inset-bottom, 0px));
     z-index:10001;
-    width:52px;
+    width:56px;
     height:52px;
     display:flex;
     align-items:center;
     justify-content:center;
     padding:0;
     border:1px solid #e5de69;
-    border-radius:10px;
+    border-right:0;
+    border-radius:26px 0 0 26px;
     background:#000;
     color:#e5de69;
     box-shadow:none;
