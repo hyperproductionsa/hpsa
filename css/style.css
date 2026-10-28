@@ -6,6 +6,8 @@
 
 
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#000;font-family:'Roboto',Arial,sans-serif}
+/* Match the store homepage: the mobile home screen itself must not vertically scroll. */
+@media (max-width:768px){body.hpsa-home-active{overflow:hidden;overscroll-behavior:none}}
 a{color:inherit;text-decoration:none}
 
 /* ============================================
