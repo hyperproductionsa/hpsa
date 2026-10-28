@@ -121,6 +121,16 @@
                     ribbon.textContent = ribbonLabel;
                     ribbon.setAttribute('aria-label', ribbonLabel);
                     link.appendChild(ribbon);
+
+                    // Traxsource branding belongs on promotional and pre-order slides only.
+                    if (ribbonType === 'pre-order' || ribbonType === 'promo') {
+                        const traxsourceIcon = document.createElement('span');
+                        traxsourceIcon.className = 'release-traxsource-icon';
+                        traxsourceIcon.setAttribute('aria-label', 'Traxsource');
+                        traxsourceIcon.setAttribute('role', 'img');
+                        link.appendChild(traxsourceIcon);
+                    }
+
                     slide.appendChild(link);
                     container.append(slide);
                 });
