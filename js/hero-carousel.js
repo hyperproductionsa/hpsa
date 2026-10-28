@@ -111,17 +111,16 @@
 
                     link.appendChild(image);
                     const ribbonType = getReleaseRibbon(release.release_date, getSouthAfricanToday());
-                    if (ribbonType) {
-                        const ribbon = document.createElement('span');
-                        ribbon.className = 'release-ribbon release-ribbon--' + ribbonType;
-                        ribbon.textContent = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
-                        ribbon.setAttribute('aria-label', ribbonType === 'pre-order' ? 'Pre-order period' : 'Promo period');
-                        link.appendChild(ribbon);
-                        const traxsourceIcon = document.createElement('span');
-                        traxsourceIcon.className = 'release-traxsource-icon';
-                        traxsourceIcon.setAttribute('aria-label', 'Available on Traxsource');
-                        link.appendChild(traxsourceIcon);
-                    }
+                    const ribbonLabel = ribbonType === 'pre-order'
+                        ? 'PRE-ORDER'
+                        : ribbonType === 'promo'
+                            ? 'PROMO'
+                            : 'OUT NOW';
+                    const ribbon = document.createElement('span');
+                    ribbon.className = 'release-ribbon release-ribbon--' + (ribbonType || 'out-now');
+                    ribbon.textContent = ribbonLabel;
+                    ribbon.setAttribute('aria-label', ribbonLabel);
+                    link.appendChild(ribbon);
                     slide.appendChild(link);
                     container.append(slide);
                 });
