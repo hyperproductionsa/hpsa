@@ -423,7 +423,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
   #mobile-explore-toggle {
     position:fixed;
     right:0;
-    bottom:calc(54px + env(safe-area-inset-bottom, 0px));
+    bottom:calc(64px + env(safe-area-inset-bottom, 0px));
     z-index:10001;
     width:56px;
     height:52px;
