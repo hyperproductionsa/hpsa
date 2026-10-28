@@ -604,3 +604,14 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     bottom:44px;
   }
 }
+
+/* Match the fixed footer to the open mobile discovery drawer. */
+@media (max-width:768px) {
+  body:has(#mobile-discovery-panel.discovery-open) #my-sticky-footer {
+    background:#000!important;
+    box-shadow:none;
+  }
+  body:has(#mobile-discovery-panel.discovery-open) #my-sticky-footer .social-icons img {
+    filter:brightness(0) saturate(100%) invert(89%) sepia(16%) saturate(1042%) hue-rotate(11deg) brightness(96%) contrast(91%);
+  }
+}
