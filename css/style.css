@@ -616,16 +616,20 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
   }
 }
 
-/* Mobile Explore: use a large condensed yellow chevron for internal links.
-   Keep the external HTs Collections link's original external-link arrow. */
+/* Explore arrows: one external-link arrow on desktop; bold yellow chevrons on every mobile card. */
+@media (min-width:769px) {
+  #explore .explore-card:not([href="https://htcoll.shop/"]) .explore-arrow {
+    display:none;
+  }
+}
 @media (max-width:768px) {
   #explore .explore-card {
     grid-template-columns:44px minmax(0,1fr) 28px;
   }
-  #explore .explore-card:not([href="https://htcoll.shop/"]) .explore-arrow {
-    display:none;
+  #explore .explore-card .explore-arrow {
+    display:none!important;
   }
-  #explore .explore-card:not([href="https://htcoll.shop/"])::after {
+  #explore .explore-card::after {
     content:">";
     grid-column:3;
     grid-row:1;
@@ -637,9 +641,6 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     font-weight:900;
     font-stretch:condensed;
     line-height:.8;
-  }
-  #explore .explore-card[href="https://htcoll.shop/"] .explore-arrow {
-    display:block;
   }
 }
 @media (max-width:480px) {
