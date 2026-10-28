@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
       drawerHistoryActive = false;
       history.replaceState({ ...(history.state || {}), hpsaDiscoveryDrawer: false }, '', location.href);
     }
+    // Every time the menu opens, start at the top of Explore instead of
+    // restoring the drawer's previous scroll position.
+    if (open) panel.scrollTop = 0;
     panel.classList.toggle('discovery-open', open);
     if (open) lockPageScroll();
     else unlockPageScroll();
