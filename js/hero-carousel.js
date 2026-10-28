@@ -145,11 +145,12 @@
                             outline: none;
                             cursor: pointer;
                         }
-                        .hero-link .carousel-img {
+                        .hero-link {
                             transition: transform 0.3s ease;
                             transform: scale(1);
+                            transform-origin: center;
                         }
-                        .hero-link:hover .carousel-img {
+                        .hero-link:hover {
                             transform: scale(0.8);
                         }
                     `;
