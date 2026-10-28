@@ -87,6 +87,8 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 .hero-buttons a:hover{background:#e5de69;color:#000;transform:translateY(-3px);border-color:#000}
 
 @media (max-width:768px){#hero{padding:0 10px}#artwork-carousel{padding:0 5px}#artwork-carousel .slick-slide{padding:0 5px}.carousel-img{max-width:280px}.hero-buttons a{padding:12px 30px;font-size:.9rem;width:100%;max-width:280px}.hero-buttons{gap:12px}}
+/* Keep the mobile hero completely stationary; no scroll-reveal movement. */
+@media (max-width:768px){#hero.fade-section,#hero .fade-section,#hero .fade-left,#hero .fade-right,#hero .scale-up{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}}
 @media (max-width:480px){#hero{--hero-heading-size:1.8rem}#hero .hero-section-heading,#explore h2,#distribution h2{font-size:1.5rem!important}.hero-link{max-width:260px}.carousel-img{max-width:260px}.release-ribbon{top:17px;right:-40px;width:136px;font-size:11px}.hero-buttons a{font-size:.8rem;padding:10px 20px}}
 
 /* ============================================
