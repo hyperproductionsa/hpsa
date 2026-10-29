@@ -1,11 +1,39 @@
 [
     {
+        "cat": "HYP145",
+        "artist": "DJBANDZ_SA",
+        "title": "IZITHA",
+        "upc": "612891320619",
+        "release_date": "2026-11-13",
+        "release_status": "Delivered",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP145.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP145.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600043",
+                "artist": "DJBANDZ_SA",
+                "title": "IZITHA",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "https://music.apple.com/us/album/izitha/id6826889523",
+            "Traxsource": "https://www.traxsource.com/title/2905038/izitha",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
         "cat": "HYP144",
         "artist": "Lieutenant-X, Thapelo Kganane, LeeJoy",
         "title": "Mamela",
-        "upc": "",
+        "upc": "612891314274",
         "release_date": "2026-11-06",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP144.png",
@@ -28,8 +56,8 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
-            "Traxsource": "",
+            "Apple Music": "https://music.apple.com/us/album/mamela/id6826157747",
+            "Traxsource": "https://www.traxsource.com/title/2903995/mamela",
             "Youtube": "",
             "Beatport": ""
         }
@@ -75,7 +103,7 @@
         "title": "Mogodumo",
         "upc": "612891292626",
         "release_date": "2026-10-23",
-        "release_status": "Delivered",
+        "release_status": "Live",
         "release_type": "EP",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP142.png",
