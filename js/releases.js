@@ -8,7 +8,38 @@
     let filteredReleases = [];
     let totalPages = 1;
     let searchQuery = '';
+
     let maxCatalogWithStore = 0;
+
+    // Release ribbons use the label's South African calendar date.
+    const getSouthAfricanToday = () => {
+        const parts = new Intl.DateTimeFormat('en-CA', {
+            timeZone: 'Africa/Johannesburg',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        }).formatToParts(new Date());
+        const part = type => parts.find(item => item.type === type).value;
+        return new Date(Date.UTC(
+            Number(part('year')),
+            Number(part('month')) - 1,
+            Number(part('day'))
+        ));
+    };
+
+    const getReleaseRibbon = (releaseDate, today) => {
+        if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(releaseDate || '')) return null;
+        const [year, month, day] = releaseDate.split('-').map(Number);
+        const date = new Date(Date.UTC(year, month - 1, day));
+        if (date.getUTCFullYear() !== year ||
+            date.getUTCMonth() !== month - 1 ||
+            date.getUTCDate() !== day) return null;
+
+        const daysUntilRelease = Math.round((date - today) / 86400000);
+        if (daysUntilRelease >= 1 && daysUntilRelease <= 14) return 'pre-order';
+        if (daysUntilRelease >= -13 && daysUntilRelease <= 0) return 'promo';
+        return null;
+    };
 
     function getPageFromURL() {
         const params = new URLSearchParams(window.location.search);
@@ -181,6 +212,7 @@
             var link = document.createElement('a');
             link.href = '/releases/' + rel.cat + '.html';
             link.className = 'tile';
+            link.style.position = 'relative';
             link.style.display = 'flex';
             link.style.flexDirection = 'column';
             link.style.textDecoration = 'none';
@@ -204,6 +236,23 @@
                 this.style.transform = 'translateY(0)';
             };
             
+            // Show promotional ribbons only during the 14-day pre-order and promo windows.
+            const ribbonType = getReleaseRibbon(rel.release_date, getSouthAfricanToday());
+            if (ribbonType) {
+                const ribbonLabel = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
+                const ribbon = document.createElement('span');
+                ribbon.className = 'release-ribbon release-ribbon--' + ribbonType;
+                ribbon.textContent = ribbonLabel;
+                ribbon.setAttribute('aria-label', ribbonLabel);
+                link.appendChild(ribbon);
+
+                const traxsourceIcon = document.createElement('span');
+                traxsourceIcon.className = 'release-traxsource-icon';
+                traxsourceIcon.setAttribute('aria-label', 'Traxsource');
+                traxsourceIcon.setAttribute('role', 'img');
+                link.appendChild(traxsourceIcon);
+            }
+
             // Image
             var img = document.createElement('img');
             img.src = 'https://cdn.hyperproduction.co.za/artworks/' + rel.cat + '.png';
