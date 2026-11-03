@@ -28,7 +28,7 @@
     };
 
     const getReleaseRibbon = (releaseDate, today) => {
-        if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(releaseDate || '')) return null;
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(releaseDate || '')) return null;
         const [year, month, day] = releaseDate.split('-').map(Number);
         const date = new Date(Date.UTC(year, month - 1, day));
         if (date.getUTCFullYear() !== year ||
