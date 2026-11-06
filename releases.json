@@ -1,5 +1,117 @@
 [
     {
+        "cat": "HYP149",
+        "artist": "Lieutenant-X, Sabrina Masenya",
+        "title": "Passion",
+        "upc": "",
+        "release_date": "2026-12-11",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP149.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP149.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600047",
+                "artist": "Lieutenant-X, Sabrina Masenya",
+                "title": "Passion",
+                "mix": "3Step Mix"
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
+        "cat": "HYP148",
+        "artist": "ALKEIVAL",
+        "title": "Wandiganiria",
+        "upc": "",
+        "release_date": "2026-12-04",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP148.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP148.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600046",
+                "artist": "ALKEIVAL",
+                "title": "Wandiganiria",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
+        "cat": "HYP147",
+        "artist": "Just Coske",
+        "title": "1001 Nights",
+        "upc": "",
+        "release_date": "2026-11-27",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP147.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP147.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600045",
+                "artist": "Just Coske",
+                "title": "1001 Nights",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
+        "cat": "HYP146",
+        "artist": "Willard Jansen",
+        "title": "The Tale of Human Labor",
+        "upc": "",
+        "release_date": "2026-11-20",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP146.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP146.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600044",
+                "artist": "Willard Jansen",
+                "title": "The Tale of Human Labor",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
         "cat": "HYP145",
         "artist": "DJBANDZ_SA",
         "title": "IZITHA",
@@ -68,7 +180,7 @@
         "title": "Mzulo",
         "upc": "612891308655",
         "release_date": "2026-10-30",
-        "release_status": "Delivered",
+        "release_status": "Live",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP143.png",
