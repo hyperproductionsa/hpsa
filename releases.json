@@ -21,7 +21,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
+            "Apple Music": "https://itunes.apple.com/us/album/passion/id6832264545?at=1000lpc4&ct=LE",
             "Traxsource": "",
             "Youtube": "",
             "Beatport": ""
@@ -49,8 +49,8 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
-            "Traxsource": "",
+            "Apple Music": "https://itunes.apple.com/us/album/wandiganiria/id6832280391?at=1000lpc4&ct=LE",
+            "Traxsource": "https://www.traxsource.com/title/2914041/wandiganiria",
             "Youtube": "",
             "Beatport": ""
         }
@@ -77,8 +77,8 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
-            "Traxsource": "",
+            "Apple Music": "https://itunes.apple.com/us/album/1001-nights/id6832265218?at=1000lpc4&ct=LE",
+            "Traxsource": "https://www.traxsource.com/title/2914038/1001-nights",
             "Youtube": "",
             "Beatport": ""
         }
@@ -105,8 +105,8 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
-            "Traxsource": "",
+            "Apple Music": "https://itunes.apple.com/us/album/the-tale-of-human-labor/id6832265784?at=1000lpc4&ct=LE",
+            "Traxsource": "https://www.traxsource.com/title/2914037/the-tale-of-human-labor",
             "Youtube": "",
             "Beatport": ""
         }
