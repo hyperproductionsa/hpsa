@@ -1,11 +1,67 @@
 [
     {
+        "cat": "HYP151",
+        "artist": "Luca Lyj",
+        "title": "Naua Naue",
+        "upc": "",
+        "release_date": "2026-12-25",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP151.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP151.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600049",
+                "artist": "Luca Lyj",
+                "title": "Naua Naue",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
+        "cat": "HYP150",
+        "artist": "MAX STAN",
+        "title": "Te Sigo Esperando",
+        "upc": "",
+        "release_date": "2026-12-18",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP150.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP150.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600048",
+                "artist": "Max Stan",
+                "title": "Te Sigo Esperando",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
         "cat": "HYP149",
         "artist": "Lieutenant-X, Sabrina Masenya",
         "title": "Passion",
-        "upc": "",
+        "upc": "612891346718",
         "release_date": "2026-12-11",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP149.png",
@@ -31,9 +87,9 @@
         "cat": "HYP148",
         "artist": "ALKEIVAL",
         "title": "Wandiganiria",
-        "upc": "",
+        "upc": "612891346954",
         "release_date": "2026-12-04",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP148.png",
@@ -41,7 +97,7 @@
         "tracks": [
             {
                 "track_number": 1,
-                "isrc": "ZASY52600046",
+                "isrc": "QZWDD2602331",
                 "artist": "ALKEIVAL",
                 "title": "Wandiganiria",
                 "mix": ""
@@ -59,9 +115,9 @@
         "cat": "HYP147",
         "artist": "Just Coske",
         "title": "1001 Nights",
-        "upc": "",
+        "upc": "612891346732",
         "release_date": "2026-11-27",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP147.png",
@@ -87,9 +143,9 @@
         "cat": "HYP146",
         "artist": "Willard Jansen",
         "title": "The Tale of Human Labor",
-        "upc": "",
+        "upc": "612891346770",
         "release_date": "2026-11-20",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP146.png",
@@ -145,7 +201,7 @@
         "title": "Mamela",
         "upc": "612891314274",
         "release_date": "2026-11-06",
-        "release_status": "Delivered",
+        "release_status": "Live",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP144.png",
@@ -244,7 +300,7 @@
             }
         ],
         "stores": {
-            "Spotify": "",
+            "Spotify": "https://open.spotify.com/album/5P3Y8OOto6VBPxdVVCSKTf",
             "Apple Music": "https://music.apple.com/us/album/mogodumo/id6822405731?at=1000lpc4&ct=LE",
             "Traxsource": "https://www.traxsource.com/title/2897578/mogodumo",
             "Youtube": "",
@@ -2209,7 +2265,7 @@
         "artist": "Dub Smash, HyperSOUL-X",
         "title": "Bueno",
         "upc": "723277875033",
-        "release_date": "2025-01-12",
+        "release_date": "2026-11-17",
         "release_status": "Deleted",
         "release_type": "Single",
         "main_genre": "Dance",
@@ -3317,7 +3373,7 @@
         "title": "Ancient Garden",
         "upc": "795397806709",
         "release_date": "2023-06-10",
-        "release_status": "Live",
+        "release_status": "Processing",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP050.png",
