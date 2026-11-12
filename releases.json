@@ -2261,28 +2261,6 @@
         }
     },
     {
-        "cat": "HYP082",
-        "artist": "Dub Smash, HyperSOUL-X",
-        "title": "Bueno",
-        "upc": "723277875033",
-        "release_date": "2026-11-17",
-        "release_status": "Deleted",
-        "release_type": "Single",
-        "main_genre": "Dance",
-        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP082.png",
-        "release_url": "https://hyperproduction.co.za/releases/HYP082.html",
-        "tracks": [
-            {
-                "track_number": 1,
-                "isrc": "ZASY52400024",
-                "artist": "Dub Smash, HyperSOUL-X",
-                "title": "Bueno",
-                "mix": ""
-            }
-        ],
-        "stores": {}
-    },
-    {
         "cat": "HYP081",
         "artist": "Alvilianx",
         "title": "Into The Unknown",
