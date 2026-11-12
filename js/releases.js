@@ -34,8 +34,10 @@
             date.getUTCDate() !== day) return null;
 
         const daysUntilRelease = Math.round((date - today) / 86400000);
-        if (daysUntilRelease >= 1 && daysUntilRelease <= 14) return 'pre-order';
-        if (daysUntilRelease >= -13 && daysUntilRelease <= 0) return 'promo';
+        // PRE-ORDER remains visible for every future release, regardless of lead time.
+        if (daysUntilRelease > 0) return 'pre-order';
+        // PROMO starts on release_date and continues for the following 14 days.
+        if (daysUntilRelease >= -14) return 'promo';
         return null;
     };
 
@@ -223,22 +225,13 @@
                 this.style.transform = 'translateY(0)';
             };
             
-            // Show promotional ribbons only during the 14-day pre-order and promo windows.
-            const ribbonType = getReleaseRibbon(rel.release_date, getSouthAfricanToday());
-            if (ribbonType) {
-                const ribbonLabel = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
-                const ribbon = document.createElement('span');
-                ribbon.className = 'release-ribbon release-ribbon--' + ribbonType;
-                ribbon.textContent = ribbonLabel;
-                ribbon.setAttribute('aria-label', ribbonLabel);
-                link.appendChild(ribbon);
-
-                const traxsourceIcon = document.createElement('span');
-                traxsourceIcon.className = 'release-traxsource-icon';
-                traxsourceIcon.setAttribute('aria-label', 'Traxsource');
-                traxsourceIcon.setAttribute('role', 'img');
-                link.appendChild(traxsourceIcon);
-            }
+            // Artwork wrapper keeps ribbons and the Traxsource mark confined to the image.
+            const artwork = document.createElement('div');
+            artwork.style.position = 'relative';
+            artwork.style.width = '100%';
+            artwork.style.flexShrink = '0';
+            artwork.style.overflow = 'hidden';
+            artwork.style.borderRadius = '4px';
 
             // Image
             var img = document.createElement('img');
@@ -249,7 +242,24 @@
             img.style.display = 'block';
             img.style.borderRadius = '4px';
             img.style.flexShrink = '0';
-            
+            artwork.appendChild(img);
+
+            const ribbonType = getReleaseRibbon(rel.release_date, getSouthAfricanToday());
+            if (ribbonType) {
+                const ribbonLabel = ribbonType === 'pre-order' ? 'PRE-ORDER' : 'PROMO';
+                const ribbon = document.createElement('span');
+                ribbon.className = 'release-ribbon release-ribbon--' + ribbonType;
+                ribbon.textContent = ribbonLabel;
+                ribbon.setAttribute('aria-label', ribbonLabel);
+                artwork.appendChild(ribbon);
+
+                const traxsourceIcon = document.createElement('span');
+                traxsourceIcon.className = 'release-traxsource-icon';
+                traxsourceIcon.setAttribute('aria-label', 'Traxsource');
+                traxsourceIcon.setAttribute('role', 'img');
+                artwork.appendChild(traxsourceIcon);
+            }
+
             // Info
             var info = document.createElement('div');
             info.className = 'tile-info';
@@ -264,7 +274,7 @@
             info.innerHTML = '<p class="artist" style="font-weight:700;margin:0;font-size:14px;color:#e4de69;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.artist + '</p>' +
                              '<p class="title" style="margin:0;font-size:12px;color:#ccc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.title + '</p>';
             
-            link.appendChild(img);
+            link.appendChild(artwork);
             link.appendChild(info);
             
             // Animation
