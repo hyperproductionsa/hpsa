@@ -9,8 +9,6 @@
     let totalPages = 1;
     let searchQuery = '';
 
-    let maxCatalogWithStore = 0;
-
     // Release ribbons use the label's South African calendar date.
     const getSouthAfricanToday = () => {
         const parts = new Intl.DateTimeFormat('en-CA', {
@@ -58,36 +56,25 @@
 
     async function initCatalog() {
         try {
-            // Fetch both JSON files
-            const [releasesRes, storesRes] = await Promise.all([
-                fetch('/releases.json'),
-                fetch('/stores.json')
-            ]);
-
-            const allReleasesData = await releasesRes.json();
-            
-            // Get max catalog from stores
-            if (storesRes.ok) {
-                const storesData = await storesRes.json();
-                storesData.forEach(function(store) {
-                    const cat = store["Catalogue Number"];
-                    if (cat && cat.startsWith('HYP')) {
-                        const num = parseInt(cat.replace('HYP', ''));
-                        if (num > maxCatalogWithStore) {
-                            maxCatalogWithStore = num;
-                        }
-                    }
-                });
-                console.log('📊 Max catalog with store links: HYP' + String(maxCatalogWithStore).padStart(3, '0'));
+            // The releases catalog is driven exclusively by releases.json.
+            // Store links are optional metadata and must never hide a release.
+            const releasesRes = await fetch('/releases.json');
+            if (!releasesRes.ok) {
+                throw new Error('Could not fetch releases.json (HTTP ' + releasesRes.status + ')');
             }
 
-            // Filter releases: only those that have store links
+            const allReleasesData = await releasesRes.json();
+            if (!Array.isArray(allReleasesData)) {
+                throw new Error('Invalid releases.json: expected an array');
+            }
+
             allReleases = allReleasesData.filter(function(rel) {
-                const num = parseInt(rel.cat.replace('HYP', ''));
-                return num <= maxCatalogWithStore;
+                return rel && typeof rel.cat === 'string' &&
+                       typeof rel.artist === 'string' &&
+                       typeof rel.title === 'string';
             });
 
-            console.log('📄 Showing ' + allReleases.length + ' releases (up to HYP' + String(maxCatalogWithStore).padStart(3, '0') + ')');
+            console.log('📄 Showing all ' + allReleases.length + ' releases from releases.json');
             
             // Sort by catalog number (newest first)
             allReleases.sort(function(a, b) {
