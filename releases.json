@@ -77,7 +77,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "https://itunes.apple.com/us/album/passion/id6832264545?at=1000lpc4&ct=LE",
+            "Apple Music": "https://itunes.apple.com/us/album/passion/id6832264545",
             "Traxsource": "",
             "Youtube": "",
             "Beatport": ""
@@ -105,7 +105,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "https://itunes.apple.com/us/album/wandiganiria/id6832280391?at=1000lpc4&ct=LE",
+            "Apple Music": "https://itunes.apple.com/us/album/wandiganiria/id6832280391",
             "Traxsource": "https://www.traxsource.com/title/2914041/wandiganiria",
             "Youtube": "",
             "Beatport": ""
@@ -133,7 +133,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "https://itunes.apple.com/us/album/1001-nights/id6832265218?at=1000lpc4&ct=LE",
+            "Apple Music": "https://itunes.apple.com/us/album/1001-nights/id6832265218",
             "Traxsource": "https://www.traxsource.com/title/2914038/1001-nights",
             "Youtube": "",
             "Beatport": ""
@@ -161,7 +161,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "https://itunes.apple.com/us/album/the-tale-of-human-labor/id6832265784?at=1000lpc4&ct=LE",
+            "Apple Music": "https://itunes.apple.com/us/album/the-tale-of-human-labor/id6832265784",
             "Traxsource": "https://www.traxsource.com/title/2914037/the-tale-of-human-labor",
             "Youtube": "",
             "Beatport": ""
@@ -258,7 +258,7 @@
             }
         ],
         "stores": {
-            "Spotify": "",
+            "Spotify": "https://open.spotify.com/album/59fmCeXcWQaSrIY837KYsX",
             "Apple Music": "https://music.apple.com/us/album/mzulo/id6825014895",
             "Traxsource": "https://www.traxsource.com/title/2902181/mzulo",
             "Youtube": "",
@@ -301,7 +301,7 @@
         ],
         "stores": {
             "Spotify": "https://open.spotify.com/album/5P3Y8OOto6VBPxdVVCSKTf",
-            "Apple Music": "https://music.apple.com/us/album/mogodumo/id6822405731?at=1000lpc4&ct=LE",
+            "Apple Music": "https://music.apple.com/us/album/mogodumo/id6822405731",
             "Traxsource": "https://www.traxsource.com/title/2897578/mogodumo",
             "Youtube": "",
             "Beatport": ""
