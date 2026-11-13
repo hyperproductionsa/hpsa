@@ -1,11 +1,39 @@
 [
     {
+        "cat": "HYP152",
+        "artist": "Duncan R32",
+        "title": "27",
+        "upc": "",
+        "release_date": "2027-01-01",
+        "release_status": "Reviewing",
+        "release_type": "Single",
+        "main_genre": "Dance",
+        "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP152.png",
+        "release_url": "https://hyperproduction.co.za/releases/HYP152.html",
+        "tracks": [
+            {
+                "track_number": 1,
+                "isrc": "ZASY52600050",
+                "artist": "Duncan R32",
+                "title": "27",
+                "mix": ""
+            }
+        ],
+        "stores": {
+            "Spotify": "",
+            "Apple Music": "",
+            "Traxsource": "",
+            "Youtube": "",
+            "Beatport": ""
+        }
+    },
+    {
         "cat": "HYP151",
         "artist": "Luca Lyj",
         "title": "Naua Naue",
-        "upc": "",
+        "upc": "612891356120",
         "release_date": "2026-12-25",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP151.png",
@@ -21,7 +49,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
+            "Apple Music": "https://itunes.apple.com/us/album/naua-naue/id6834019644",
             "Traxsource": "",
             "Youtube": "",
             "Beatport": ""
@@ -31,9 +59,9 @@
         "cat": "HYP150",
         "artist": "MAX STAN",
         "title": "Te Sigo Esperando",
-        "upc": "",
+        "upc": "612891356137",
         "release_date": "2026-12-18",
-        "release_status": "Reviewing",
+        "release_status": "Delivered",
         "release_type": "Single",
         "main_genre": "Dance",
         "artwork_url": "https://cdn.hyperproduction.co.za/artworks/HYP150.png",
@@ -49,7 +77,7 @@
         ],
         "stores": {
             "Spotify": "",
-            "Apple Music": "",
+            "Apple Music": "https://itunes.apple.com/us/album/te-sigo-esperando/id6834019743",
             "Traxsource": "",
             "Youtube": "",
             "Beatport": ""
