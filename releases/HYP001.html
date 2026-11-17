@@ -86,14 +86,13 @@
         .release-art { display:block; width:100%; aspect-ratio:1; object-fit:cover; background:#111; }
         .preview-button { position:absolute; z-index:2; left:50%; top:50%; transform:translate(-50%,-50%); width:76px; height:76px; display:grid; place-items:center; border:1px solid rgba(229,222,105,.9); border-radius:50%; color:#050505; background:#e5de69; box-shadow:0 8px 35px rgba(0,0,0,.45); cursor:pointer; transition:transform .2s,background .2s,box-shadow .2s; }
         .preview-button:hover { transform:translate(-50%,-50%) scale(1.07); background:#f1eb8a; box-shadow:0 10px 42px rgba(229,222,105,.2); }
-        .preview-button:focus-visible,.store-link:focus-visible,.back-link:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+        .preview-button:focus-visible,.store-link:focus-visible { outline:2px solid #fff; outline-offset:4px; }
         .preview-button svg { width:24px; height:24px; fill:currentColor; }
         .preview-button .pause-symbol { display:none; }
         .preview-button.is-playing .play-symbol { display:none; }
         .preview-button.is-playing .pause-symbol { display:block; }
         .store-heading { margin:17px 0 12px; color:#777; font-size:.65rem; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; }
         .release-stores { display:flex; align-items:center; flex-wrap:wrap; gap:9px; }
-        .release-copy h1 {
         .release-copy h1 { display:block; width:100%; margin:0 0 14px!important; padding:0!important; color:#f4f1d1!important; font-family:'HyperPixel',sans-serif!important; font-size:clamp(3.2rem,6vw,6.8rem)!important; font-weight:400!important; letter-spacing:0!important; line-height:1.12!important; text-transform:uppercase!important; overflow:visible; overflow-wrap:anywhere; }
         .release-artists { margin:0 0 30px; color:#bcbcbc; font-size:1.08rem; letter-spacing:.2px; }
         .release-artists strong { color:#fff; font-weight:500; }
@@ -132,7 +131,6 @@
             .release-artists { margin-bottom:22px; font-size:1rem; }
             .release-facts { gap:10px 24px; }
             .track-section { margin-top:25px; }
-            .release-bottom { margin-top:28px; }
         }
         @media(max-width:420px) {
             .release-shell { padding-left:0; padding-right:0; }
@@ -140,13 +138,12 @@
             .release-art-frame { width:min(86vw,360px); }
             .preview-button { width:66px; height:66px; }
             .store-link { flex:1 1 calc(50% - 9px); min-width:0; }
-            .release-bottom-note { display:none; }
         }
         #my-sticky-header a { width:100%; }
         #my-sticky-header .header-logo { display:block; width:190px; height:75px; background:#e5de69; -webkit-mask:url('https://hyperproduction.co.za/logo/HPSAss.svg') center/contain no-repeat; mask:url('https://hyperproduction.co.za/logo/HPSAss.svg') center/contain no-repeat; }
         @media(max-width:680px) { #my-sticky-header .header-logo { width:160px; height:63px; } }
         @media(prefers-reduced-motion:reduce) {
-            .preview-button,.store-link,.back-link { transition:none; }
+            .preview-button,.store-link { transition:none; }
         }
     </style>
 </head>
