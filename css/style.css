@@ -1404,3 +1404,31 @@ body.release-page:not(.content-page) .release-layout {
     margin:0!important;
     padding:0 clamp(24px,5vw,88px)!important;
 }
+
+/* Shared section-heading treatment for About and Privacy Policy.
+   Privacy's numbered section headings use the same Roboto/yellow style as About. */
+body.content-page #about .about-content h4,
+body.content-page #privacy-page .privacy-container h2 {
+    font-family:'Roboto',Arial,sans-serif!important;
+    font-size:clamp(1.2rem,2.5vw,1.6rem)!important;
+    font-weight:700!important;
+    line-height:1.2!important;
+    letter-spacing:normal!important;
+    text-transform:uppercase!important;
+    color:#e5de69!important;
+    text-align:center!important;
+    margin:34px 0 10px!important;
+}
+
+@media(max-width:768px) {
+    body.content-page #about .about-content h4,
+    body.content-page #privacy-page .privacy-container h2 {
+        font-size:1.1rem!important;
+    }
+}
+@media(max-width:480px) {
+    body.content-page #about .about-content h4,
+    body.content-page #privacy-page .privacy-container h2 {
+        font-size:1rem!important;
+    }
+}
