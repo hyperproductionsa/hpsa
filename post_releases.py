@@ -377,7 +377,7 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
         if store_url is None or str(store_url).strip().lower() in ('', 'nan', 'none'):
             continue
         store_links_html.append(
-            f'<a class="store-link" style="--store-icon:url(\'/logo/dsp-icons/{icon_file}\')" '
+            f'<a class="store-link" style="--store-icon:url(\'{icon_file}\')" '
             f'href="{esc_attr(str(store_url).strip())}" target="_blank" rel="noopener noreferrer" '
             f'aria-label="{esc_attr(store_labels[store_name])}">'
             f'<span class="store-icon" aria-hidden="true"></span></a>'
