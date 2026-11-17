@@ -925,3 +925,10 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
                 max-width: 250px;
             }
         }
+
+
+/* Keep modern release-page store buttons centered; legacy template spacing must not override them. */
+body.release-page .release-visual .release-stores {
+    margin-left: auto;
+    margin-right: auto;
+}
