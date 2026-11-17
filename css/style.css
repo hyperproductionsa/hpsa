@@ -1451,3 +1451,49 @@ body.content-page #privacy-page .privacy-container h2 {
         font-size:1rem!important;
     }
 }
+
+
+/* RELEASE CATALOG — align tiles and page chrome with the modern individual release pages. */
+body.release-catalog-page {
+    min-height:100vh;
+    color:#f5f5f5;
+    background:radial-gradient(ellipse at 24% 44%,rgba(229,222,105,.075),transparent 34%),#050505!important;
+}
+body.release-catalog-page::before {
+    content:"";
+    position:fixed;
+    z-index:0;
+    inset:0;
+    background:linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+               linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px);
+    background-size:72px 72px;
+    opacity:.22;
+    pointer-events:none;
+    mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 75%,transparent);
+}
+body.release-catalog-page #hp-catalog-container {
+    position:relative;
+    z-index:1;
+}
+body.release-catalog-page .tile {
+    background:#000!important;
+    border:1px solid #e5de69!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+}
+body.release-catalog-page .tile img {
+    border-radius:0!important;
+}
+body.release-catalog-page .tile:hover {
+    border-color:#fff!important;
+    transform:translateY(-3px);
+}
+body.release-catalog-page #my-sticky-footer {
+    background:#000!important;
+    box-shadow:none!important;
+}
+body.release-catalog-page #my-sticky-footer .copyright { color:#fff!important; }
+body.release-catalog-page #my-sticky-footer .copyright strong { color:#e5de69!important; }
+body.release-catalog-page #my-sticky-footer .social-icons img {
+    filter:brightness(0) saturate(100%) invert(89%) sepia(16%) saturate(1042%) hue-rotate(11deg) brightness(96%) contrast(91%);
+}
