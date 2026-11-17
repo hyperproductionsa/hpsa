@@ -103,7 +103,7 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
 #artwork-carousel{width:100%;max-width:1000px;margin:0 auto 30px;padding:0 20px}
 #artwork-carousel .slick-slide{padding:0 10px}
 .carousel-img{width:100%;max-width:280px;height:auto;aspect-ratio:1/1;margin:0 auto;display:block;box-shadow:0 7px 10px 0 rgba(0,0,0,.5);object-fit:cover;background:#e5de69}
-.hero-link{position:relative;display:block;width:100%;max-width:280px;margin:0 auto;overflow:hidden;text-decoration:none;filter:drop-shadow(0 8px 12px rgba(0,0,0,.38))}
+.hero-link{position:relative;display:block;width:100%;max-width:280px;margin:0 auto;overflow:hidden;text-decoration:none;container-type:inline-size;filter:drop-shadow(0 8px 12px rgba(0,0,0,.38))}
 .hero-link .carousel-img{width:100%;max-width:100%}
 .release-ribbon{position:absolute;z-index:2;top:6.8cqw;right:-13.2cqw;width:50.7cqw;padding:2.5cqw 0;background:#E5DE69;color:#000;text-align:center;font-family:'Roboto',Arial,sans-serif;font-size:clamp(8px,4.3cqw,12px);font-weight:900;line-height:1.15;letter-spacing:.21cqw;text-transform:uppercase;transform:rotate(45deg);transform-origin:center;pointer-events:none;text-shadow:0 1px 1px rgba(255,255,255,.25);box-shadow:0 0 0 1px rgba(0,0,0,.35),0 1.4cqw 3.6cqw rgba(0,0,0,.55),0 0 2.9cqw rgba(0,0,0,.3)}
 .release-ribbon--pre-order{background:#AD0069;color:#fff}
