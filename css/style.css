@@ -1235,3 +1235,54 @@ body.content-page #my-sticky-footer .social-icons img { filter:brightness(0) sat
     body.content-page .content-panel p,
     body.content-page .content-panel li { font-size:.86rem; }
 }
+
+
+/* ID-specific legacy section rules need explicit overrides on the redesigned pages. */
+body.content-page #about.content-shell,
+body.content-page #services.content-shell,
+body.content-page #demo-page.content-shell,
+body.content-page #privacy-page.content-shell {
+    display:flex!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    width:100%!important;
+    min-height:100vh!important;
+    height:auto!important;
+    padding:112px clamp(16px,5vw,72px) 104px!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+    background:radial-gradient(ellipse at 24% 18%,rgba(229,222,105,.075),transparent 34%),#050505!important;
+}
+body.content-page #about .content-panel h1,
+body.content-page #services .content-panel h1,
+body.content-page #demo-page .content-panel h1,
+body.content-page #privacy-page .content-panel h1 {
+    color:#f4f1d1!important;
+    text-align:left!important;
+    font-size:clamp(1.9rem,4vw,3.2rem)!important;
+    letter-spacing:0!important;
+    margin:0 0 24px!important;
+}
+@media(max-width:768px) {
+    body.content-page #about.content-shell,
+    body.content-page #services.content-shell,
+    body.content-page #demo-page.content-shell,
+    body.content-page #privacy-page.content-shell {
+        padding:96px 14px 88px!important;
+    }
+    body.content-page #about .content-panel h1,
+    body.content-page #services .content-panel h1,
+    body.content-page #demo-page .content-panel h1,
+    body.content-page #privacy-page .content-panel h1 {
+        font-size:clamp(1.65rem,7vw,2.4rem)!important;
+        margin-bottom:20px!important;
+    }
+}
+@media(max-width:480px) {
+    body.content-page #about.content-shell,
+    body.content-page #services.content-shell,
+    body.content-page #demo-page.content-shell,
+    body.content-page #privacy-page.content-shell {
+        padding:90px 10px 82px!important;
+    }
+}
