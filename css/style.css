@@ -934,6 +934,22 @@ body.release-page .release-visual .release-stores {
 }
 
 
+/* Center release identity and metadata on mobile, beneath the artwork/store area. */
+@media (max-width:680px) {
+    body.release-page .release-copy h1,
+    body.release-page .release-copy .release-artists {
+        text-align: center;
+    }
+    body.release-page .release-copy .release-facts {
+        justify-content: center;
+        text-align: center;
+    }
+    body.release-page .release-copy .release-fact {
+        align-items: center;
+        text-align: center;
+    }
+}
+
 /* Keep all three modern release store buttons in one compact mobile row.
    The legacy .release-stores flex rule appears later in the stylesheet, so
    explicitly restore the modern grid here. */
