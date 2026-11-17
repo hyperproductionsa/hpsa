@@ -934,10 +934,16 @@ body.release-page .release-visual .release-stores {
 }
 
 
-/* Compact release store buttons on mobile so multi-store rows do not dominate the page. */
+/* Keep all three modern release store buttons in one compact mobile row.
+   The legacy .release-stores flex rule appears later in the stylesheet, so
+   explicitly restore the modern grid here. */
 @media (max-width:680px) {
     body.release-page .release-visual .release-stores {
-        width: min(76vw, 320px);
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-auto-flow: column;
+        flex-wrap: nowrap;
+        width: min(86vw, 360px);
         gap: 6px;
     }
     body.release-page .release-visual .store-link {
