@@ -1286,3 +1286,95 @@ body.content-page #privacy-page .content-panel h1 {
         padding:90px 10px 82px!important;
     }
 }
+
+
+/* SHARED OPEN PAGE LAYOUT: internal pages + release catalog */
+:root { --hp-content-width:1200px; }
+body.content-page .content-shell,
+body.content-page #about.content-shell,
+body.content-page #services.content-shell,
+body.content-page #demo-page.content-shell,
+body.content-page #privacy-page.content-shell {
+    display:block!important; width:100%!important; min-height:100vh!important;
+    height:auto!important; padding:112px 24px 104px!important;
+    overflow:visible!important; box-sizing:border-box!important;
+}
+body.content-page .content-shell > .content-panel,
+body.content-page .content-shell > .about-content,
+body.content-page .content-shell > .services-content,
+body.content-page .content-shell > .demo-container,
+body.content-page .content-shell > .privacy-container {
+    display:block; width:min(100%,var(--hp-content-width))!important;
+    max-width:var(--hp-content-width)!important; min-width:0;
+    margin:0 auto!important; padding:0!important; background:transparent!important;
+    border:0!important; border-radius:0!important; box-shadow:none!important;
+    box-sizing:border-box;
+}
+body.content-page .about-content,
+body.content-page .services-content { text-align:initial!important; }
+body.content-page .content-shell h1,
+body.content-page .content-shell h2 { text-align:center!important; }
+body.content-page .content-shell h1 { margin:0 auto 28px!important; }
+body.content-page .content-shell h2 { margin:30px auto 12px!important; }
+body.content-page .content-shell h2 + p,
+body.content-page .content-shell .subtitle,
+body.content-page .content-shell .services-intro {
+    max-width:900px; margin:0 auto 28px!important; text-align:center!important;
+}
+body.content-page .about-content h4 { text-align:center!important; margin:34px 0 10px!important; }
+body.content-page .about-divider { margin:0 auto 18px!important; }
+body.content-page .about-text {
+    width:100%; max-width:none!important; margin:0!important; text-align:left!important;
+}
+body.content-page .about-text blockquote { margin:22px 0; }
+body.content-page .service-grid { width:100%; }
+body.content-page .service-card { min-width:0; }
+body.content-page .demo-container { max-width:var(--hp-content-width)!important; }
+body.content-page #demo-form-container { width:min(100%,760px); margin:0 auto; }
+body.content-page .demo-container .subtitle { text-align:center!important; }
+body.content-page .platform-icons { justify-content:center!important; }
+body.content-page .privacy-container { max-width:none!important; line-height:1.8; }
+body.content-page .privacy-container > p,
+body.content-page .privacy-container > ul { text-align:left; }
+body.content-page .privacy-container h2 + p { text-align:center!important; }
+body.content-page .privacy-container h2 { margin-top:34px!important; }
+
+body.release-page:not(.content-page) .release-layout {
+    width:min(100%,var(--hp-content-width)); max-width:var(--hp-content-width);
+    margin:0 auto; padding:0 24px;
+}
+#hp-catalog-container {
+    width:min(100%,var(--hp-content-width))!important;
+    max-width:var(--hp-content-width)!important; margin:0 auto!important;
+    padding:140px 24px 100px!important; box-sizing:border-box;
+}
+#hp-catalog-container .catalog-title { text-align:center!important; margin-bottom:32px!important; }
+#catalog-controls { align-items:center; justify-content:space-between; }
+.search-wrapper { position:relative; max-width:400px; }
+.search-wrapper .search-icon {
+    position:absolute; left:14px; top:50%; width:18px; height:18px;
+    transform:translateY(-50%); color:#e5de69; pointer-events:none;
+}
+.search-wrapper .search-icon svg {
+    display:block; width:100%; height:100%; fill:none; stroke:currentColor;
+    stroke-width:2; stroke-linecap:round; stroke-linejoin:round;
+}
+.search-wrapper input { padding-left:42px!important; }
+@media(max-width:768px) {
+    body.content-page .content-shell,
+    body.content-page #about.content-shell,
+    body.content-page #services.content-shell,
+    body.content-page #demo-page.content-shell,
+    body.content-page #privacy-page.content-shell { padding:96px 18px 88px!important; }
+    body.content-page .content-shell h1 { font-size:clamp(1.65rem,7vw,2.4rem)!important; }
+    body.content-page .service-grid { grid-template-columns:1fr; }
+    #hp-catalog-container { padding:112px 18px 88px!important; }
+}
+@media(max-width:480px) {
+    body.content-page .content-shell,
+    body.content-page #about.content-shell,
+    body.content-page #services.content-shell,
+    body.content-page #demo-page.content-shell,
+    body.content-page #privacy-page.content-shell { padding:90px 14px 82px!important; }
+    #hp-catalog-container { padding:100px 14px 82px!important; }
+}
