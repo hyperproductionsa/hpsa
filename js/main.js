@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){console.log('Hyper Produ
 /* Mobile discovery panel: Explore + distribution, controlled by the floating menu and swipe gesture. */
 document.addEventListener('DOMContentLoaded', function () {
   const hero = document.getElementById('hero');
-  if (hero) document.body.classList.add('hpsa-home-active');
+  if (hero) document.body.classList.add('hpsa-home-active', 'home-page');
   const panel = document.getElementById('mobile-discovery-panel');
   const explore = document.getElementById('explore');
   const toggle = document.getElementById('mobile-explore-toggle');
@@ -171,3 +171,42 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+/* Desktop homepage footer follows the Contact section, activating before it reaches the fixed footer. */
+document.addEventListener('DOMContentLoaded', function () {
+  const contact = document.getElementById('contact');
+  if (!contact || !document.body.classList.contains('home-page')) return;
+
+  const desktop = window.matchMedia('(min-width: 769px)');
+  let observer = null;
+
+  function clearContactState() {
+    document.body.classList.remove('contact-section-active');
+  }
+
+  function observeContact() {
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
+    clearContactState();
+    if (!desktop.matches) return;
+
+    observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        document.body.classList.toggle('contact-section-active', entry.isIntersecting);
+      });
+    }, {
+      root:null,
+      rootMargin:'0px 0px -60px 0px',
+      threshold:0
+    });
+
+    observer.observe(contact);
+  }
+
+  observeContact();
+  if (desktop.addEventListener) desktop.addEventListener('change', observeContact);
+  else if (desktop.addListener) desktop.addListener(observeContact);
+});
+
