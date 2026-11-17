@@ -932,3 +932,35 @@ body.release-page .release-visual .release-stores {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Compact release store buttons on mobile so multi-store rows do not dominate the page. */
+@media (max-width:680px) {
+    body.release-page .release-visual .release-stores {
+        width: min(76vw, 320px);
+        gap: 6px;
+    }
+    body.release-page .release-visual .store-link {
+        min-height: 42px;
+        padding: 5px 3px;
+        border-width: 1px;
+    }
+    body.release-page .release-visual .store-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media (max-width:420px) {
+    body.release-page .release-visual .release-stores {
+        width: min(82vw, 300px);
+        gap: 5px;
+    }
+    body.release-page .release-visual .store-link {
+        min-height: 38px;
+        padding: 4px 2px;
+    }
+    body.release-page .release-visual .store-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
