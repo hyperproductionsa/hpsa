@@ -358,11 +358,11 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
 
     # Match HYP001's DSP order and icon treatment.
     store_icons = {
-        'Spotify': 'spotify.svg',
-        'Apple Music': 'apple.svg',
-        'Traxsource': 'traxsource.svg',
-        'Beatport': 'beatport.svg',
-        'Youtube': 'youtube.svg'
+        'Spotify': '/logo/dsp-icons/spotify.svg',
+        'Apple Music': '/logo/dsp-icons/apple.svg',
+        'Traxsource': '/logo/dsp-icons/traxsource.svg',
+        'Beatport': '/logo/stores/beatport.webp',
+        'Youtube': '/logo/stores/youtube.webp'
     }
     store_labels = {
         'Spotify': 'Listen on Spotify',
