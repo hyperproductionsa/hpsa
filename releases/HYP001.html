@@ -112,6 +112,11 @@
         .store-link { display:flex; flex:0 1 132px; align-items:center; justify-content:center; min-width:0; min-height:48px; padding:8px 15px; border:1px solid #292929; background:#101010; transition:border-color .2s,background .2s,transform .2s; }
         .store-link:hover { border-color:#e5de69; background:#171717; transform:translateY(-2px); }
         .store-icon { display:block; width:28px; height:28px; background:#e5de69; -webkit-mask:var(--store-icon) center/contain no-repeat; mask:var(--store-icon) center/contain no-repeat; }
+        #my-sticky-footer { background:#000!important; box-shadow:none!important; border-top:1px solid rgba(229,222,105,.35); }
+        #my-sticky-footer .copyright { color:#fff!important; font-weight:700!important; }
+        #my-sticky-footer .copyright strong { color:#e5de69!important; font-weight:900!important; }
+        #my-sticky-footer .social-icons img { filter:brightness(0) saturate(100%) invert(89%) sepia(16%) saturate(1042%) hue-rotate(11deg) brightness(96%) contrast(91%); }
+
         @media(max-width:850px) {
             .release-shell { height:auto; min-height:100vh; min-height:100svh; padding:104px 0 92px; overflow:visible; }
             .release-layout { height:auto; min-height:0; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:30px; padding:0 28px; }
