@@ -262,39 +262,34 @@ def release_type_to_schema(release_type):
 # GENERATE RELEASE HTML
 # ============================================
 def generate_release_html(cat_no, artist, title, tracks, stores, release_date, release_type, upc):
-    """Generate individual release HTML page with SEO tags."""
+    """Generate a release page using the shared HYP001 release-page layout."""
 
+    # De-duplicate tracks while preserving their original order.
     unique_tracks = []
     seen = set()
     for track in tracks:
-        key = f"{track['artist']}|{track['title']}|{track.get('mix', '')}"
+        track_artist = str(track.get('artist') or '').strip()
+        track_title = str(track.get('title') or '').strip()
+        track_mix = str(track.get('mix') or '').strip()
+        key = f"{track_artist}|{track_title}|{track_mix}"
         if key not in seen:
             seen.add(key)
-            unique_tracks.append(track)
+            unique_tracks.append({
+                **track,
+                'artist': track_artist,
+                'title': track_title,
+                'mix': track_mix
+            })
 
-    # Tracklist HTML (escaped)
-    tracklist_html = ''
-    for i, track in enumerate(unique_tracks, 1):
-        mix = f" ({esc_html(track.get('mix', ''))})" if track.get('mix') and track.get('mix') != 'nan' else ''
-        track_artist = track['artist'] if track['artist'] and track['artist'] != 'nan' else artist
-        track_title = track['title'] if track['title'] else 'Untitled'
-        tracklist_html += f'<li><strong>{i}.</strong> {esc_html(track_artist)} - {esc_html(track_title)}{mix}</li>\n'
-
-    # Store icons (URLs as attrs, alt text escaped)
-    store_icons_html = ''
-    for store_name, icon_file in STORE_ICONS.items():
-        store_url = stores.get(store_name, '')
-        if store_url and str(store_url) != 'nan' and str(store_url) != '':
-            store_icons_html += f'''
-                    <a href="{esc_attr(store_url)}" target="_blank">
-                        <img src="{STORES_BASE}/{icon_file}" alt="{esc_attr(store_name)}">
-                    </a>'''
-
-    track_count = len(unique_tracks)
-    track_info = "featuring 1 track" if track_count == 1 else f"featuring {track_count} tracks"
+    artist = str(artist or '').strip()
+    title = str(title or '').strip()
+    cat_no = str(cat_no).strip()
+    stores = stores or {}
 
     date_iso = format_date_iso(release_date)
     date_display = format_date_display(release_date)
+    track_count = len(unique_tracks)
+    track_info = "featuring 1 track" if track_count == 1 else f"featuring {track_count} tracks"
 
     if date_display:
         meta_description_raw = f"{artist} - {title}. {track_info}. Released {date_display} on Hyper Production (SA)."
@@ -303,7 +298,7 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
 
     schema_type = release_type_to_schema(release_type)
 
-    # JSON-LD (unescaped values — json.dumps handles encoding)
+    # Preserve the existing SEO and structured-data fields.
     ld = {
         "@context": "https://schema.org",
         "@type": schema_type,
@@ -327,32 +322,99 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
     if unique_tracks:
         track_entities = []
         for track in unique_tracks:
-            track_name = track['title'] if track['title'] else 'Untitled'
-            if track.get('mix') and track['mix'] != 'nan':
+            track_name = track['title'] or 'Untitled'
+            if track.get('mix'):
                 track_name += f" ({track['mix']})"
-            track_artist_str = track['artist'] if track['artist'] and track['artist'] != 'nan' else artist
+            track_artist_str = track['artist'] or artist
             entity = {
                 "@type": "MusicRecording",
                 "name": track_name,
                 "byArtist": artists_to_schema(track_artist_str)
             }
-            if track.get('isrc') and track['isrc'] != 'nan' and str(track['isrc']).strip():
-                entity["isrcCode"] = str(track['isrc']).strip()
+            isrc = str(track.get('isrc') or '').strip()
+            if isrc and isrc.lower() != 'nan':
+                entity["isrcCode"] = isrc
             track_entities.append(entity)
         ld["track"] = track_entities
 
     json_ld_str = json.dumps(ld, indent=4, ensure_ascii=False)
 
-    # HTML-escaped versions for embedding
+    # Escaped values for HTML.
     meta_description = esc_attr(meta_description_raw)
     artist_html = esc_html(artist)
     title_html = esc_html(title)
-    title_attr = esc_attr(f"{artist} - {title}")
     title_og = esc_attr(f"{artist} - {title} | Hyper Production (SA)")
+    title_attr = esc_attr(f"{artist} - {title}")
 
-    date_row = ''
+    # Match HYP001's artist treatment: first credited artist highlighted.
+    artist_names = split_artists(artist)
+    if artist_names:
+        artist_display_html = (
+            f"<strong>{esc_html(artist_names[0])}</strong>"
+            + "".join(f", {esc_html(name)}" for name in artist_names[1:])
+        )
+    else:
+        artist_display_html = artist_html
+
+    # Match HYP001's DSP order and icon treatment.
+    store_icons = {
+        'Spotify': 'spotify.svg',
+        'Apple Music': 'apple.svg',
+        'Traxsource': 'traxsource.svg',
+        'Beatport': 'beatport.svg',
+        'Youtube': 'youtube.svg'
+    }
+    store_labels = {
+        'Spotify': 'Listen on Spotify',
+        'Apple Music': 'Listen on Apple Music',
+        'Traxsource': 'Listen on Traxsource',
+        'Beatport': 'Listen on Beatport',
+        'Youtube': 'Watch on YouTube'
+    }
+    store_links_html = []
+    for store_name, icon_file in store_icons.items():
+        store_url = stores.get(store_name, '')
+        if store_url is None or str(store_url).strip().lower() in ('', 'nan', 'none'):
+            continue
+        store_links_html.append(
+            f'<a class="store-link" style="--store-icon:url(\'/logo/dsp-icons/{icon_file}\')" '
+            f'href="{esc_attr(str(store_url).strip())}" target="_blank" rel="noopener noreferrer" '
+            f'aria-label="{esc_attr(store_labels[store_name])}">'
+            f'<span class="store-icon" aria-hidden="true"></span></a>'
+        )
+    store_links_html = "\n                    ".join(store_links_html)
+
+    # Track rows follow the HYP001 hierarchy: number, title/mix, credited artist.
+    tracklist_rows = []
+    for index, track in enumerate(unique_tracks, 1):
+        track_title = esc_html(track['title'] or 'Untitled')
+        if track.get('mix'):
+            track_title += f" ({esc_html(track['mix'])})"
+        track_artist = esc_html(track['artist'] or artist)
+        tracklist_rows.append(f'''<li class="release-track">
+                            <span class="track-number">{index:02d}</span>
+                            <span><span class="track-name">{track_title}</span><span class="track-mix">{track_artist}</span></span>
+                            <span class="track-mark" aria-hidden="true">♪</span>
+                        </li>''')
+    tracklist_html = "\n                        ".join(tracklist_rows)
+
+    release_type_clean = str(release_type or '').strip().lower()
+    if release_type_clean in ('album', 'music album'):
+        format_label = 'Digital album'
+    elif release_type_clean in ('ep', 'extended play'):
+        format_label = 'Digital EP'
+    elif release_type_clean in ('single', 'music release', ''):
+        format_label = 'Digital single'
+    else:
+        format_label = f"Digital {esc_html(str(release_type).strip().lower())}"
+
+    date_fact_html = ''
     if date_display:
-        date_row = f'\n                <p class="meta"><strong>Released:</strong> {esc_html(date_display)}</p>'
+        date_fact_html = (
+            f'<div class="release-fact"><span class="release-fact-label">Release date</span>'
+            f'<span class="release-fact-value"><time datetime="{esc_attr(date_iso or "")}">'
+            f'{esc_html(date_display)}</time></span></div>'
+        )
 
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -361,100 +423,108 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{artist_html} - {title_html} | Hyper Production (SA)</title>
     <meta name="description" content="{meta_description}" />
-    
-    <!-- ===== CANONICAL ===== -->
-    <link rel="canonical" href="https://hyperproduction.co.za/releases/{cat_no}.html" />
-    
+    <link rel="canonical" href="https://hyperproduction.co.za/releases/{esc_attr(cat_no)}.html" />
     <meta property="og:title" content="{title_og}" />
     <meta property="og:description" content="{meta_description}" />
-    <meta property="og:image" content="{ARTWORK_BASE}/{cat_no}.png" />
+    <meta property="og:image" content="{ARTWORK_BASE}/{esc_attr(cat_no)}.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
-    <meta property="og:url" content="https://hyperproduction.co.za/releases/{cat_no}.html" />
+    <meta property="og:url" content="https://hyperproduction.co.za/releases/{esc_attr(cat_no)}.html" />
     <meta property="og:type" content="music.song" />
     <meta property="og:site_name" content="Hyper Production (SA)" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{title_og}" />
     <meta name="twitter:description" content="{meta_description}" />
-    <meta name="twitter:image" content="{ARTWORK_BASE}/{cat_no}.png" />
+    <meta name="twitter:image" content="{ARTWORK_BASE}/{esc_attr(cat_no)}.png" />
     <meta name="twitter:site" content="@hyperprosa" />
     <script type="application/ld+json">
 {json_ld_str}
     </script>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="https://hyperproduction.co.za/logo/site-icon.png" type="image/png" />
-
 </head>
-<body>
+<body class="release-page">
     <header id="my-sticky-header">
         <a href="https://hyperproduction.co.za/" title="Home">
             <img src="https://hyperproduction.co.za/logo/HPSA-gold.png" alt="Hyper Production (SA) – Home" />
         </a>
     </header>
-    <div class="release-detail-container">
-        <div class="release-detail-grid">
-            <div class="release-artwork">
-                <div class="art-wrapper" id="art-click">
-                    <img src="{ARTWORK_BASE}/{cat_no}.png" class="detail-art" onerror="this.src='https://hyperproduction.co.za/placeholder.png'" alt="{title_attr}" />
-                    <div class="play-overlay" id="play-btn-ui">
-                        <div class="play-icon" id="icon-play"></div>
-                        <div class="pause-icon" id="icon-pause"></div>
-                    </div>
+
+    <main class="release-shell">
+        <div class="release-layout">
+            <section class="release-visual" aria-label="Release artwork and audio preview">
+                <div class="release-art-frame">
+                    <img class="release-art" src="{ARTWORK_BASE}/{esc_attr(cat_no)}.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'" alt="{title_attr} artwork" />
+                    <button class="preview-button" id="preview-toggle" type="button" aria-label="Play audio preview" aria-pressed="false">
+                        <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.8c0-.8.9-1.3 1.6-.9l10 6.2a1.1 1.1 0 0 1 0 1.8l-10 6.2c-.7.4-1.6-.1-1.6-.9V5.8Z"/></svg>
+                        <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+                    </button>
                 </div>
-                <div class="release-stores">
-                    {store_icons_html}
+                <p class="store-heading">Available on</p>
+                <nav class="release-stores" aria-label="Listen and buy">
+                    {store_links_html}
+                </nav>
+            </section>
+
+            <section class="release-copy" aria-labelledby="release-title">
+                <h1 id="release-title">{title_html}</h1>
+                <p class="release-artists">{artist_display_html}</p>
+
+                <div class="release-facts" aria-label="Release details">
+                    <div class="release-fact"><span class="release-fact-label">Catalogue</span><span class="release-fact-value">{esc_html(cat_no)}</span></div>
+                    {date_fact_html}
+                    <div class="release-fact"><span class="release-fact-label">Format</span><span class="release-fact-value">{format_label}</span></div>
                 </div>
-            </div>
-            <div class="release-info">
-                <h1 class="release-title">{title_html}</h1>
-                <p class="artist-name">{artist_html}</p>
-                <p class="meta"><strong>Catalog:</strong> {cat_no}</p>{date_row}
-                <div class="tracklist">
-                    <p><strong>Tracklist:</strong></p>
-                    <ol>
+
+                <div class="track-section">
+                    <div class="track-heading"><span>Tracklist</span><span class="track-count">{track_count:02d} tracks</span></div>
+                    <ol class="release-tracklist">
                         {tracklist_html}
                     </ol>
                 </div>
-                <a href="/releases/" class="back-to-catalog">&lt; Back to Catalog</a>
-            </div>
+            </section>
         </div>
-    </div>
+    </main>
+
     <footer id="my-sticky-footer">
         <div class="footer-inner">
             <p class="copyright">&copy; 2026 <strong>Hyper Production (SA)</strong>. All Rights Reserved.</p>
             <div class="social-icons">
-                <a href="https://facebook.com/hyperproductionsa" target="_blank" title="Facebook"><img src="https://hyperproduction.co.za/logo/facebook.png" alt="Facebook" /></a>
-                <a href="https://instagram.com/hyperprosa" target="_blank" title="Instagram"><img src="https://hyperproduction.co.za/logo/instagram.png" alt="Instagram" /></a>
-                <a href="https://www.youtube.com/@hyperproductionsa" target="_blank" title="YouTube"><img src="https://hyperproduction.co.za/logo/youtube.png" alt="YouTube" /></a>
+                <a href="https://facebook.com/hyperproductionsa" target="_blank" rel="noopener noreferrer" title="Facebook"><img src="https://hyperproduction.co.za/logo/facebook.png" alt="Facebook" /></a>
+                <a href="https://instagram.com/hyperprosa" target="_blank" rel="noopener noreferrer" title="Instagram"><img src="https://hyperproduction.co.za/logo/instagram.png" alt="Instagram" /></a>
+                <a href="https://www.youtube.com/@hyperproductionsa" target="_blank" rel="noopener noreferrer" title="YouTube"><img src="https://hyperproduction.co.za/logo/youtube.png" alt="YouTube" /></a>
             </div>
         </div>
     </footer>
+
     <script>
-        (function() {{
-            const audio = new Audio('{SAMPLE_BASE}/{cat_no}.m4a');
-            const ui = document.getElementById('play-btn-ui');
-            const artClick = document.getElementById('art-click');
-            const iconPlay = document.getElementById('icon-play');
-            const iconPause = document.getElementById('icon-pause');
-            audio.oncanplaythrough = () => {{
-                if (ui) ui.style.display = 'flex';
+        (() => {{
+            const audio = new Audio('{SAMPLE_BASE}/{esc_attr(cat_no)}.m4a');
+            audio.preload = 'none';
+            const button = document.getElementById('preview-toggle');
+
+            const setPlaying = (playing) => {{
+                button.classList.toggle('is-playing', playing);
+                button.setAttribute('aria-pressed', String(playing));
+                button.setAttribute('aria-label', playing ? 'Pause audio preview' : 'Play audio preview');
             }};
-            audio.onerror = () => {{
-                if (ui) ui.style.display = 'none';
-            }};
-            if (artClick) {{
-                artClick.onclick = () => {{
-                    if (audio.paused) {{
-                        audio.play();
-                        if (iconPlay) iconPlay.style.display = 'none';
-                        if (iconPause) iconPause.style.display = 'block';
-                    }} else {{
-                        audio.pause();
-                        if (iconPlay) iconPlay.style.display = 'block';
-                        if (iconPause) iconPause.style.display = 'none';
+
+            button.addEventListener('click', async () => {{
+                if (audio.paused) {{
+                    try {{
+                        await audio.play();
+                    }} catch (error) {{
+                        setPlaying(false);
                     }}
-                }};
-            }}
+                }} else {{
+                    audio.pause();
+                }}
+            }});
+
+            audio.addEventListener('play', () => setPlaying(true));
+            audio.addEventListener('pause', () => setPlaying(false));
+            audio.addEventListener('ended', () => setPlaying(false));
+            audio.addEventListener('error', () => setPlaying(false));
         }})();
     </script>
 </body>
