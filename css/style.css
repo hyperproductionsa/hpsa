@@ -975,6 +975,20 @@ body.release-page .release-visual .release-stores {
     }
 }
 
+/* Tighten the artwork-to-DSP spacing and keep release title/artist visually grouped. */
+body.release-page .release-visual .store-heading {
+    margin:8px auto 4px!important;
+}
+body.release-page .release-visual .release-stores {
+    margin-top:0!important;
+}
+body.release-page .release-copy h1 {
+    margin-bottom:4px!important;
+}
+body.release-page .release-copy .release-artists {
+    margin-top:0!important;
+}
+
 /* Hide the DSP label and row entirely when a release has no valid store links. */
 body.release-page .release-visual:not(:has(.release-stores .store-link)) .store-heading {
     display:none!important;
