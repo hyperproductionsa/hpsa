@@ -25,8 +25,14 @@
     "@type": "MusicRelease",
     "name": "Love Me Hard",
     "byArtist": [
-        { "@type": "MusicGroup", "name": "Snokie" },
-        { "@type": "MusicGroup", "name": "HyperSOUL-X" }
+        {
+            "@type": "MusicGroup",
+            "name": "Snokie"
+        },
+        {
+            "@type": "MusicGroup",
+            "name": "HyperSOUL-X"
+        }
     ],
     "catalogNumber": "HYP001",
     "description": "Snokie, HyperSOUL-X - Love Me Hard. featuring 2 tracks. Released 7 January 2022 on Hyper Production (SA).",
@@ -44,8 +50,14 @@
             "@type": "MusicRecording",
             "name": "Love Me Hard (Instrumental Mix)",
             "byArtist": [
-                { "@type": "MusicGroup", "name": "Snokie" },
-                { "@type": "MusicGroup", "name": "HyperSOUL-X" }
+                {
+                    "@type": "MusicGroup",
+                    "name": "Snokie"
+                },
+                {
+                    "@type": "MusicGroup",
+                    "name": "HyperSOUL-X"
+                }
             ],
             "isrcCode": "ZASY52100056"
         },
@@ -53,8 +65,14 @@
             "@type": "MusicRecording",
             "name": "Love Me Hard (Original Mix)",
             "byArtist": [
-                { "@type": "MusicGroup", "name": "Snokie" },
-                { "@type": "MusicGroup", "name": "HyperSOUL-X" }
+                {
+                    "@type": "MusicGroup",
+                    "name": "Snokie"
+                },
+                {
+                    "@type": "MusicGroup",
+                    "name": "HyperSOUL-X"
+                }
             ],
             "isrcCode": "ZASY52100055"
         }
@@ -63,7 +81,6 @@
     </script>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="https://hyperproduction.co.za/logo/site-icon.png" type="image/png" />
-
 </head>
 <body class="release-page">
     <header id="my-sticky-header">
@@ -76,7 +93,7 @@
         <div class="release-layout">
             <section class="release-visual" aria-label="Release artwork and audio preview">
                 <div class="release-art-frame">
-                    <img class="release-art" src="https://cdn.hyperproduction.co.za/artworks/HYP001.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'" alt="Love Me Hard artwork by Snokie and HyperSOUL-X" />
+                    <img class="release-art" src="https://cdn.hyperproduction.co.za/artworks/HYP001.png" onerror="this.src='https://hyperproduction.co.za/placeholder.png'" alt="Snokie, HyperSOUL-X - Love Me Hard artwork" />
                     <button class="preview-button" id="preview-toggle" type="button" aria-label="Play audio preview" aria-pressed="false">
                         <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.8c0-.8.9-1.3 1.6-.9l10 6.2a1.1 1.1 0 0 1 0 1.8l-10 6.2c-.7.4-1.6-.1-1.6-.9V5.8Z"/></svg>
                         <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
@@ -115,8 +132,6 @@
                         </li>
                     </ol>
                 </div>
-
-
             </section>
         </div>
     </main>
@@ -137,23 +152,19 @@
             const audio = new Audio('https://cdn.hyperproduction.co.za/samples/HYP001.m4a');
             audio.preload = 'none';
             const button = document.getElementById('preview-toggle');
-            const status = null;
 
             const setPlaying = (playing) => {
                 button.classList.toggle('is-playing', playing);
                 button.setAttribute('aria-pressed', String(playing));
                 button.setAttribute('aria-label', playing ? 'Pause audio preview' : 'Play audio preview');
-                if (status) status.textContent = playing ? 'Playing preview' : '';
             };
 
             button.addEventListener('click', async () => {
                 if (audio.paused) {
-                    if (status) status.textContent = 'Loading preview…';
                     try {
                         await audio.play();
                     } catch (error) {
                         setPlaying(false);
-                        if (status) status.textContent = 'Preview unavailable';
                     }
                 } else {
                     audio.pause();
@@ -163,10 +174,7 @@
             audio.addEventListener('play', () => setPlaying(true));
             audio.addEventListener('pause', () => setPlaying(false));
             audio.addEventListener('ended', () => setPlaying(false));
-            audio.addEventListener('error', () => {
-                setPlaying(false);
-                if (status) status.textContent = 'Preview unavailable';
-            });
+            audio.addEventListener('error', () => setPlaying(false));
         })();
     </script>
 </body>
