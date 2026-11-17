@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobile = () => window.matchMedia('(max-width: 768px)').matches;
   let drag = null;
   let suppressClickUntil = 0;
-  let drawerHistoryActive = false;
-  let closingFromHistory = false;
   let lockedScrollY = 0;
   let scrollLocked = false;
 
@@ -40,15 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function setOpen(open) {
     if (!mobile()) return;
-    if (open && !drawerHistoryActive) {
-      history.pushState({ ...(history.state || {}), hpsaDiscoveryDrawer: true }, '', location.href);
-      drawerHistoryActive = true;
-    } else if (!open && drawerHistoryActive && !closingFromHistory) {
-      // Mark this history entry closed instead of navigating back immediately.
-      // history.back() here races a fast reopen and can make the X need two taps.
-      drawerHistoryActive = false;
-      history.replaceState({ ...(history.state || {}), hpsaDiscoveryDrawer: false }, '', location.href);
-    }
     // Every time the menu opens, start at the top of Explore instead of
     // restoring the drawer's previous scroll position.
     if (open) panel.scrollTop = 0;
@@ -63,17 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   toggle.addEventListener('click', function () {
     setOpen(!panel.classList.contains('discovery-open'));
-    panel.style.transform = '';
-  });
-
-  // Browser Back closes an open drawer without racing a rapid tap on the X.
-  window.addEventListener('popstate', function (event) {
-    if (!panel.classList.contains('discovery-open')) return;
-    if (event.state && event.state.hpsaDiscoveryDrawer) return;
-    drawerHistoryActive = false;
-    closingFromHistory = true;
-    setOpen(false);
-    closingFromHistory = false;
     panel.style.transform = '';
   });
 
