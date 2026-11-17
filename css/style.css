@@ -1405,15 +1405,14 @@ body.release-page:not(.content-page) .release-layout {
     padding:0 clamp(24px,5vw,88px)!important;
 }
 
-/* Shared section-heading treatment for About and Privacy Policy.
-   Privacy's numbered section headings use the same Roboto/yellow style as About. */
+/* Shared HyperPixel section-heading treatment for About and Privacy Policy. */
 body.content-page #about .about-content h4,
 body.content-page #privacy-page .privacy-container h2 {
-    font-family:'Roboto',Arial,sans-serif!important;
+    font-family:'HyperPixel',sans-serif!important;
     font-size:clamp(1.2rem,2.5vw,1.6rem)!important;
-    font-weight:700!important;
+    font-weight:400!important;
     line-height:1.2!important;
-    letter-spacing:normal!important;
+    letter-spacing:0!important;
     text-transform:uppercase!important;
     color:#e5de69!important;
     text-align:center!important;
