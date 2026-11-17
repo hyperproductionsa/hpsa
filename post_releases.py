@@ -445,7 +445,7 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>{artist_html} - {title_html} | Hyper Production (SA)</title>
     <meta name="description" content="{meta_description}" />
     <link rel="canonical" href="https://hyperproduction.co.za/releases/{esc_attr(cat_no)}.html" />
@@ -851,7 +851,7 @@ def generate_all_releases():
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Releases Catalog | Hyper Production (SA) - Afro House Record Label</title>
     <meta name="description" content="Browse the full catalog of Hyper Production (SA) releases. Afro House from South Africa's premier independent record label." />
     
