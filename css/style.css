@@ -975,27 +975,28 @@ body.release-page .release-visual .release-stores {
     }
 }
 
-/* Keep all three modern release store buttons in one compact mobile row.
-   The legacy .release-stores flex rule appears later in the stylesheet, so
-   explicitly restore the modern grid here. */
-@media (max-width:680px) {
-    body.release-page .release-visual .release-stores {
-        display: grid !important;
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        grid-auto-flow: column;
-        flex-wrap: nowrap;
-        width: min(86vw, 360px);
-        gap: 6px;
-    }
-    body.release-page .release-visual .store-link {
-        min-height: 42px;
-        padding: 5px 3px;
-        border-width: 1px;
-    }
-    body.release-page .release-visual .store-icon {
-        width: 22px;
-        height: 22px;
-    }
+/* Modern release store links: center the complete group at every viewport width.
+   Wrapping keeps two links centered instead of leaving them in fixed grid columns. */
+body.release-page .release-visual .release-stores {
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    grid-template-columns: none !important;
+    grid-auto-flow: row !important;
+    width: min(86vw, 360px);
+    gap: 6px;
+}
+body.release-page .release-visual .store-link {
+    flex: 0 1 132px;
+    width: auto;
+    min-height: 42px;
+    padding: 5px 3px;
+    border-width: 1px;
+}
+body.release-page .release-visual .store-icon {
+    width: 22px;
+    height: 22px;
 }
 @media (max-width:420px) {
     body.release-page .release-visual .release-stores {
