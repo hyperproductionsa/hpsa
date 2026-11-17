@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobile = () => window.matchMedia('(max-width: 768px)').matches;
   let drag = null;
   let suppressClickUntil = 0;
+  let drawerHistoryActive = false;
+  let closingDrawerHistory = false;
+  let reopenAfterHistoryClose = false;
   let lockedScrollY = 0;
   let scrollLocked = false;
 
@@ -36,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo(0, lockedScrollY);
   }
 
-  function setOpen(open) {
-    if (!mobile()) return;
+  function applyOpenState(open) {
     // Every time the menu opens, start at the top of Explore instead of
     // restoring the drawer's previous scroll position.
     if (open) panel.scrollTop = 0;
@@ -50,9 +52,55 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.querySelector('.explore-toggle-close-icon').style.display = open ? 'block' : 'none';
   }
 
+  function setOpen(open) {
+    if (!mobile()) return;
+
+    if (open) {
+      // If an X-tap is still removing the previous drawer entry, wait for
+      // that popstate before creating a fresh one. This prevents history races.
+      if (closingDrawerHistory) {
+        reopenAfterHistoryClose = true;
+        return;
+      }
+      if (!drawerHistoryActive) {
+        history.pushState({ ...(history.state || {}), hpsaDiscoveryDrawer: true }, '', location.href);
+        drawerHistoryActive = true;
+      }
+      applyOpenState(true);
+      return;
+    }
+
+    applyOpenState(false);
+    // Remove the one temporary drawer entry. Back itself closes the drawer
+    // too, because its popstate is handled below.
+    if (drawerHistoryActive && !closingDrawerHistory) {
+      closingDrawerHistory = true;
+      history.back();
+    }
+  }
+
   toggle.addEventListener('click', function () {
-    setOpen(!panel.classList.contains('discovery-open'));
+    setOpen(!panel.classList.contains('discovery-open') && !reopenAfterHistoryClose);
     panel.style.transform = '';
+  });
+
+  window.addEventListener('popstate', function () {
+    if (closingDrawerHistory) {
+      drawerHistoryActive = false;
+      closingDrawerHistory = false;
+      if (reopenAfterHistoryClose) {
+        reopenAfterHistoryClose = false;
+        setOpen(true);
+      }
+      return;
+    }
+
+    if (drawerHistoryActive) {
+      // The user pressed the browser/Android Back button while the drawer
+      // was open. Consume the temporary entry and close the drawer in place.
+      drawerHistoryActive = false;
+      applyOpenState(false);
+    }
   });
 
   function start(event, mode) {
