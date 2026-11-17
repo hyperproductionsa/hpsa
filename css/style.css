@@ -19,7 +19,7 @@ a{color:inherit;text-decoration:none}
 /* ============================================
    TYPOGRAPHY - Letter-spacing now baked into the font
    ============================================ */
-h1{font-family:'HyperPixel',sans-serif!important;font-size:56px!important;letter-spacing:0!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-left:0!important;margin-bottom:10px!important;font-weight:400!important}
+h1{font-family:'HyperPixel',sans-serif!important;font-size:clamp(1.5rem,3.75vw,3.5rem)!important;letter-spacing:0!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-left:0!important;margin-bottom:10px!important;font-weight:400!important}
 
 h2{font-family:'HyperPixel',sans-serif!important;font-size:32px!important;letter-spacing:0!important;line-height:1.1!important;-webkit-font-smoothing:none!important;-moz-osx-font-smoothing:grayscale!important;text-transform:uppercase!important;margin-bottom:10px!important;margin-left:0!important;font-weight:400!important}
 
