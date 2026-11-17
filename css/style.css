@@ -1378,3 +1378,34 @@ body.release-page:not(.content-page) .release-layout {
     body.content-page #privacy-page.content-shell { padding:90px 14px 82px!important; }
     #hp-catalog-container { padding:100px 14px 82px!important; }
 }
+
+
+/* Final alignment corrections: centre About and Privacy content;
+   keep individual release layouts full-bleed. */
+body.content-page #about .about-text,
+body.content-page #about .about-text p,
+body.content-page #about .about-text blockquote,
+body.content-page #privacy-page .privacy-container,
+body.content-page #privacy-page .privacy-container p,
+body.content-page #privacy-page .privacy-container li,
+body.content-page #privacy-page .privacy-container .last-updated {
+    text-align:center!important;
+}
+body.content-page #privacy-page .privacy-container ul {
+    padding:0!important;
+    list-style-position:inside;
+    text-align:center!important;
+}
+body.content-page #about .about-text blockquote {
+    border-left:0!important;
+    border-top:1px solid #e5de69;
+    border-bottom:1px solid #292929;
+    padding:16px 0!important;
+    background:transparent!important;
+}
+body.release-page:not(.content-page) .release-layout {
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0 clamp(24px,5vw,88px)!important;
+}
