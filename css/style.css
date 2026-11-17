@@ -975,36 +975,42 @@ body.release-page .release-visual .release-stores {
     }
 }
 
-/* Keep all three DSP buttons in one compact row on mobile.
-   Do not use flex-wrap here: it was splitting the buttons into a 2+1 layout. */
+/* Hide the DSP label and row entirely when a release has no valid store links. */
+body.release-page .release-visual:not(:has(.release-stores .store-link)) .store-heading {
+    display:none!important;
+}
+body.release-page .release-visual .release-stores:not(:has(.store-link)) {
+    display:none!important;
+}
+
+/* Keep only the available DSP buttons together; never reserve empty grid columns. */
 @media (max-width:680px) {
     body.release-page .release-visual .release-stores {
-        display: grid !important;
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        grid-auto-flow: row !important;
-        align-items: stretch;
-        justify-content: stretch !important;
-        width: min(86vw, 360px);
-        gap: 5px;
+        display:flex!important;
+        flex-flow:row nowrap!important;
+        align-items:stretch;
+        justify-content:center!important;
+        width:min(86vw,360px);
+        gap:5px;
     }
     body.release-page .release-visual .store-link {
-        display: flex;
-        flex: none !important;
-        width: 100% !important;
-        min-width: 0;
-        min-height: 38px;
-        padding: 4px 2px;
-        border-width: 1px;
+        display:flex;
+        flex:0 0 38px!important;
+        width:38px!important;
+        min-width:38px;
+        min-height:38px;
+        padding:4px 2px;
+        border-width:1px;
     }
     body.release-page .release-visual .store-icon {
-        width: 20px;
-        height: 20px;
+        width:20px;
+        height:20px;
     }
 }
 @media (max-width:420px) {
     body.release-page .release-visual .release-stores {
-        width: min(82vw, 300px);
-        gap: 5px;
+        width:min(82vw,300px);
+        gap:5px;
     }
 }
 
