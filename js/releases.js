@@ -228,6 +228,7 @@
             // Artwork wrapper keeps ribbons and the Traxsource mark confined to the image.
             const artwork = document.createElement('div');
             artwork.style.position = 'relative';
+            artwork.style.containerType = 'inline-size';
             artwork.style.width = '100%';
             artwork.style.flexShrink = '0';
             artwork.style.overflow = 'hidden';
