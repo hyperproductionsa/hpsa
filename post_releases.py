@@ -298,6 +298,27 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
 
     schema_type = release_type_to_schema(release_type)
 
+    # Link this release to its exact DSP destinations, and identify the
+    # label using the same official profiles declared on the main website.
+    release_profiles = []
+    for store_name in ('Spotify', 'Apple Music', 'Traxsource', 'Beatport', 'Youtube'):
+        store_url = stores.get(store_name, '')
+        if store_url is None:
+            continue
+        store_url = str(store_url).strip()
+        if store_url.lower() in ('', 'nan', 'none', 'null'):
+            continue
+        if store_url.startswith(('https://', 'http://')):
+            release_profiles.append(store_url)
+
+    label_profiles = [
+        "https://facebook.com/hyperproductionsa",
+        "https://instagram.com/hyperprosa",
+        "https://www.youtube.com/@hyperproductionsa",
+        "https://www.traxsource.com/label/19884/hyper-production-sa",
+        "https://www.beatport.com/label/hyper-production-sa/43113"
+    ]
+
     # Preserve the existing SEO and structured-data fields.
     ld = {
         "@context": "https://schema.org",
@@ -310,10 +331,14 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
         "url": f"https://hyperproduction.co.za/releases/{cat_no}.html",
         "recordLabel": {
             "@type": "Organization",
+            "@id": "https://hyperproduction.co.za/#label",
             "name": "Hyper Production (SA)",
-            "url": "https://hyperproduction.co.za/"
+            "url": "https://hyperproduction.co.za/",
+            "sameAs": label_profiles
         }
     }
+    if release_profiles:
+        ld["sameAs"] = release_profiles
     if date_iso:
         ld["datePublished"] = date_iso
     if upc and str(upc).strip():
