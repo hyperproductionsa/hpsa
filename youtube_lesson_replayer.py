@@ -2,28 +2,20 @@
 """
 Replay vsdc_lesson.txt against eligible releases in stores.xlsx.
 
-Required files in the working directory:
+Files:
     stores.xlsx
     vsdc_lesson.txt
+    manifest.txt (created automatically)
 
-Lesson format:
-    CLICK|0.0|1152|148|Button.left
-    CLICK|0.2|1152|148|Button.left
-    KEY|0.6|{QUERY}
-    KEY|1.0|Key.enter
-    CLICK|4.0|1450|256|Button.right
-    CLICK|4.2|1510|436|Button.left
-
-{QUERY} becomes "Release Artist - Release Title".
-
-Only rows with a non-empty Spotify URL are processed. The script reads
-stores.xlsx but never modifies it. Results are saved incrementally to
-youtube_playlist_results.xlsx.
+The manifest is the resume/skip ledger. Every catalogue marked DONE or
+STOPPED_NO_CLIPBOARD is skipped on later runs. If the clipboard is empty
+after the final copy-link click, the script records that catalogue and exits.
 """
 
 from __future__ import annotations
 
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +26,7 @@ from pynput import keyboard, mouse
 
 STORES_FILE = Path("stores.xlsx")
 LESSON_FILE = Path("vsdc_lesson.txt")
+MANIFEST_FILE = Path("manifest.txt")
 OUTPUT_FILE = Path("youtube_playlist_results.xlsx")
 
 START_COUNTDOWN_SECONDS = 5
@@ -72,8 +65,7 @@ def load_releases() -> list[dict[str, str]]:
     for name in REQUIRED_COLUMNS:
         frame[name] = frame[name].map(clean)
 
-    # Spotify URL is the eligibility gate. Also require fields needed to search
-    # and identify the result.
+    # A non-empty Spotify URL is the eligibility gate.
     frame = frame[
         frame["Spotify URL"].ne("")
         & frame["Catalogue Number"].ne("")
@@ -82,6 +74,40 @@ def load_releases() -> list[dict[str, str]]:
     ]
 
     return frame[REQUIRED_COLUMNS].to_dict(orient="records")
+
+
+def load_manifest() -> dict[str, str]:
+    """Read catalogue statuses already recorded; these are skipped on reruns."""
+    statuses: dict[str, str] = {}
+
+    if not MANIFEST_FILE.exists():
+        return statuses
+
+    with MANIFEST_FILE.open("r", encoding="utf-8-sig") as handle:
+        for raw in handle:
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            fields = [part.strip() for part in line.split("|", 2)]
+            if len(fields) >= 2 and fields[0]:
+                statuses[fields[0]] = fields[1]
+
+    return statuses
+
+
+def append_manifest(catalogue: str, status: str, detail: str = "") -> None:
+    """Append and flush one result immediately, so progress survives a stop."""
+    is_new = not MANIFEST_FILE.exists() or MANIFEST_FILE.stat().st_size == 0
+
+    with MANIFEST_FILE.open("a", encoding="utf-8", newline="") as handle:
+        if is_new:
+            handle.write("# Catalogue Number | Status | Timestamp (UTC) | Detail\n")
+
+        timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        safe_detail = detail.replace("|", "/").replace("\n", " ").replace("\r", " ")
+        handle.write(f"{catalogue} | {status} | {timestamp} | {safe_detail}\n")
+        handle.flush()
 
 
 def load_lesson() -> list[dict[str, Any]]:
@@ -172,7 +198,6 @@ def perform_key(controller: keyboard.Controller, value: str, query: str) -> None
         controller.release(special)
         return
 
-    # Other KEY values are typed literally.
     controller.type(value)
 
 
@@ -184,7 +209,7 @@ def replay_one(
 ) -> tuple[str, float]:
     started = time.perf_counter()
 
-    # Prevent a failed copy from reusing the previous release's clipboard URL.
+    # Clear clipboard first so a failed copy cannot reuse the previous URL.
     pyperclip.copy("")
 
     for index, action in enumerate(actions):
@@ -200,11 +225,10 @@ def replay_one(
             button = getattr(mouse.Button, action["button"])
             mouse_controller.click(button, 1)
 
-            # The final action is the recorded Copy link click.
+            # The last action is the recorded Copy link click.
             if index == len(actions) - 1:
                 time.sleep(CLIPBOARD_READ_DELAY)
-                copied = pyperclip.paste().strip()
-                return copied, time.perf_counter() - started
+                return pyperclip.paste().strip(), time.perf_counter() - started
 
     return "", time.perf_counter() - started
 
@@ -215,18 +239,32 @@ def save_results(rows: list[dict[str, str]]) -> None:
 
 def main() -> None:
     releases = load_releases()
+    manifest = load_manifest()
     lesson = load_lesson()
 
-    if not releases:
-        print("No eligible rows: no rows have a Spotify URL and complete release details.")
+    # Anything present in the manifest is intentionally ignored on later runs,
+    # including the catalogue at which the previous run stopped.
+    pending = [
+        release for release in releases
+        if release["Catalogue Number"] not in manifest
+    ]
+
+    skipped = len(releases) - len(pending)
+
+    print(f"Eligible releases in stores.xlsx: {len(releases)}")
+    print(f"Already recorded in manifest and skipped: {skipped}")
+    print(f"Remaining releases: {len(pending)}")
+    print(f"Lesson actions loaded: {len(lesson)}")
+    print(f"Manifest: {MANIFEST_FILE.resolve()}")
+    print(f"Results: {OUTPUT_FILE.resolve()}")
+
+    if not pending:
+        print("Nothing to process. All eligible catalogues are already in manifest.txt.")
         return
 
-    print(f"Eligible releases from stores.xlsx: {len(releases)}")
-    print(f"Lesson actions loaded: {len(lesson)}")
-    print(f"Output: {OUTPUT_FILE.resolve()}")
     print()
-    print("Switch to Chrome. Keep the window maximised in the same display setup")
-    print("used when recording. Do not use the mouse or keyboard during replay.")
+    print("Switch to Chrome. Keep its window in the same display position and")
+    print("resolution used when recording. Do not use mouse/keyboard during replay.")
     print("Press Ctrl+C in this terminal to stop safely.")
     print()
 
@@ -239,34 +277,21 @@ def main() -> None:
     results: list[dict[str, str]] = []
 
     try:
-        for number, release in enumerate(releases, start=1):
+        for number, release in enumerate(pending, start=1):
             catalogue = release["Catalogue Number"]
             query = f'{release["Release Artist"]} - {release["Release Title"]}'
             cycle_started = time.perf_counter()
 
-            print(f"[{number}/{len(releases)}] {catalogue} — {query}")
+            print(f"[{number}/{len(pending)}] {catalogue} — {query}")
 
             try:
-                url, elapsed = replay_one(
+                url, _elapsed = replay_one(
                     lesson, query, mouse_controller, keyboard_controller
                 )
-
-                status = "Copied" if url else "Clipboard empty"
-                results.append({
-                    **release,
-                    "YouTube Playlist URL": url,
-                    "Status": status,
-                })
-                save_results(results)
-
-                if url:
-                    print(f"    {url}")
-                else:
-                    print("    WARNING: clipboard was empty after the copy click.")
-
             except KeyboardInterrupt:
                 raise
             except Exception as exc:
+                append_manifest(catalogue, "ERROR", str(exc))
                 results.append({
                     **release,
                     "YouTube Playlist URL": "",
@@ -274,21 +299,48 @@ def main() -> None:
                 })
                 save_results(results)
                 print(f"    ERROR: {exc}")
-                elapsed = time.perf_counter() - cycle_started
+            else:
+                if not url:
+                    # Record the failed catalogue before exiting. It will be
+                    # skipped on the next run, as requested.
+                    append_manifest(
+                        catalogue,
+                        "STOPPED_NO_CLIPBOARD",
+                        "Clipboard was empty after final copy-link click",
+                    )
+                    results.append({
+                        **release,
+                        "YouTube Playlist URL": "",
+                        "Status": "Stopped: clipboard empty",
+                    })
+                    save_results(results)
+                    print("    Clipboard empty. Stopping the script.")
+                    print(f"    {catalogue} recorded in manifest.txt.")
+                    break
 
-            # Schedule the next release at a five-second start-to-start interval.
+                append_manifest(catalogue, "DONE", url)
+                results.append({
+                    **release,
+                    "YouTube Playlist URL": url,
+                    "Status": "Copied",
+                })
+                save_results(results)
+                print(f"    Captured: {url}")
+
+            # Maintain a five-second start-to-start cycle.
             remaining = CYCLE_SECONDS - (time.perf_counter() - cycle_started)
-            if number < len(releases) and remaining > 0:
+            if number < len(pending) and remaining > 0:
                 time.sleep(remaining)
 
     except KeyboardInterrupt:
-        print("\nStopped. Saving completed results...")
+        print("\nInterrupted by user. Completed progress is already in manifest.txt.")
 
     finally:
         if results:
             save_results(results)
 
-    print(f"\nSaved {len(results)} result(s) to {OUTPUT_FILE.resolve()}")
+    print(f"\nRun results saved to {OUTPUT_FILE.resolve()}")
+    print(f"Progress ledger saved to {MANIFEST_FILE.resolve()}")
     print("stores.xlsx was not modified.")
 
 
