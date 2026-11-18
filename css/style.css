@@ -1497,3 +1497,27 @@ body.release-catalog-page #my-sticky-footer .copyright strong { color:#e5de69!im
 body.release-catalog-page #my-sticky-footer .social-icons img {
     filter:brightness(0) saturate(100%) invert(89%) sepia(16%) saturate(1042%) hue-rotate(11deg) brightness(96%) contrast(91%);
 }
+
+/* Keep all available DSP icons on one compact row on desktop as on mobile. */
+@media (min-width:681px) {
+    body.release-page .release-visual .release-stores {
+        display:flex!important;
+        flex-flow:row nowrap!important;
+        align-items:stretch;
+        justify-content:center!important;
+        gap:5px;
+    }
+    body.release-page .release-visual .store-link {
+        display:flex;
+        flex:0 0 38px!important;
+        width:38px!important;
+        min-width:38px;
+        min-height:38px;
+        padding:4px 2px;
+        border-width:1px;
+    }
+    body.release-page .release-visual .store-icon {
+        width:20px;
+        height:20px;
+    }
+}
