@@ -28,7 +28,6 @@ from pynput import keyboard, mouse
 STORES_FILE = Path("stores.xlsx")
 LESSON_FILE = Path("vsdc_lesson.txt")
 MANIFEST_FILE = Path("manifest.csv")
-OUTPUT_FILE = Path("youtube_playlist_results.xlsx")
 
 START_COUNTDOWN_SECONDS = 5
 CYCLE_SECONDS = 5.0
@@ -245,10 +244,6 @@ def replay_one(
     return "", time.perf_counter() - started
 
 
-def save_results(rows: list[dict[str, str]]) -> None:
-    pd.DataFrame(rows).to_excel(OUTPUT_FILE, index=False)
-
-
 def main() -> None:
     releases = load_releases()
     manifest = load_manifest()
@@ -269,7 +264,6 @@ def main() -> None:
     print(f"Remaining releases: {len(pending)}")
     print(f"Lesson actions loaded: {len(lesson)}")
     print(f"Manifest: {MANIFEST_FILE.resolve()}")
-    print(f"Results: {OUTPUT_FILE.resolve()}")
 
     if not pending:
         print("Nothing to process. All eligible catalogues are already in manifest.txt.")
@@ -287,8 +281,7 @@ def main() -> None:
 
     mouse_controller = mouse.Controller()
     keyboard_controller = keyboard.Controller()
-    results: list[dict[str, str]] = []
-
+    
     try:
         for number, release in enumerate(pending, start=1):
             catalogue = release["Catalogue Number"]
@@ -306,12 +299,6 @@ def main() -> None:
             except Exception as exc:
                 # Transient automation errors are reported in the results but
                 # deliberately not added to the manifest, so they can be retried.
-                results.append({
-                    **release,
-                    "YouTube Playlist URL": "",
-                    "Status": f"Error: {exc}",
-                })
-                save_results(results)
                 print(f"    ERROR: {exc}")
             else:
                 if not url:
@@ -322,23 +309,11 @@ def main() -> None:
                         "STOPPED_NO_CLIPBOARD",
                         "Clipboard was empty after final copy-link click",
                     )
-                    results.append({
-                        **release,
-                        "YouTube Playlist URL": "",
-                        "Status": "Stopped: clipboard empty",
-                    })
-                    save_results(results)
                     print("    Clipboard empty. Stopping the script.")
                     print(f"    {catalogue} recorded in manifest.txt.")
                     break
 
                 append_manifest(catalogue, "DONE", url)
-                results.append({
-                    **release,
-                    "YouTube Playlist URL": url,
-                    "Status": "Copied",
-                })
-                save_results(results)
                 print(f"    Captured: {url}")
 
             # Maintain a five-second start-to-start cycle.
@@ -350,11 +325,9 @@ def main() -> None:
         print("\nInterrupted by user. Completed progress is already in manifest.txt.")
 
     finally:
-        if results:
-            save_results(results)
 
-    print(f"\nRun results saved to {OUTPUT_FILE.resolve()}")
     print(f"Progress ledger saved to {MANIFEST_FILE.resolve()}")
+    print("All progress and copied URLs are stored in manifest.csv.")
     print("stores.xlsx was not modified.")
 
 
