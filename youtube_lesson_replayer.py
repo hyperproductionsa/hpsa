@@ -244,9 +244,10 @@ def main() -> None:
 
     # Anything present in the manifest is intentionally ignored on later runs,
     # including the catalogue at which the previous run stopped.
+    terminal_statuses = {"DONE", "STOPPED_NO_CLIPBOARD"}
     pending = [
         release for release in releases
-        if release["Catalogue Number"] not in manifest
+        if manifest.get(release["Catalogue Number"]) not in terminal_statuses
     ]
 
     skipped = len(releases) - len(pending)
@@ -291,7 +292,8 @@ def main() -> None:
             except KeyboardInterrupt:
                 raise
             except Exception as exc:
-                append_manifest(catalogue, "ERROR", str(exc))
+                # Transient automation errors are reported in the results but
+                # deliberately not added to the manifest, so they can be retried.
                 results.append({
                     **release,
                     "YouTube Playlist URL": "",
