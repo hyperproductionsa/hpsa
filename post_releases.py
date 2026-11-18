@@ -944,7 +944,7 @@ def generate_all_releases():
         </div>
     </noscript>
 </head>
-<body>
+<body class="release-catalog-page">
     <header id="my-sticky-header">
         <a href="https://hyperproduction.co.za/" title="Home">
             <img src="https://hyperproduction.co.za/logo/HPSA-gold.png" alt="Hyper Production (SA) – Home" />
@@ -956,7 +956,13 @@ def generate_all_releases():
         
         <div id="catalog-controls">
             <div class="search-wrapper">
-                <input type="text" id="search-input" placeholder="🔍 Search releases..." />
+                <span class="search-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </span>
+                <input type="search" id="search-input" placeholder="Search releases..." aria-label="Search releases" />
             </div>
             <div class="page-selector-wrapper">
                 <span>Page:</span>
