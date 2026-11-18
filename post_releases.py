@@ -35,11 +35,11 @@ DELETED_CATALOGS = ["HYP126A", "HYP045", "HYP050", "HYP082", "HYP139X"]
 
 # Store icons
 STORE_ICONS = {
-    'Spotify': 'spotify.webp',
-    'Apple Music': 'apple.webp',
-    'Traxsource': 'traxsource.webp',
-    'Youtube': 'youtube.webp',
-    'Beatport': 'beatport.webp'
+    'Spotify': 'spotify.svg',
+    'Apple Music': 'apple-music.svg',
+    'Traxsource': 'traxsource.svg',
+    'Youtube': 'youtube-music.svg',
+    'Beatport': 'beatport.svg'
 }
 
 # ============================================
@@ -384,10 +384,10 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
     # Match HYP001's DSP order and icon treatment.
     store_icons = {
         'Spotify': '/logo/dsp-icons/spotify.svg',
-        'Apple Music': '/logo/dsp-icons/apple.svg',
+        'Apple Music': '/logo/dsp-icons/apple-music.svg',
         'Traxsource': '/logo/dsp-icons/traxsource.svg',
-        'Beatport': '/logo/stores/beatport.webp',
-        'Youtube': '/logo/stores/youtube.webp'
+        'Beatport': '/logo/dsp-icons/beatport.svg',
+        'Youtube': '/logo/dsp-icons/youtube-music.svg'
     }
     store_labels = {
         'Spotify': 'Listen on Spotify',
