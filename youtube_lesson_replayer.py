@@ -5,7 +5,7 @@ Replay vsdc_lesson.txt against eligible releases in stores.xlsx.
 Files:
     stores.xlsx
     vsdc_lesson.txt
-    manifest.txt (created automatically)
+    manifest.csv (created automatically)
 
 The manifest is the resume/skip ledger. Every catalogue marked DONE or
 STOPPED_NO_CLIPBOARD is skipped on later runs. If the clipboard is empty
@@ -14,6 +14,7 @@ after the final copy-link click, the script records that catalogue and exits.
 
 from __future__ import annotations
 
+import csv
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -26,7 +27,7 @@ from pynput import keyboard, mouse
 
 STORES_FILE = Path("stores.xlsx")
 LESSON_FILE = Path("vsdc_lesson.txt")
-MANIFEST_FILE = Path("manifest.txt")
+MANIFEST_FILE = Path("manifest.csv")
 OUTPUT_FILE = Path("youtube_playlist_results.xlsx")
 
 START_COUNTDOWN_SECONDS = 5
@@ -77,36 +78,47 @@ def load_releases() -> list[dict[str, str]]:
 
 
 def load_manifest() -> dict[str, str]:
-    """Read catalogue statuses already recorded; these are skipped on reruns."""
+    """Read catalogue statuses from a semicolon-delimited, fully quoted CSV."""
     statuses: dict[str, str] = {}
 
     if not MANIFEST_FILE.exists():
         return statuses
 
-    with MANIFEST_FILE.open("r", encoding="utf-8-sig") as handle:
-        for raw in handle:
-            line = raw.strip()
-            if not line or line.startswith("#"):
-                continue
-
-            fields = [part.strip() for part in line.split("|", 2)]
-            if len(fields) >= 2 and fields[0]:
-                statuses[fields[0]] = fields[1]
+    with MANIFEST_FILE.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter=";", quotechar='"')
+        for row in reader:
+            catalogue = (row.get("Catalogue Number") or "").strip()
+            status = (row.get("Status") or "").strip()
+            if catalogue and status:
+                statuses[catalogue] = status
 
     return statuses
 
 
 def append_manifest(catalogue: str, status: str, detail: str = "") -> None:
-    """Append and flush one result immediately, so progress survives a stop."""
+    """Append and flush one fully quoted CSV row immediately."""
     is_new = not MANIFEST_FILE.exists() or MANIFEST_FILE.stat().st_size == 0
 
-    with MANIFEST_FILE.open("a", encoding="utf-8", newline="") as handle:
+    with MANIFEST_FILE.open("a", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(
+            handle,
+            delimiter=";",
+            quotechar='"',
+            quoting=csv.QUOTE_ALL,
+            lineterminator="\\n",
+        )
+
         if is_new:
-            handle.write("# Catalogue Number | Status | Timestamp (UTC) | Detail\n")
+            writer.writerow([
+                "Catalogue Number",
+                "Status",
+                "Timestamp (UTC)",
+                "Detail",
+            ])
 
         timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        safe_detail = detail.replace("|", "/").replace("\n", " ").replace("\r", " ")
-        handle.write(f"{catalogue} | {status} | {timestamp} | {safe_detail}\n")
+        safe_detail = detail.replace("\\r", " ").replace("\\n", " ")
+        writer.writerow([catalogue, status, timestamp, safe_detail])
         handle.flush()
 
 
