@@ -1,7 +1,7 @@
 (function($){
   const stores = [
     {name:'Spotify',icon:'spotify'},
-    {name:'Apple Music',icon:'apple'},
+    {name:'Apple Music',icon:'apple-music'},
     {name:'Amazon Music',icon:'amazon-music'},
     {name:'Beatport',icon:'beatport'},
     {name:'Traxsource',icon:'traxsource'},
