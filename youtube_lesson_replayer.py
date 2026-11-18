@@ -17,6 +17,7 @@ from __future__ import annotations
 import csv
 import time
 from datetime import datetime, timezone
+from io import StringIO
 from pathlib import Path
 from typing import Any
 
@@ -25,9 +26,10 @@ import pyperclip
 from pynput import keyboard, mouse
 
 
-STORES_FILE = Path("stores.xlsx")
-LESSON_FILE = Path("vsdc_lesson.txt")
-MANIFEST_FILE = Path("manifest.csv")
+BASE_DIR = Path(__file__).resolve().parent
+STORES_FILE = BASE_DIR / "stores.xlsx"
+LESSON_FILE = BASE_DIR / "vsdc_lesson.txt"
+MANIFEST_FILE = BASE_DIR / "manifest.csv"
 
 START_COUNTDOWN_SECONDS = 5
 CYCLE_SECONDS = 5.0
@@ -83,13 +85,16 @@ def load_manifest() -> dict[str, str]:
     if not MANIFEST_FILE.exists():
         return statuses
 
-    with MANIFEST_FILE.open("r", encoding="utf-8-sig", newline="") as handle:
-        reader = csv.DictReader(handle, delimiter=";", quotechar='"')
-        for row in reader:
-            catalogue = (row.get("Catalogue Number") or "").strip()
-            status = (row.get("Status") or "").strip()
-            if catalogue and status:
-                statuses[catalogue] = status
+    raw = MANIFEST_FILE.read_text(encoding="utf-8-sig")
+    # Repair files produced by the previous version, which used literal
+    # backslash-n characters instead of actual CSV row separators.
+    raw = raw.replace("\\n", "\n") if "\\n" in raw else raw
+    reader = csv.DictReader(StringIO(raw), delimiter=";", quotechar='"')
+    for row in reader:
+        catalogue = (row.get("Catalogue Number") or "").strip()
+        status = (row.get("Status") or "").strip()
+        if catalogue and status:
+            statuses[catalogue] = status
 
     return statuses
 
@@ -98,13 +103,13 @@ def append_manifest(catalogue: str, status: str, detail: str = "") -> None:
     """Append and flush one fully quoted CSV row immediately."""
     is_new = not MANIFEST_FILE.exists() or MANIFEST_FILE.stat().st_size == 0
 
-    with MANIFEST_FILE.open("a", encoding="utf-8-sig", newline="") as handle:
+    with MANIFEST_FILE.open("a", encoding="utf-8", newline="") as handle:
         writer = csv.writer(
             handle,
             delimiter=";",
             quotechar='"',
             quoting=csv.QUOTE_ALL,
-            lineterminator="\\n",
+            lineterminator="\n",
         )
 
         if is_new:
@@ -116,7 +121,7 @@ def append_manifest(catalogue: str, status: str, detail: str = "") -> None:
             ])
 
         timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        safe_detail = detail.replace("\\r", " ").replace("\\n", " ")
+        safe_detail = detail.replace("\r", " ").replace("\n", " ")
         writer.writerow([catalogue, status, timestamp, safe_detail])
         handle.flush()
 
@@ -266,7 +271,7 @@ def main() -> None:
     print(f"Manifest: {MANIFEST_FILE.resolve()}")
 
     if not pending:
-        print("Nothing to process. All eligible catalogues are already in manifest.txt.")
+        print("Nothing to process. All eligible catalogues are already recorded in manifest.csv.")
         return
 
     print()
@@ -297,8 +302,8 @@ def main() -> None:
             except KeyboardInterrupt:
                 raise
             except Exception as exc:
-                # Transient automation errors are reported in the results but
-                # deliberately not added to the manifest, so they can be retried.
+                # Transient automation errors are not added to the manifest,
+                # so they can be retried on the next run.
                 print(f"    ERROR: {exc}")
             else:
                 if not url:
@@ -310,7 +315,7 @@ def main() -> None:
                         "Clipboard was empty after final copy-link click",
                     )
                     print("    Clipboard empty. Stopping the script.")
-                    print(f"    {catalogue} recorded in manifest.txt.")
+                    print(f"    {catalogue} recorded in manifest.csv.")
                     break
 
                 append_manifest(catalogue, "DONE", url)
@@ -322,9 +327,7 @@ def main() -> None:
                 time.sleep(remaining)
 
     except KeyboardInterrupt:
-        print("\nInterrupted by user. Completed progress is already in manifest.txt.")
-
-    finally:
+        print("\nInterrupted by user. Completed progress is already in manifest.csv.")
 
     print(f"Progress ledger saved to {MANIFEST_FILE.resolve()}")
     print("All progress and copied URLs are stored in manifest.csv.")
