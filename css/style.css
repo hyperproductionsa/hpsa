@@ -1681,3 +1681,119 @@ body.release-catalog-page #catalog-controls .page-selector-wrapper select:focus 
     border-color:#e5de69;
     box-shadow:0 0 0 1px rgba(229,222,105,.12);
 }
+
+
+/* FIVE-PAGE SYSTEM — one shared frame for About, Services, Demo, Contact and Privacy. */
+body.content-page {
+    min-height:100vh;
+    color:#f2f2f2;
+    background:radial-gradient(ellipse at 24% 18%,rgba(229,222,105,.075),transparent 34%),#050505!important;
+}
+body.content-page #my-sticky-header,
+body.content-page #my-sticky-footer {
+    z-index:20;
+}
+body.content-page .content-shell {
+    position:relative;
+    isolation:isolate;
+    display:block!important;
+    width:100%!important;
+    min-height:100vh!important;
+    height:auto!important;
+    margin:0!important;
+    padding:112px clamp(16px,5vw,72px) 104px!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+}
+body.content-page .content-shell > .about-content,
+body.content-page .content-shell > .services-content,
+body.content-page .content-shell > .demo-container,
+body.content-page .content-shell > .privacy-container {
+    width:min(100%,1200px)!important;
+    max-width:1200px!important;
+    min-width:0!important;
+    margin:0 auto!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+}
+body.content-page .content-shell h1 {
+    margin:0 auto 28px!important;
+    color:#f4f1d1!important;
+    font-size:clamp(1.9rem,4vw,3.2rem)!important;
+    font-weight:400!important;
+    letter-spacing:0!important;
+    line-height:1.1!important;
+    text-align:center!important;
+    text-transform:uppercase;
+}
+body.content-page .content-shell .subtitle,
+body.content-page .content-shell .services-intro {
+    width:min(100%,900px);
+    margin:0 auto 30px!important;
+    color:#aaa;
+    line-height:1.8;
+    text-align:center!important;
+}
+body.content-page .content-shell h4,
+body.content-page .content-shell .privacy-container h2 {
+    color:#e5de69!important;
+    font-family:'HyperPixel',sans-serif!important;
+    font-size:clamp(1.1rem,2.2vw,1.55rem)!important;
+    font-weight:400!important;
+    line-height:1.25!important;
+    letter-spacing:0!important;
+    text-align:center!important;
+    text-transform:uppercase!important;
+}
+body.content-page .content-shell .about-text,
+body.content-page .content-shell .privacy-container {
+    color:#bdbdbd;
+    line-height:1.85;
+}
+body.content-page .content-shell .service-card {
+    background:linear-gradient(145deg,#171717,#090909)!important;
+    border:1px solid #292929!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+}
+body.content-page .content-shell .service-card:hover {
+    border-color:#e5de69!important;
+}
+body.content-page .content-shell input,
+body.content-page .content-shell select,
+body.content-page .content-shell textarea {
+    border-radius:0!important;
+}
+body.content-page .content-shell a:not(.service-pill):not(.contact-btn) {
+    color:#e5de69;
+}
+body.content-page .content-shell a:focus-visible,
+body.content-page .content-shell button:focus-visible,
+body.content-page .content-shell input:focus-visible,
+body.content-page .content-shell select:focus-visible,
+body.content-page .content-shell textarea:focus-visible {
+    outline:2px solid #e5de69;
+    outline-offset:3px;
+}
+body.content-page #my-sticky-footer {
+    background:#000!important;
+    box-shadow:none!important;
+}
+@media(max-width:768px) {
+    body.content-page .content-shell {
+        padding:96px 18px 88px!important;
+    }
+    body.content-page .content-shell h1 {
+        font-size:clamp(1.65rem,7vw,2.4rem)!important;
+        margin-bottom:22px!important;
+    }
+}
+@media(max-width:480px) {
+    body.content-page .content-shell {
+        padding:90px 14px 82px!important;
+    }
+}
