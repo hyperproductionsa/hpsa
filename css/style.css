@@ -564,7 +564,6 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
   }
   #mobile-discovery-panel #distribution .distribution-content { width:100%; }
   #mobile-discovery-panel #distribution .distribution-text { text-align:left; }
-  #contact { display:none!important; }
   #mobile-explore-toggle {
     bottom:calc(54px + env(safe-area-inset-bottom, 0px));
     z-index:10001;
@@ -612,16 +611,6 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     margin-left:auto!important;
     margin-right:auto!important;
     text-align:center!important;
-  }
-  #contact {
-    display:none!important;
-    background:#000!important;
-    height:0!important;
-    min-height:0!important;
-    margin:0!important;
-    padding:0!important;
-    border:0!important;
-    box-shadow:none!important;
   }
 }
 
