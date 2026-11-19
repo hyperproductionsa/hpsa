@@ -1797,3 +1797,43 @@ body.content-page #my-sticky-footer {
         padding:90px 14px 82px!important;
     }
 }
+
+
+/* Shared responsive heading scale across the five internal content pages. */
+body.content-page .content-shell h1 {
+    font-size:clamp(1.5rem,3.75vw,3.5rem)!important;
+    line-height:1.12!important;
+}
+body.content-page .content-shell h2 {
+    font-size:clamp(.75rem,1.875vw,1.75rem)!important;
+    line-height:1.2!important;
+}
+
+/* Homepage section headings use the same responsive scale as release-page H1s. */
+body:not(.content-page) #hero .hero-section-heading,
+body:not(.content-page) #distribution h2,
+body:not(.content-page) #explore h2,
+body:not(.content-page) #demo h2,
+body:not(.content-page) .contact-container h2,
+body:not(.content-page) h2 {
+    font-size:clamp(1.5rem,3.75vw,3.5rem)!important;
+    line-height:1.1!important;
+}
+
+/* The five internal pages remain completely static on mobile. */
+@media(max-width:768px) {
+    body.content-page *,
+    body.content-page *::before,
+    body.content-page *::after {
+        animation:none!important;
+        transition:none!important;
+        scroll-behavior:auto!important;
+    }
+    body.content-page .fade-section,
+    body.content-page .fade-left,
+    body.content-page .fade-right,
+    body.content-page .scale-up {
+        opacity:1!important;
+        transform:none!important;
+    }
+}
