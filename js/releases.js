@@ -273,8 +273,18 @@
             info.style.justifyContent = 'flex-start';
             info.style.overflow = 'hidden';
             info.style.minHeight = '0';
-            info.innerHTML = '<p class="artist" style="font-weight:700;margin:0;font-size:14px;color:#e4de69;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.artist + '</p>' +
-                             '<p class="title" style="margin:0;font-size:12px;color:#ccc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + rel.title + '</p>';
+            var artistText = document.createElement('p');
+            artistText.className = 'artist';
+            artistText.style.cssText = 'font-weight:700;margin:0;font-size:14px;color:#e4de69;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;';
+            artistText.textContent = repairMojibake(rel.artist);
+
+            var titleText = document.createElement('p');
+            titleText.className = 'title';
+            titleText.style.cssText = 'margin:0;font-size:12px;color:#ccc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;';
+            titleText.textContent = repairMojibake(rel.title);
+
+            info.appendChild(artistText);
+            info.appendChild(titleText);
             
             link.appendChild(artwork);
             link.appendChild(info);
