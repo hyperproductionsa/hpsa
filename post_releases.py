@@ -980,8 +980,6 @@ def generate_all_releases():
                 <span class="page-num" data-page="3">3</span>
                 <span class="page-num" data-page="4">4</span>
                 <span class="page-num" data-page="5">5</span>
-                <span class="page-num" data-page="6">6</span>
-                <span class="page-num" data-page="7">7</span>
                 <span class="page-arrow" id="next-page">&raquo;</span>
             </div>
         </div>
