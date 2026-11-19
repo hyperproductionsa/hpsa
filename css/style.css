@@ -1947,7 +1947,7 @@ body.home-page #mobile-explore-toggle {
         margin-bottom:18px;
     }
     body.home-page #artwork-carousel .slick-slide {
-        padding:0;
+        padding:0 8px;
     }
     body.home-page .hero-link {
         max-width:100%!important;
