@@ -227,6 +227,7 @@
             
             // Artwork wrapper keeps ribbons and the Traxsource mark confined to the image.
             const artwork = document.createElement('div');
+            artwork.className = 'tile-art-frame';
             artwork.style.position = 'relative';
             artwork.style.containerType = 'inline-size';
             artwork.style.width = '100%';
@@ -355,9 +356,9 @@
                 pagination.appendChild(prev);
             }
 
-            // Show at most four page numbers at once, sliding with the current page.
-            // Example: page 3 of 8 shows 2, 3, 4, 5.
-            var visiblePageCount = Math.min(4, totalPages);
+            // Show at most five page numbers at once, sliding with the current page.
+            // Example: page 3 of 9 shows 1, 2, 3, 4, 5.
+            var visiblePageCount = Math.min(5, totalPages);
             var rangeStart = Math.max(1, Math.min(currentPage - 1, totalPages - visiblePageCount + 1));
             var rangeEnd = Math.min(totalPages, rangeStart + visiblePageCount - 1);
             for (var p = rangeStart; p <= rangeEnd; p++) addPageButton(p);
