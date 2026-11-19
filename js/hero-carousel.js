@@ -161,17 +161,20 @@
                     const hasMultipleSlides = container.children().length > 1;
                     container.slick({
                         infinite: hasMultipleSlides,
-                        slidesToShow: 3,
+                        slidesToShow: isMobile ? 1 : 3,
                         slidesToScroll: 1,
+                        vertical: isMobile,
+                        verticalSwiping: isMobile,
+                        adaptiveHeight: isMobile,
                         autoplay: hasMultipleSlides,
-                        autoplaySpeed: isMobile ? 1000 : 0,
-                        speed: isMobile ? 800 : 2000,
-                        cssEase: isMobile ? 'ease' : 'linear',
+                        autoplaySpeed: isMobile ? 2200 : 0,
+                        speed: isMobile ? 700 : 2000,
+                        cssEase: isMobile ? 'ease-in-out' : 'linear',
                         arrows: false,
                         dots: false,
                         pauseOnHover: true,
                         pauseOnFocus: false,
-                        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }]
+                        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1, vertical: true, verticalSwiping: true } }]
                     });
 
                     // Pause while the user touches an artwork, then resume after release.
