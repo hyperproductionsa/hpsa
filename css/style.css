@@ -2042,12 +2042,24 @@ body.home-page #mobile-explore-toggle {
 
 /* Homepage demo submission CTA: same compact button dimensions, yellow treatment. */
 body.home-page .hero-buttons--secondary {
-    margin-top:8px;
+    width:272px;
+    max-width:100%;
+    margin:8px auto 0;
+}
+body.home-page .hero-buttons--secondary a.demo-submission-button {
+    flex:1 1 100%;
+    width:100%;
+    max-width:100%!important;
 }
 body.home-page .hero-buttons--secondary a.demo-submission-button {
     background:#e5de69!important;
     border-color:#e5de69!important;
     color:#000!important;
+}
+@media (max-width:768px) {
+    body.home-page .hero-buttons--secondary {
+        width:100%;
+    }
 }
 @media (hover:hover) {
     body.home-page .hero-buttons--secondary a.demo-submission-button:hover {
