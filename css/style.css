@@ -400,7 +400,8 @@ p,a,li,span,div,button,input,textarea{font-family:'Roboto',Arial,sans-serif}
     width:100%;
     overflow:hidden;
   }
-  #hero { touch-action: pan-x; }
+  /* Allow vertical page scrolling when a gesture starts over the hero. */
+  #hero { touch-action: pan-y; }
   #explore {
     position: fixed;
     inset: 80px 0 50px;
