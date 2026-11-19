@@ -1837,3 +1837,19 @@ body:not(.content-page) h2 {
         transform:none!important;
     }
 }
+
+
+/* Ensure page-specific legacy selectors cannot override the shared H1 scale. */
+body.content-page #about .content-panel h1,
+body.content-page #services .content-panel h1,
+body.content-page #demo-page .content-panel h1,
+body.content-page #privacy-page .content-panel h1 {
+    font-size:clamp(1.5rem,3.75vw,3.5rem)!important;
+    line-height:1.12!important;
+}
+
+/* Privacy section headings are also H2s and follow the half-size rule. */
+body.content-page .content-shell .privacy-container h2 {
+    font-size:clamp(.75rem,1.875vw,1.75rem)!important;
+    line-height:1.2!important;
+}
