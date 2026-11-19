@@ -251,10 +251,10 @@
             }
         ],
         "stores": {
-            "Spotify": "",
+            "Spotify": "https://open.spotify.com/album/7sCyarf2Y2oI5JevOMvVcn",
             "Apple Music": "https://music.apple.com/us/album/mamela/id6826157747",
             "Traxsource": "https://www.traxsource.com/title/2903995/mamela",
-            "Youtube": "",
+            "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nb1XhGpdZx9SxmGrSiEP1MTz16JPbCxHo",
             "Beatport": ""
         }
     },
@@ -290,7 +290,7 @@
             "Apple Music": "https://music.apple.com/us/album/mzulo/id6825014895",
             "Traxsource": "https://www.traxsource.com/title/2902181/mzulo",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_muuio8zjc8HQQJJl7SpyO2RhzDB_p_O-I",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/mzulo/7628853"
         }
     },
     {
@@ -332,7 +332,7 @@
             "Apple Music": "https://music.apple.com/us/album/mogodumo/id6822405731",
             "Traxsource": "https://www.traxsource.com/title/2897578/mogodumo",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mvqECa88hZQTy9FMIOQ1K7KhB8e7IR3qA",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/mogodumo/7603568"
         }
     },
     {
@@ -591,7 +591,7 @@
             "Apple Music": "https://music.apple.com/us/album/caller-id-single/6779295696?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2813955/caller-id",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kk9bUUFX_ikLcbHiOdq8a2MEF0SlwK0V4",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/caller-id/7055074"
         }
     },
     {
@@ -626,7 +626,7 @@
             "Apple Music": "https://music.apple.com/us/album/afro-roots-single/6779295589?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2813957/afro-roots",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lidwxL8JJF3dsOjoHul1nvQOC1ATsX5Ng",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/afro-roots/7055080"
         }
     },
     {
@@ -682,7 +682,7 @@
             "Apple Music": "https://music.apple.com/us/album/wave-single/6779295229?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2813971/wave",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lCURRQlcne7yqk8tRALg3Lj1i26J0TyCA",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/wave/7055078"
         }
     },
     {
@@ -710,7 +710,7 @@
             "Apple Music": "https://music.apple.com/us/album/sky-single/6774603693?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2804336/sky",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_nwRFwTtiOSN3sr0_cjmyJtWBEMy47I-pA",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/sky/6999431"
         }
     },
     {
@@ -745,7 +745,7 @@
             "Apple Music": "https://music.apple.com/us/album/your-light-single/1895552468?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2780547/your-light",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_m8iF_6WyM3httvig5uEF3HwQEmcfsLDAs",
-            "Beatport": "https://beatport.com/track/your-light/28692067"
+            "Beatport": "https://www.beatport.com/release/your-light/6861396"
         }
     },
     {
@@ -773,7 +773,7 @@
             "Apple Music": "https://music.apple.com/us/album/oui-monsieur-single/1895552128?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2780548/oui-monsieur",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kxCQjTDQvEXufieh0TW6JCyD60zhCIoVQ",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/oui-monsieur/6861399"
         }
     },
     {
@@ -829,7 +829,7 @@
             "Apple Music": "https://music.apple.com/us/album/shimmer-single/1895158211?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2777076/shimmer",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kWb8rdrTDI43v53YlB1zCDHkH6KTIKOxo",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/shimmer/6845303"
         }
     },
     {
@@ -857,7 +857,7 @@
             "Apple Music": "https://music.apple.com/us/album/las-ni%C3%B1as-single/1895158267?uo=4",
             "Traxsource": "https://www.traxsource.com/title/2777077/las-ninas",
             "Youtube": "https://music.youtube.com/playlist?list=OLAK5uy_n6_0FQJHUwWRcNTb1jzmJBLCdiMxllmX4",
-            "Beatport": ""
+            "Beatport": "https://www.beatport.com/release/las-ninas/6845313"
         }
     },
     {
