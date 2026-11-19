@@ -2071,3 +2071,21 @@ body.content-page .content-shell.fade-section {
     opacity:1!important;
     transform:none!important;
 }
+
+
+/* Desktop contact layout: keep the contact details and indexed logo at opposite edges. */
+@media (min-width:769px) {
+    #contact .contact-container {
+        width:100%;
+        max-width:none;
+        justify-content:space-between;
+    }
+    #contact .contact-col--left {
+        padding-left:0;
+        text-align:left;
+    }
+    #contact .contact-col--right {
+        align-items:flex-end;
+        padding-right:0;
+    }
+}
