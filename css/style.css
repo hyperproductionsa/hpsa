@@ -1506,13 +1506,13 @@ body.release-catalog-page #my-sticky-footer .social-icons img {
 }
 
 
-/* RELEASE CATALOG — remove the inner artwork inset while retaining the outer tile frame. */
+/* RELEASE CATALOG — remove only the thin inset line inside the artwork frame. */
 body.release-catalog-page .tile {
     position:relative!important;
-    padding:0!important;
+    padding:8px!important;
     border:1px solid #303030!important;
     border-radius:0!important;
-    background:#000!important;
+    background:linear-gradient(145deg,#292929,#0d0d0d 48%,#252525)!important;
     box-shadow:0 12px 32px rgba(0,0,0,.48),0 0 24px rgba(229,222,105,.045)!important;
 }
 body.release-catalog-page .tile-art-frame {
@@ -1521,7 +1521,7 @@ body.release-catalog-page .tile-art-frame {
     flex-shrink:0;
     overflow:hidden;
     border-radius:0!important;
-    background:#000;
+    background:#111;
 }
 body.release-catalog-page .tile-art-frame::after {
     content:none!important;
