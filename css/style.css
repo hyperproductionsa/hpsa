@@ -1506,14 +1506,13 @@ body.release-catalog-page #my-sticky-footer .social-icons img {
 }
 
 
-/* RELEASE CATALOG — carry the individual release artwork-frame treatment into each tile.
-   Tile aspect ratio, grid columns, and artwork proportions remain unchanged. */
+/* RELEASE CATALOG — remove the inner artwork inset while retaining the outer tile frame. */
 body.release-catalog-page .tile {
     position:relative!important;
-    padding:8px!important;
+    padding:0!important;
     border:1px solid #303030!important;
     border-radius:0!important;
-    background:linear-gradient(145deg,#292929,#0d0d0d 48%,#252525)!important;
+    background:#000!important;
     box-shadow:0 12px 32px rgba(0,0,0,.48),0 0 24px rgba(229,222,105,.045)!important;
 }
 body.release-catalog-page .tile-art-frame {
@@ -1522,14 +1521,10 @@ body.release-catalog-page .tile-art-frame {
     flex-shrink:0;
     overflow:hidden;
     border-radius:0!important;
-    background:#111;
+    background:#000;
 }
 body.release-catalog-page .tile-art-frame::after {
-    content:"";
-    position:absolute;
-    inset:2px;
-    border:1px solid rgba(255,255,255,.12);
-    pointer-events:none;
+    content:none!important;
 }
 body.release-catalog-page .tile img {
     display:block;
