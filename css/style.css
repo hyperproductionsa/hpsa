@@ -1853,3 +1853,31 @@ body.content-page .content-shell .privacy-container h2 {
     font-size:clamp(.75rem,1.875vw,1.75rem)!important;
     line-height:1.2!important;
 }
+
+
+/* SERVICES PAGE — centre the complete content and every service card. */
+body.content-page #services .services-content,
+body.content-page #services .services-intro,
+body.content-page #services .service-card,
+body.content-page #services .service-card h4,
+body.content-page #services .service-card p {
+    text-align:center!important;
+}
+body.content-page #services .services-intro {
+    margin-left:auto!important;
+    margin-right:auto!important;
+}
+body.content-page #services .service-card {
+    align-items:center!important;
+}
+body.content-page #services .service-card > div {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+body.content-page #services .service-pill {
+    align-self:center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+}
