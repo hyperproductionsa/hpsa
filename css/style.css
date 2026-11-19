@@ -1522,3 +1522,104 @@ body.release-catalog-page #my-sticky-footer .social-icons img {
         height:48px;
     }
 }
+
+
+/* RELEASE CATALOG — carry the individual release artwork-frame treatment into each tile.
+   Tile aspect ratio, grid columns, and artwork proportions remain unchanged. */
+body.release-catalog-page .tile {
+    position:relative!important;
+    padding:8px!important;
+    border:1px solid #303030!important;
+    border-radius:0!important;
+    background:linear-gradient(145deg,#292929,#0d0d0d 48%,#252525)!important;
+    box-shadow:0 12px 32px rgba(0,0,0,.48),0 0 24px rgba(229,222,105,.045)!important;
+}
+body.release-catalog-page .tile-art-frame {
+    position:relative;
+    width:100%;
+    flex-shrink:0;
+    overflow:hidden;
+    border-radius:0!important;
+    background:#111;
+}
+body.release-catalog-page .tile-art-frame::after {
+    content:"";
+    position:absolute;
+    inset:2px;
+    border:1px solid rgba(255,255,255,.12);
+    pointer-events:none;
+}
+body.release-catalog-page .tile img {
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:0!important;
+}
+body.release-catalog-page .tile:hover {
+    border-color:#e5de69!important;
+    box-shadow:0 16px 38px rgba(0,0,0,.58),0 0 28px rgba(229,222,105,.11)!important;
+    transform:translateY(-3px);
+}
+
+/* Square, aligned pagination controls echo the catalogue's framed artwork tiles. */
+body.release-catalog-page .pagination {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    margin:30px 0 20px;
+}
+body.release-catalog-page .pagination .page-num,
+body.release-catalog-page .pagination .page-arrow {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+    width:36px;
+    height:36px;
+    min-width:36px;
+    margin:0;
+    padding:0;
+    border:1px solid #303030;
+    border-radius:0;
+    background:#0d0d0d;
+    color:#e5de69;
+    font-size:13px;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    transition:background .2s,border-color .2s,color .2s,transform .2s;
+}
+body.release-catalog-page .pagination .page-num:hover,
+body.release-catalog-page .pagination .page-arrow:hover {
+    border-color:#e5de69;
+    background:#191919;
+    color:#fff;
+    opacity:1;
+}
+body.release-catalog-page .pagination .page-num.active {
+    border-color:#e5de69;
+    background:#e5de69;
+    color:#000;
+}
+body.release-catalog-page .pagination .page-ellipsis {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:18px;
+    color:#777;
+}
+body.release-catalog-page .pagination .page-num:focus-visible,
+body.release-catalog-page .pagination .page-arrow:focus-visible {
+    outline:2px solid #fff;
+    outline-offset:3px;
+}
+@media(max-width:480px) {
+    body.release-catalog-page .pagination { gap:5px; }
+    body.release-catalog-page .pagination .page-num,
+    body.release-catalog-page .pagination .page-arrow {
+        width:34px;
+        height:34px;
+        min-width:34px;
+    }
+}
