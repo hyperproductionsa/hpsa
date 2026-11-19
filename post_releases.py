@@ -64,6 +64,25 @@ def esc_attr(s):
         .replace("<", "&lt;")
         .replace(">", "&gt;"))
 
+def repair_mojibake(value):
+    """Repair common UTF-8 text that was incorrectly decoded as Windows-1252."""
+    if value is None:
+        return ""
+    text = str(value)
+    suspicious = ("Ã", "Â", "â", "ð")
+    # Only attempt conversion when typical mojibake markers are present.
+    for _ in range(2):
+        if not any(marker in text for marker in suspicious):
+            break
+        try:
+            repaired = text.encode("cp1252").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            break
+        if repaired == text:
+            break
+        text = repaired
+    return text
+
 def clean_upc(upc_val):
     """Normalise a UPC value: strip trailing .0 from float-like strings."""
     if upc_val is None:
@@ -191,8 +210,8 @@ def generate_sitemap_and_links(all_releases, df_rel, artist_col, title_col, cat_
     for cat_no in all_releases:
         group = df_rel[df_rel[cat_col] == cat_no]
         row = group.iloc[0]
-        artist = str(row.get(artist_col, '')) if artist_col else ''
-        title = str(row.get(title_col, '')) if title_col else ''
+        artist = repair_mojibake(row.get(artist_col, '')) if artist_col else ''
+        title = repair_mojibake(row.get(title_col, '')) if title_col else ''
         link_list_html += f'        <li><a href="/releases/{cat_no}.html">{cat_no} - {esc_html(artist)} - {esc_html(title)}</a></li>\n'
 
     NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -268,8 +287,8 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
     unique_tracks = []
     seen = set()
     for track in tracks:
-        track_artist = str(track.get('artist') or '').strip()
-        track_title = str(track.get('title') or '').strip()
+        track_artist = repair_mojibake(track.get('artist') or '').strip()
+        track_title = repair_mojibake(track.get('title') or '').strip()
         track_mix = str(track.get('mix') or '').strip()
         key = f"{track_artist}|{track_title}|{track_mix}"
         if key not in seen:
@@ -281,8 +300,8 @@ def generate_release_html(cat_no, artist, title, tracks, stores, release_date, r
                 'mix': track_mix
             })
 
-    artist = str(artist or '').strip()
-    title = str(title or '').strip()
+    artist = repair_mojibake(artist or '').strip()
+    title = repair_mojibake(title or '').strip()
     cat_no = str(cat_no).strip()
     stores = stores or {}
 
@@ -759,7 +778,7 @@ def generate_all_releases():
 
                 def g(k):
                     v = row.get(k, '') if k else ''
-                    return '' if (v is None or str(v) == 'nan') else str(v).strip()
+                    return '' if (v is None or str(v) == 'nan') else repair_mojibake(v).strip()
 
                 artist       = g(artist_col)
                 title        = g(title_col)
@@ -773,7 +792,7 @@ def generate_all_releases():
                 for i, (_, r) in enumerate(group.iterrows(), 1):
                     def gt(k):
                         v = r.get(k, '') if k else ''
-                        return '' if (v is None or str(v) == 'nan') else str(v).strip()
+                        return '' if (v is None or str(v) == 'nan') else repair_mojibake(v).strip()
 
                     tn_raw = r.get(track_num_col, '') if track_num_col else ''
                     try:
