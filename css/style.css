@@ -2124,6 +2124,20 @@ body.content-page .content-shell.fade-section {
         width:min(36vw,432px);
     }
     body.home-page #distribution-carousel .distro-tile {
-        border-width:.8px;
+        max-width:92.8px;
+        border-width:1px;
+    }
+    body.home-page #distribution-carousel .distro-icon {
+        width:41.6px;
+        height:41.6px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    body.home-page #distribution-carousel .distro-tile {
+        max-width:70.4px;
+    }
+    body.home-page #distribution-carousel .distro-icon {
+        width:32px;
+        height:32px;
     }
 }
