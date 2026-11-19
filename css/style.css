@@ -2038,3 +2038,21 @@ body.home-page #mobile-explore-toggle {
     #hero { height:100vh; min-height:100vh; display:flex; align-items:center; justify-content:center; }
     #hero .hero-inner { margin:auto; }
 }
+
+
+/* Homepage demo submission CTA: same compact button dimensions, yellow treatment. */
+body.home-page .hero-buttons--secondary {
+    margin-top:8px;
+}
+body.home-page .hero-buttons--secondary a.demo-submission-button {
+    background:#e5de69!important;
+    border-color:#e5de69!important;
+    color:#000!important;
+}
+@media (hover:hover) {
+    body.home-page .hero-buttons--secondary a.demo-submission-button:hover {
+        background:#e5de69!important;
+        border-color:#fff!important;
+        color:#000!important;
+    }
+}
