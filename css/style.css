@@ -2064,3 +2064,10 @@ body.home-page .hero-buttons--secondary a.demo-submission-button {
         color:#000!important;
     }
 }
+
+
+/* Internal content pages are static; never hide the page shell behind a scroll reveal. */
+body.content-page .content-shell.fade-section {
+    opacity:1!important;
+    transform:none!important;
+}
