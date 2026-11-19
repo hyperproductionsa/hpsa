@@ -2093,3 +2093,34 @@ body.content-page .content-shell.fade-section {
         padding-right:0;
     }
 }
+
+/* Desktop contact columns use three equal tracks for even spacing. */
+@media (min-width:769px) {
+    #contact .contact-container {
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        align-items:start;
+        column-gap:0;
+    }
+    #contact .contact-col--left {
+        width:100%;
+        padding-left:0;
+        text-align:left;
+    }
+    #contact .contact-col--center {
+        width:100%;
+        padding-left:0;
+        text-align:center;
+    }
+    #contact .contact-col--right {
+        width:100%;
+        align-items:center;
+        padding:0;
+    }
+    #contact .contact-col--right img {
+        width:90%;
+    }
+    body.home-page #distribution-carousel .distro-tile {
+        border-width:.8px;
+    }
+}
