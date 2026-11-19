@@ -2073,11 +2073,15 @@ body.content-page .content-shell.fade-section {
 }
 
 
-/* Desktop contact layout: keep the contact details and indexed logo at opposite edges. */
+/* Desktop contact content shares the footer's centered 1200px alignment. */
 @media (min-width:769px) {
+    #contact {
+        padding-left:30px;
+        padding-right:30px;
+    }
     #contact .contact-container {
         width:100%;
-        max-width:none;
+        max-width:1200px;
         justify-content:space-between;
     }
     #contact .contact-col--left {
