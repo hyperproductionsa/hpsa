@@ -2001,8 +2001,30 @@ body.home-page #mobile-explore-toggle {
         transition:none!important; background:#000!important;
     }
     #contact {
-        display:block!important; height:auto!important; min-height:0!important;
-        margin:0!important; padding:50px 16px!important; border:0; background:#000!important;
+        display:block!important;
+        position:relative!important;
+        width:100%!important;
+        height:auto!important;
+        min-height:0!important;
+        margin:0!important;
+        padding:50px 16px 80px!important;
+        border:0!important;
+        background:#e4de69!important;
+        opacity:1!important;
+        visibility:visible!important;
+        transform:none!important;
+        transition:none!important;
+    }
+    #contact,
+    #contact * {
+        color:#000!important;
+    }
+    #contact .contact-col--left,
+    #contact .contact-col--left * {
+        opacity:1!important;
+        visibility:visible!important;
+        transform:none!important;
+        transition:none!important;
     }
     #hero {
         height:100svh!important; min-height:100svh!important; max-height:none!important;
