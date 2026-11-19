@@ -1943,7 +1943,7 @@ body.home-page #mobile-explore-toggle {
     body.home-page #artwork-carousel {
         width:100%;
         max-width:360px;
-        padding:10px;
+        padding:18px 10px;
         margin-bottom:18px;
     }
     body.home-page #artwork-carousel .slick-slide {
@@ -2058,7 +2058,8 @@ body.home-page .hero-buttons--secondary a.demo-submission-button {
 }
 @media (max-width:768px) {
     body.home-page .hero-buttons--secondary {
-        width:100%;
+        width:272px;
+        max-width:100%;
     }
 }
 @media (hover:hover) {
