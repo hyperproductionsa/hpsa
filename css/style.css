@@ -2001,3 +2001,36 @@ body.home-page #mobile-explore-toggle {
         font-size:.7rem!important;
     }
 }
+
+
+/* Homepage follow-up: remove the mobile discovery drawer and keep the page in normal flow. */
+@media (max-width:768px) {
+    #explore {
+        position:relative!important; inset:auto!important; z-index:auto!important;
+        display:block!important; width:100%!important; height:auto!important; min-height:0!important;
+        margin:0!important; padding:28px 16px 30px!important; overflow:visible!important;
+        opacity:1!important; visibility:visible!important; pointer-events:auto!important;
+        transform:none!important; transition:none!important; background:#000!important;
+    }
+    #distribution {
+        display:block!important; position:relative!important; width:100%!important;
+        min-height:0!important; margin:0!important; padding:40px 16px!important;
+        opacity:1!important; visibility:visible!important; transform:none!important;
+        transition:none!important; background:#000!important;
+    }
+    #contact {
+        display:block!important; height:auto!important; min-height:0!important;
+        margin:0!important; padding:50px 16px!important; border:0; background:#000!important;
+    }
+    #hero {
+        height:100svh!important; min-height:100svh!important; max-height:none!important;
+        display:flex!important; align-items:center!important; justify-content:center!important;
+    }
+    #hero .hero-inner { width:100%; margin:auto!important; }
+    #artwork-carousel { touch-action:pan-y; }
+}
+@media (min-width:769px) {
+    body.home-page #artwork-carousel { padding-top:26px; padding-bottom:26px; }
+    #hero { height:100vh; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+    #hero .hero-inner { margin:auto; }
+}
